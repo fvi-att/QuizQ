@@ -14,6 +14,7 @@ exports.getSerif = function(situation){
 		case "need_apple":
 			return 'apple_need';
 		
+		
 		default :
 			return 'first_contact';
 			
