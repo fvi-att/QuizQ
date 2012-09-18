@@ -14,7 +14,7 @@ exports.openView = function(view){
 		});
 		
 		var serif_label = Titanium.UI.createLabel({
-			text:L(require('/Serif/Serif').getSerif('need_apple')),
+			text:L(require('/Serif/Serif').getSerif(Titanium.App.Properties.getString('prmt_talk'))),
 			backgroundImage:'/images/transparent.png',
 			color:'#191970',
 			top:0,

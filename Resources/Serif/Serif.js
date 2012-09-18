@@ -7,6 +7,8 @@
  */
 exports.getSerif = function(situation){
 	
+	Titanium.API.info('getSerifMessage::'+situation);
+	
 	
 	switch(situation){
 		case "need_apple":
