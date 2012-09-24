@@ -23,6 +23,10 @@ if (Ti.version < 1.8 ) {
 	require('/DB/SQL').CreateTable();
 	
 	//パラメータ値の管理
+	//人間のおしゃべり機能に関するパラメータ　を文字列で表現する
+	if(!Titanium.App.Properties.hasProperty('prmt_talk'))
+		Titanium.App.Properties.setString('prmt_talk','first_contact');
+		
 	if(!Titanium.App.Properties.hasProperty('civ_population'))
 		Titanium.App.Properties.setInt('civ_population',10);
 	

@@ -36,6 +36,7 @@ exports.openCivilView = function(){
 	man_image.addEventListener('click',function(e){
 
 		require('/ui/common/serifView/Serif').openView(view);
+		Titanium.App.Properties.setString('first_contact','need_apple')
 		
 	});
 	
