@@ -8,9 +8,11 @@
 //STUB ADD HELLO BOY
 exports.AddProject = function() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+	
+	var background_path = require('/util/getbackPathWithTime').getPath();
 	var win = Titanium.UI.createWindow({
 		title : 'クイズを作る',
-		backgroundImage : '/images/background/note.jpg',
+		backgroundImage :background_path,
 		exitOnClose : false,
 		fullscreen : false,
 		orientationModes : [Titanium.UI.PORTRAIT]
