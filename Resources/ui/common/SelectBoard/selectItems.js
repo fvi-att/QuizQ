@@ -31,7 +31,7 @@ exports.openView = function(view) {
 
 	var item_image2 = '/images/background/back_white.png';
 
-	var item_image3 = '/images/background/cork.png';
+	var item_image3 = '/images/background/cork.jpg';
 
 	var item_image4 = '/images/background/open_background.png';
 
@@ -46,17 +46,17 @@ exports.openView = function(view) {
 
 	old_paper.add(item);
 
-/*
+
 	//説明部分の背景
 	var item_explain_area = Titanium.UI.createView({
-		backgroundImage : '/images/background/note.png',
+		backgroundImage : '/images/background/note.jpg',
 		width : width * 0.75,
 		height : height * 0.2,
-		top : height * 0.4
+		top : height * 0.35
 	});
 
 	old_paper.add(item_explain_area);
-*/
+
 	//アイテムのリストを表示
 	var item_list = [];
 	var item_list0 = item_image0;
@@ -67,33 +67,38 @@ exports.openView = function(view) {
 
 	var item_list_view0 = Titanium.UI.createView({
 		backgroundImage : item_image0,
-		width : width * 0.1,
+		width : width * 0.15,
+		height : height * 0.1,
+		top : height * 0.55,
+		left : width * 0.02
+	});
+	var item_list_view1 = Titanium.UI.createView({
+		backgroundImage : item_image1,
+		width : width * 0.15,
 		height : height * 0.1,
 		top : height * 0.55,
 		left : width * 0.2
 	});
-	var item_list_view1 = Titanium.UI.createView({
-		backgroundImage : item_image1,
-		width : width * 0.1,
-		height : height * 0.1,
-		top : height * 0.55,
-		left : width * 0.35
-	});
 	var item_list_view2 = Titanium.UI.createView({
 		backgroundImage : item_image2,
-		width : width * 0.1,
+		width : width * 0.15,
 		height : height * 0.1,
 		top : height * 0.55,
-		left : width * 0.55
+		left : width * 0.40
 	});
 	var item_list_view3 = Titanium.UI.createView({
 		backgroundImage : item_image3,
-		width : width * 0.1,
+		width : width * 0.15,
 		height : height * 0.1,
 		top : height * 0.55,
-		left : width * 0.7
+		left : width * 0.60
 	});
-	
+
+
+	old_paper.add(item_list_view0);
+	old_paper.add(item_list_view1);
+	old_paper.add(item_list_view2);
+	old_paper.add(item_list_view3);
 	
 	
 
