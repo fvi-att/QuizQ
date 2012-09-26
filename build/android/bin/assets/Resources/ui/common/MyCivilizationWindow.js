@@ -62,6 +62,8 @@ exports.openCivilView = function(){
 	view.add(item_button);
 	
 	item_button.addEventListener('click',function(e){
+		var item_view = require('/ui/common/SelectBoard/selectItems').openView(view);	
+		item_view.add(view);
 		item_button.setTouchEnabled(false);
 		
 		cupcell_image.animate({center:{x:width * 0.5,y:height * 0.65},duration:1500},function(e){

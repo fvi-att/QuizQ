@@ -25,43 +25,26 @@ exports.openView = function(view){
 		
 		//ここからhachi_927によるもの
 		//アイテム画像読み込み
-		var item_view = []
-		var item_view[0] = Ti.UI.createview({
-			backgroundImage:'/images/background/back_green.png',
+		var item_image = [];
+		var item_image0 = '/images/background/back_green.png';
+		
+		var item_image1 = '/images/background/back_lightblue.png';
+		
+		var item_image2 = '/images/background/back_white.png';
+		
+		var item_image3 = '/images/background/cork.png';
+		
+		var item_image4 = '/images/background/open_background.png';
+		
+		var item = Titanium.UI.createView({
+			backgroundImage:item_image0,
 			width:width * 0.6,
 			height:height * 0.3,
-			top:height *0.15
+			top:height * 0.15
 		});
 		
-		var item_view[1] = Ti.UI.createview({
-			backgroundImage:'/images/background/back_lightblue.png',
-			width:width * 0.6,
-			height:height * 0.3,
-			top:height *0.15
-		});
 		
-		var item_view[2] = Ti.UI.createview({
-			backgroundImage:'/images/background/back_white.png',
-			width:width * 0.6,
-			height:height * 0.3,
-			top:height *0.15
-		});
-		
-		var item_view[3] = Ti.UI.createview({
-			backgroundImage:'/images/background/cork.png',
-			width:width * 0.6,
-			height:height * 0.3,
-			top:height *0.15
-		});
-		
-		var item_view[4] = Ti.UI.createview({
-			backgroundImage:'/images/background/open_background.png',
-			width:width * 0.6,
-			height:height * 0.3,
-			top:height *0.1
-		});
-		
-		view.add(item_view[0]);
+		view.add(item);
 		
 		//
 		var item_explain_area = Ti.UI.createview({
