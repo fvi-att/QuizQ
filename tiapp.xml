@@ -15,14 +15,24 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.1.GA</sdk-version>
+<<<<<<< HEAD
     <id>com.xicolo.app</id>
     <name>xicolo    QuizQ</name>
     <version>0.5</version>
+=======
+    <id>xicolo.app</id>
+    <name>xicolo    Quiz</name>
+    <version>1.0</version>
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
     <publisher>fvi@</publisher>
     <url>http://xicolo.com/wordpress</url>
     <description>iOS implemented</description>
     <copyright>2012 by xicolo</copyright>
+<<<<<<< HEAD
     <icon>appico.png</icon>
+=======
+    <icon>xicolo.png</icon>
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>

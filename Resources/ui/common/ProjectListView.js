@@ -41,7 +41,10 @@ function ProjectList() {
 	//新規でたしてみる  sample
 	function AddSample() {
 		if (Titanium.App.Properties.getBool('isSampleNeed')) {
+<<<<<<< HEAD
 			/*
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 			var spl_row = require('/ui/common/ProjectTableRow').createRowObject('', '(例)りんごは林檎ですがゴリラの漢字名は？', 0);
 			var spl_row2 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)2012年のサラリーマン川柳受賞作は？',0);
 			var spl_row3 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)ユニークな貯金法ってある？', 0);
@@ -51,8 +54,11 @@ function ProjectList() {
 			aTableView.appendRow(spl_row2.row);
 			aTableView.appendRow(spl_row3.row);
 			aTableView.appendRow(spl_row4.row);
+<<<<<<< HEAD
 			一時停止
 			*/
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		}
 	}
 	
@@ -109,8 +115,11 @@ function ProjectList() {
 	});
 
 	var view = new require('/ui/common/FirstView')();
+<<<<<<< HEAD
 	view.setBackgroundImage('/images/opening/old_paper.jpg');
 	
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 
 	//image cork board
 	var back_cork = Titanium.UI.createImageView({
@@ -134,10 +143,16 @@ function ProjectList() {
 		
 	});
 	
+<<<<<<< HEAD
 	/*
 	var tabView = require('/ui/common/menuTab/MenuTab').createMenuTab(2);
 	view.add(tabView.view);
 	*/
+=======
+
+	var tabView = require('/ui/common/menuTab/MenuTab').createMenuTab(2);
+	view.add(tabView.view);
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	view.add(debug_text);
 
 	return view;
