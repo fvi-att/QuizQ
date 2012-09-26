@@ -36,7 +36,7 @@ function ResultView(download,result_arr,fromwin){
 		height:Titanium.UI.FILL,
 		
 	});
-	
+	//結果という文字列に関する画像一覧
 	var resultImage = Titanium.UI.createImageView({
 		url:'/images/result/resultImage1.png',
 		top:0,
@@ -62,7 +62,7 @@ function ResultView(download,result_arr,fromwin){
 		view.add(p_image);
 	}
 	
-	
+	/*
 	 var slash_image = Titanium.UI.createImageView({
 	 	width:width/6,
 	 	height:height/10,
@@ -91,7 +91,7 @@ function ResultView(download,result_arr,fromwin){
 
 		view.add(p_image);
 	}
-	
+	*/
 	var result_tableView = Titanium.UI.createTableView({
 		showVerticalScrollIndicator:true,
 		top:height*0.25,

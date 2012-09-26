@@ -134,9 +134,10 @@ function ProjectList() {
 		
 	});
 	
-
+	/*
 	var tabView = require('/ui/common/menuTab/MenuTab').createMenuTab(2);
 	view.add(tabView.view);
+	*/
 	view.add(debug_text);
 
 	return view;
