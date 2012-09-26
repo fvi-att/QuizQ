@@ -72,7 +72,7 @@ exports.openCivilView = function() {
 	item_button.addEventListener('click', function(e) {
 		var item_view = require('/ui/common/SelectBoard/selectItems').openView(view);
 		item_button.setTouchEnabled(false);
-		//StartAnimation(); このメソッドでアニメーションを開始する
+		//StartAnimation(); このメソッドでアニメーションを開始するよ
 		
 	});
 
