@@ -25,18 +25,17 @@ exports.openView = function(view) {
 
 	//ここからhachi_927によるもの
 	//アイテム画像読み込み
-	var item_image = [];
 	var item_image0 = '/images/background/back_green.png';
 
 	var item_image1 = '/images/background/back_lightblue.png';
 
 	var item_image2 = '/images/background/back_white.png';
 
-	var item_image3 = '/images/background/cork.png';
+	var item_image3 = '/images/background/cork.jpg';
 
 	var item_image4 = '/images/background/open_background.png';
 
-	var selected_item_image = item_image[0];
+	var selected_item_image = item_image0;
 
 	var item = Titanium.UI.createView({
 		backgroundImage : selected_item_image,
@@ -47,19 +46,61 @@ exports.openView = function(view) {
 
 	old_paper.add(item);
 
+
 	//説明部分の背景
 	var item_explain_area = Titanium.UI.createView({
-		backgroundImage : '/images/background/note.png',
+		backgroundImage : '/images/background/note.jpg',
 		width : width * 0.75,
 		height : height * 0.2,
-		top : height * 0.4
+		top : height * 0.35
 	});
 
 	old_paper.add(item_explain_area);
 
 	//アイテムのリストを表示
 	var item_list = [];
-	var item_list[0] = item_image0;
+	var item_list0 = item_image0;
+	var item_list1 = item_image1;
+	var item_list2 = item_image2;
+	var item_list3 = item_image3;
+	var item_list4 = item_image4;
+
+	var item_list_view0 = Titanium.UI.createView({
+		backgroundImage : item_image0,
+		width : width * 0.15,
+		height : height * 0.1,
+		top : height * 0.55,
+		left : width * 0.02
+	});
+	var item_list_view1 = Titanium.UI.createView({
+		backgroundImage : item_image1,
+		width : width * 0.15,
+		height : height * 0.1,
+		top : height * 0.55,
+		left : width * 0.2
+	});
+	var item_list_view2 = Titanium.UI.createView({
+		backgroundImage : item_image2,
+		width : width * 0.15,
+		height : height * 0.1,
+		top : height * 0.55,
+		left : width * 0.40
+	});
+	var item_list_view3 = Titanium.UI.createView({
+		backgroundImage : item_image3,
+		width : width * 0.15,
+		height : height * 0.1,
+		top : height * 0.55,
+		left : width * 0.60
+	});
+
+
+	old_paper.add(item_list_view0);
+	old_paper.add(item_list_view1);
+	old_paper.add(item_list_view2);
+	old_paper.add(item_list_view3);
+	
+	
 
 	//ここまでhachi_927によるもの
 
