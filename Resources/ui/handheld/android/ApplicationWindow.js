@@ -84,8 +84,8 @@ function ApplicationWindow() {
 	//	introViews.push(new require('/ui/common/AddProject')());
 
 	introViews.push(new require('/ui/common/ProjectListView')());
-
-	introViews.push(new require('/ui/common/MatomeView')());
+	//ソーシャルウィンドウは一旦閉鎖
+	//introViews.push(new require('/ui/common/MatomeView')());
 
 	// 上記のviewを配列としてviewsプロパティに引き渡します。
 	var scrollView = Titanium.UI.createScrollableView({
