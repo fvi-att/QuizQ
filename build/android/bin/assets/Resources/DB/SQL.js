@@ -23,7 +23,9 @@ exports.getBookMark = function() {
 exports.CreateTable = function() {
 	try {
 		sql.execute('CREATE TABLE IF NOT EXISTS BOOKMARK(_ID INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT,BOOK_ID TEXT NOT NULL ,TITLE TEXT,TYPE TEXT NOT NULL)');
+
 		sql.execute('CREATE TABLE IF NOT EXISTS CIVSTATUS(_ID INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT,NAME TEXT NOT NULL ,STATUS TEXT,POSITION TEXT NOT NULL)');
+
 		return true;
 	} catch(err) {
 		Titanium.API.info('ERR::Database::'+JSON.stringify(err));

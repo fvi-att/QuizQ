@@ -8,11 +8,12 @@
 //STUB ADD HELLO BOY
 exports.AddProject = function() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+
 	
 	var background_path = require('/util/getbackPathWithTime').getPath();
 	var win = Titanium.UI.createWindow({
 		title : 'クイズを作る',
-		backgroundImage :background_path,
+		backgroundImage : '/images/background/note.jpg',
 		exitOnClose : false,
 		fullscreen : false,
 		orientationModes : [Titanium.UI.PORTRAIT]
@@ -25,7 +26,6 @@ exports.AddProject = function() {
 		top : 0
 	});
 	win.add(backImageView);
-
 
 	var textArea = Titanium.UI.createTextArea({
 		hintText : '問題をここに入れてください',

@@ -23,10 +23,7 @@ exports.createRowObject = function(image_path,title,side) {
 		
 	var row = Titanium.UI.createTableViewRow({
 		leftImage:leftImagePath,
-<<<<<<< HEAD
 		backgroundImage:'/images/opening/old_paper.jpg',
-=======
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		hasChild:true,
 		height : height * 0.15,
 		className : 'todo_row',

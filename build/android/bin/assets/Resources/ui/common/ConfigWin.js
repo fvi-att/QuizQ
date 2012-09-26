@@ -13,16 +13,9 @@ exports.OpenConfigWin = function() {
 		fullscreen : false,
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
-	/*
-	var icon = new require('/ui/common/MenuIcon')('/images/postit/green_post1.png', '/images/icon/dark_gears.png', "設定");
-	icon.setWidth(width * 0.8);
-	icon.setTop(height * 0.03);
-	icon.setLeft(width * 0.05);
 
-	win.add(icon);
-	*/
 	var introSW_label = Titanium.UI.createLabel({
-		text : '起動時にオープニングを表示する',
+		text : '起動時に説明画面をつける',
 		color : 'black',
 		top : height * 0.3,
 		font : {
@@ -76,11 +69,13 @@ exports.OpenConfigWin = function() {
 
 	win.add(introSW_label2);
 	win.add(introSW2);
+
 	/*
 	 * 
 	 * アカウント管理処理
 	 * 
 	 *
+	*/
 	var account_man = Titanium.UI.createButton({
 		title : 'アカウント管理',
 		textAlign : 'center',
@@ -141,11 +136,16 @@ exports.OpenConfigWin = function() {
 
 		dialog.show();
 	});
-	win.add(account_man);
-*/
+
 	win.add(introSW_label);
 	win.add(introSW);
 	
+
+
+	win.add(introSW_label);
+	win.add(introSW);
+	win.add(account_man);
+
 
 	win.open();
 

@@ -51,6 +51,7 @@ function ApplicationWindow() {
 				  money:Titanium.App.Properties.getInt('civ_money')}
 				  
 	var status_message = '人口：'	+status.population;+',食料：'+status.food;//+',文化値：'status.culture+',財政：'+status.money;
+	
 	var self = Ti.UI.createWindow({
 		title:status_message,
 		backgroundColor : '#ffffff',
@@ -58,10 +59,11 @@ function ApplicationWindow() {
 		exitOnClose : true,
 		fullscreen : true
 	});
+
 	
 	//簡単な説明文の機能をカットするよ
 	Titanium.App.Properties.setBool('isIntroNeed',false);
-	
+
 
 	var introViews = [];
 	if (Titanium.App.Properties.getBool('isIntroNeed')) {
@@ -74,6 +76,9 @@ function ApplicationWindow() {
 
 	//introViews.push(new require('/ui/common/TopView')());
 	introViews.push(require('/ui/common/MyCivilizationWindow').openCivilView());
+
+	//introViews.push(new require('/ui/common/TopView')());
+
 
 	//新規プロジェクト追加画面の追加
 	//	introViews.push(new require('/ui/common/AddProject')());

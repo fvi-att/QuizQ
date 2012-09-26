@@ -4,6 +4,7 @@ function FirstView() {
 	var background_path = require('/util/getbackPathWithTime').getPath();
 	var self = Ti.UI.createView({
 		backgroundImage:background_path
+
 	});
 	
 	return self;
