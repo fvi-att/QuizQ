@@ -14,6 +14,11 @@ exports.openCivilView = function() {
 	var view = Titanium.UI.createView({
 		backgroundImage : background_path
 	});
+	
+	view.addEventListener('click',function(e){
+		alert(view.getBackgroundImage())
+	});
+	
 	var house_image = Titanium.UI.createImageView({
 		image : '/images/civ/ancient/house/house1.png',
 		width : 'auto',
@@ -23,6 +28,7 @@ exports.openCivilView = function() {
 			y : height * 0.4
 		}
 	});
+	
 
 	view.add(house_image);
 
