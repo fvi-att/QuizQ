@@ -103,7 +103,16 @@ exports.openCivilView = function(){
 	
 	invest_button.addEventListener('click',function(e){
 		//背景黒のビューを設定
-		require('/ui/common/SelectBoard/SelectBoard').openView(view);	
+		var invest_view = require('/ui/common/SelectBoard/SelectBoard').openView(view);	
+		var invest_label = Titanium.UI.createLabel({
+			text:'これはてすとです',
+			textAlign:'center',
+			color:'black',
+			width:invest_view.width * 0.9,
+			height:invest_view.height *0.7
+		});
+		invest_view.add(invest_label);
+		
 	});
 	
 	view.add(invest_button);

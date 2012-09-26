@@ -10,8 +10,8 @@ exports.createIntroduction = function(quizID,download){
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
 	var discribe_window = Titanium.UI.createWindow({
-		title : 'タイトル: '+quizID,
-		backgroundImage : '/images/note.jpg',
+		title : 'クイズペディア:ID::'+quizID,
+		backgroundImage : '/images/opening/old_paper.jpg',
 		exitOnClose : false,
 		fullscreen : false
 	});

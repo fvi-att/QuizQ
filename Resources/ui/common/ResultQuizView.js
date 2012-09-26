@@ -29,9 +29,9 @@ function ResultView(download,result_arr,fromwin){
 	
 
 	
-	var background_path = require('/util/getbackPathWithTime').getPath();
+	//var background_path = require('/util/getbackPathWithTime').getPath();
 	var view = Titanium.UI.createView({
-		backgroundImage:background_path,
+		backgroundImage:'/images/opening/old_paper.jpg',
 		width:Titanium.UI.FILL,
 		height:Titanium.UI.FILL,
 		
