@@ -70,36 +70,10 @@ exports.openCivilView = function() {
 	view.add(item_button);
 
 	item_button.addEventListener('click', function(e) {
-		//var item_view = require('/ui/common/SelectBoard/selectItems').openView(view);
+		var item_view = require('/ui/common/SelectBoard/selectItems').openView(view);
 		item_button.setTouchEnabled(false);
-		StartAnimation();
-		/*
-		 cupcell_image.animate({center:{x:width * 0.5,y:height * 0.65},duration:1500},function(e){
-		 //second animation
-		 cupcell_image.animate({center:{x:width * 0.5,y:height * 0.6},duration:500},function(e){
-		 //third animation
-		 cupcell_image.setImage('/images/civ/cupcell/cupcell_open.png');
-		 food_arr.push(Ti.UI.createImageView({image:'/images/civ/food/apple.png',width:'auto',height:'auto',center:{x:width * 0.5,y:height *0.4}}));
-		 view.add(food_arr[0]);
-
-		 var disappear_time = setTimeout(function(e){
-		 //cupcell_image.setCenter({x:width * 0.5,y:-1 * height});
-		 cupcell_image.setImage('/images/civ/cupcell/cupcell.png');
-		 cupcell_image.animate({center:{x:width * 0.5,y:-1 *height},duration:500})
-		 item_button.setTouchEnabled(true);
-
-		 clearTimeout(disappear_time);
-
-		 },2000);
-
-		 var item_disappear_time = setTimeout(function(e){
-		 //STUB的処理
-		 view.remove(food_arr[0]);
-		 clearTimeout(item_disappear_time);
-		 },2500);
-		 })
-		 })
-		 */
+		//StartAnimation(); このメソッドでアニメーションを開始する
+		
 	});
 
 	//変更　アイテムに関するアニメーションを関数に変更
