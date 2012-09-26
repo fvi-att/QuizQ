@@ -41,6 +41,7 @@ function ProjectList() {
 	//新規でたしてみる  sample
 	function AddSample() {
 		if (Titanium.App.Properties.getBool('isSampleNeed')) {
+			/*
 			var spl_row = require('/ui/common/ProjectTableRow').createRowObject('', '(例)りんごは林檎ですがゴリラの漢字名は？', 0);
 			var spl_row2 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)2012年のサラリーマン川柳受賞作は？',0);
 			var spl_row3 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)ユニークな貯金法ってある？', 0);
@@ -50,6 +51,8 @@ function ProjectList() {
 			aTableView.appendRow(spl_row2.row);
 			aTableView.appendRow(spl_row3.row);
 			aTableView.appendRow(spl_row4.row);
+			一時停止
+			*/
 		}
 	}
 	
@@ -106,6 +109,8 @@ function ProjectList() {
 	});
 
 	var view = new require('/ui/common/FirstView')();
+	view.setBackgroundImage('/images/opening/old_paper.jpg');
+	
 
 	//image cork board
 	var back_cork = Titanium.UI.createImageView({

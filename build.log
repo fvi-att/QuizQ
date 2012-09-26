@@ -1,10 +1,16 @@
 Logfile initialized
+<<<<<<< HEAD
 [INFO] logfile = C:\Users\ety\My Documents\WorkPlace\QuizQ\build.log
 [DEBUG] C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\builder.py install xicolo    QuizQ C:\Program Files (x86)\Android\android-sdk\tools C:\Users\ety\My Documents\WorkPlace\QuizQ com.xicolo.app 4
+=======
+[INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build.log
+[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\builder.py install xicolo    QuizQ C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.app 2
+>>>>>>> 8bea68f4db754568d5d17eb551efc33d95c82b2c
 [INFO] Titanium SDK version: 2.1.1 (07/27/12 14:01 0fd84a2)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.033000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
@@ -44,6 +50,47 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\ety\My Documents\WorkPlace\QuizQ\build\android\bin\app-unsigned.apk
+=======
+[DEBUG] waited 0.099000 seconds on emulator to get ready
+[DEBUG] com.xicolo.app installed? False
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\ProjectTableView\IntroWin.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ProjectTableView\IntroWin.js
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\appico.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-land-hdpi\background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-land-ldpi\background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-port-hdpi\background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-port-ldpi\background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-hdpi\background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-ldpi\background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-mdpi\background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-hdpi\background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-ldpi\background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-mdpi\background.png
+[DEBUG] found splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\R.java to javac build list
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqActivity.java to javac build list
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqAppInfo.java to javac build list
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqApplication.java to javac build list
+[DEBUG] Building Java Sources: "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\R.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqActivity.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqAppInfo.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqApplication.java"
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\app-unsigned.apk
+>>>>>>> 8bea68f4db754568d5d17eb551efc33d95c82b2c
 [DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
@@ -249,6 +296,7 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+<<<<<<< HEAD
 [DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
 [DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
 [DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
@@ -270,10 +318,37 @@ Logfile initialized
 [DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
 [DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
 [DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+=======
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+>>>>>>> 8bea68f4db754568d5d17eb551efc33d95c82b2c
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.030000 seconds on emulator to get ready
+=======
+[DEBUG] waited 0.066000 seconds on emulator to get ready
+>>>>>>> 8bea68f4db754568d5d17eb551efc33d95c82b2c
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
