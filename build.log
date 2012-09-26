@@ -1,10 +1,16 @@
 Logfile initialized
+<<<<<<< HEAD
 [INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build.log
 [DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\builder.py install xicolo    QuizQ C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.app 2
+=======
+[INFO] logfile = C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\build.log
+[DEBUG] C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\builder.py install xicolo    Quiz C:\Program Files (x86)\Android\android-sdk\tools\ C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare xicolo.app 4
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [INFO] Titanium SDK version: 2.1.1 (07/27/12 14:01 0fd84a2)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.059000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
@@ -44,6 +50,32 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\app-unsigned.apk
+=======
+[DEBUG] waited 0.068000 seconds on emulator to get ready
+[DEBUG] xicolo.app installed? False
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[DEBUG] app stylesheet => C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\build\android\gen\xicolo\app\ApplicationStylesheet.java
+[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] found splash screen at C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\build\android\bin\assets\Resources\default.png
+[DEBUG] adding C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\build\android\gen\xicolo\app\ApplicationStylesheet.java to javac build list
+[DEBUG] adding C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\build\android\gen\xicolo\app\R.java to javac build list
+[DEBUG] Building Java Sources: "C:\\Users\\ety\\Dropbox\\xicolo_share\\SquareDevelop\\xicoloSquare\\build\\android\\gen\\xicolo\\app\\ApplicationStylesheet.java" "C:\\Users\\ety\\Dropbox\\xicolo_share\\SquareDevelop\\xicoloSquare\\build\\android\\gen\\xicolo\\app\\R.java"
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: C:\Users\ety\Dropbox\xicolo_share\SquareDevelop\xicoloSquare\build\android\bin\app-unsigned.apk
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
@@ -51,6 +83,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ACS/QuizDownLoader.js
 [DEBUG] from resource zip => assets/Resources/ACS/UpLoadQuiz.js
 [DEBUG] from resource zip => assets/Resources/DB/SQL.js
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/Quiz/Quiz2BookMark.js
 [DEBUG] from resource zip => assets/Resources/Quiz/QuizStarter.js
 [DEBUG] from resource zip => assets/Resources/Quiz/SaveQuiz2BookMark.js
@@ -61,24 +94,35 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/And/button.png
 [DEBUG] from resource zip => assets/Resources/images/And/button_pressed
 [DEBUG] from resource zip => assets/Resources/images/And/button_pressed.png
+=======
+[DEBUG] from resource zip => assets/Resources/Quiz/QuizStarter.js
+[DEBUG] from resource zip => assets/Resources/counter/counter.js
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/images/FirstIntro/arrow.png
 [DEBUG] from resource zip => assets/Resources/images/FirstIntro/slide.png
 [DEBUG] from resource zip => assets/Resources/images/FirstIntro/xicolo.png
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menu1_1.png
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menu2_1.png
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menu3_1.png
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menuTab1.png
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menuTab2.png
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menuTab3.png
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/images/Table/arrowDown1.png
 [DEBUG] from resource zip => assets/Resources/images/Table/arrowUp1.png
 [DEBUG] from resource zip => assets/Resources/images/Table/complete_stamp.gif
 [DEBUG] from resource zip => assets/Resources/images/Table/favorite_1.png
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/images/Table/section1.png
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/images/Table/section_1.png
 [DEBUG] from resource zip => assets/Resources/images/background/back_green.png
 [DEBUG] from resource zip => assets/Resources/images/background/back_lightblue.png
 [DEBUG] from resource zip => assets/Resources/images/background/back_white.png
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/images/background/background.png
 [DEBUG] from resource zip => assets/Resources/images/background/cork.jpg
 [DEBUG] from resource zip => assets/Resources/images/background/note.jpg
@@ -103,6 +147,19 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/button/good/good_added.png
 [DEBUG] from resource zip => assets/Resources/images/button/good/good_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/invest/investment.png
+=======
+[DEBUG] from resource zip => assets/Resources/images/background/cork.jpg
+[DEBUG] from resource zip => assets/Resources/images/background/note.jpg
+[DEBUG] from resource zip => assets/Resources/images/button/And/button.png
+[DEBUG] from resource zip => assets/Resources/images/button/And/button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/button/OK/button.png
+[DEBUG] from resource zip => assets/Resources/images/button/OK/button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/button/add/button.png
+[DEBUG] from resource zip => assets/Resources/images/button/add/button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/button/good/button.png
+[DEBUG] from resource zip => assets/Resources/images/button/good/button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/button/good/good_added.png
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/images/button/later/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/later/button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/share/button.png
@@ -113,6 +170,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/button/tweet/button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/OK_button2_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/OK_button_2.png
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/images/cancel/cancel.png
 [DEBUG] from resource zip => assets/Resources/images/civ/ancient/back/background.png
 [DEBUG] from resource zip => assets/Resources/images/civ/ancient/back/background_night.PNG
@@ -127,6 +185,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/civ/cupcell/cupcell_open.png
 [DEBUG] from resource zip => assets/Resources/images/civ/food/apple.png
 [DEBUG] from resource zip => assets/Resources/images/civ/food/grape.png
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/images/icon/dark_gears.png
 [DEBUG] from resource zip => assets/Resources/images/icon/dark_link.png
 [DEBUG] from resource zip => assets/Resources/images/icon/dark_thumb-up.png
@@ -137,6 +197,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/icon/pallet_default_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/icon/plus1.png
 [DEBUG] from resource zip => assets/Resources/images/icon/time1.png
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/images/number/0.png
 [DEBUG] from resource zip => assets/Resources/images/number/1.png
 [DEBUG] from resource zip => assets/Resources/images/number/2.png
@@ -151,6 +212,20 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/number/slash.png
 [DEBUG] from resource zip => assets/Resources/images/number/slash1.png
 [DEBUG] from resource zip => assets/Resources/images/opening/old_paper.jpg
+=======
+[DEBUG] from resource zip => assets/Resources/images/number/0.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/1.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/2.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/3.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/4.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/5.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/6.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/7.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/8.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/9.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/Plate.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/slash.PNG
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/images/postit/backpost.png
 [DEBUG] from resource zip => assets/Resources/images/postit/blue_post1.png
 [DEBUG] from resource zip => assets/Resources/images/postit/green_post1.png
@@ -167,6 +242,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/sample/spl_chokin.jpg
 [DEBUG] from resource zip => assets/Resources/images/sample/spl_idea.jpg
 [DEBUG] from resource zip => assets/Resources/images/sample/spl_manzai.jpg
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/images/serif/serif.png
 [DEBUG] from resource zip => assets/Resources/images/share/And/button.png
 [DEBUG] from resource zip => assets/Resources/images/share/And/button_pressed.png
@@ -198,6 +274,14 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWinStarter.js
 [DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/SelectBoard.js
 [DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/selectItems.js
+=======
+[DEBUG] from resource zip => assets/Resources/images/tag/hash_1.png
+[DEBUG] from resource zip => assets/Resources/images/note.jpg
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Three_Choice_Field.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Word_Field.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWinStarter.js
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/ui/common/button/button.js
 [DEBUG] from resource zip => assets/Resources/ui/common/first_intro/first_introView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/imageFrame/MenuProjectFrame.js
@@ -205,14 +289,20 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/menuTab/ScrollPage.js
 [DEBUG] from resource zip => assets/Resources/ui/common/quiz/ChildResultTableRow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/quiz/QuizWin.js
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/ui/common/serifView/Serif.js
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/ui/common/AddProject.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfigWin.js
 [DEBUG] from resource zip => assets/Resources/ui/common/CreateUserView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/FirstView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/MatomeView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/MenuIcon.js
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/ui/common/MyCivilizationWindow.js
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/ui/common/PointFrame.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ProjectListView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableRow.js
@@ -221,12 +311,18 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/handheld/android/ApplicationWindow.js
 [DEBUG] from resource zip => assets/Resources/ui/handheld/ApplicationWindow.js
 [DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/util/getbackPathWithTime.js
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/util/random.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
 [DEBUG] from resource zip => assets/Resources/app.js
+<<<<<<< HEAD
 [DEBUG] from resource zip => assets/Resources/appico.png
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] from resource zip => assets/Resources/appicon.png
 [DEBUG] from resource zip => assets/Resources/default.png
 [DEBUG] from resource zip => assets/Resources/ti.cloud.js
@@ -249,6 +345,7 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+<<<<<<< HEAD
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
@@ -270,10 +367,37 @@ Logfile initialized
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+=======
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.064000 seconds on emulator to get ready
+=======
+[DEBUG] waited 0.068000 seconds on emulator to get ready
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

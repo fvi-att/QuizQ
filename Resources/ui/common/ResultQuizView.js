@@ -29,14 +29,24 @@ function ResultView(download,result_arr,fromwin){
 	
 
 	
+<<<<<<< HEAD
 	//var background_path = require('/util/getbackPathWithTime').getPath();
 	var view = Titanium.UI.createView({
 		backgroundImage:'/images/opening/old_paper.jpg',
+=======
+	
+	var view = Titanium.UI.createView({
+		backgroundImage:'/images/background/note.jpg',
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		width:Titanium.UI.FILL,
 		height:Titanium.UI.FILL,
 		
 	});
+<<<<<<< HEAD
 	//結果という文字列に関する画像一覧
+=======
+	
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	var resultImage = Titanium.UI.createImageView({
 		url:'/images/result/resultImage1.png',
 		top:0,
@@ -62,7 +72,11 @@ function ResultView(download,result_arr,fromwin){
 		view.add(p_image);
 	}
 	
+<<<<<<< HEAD
 	/*
+=======
+	
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	 var slash_image = Titanium.UI.createImageView({
 	 	width:width/6,
 	 	height:height/10,
@@ -91,7 +105,11 @@ function ResultView(download,result_arr,fromwin){
 
 		view.add(p_image);
 	}
+<<<<<<< HEAD
 	*/
+=======
+	
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	var result_tableView = Titanium.UI.createTableView({
 		showVerticalScrollIndicator:true,
 		top:height*0.25,
@@ -120,7 +138,11 @@ function ResultView(download,result_arr,fromwin){
 	
 	
 	
+<<<<<<< HEAD
 	var button = new require('/ui/common/button/button')('ok_new');
+=======
+	var button = new require('/ui/common/button/button')('ok');
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	button.setTop(height * 0.75);
 	view.add(button);
 	

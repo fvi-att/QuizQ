@@ -1,6 +1,11 @@
 android/alias=provision
 android/keystore=C\:\\Documents and Settings\\nishi\\My Documents\\Dropbox\\xicolo_quizProvisioning
+<<<<<<< HEAD
 android/output_location=C\:\\Documents and Settings\\nishi\\My Documents\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0
 android/recent_output=C\:\\Documents and Settings\\nishi\\My Documents\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20120912,C\:\\Documents and Settings\\nishi\\My Documents\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20120911_2,C\:\\Users\\fvi\\Desktop,C\:\\Documents and Settings\\nishi\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7,C\:\\
+=======
+android/output_location=C\:\\Documents and Settings\\nishi\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7
+android/recent_output=C\:\\Documents and Settings\\nishi\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\apk\\20120819,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\apk,C\:\\
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 android/sdk=Android 2.2
 eclipse.preferences.version=1

@@ -8,21 +8,35 @@ exports.OpenConfigWin = function() {
 
 	var win = Titanium.UI.createWindow({
 		title : '設定',
+<<<<<<< HEAD
 		backgroundImage:'/images/opening/old_paper.jpg',
+=======
+		backgroundImage : '/images/background/note.jpg',
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		exitOnClose : false,
 		fullscreen : false,
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
+<<<<<<< HEAD
 	/*
+=======
+
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	var icon = new require('/ui/common/MenuIcon')('/images/postit/green_post1.png', '/images/icon/dark_gears.png', "設定");
 	icon.setWidth(width * 0.8);
 	icon.setTop(height * 0.03);
 	icon.setLeft(width * 0.05);
 
 	win.add(icon);
+<<<<<<< HEAD
 	*/
 	var introSW_label = Titanium.UI.createLabel({
 		text : '起動時にオープニングを表示する',
+=======
+
+	var introSW_label = Titanium.UI.createLabel({
+		text : '起動時に説明画面をつける',
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		color : 'black',
 		top : height * 0.3,
 		font : {
@@ -76,11 +90,15 @@ exports.OpenConfigWin = function() {
 
 	win.add(introSW_label2);
 	win.add(introSW2);
+<<<<<<< HEAD
 	/*
 	 * 
 	 * アカウント管理処理
 	 * 
 	 *
+=======
+
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	var account_man = Titanium.UI.createButton({
 		title : 'アカウント管理',
 		textAlign : 'center',
@@ -141,11 +159,18 @@ exports.OpenConfigWin = function() {
 
 		dialog.show();
 	});
+<<<<<<< HEAD
 	win.add(account_man);
 */
 	win.add(introSW_label);
 	win.add(introSW);
 	
+=======
+
+	win.add(introSW_label);
+	win.add(introSW);
+	win.add(account_man);
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 
 	win.open();
 

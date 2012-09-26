@@ -2,7 +2,11 @@
 #publisher:fvi@
 #url:http://xicolo.com/wordpress
 #image:appicon.png
+<<<<<<< HEAD
 #appid:com.xicolo.app
+=======
+#appid:xicolo.app
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 #desc:iOS implemented
 #type:ipad
 #guid:c024aca8-1e03-4020-9866-e0ded4891dd6

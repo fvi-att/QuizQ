@@ -33,6 +33,7 @@ function ApplicationWindow() {
 	var FirstView = require('ui/common/FirstView');
 
 	//create component instance
+<<<<<<< HEAD
 	if(!Titanium.App.Properties.hasProperty('civ_population'))
 		Titanium.App.Properties.setInt('civ_population',10);
 	
@@ -53,15 +54,21 @@ function ApplicationWindow() {
 	var status_message = '人口：'	+status.population;+',食料：'+status.food;//+',文化値：'status.culture+',財政：'+status.money;
 	var self = Ti.UI.createWindow({
 		title:status_message,
+=======
+	var self = Ti.UI.createWindow({
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		backgroundColor : '#ffffff',
 		orientationModes : [Titanium.UI.PORTRAIT],
 		exitOnClose : true,
 		fullscreen : true
 	});
+<<<<<<< HEAD
 	
 	//簡単な説明文の機能をカットするよ
 	Titanium.App.Properties.setBool('isIntroNeed',false);
 	
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 
 	var introViews = [];
 	if (Titanium.App.Properties.getBool('isIntroNeed')) {
@@ -72,8 +79,12 @@ function ApplicationWindow() {
 		}
 	}
 
+<<<<<<< HEAD
 	//introViews.push(new require('/ui/common/TopView')());
 	introViews.push(require('/ui/common/MyCivilizationWindow').openCivilView());
+=======
+	introViews.push(new require('/ui/common/TopView')());
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 
 	//新規プロジェクト追加画面の追加
 	//	introViews.push(new require('/ui/common/AddProject')());

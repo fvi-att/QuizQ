@@ -22,6 +22,7 @@ if (Ti.version < 1.8 ) {
 	//データベース管理をここで行う
 	require('/DB/SQL').CreateTable();
 	
+<<<<<<< HEAD
 	//パラメータ値の管理
 	//人間のおしゃべり機能に関するパラメータ　を文字列で表現する
 	if(!Titanium.App.Properties.hasProperty('prmt_talk'))
@@ -40,6 +41,8 @@ if (Ti.version < 1.8 ) {
 		Titanium.App.Properties.setInt('civ_money',50);
 		
 	
+=======
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 	var osname = Ti.Platform.osname,
 		version = Ti.Platform.version,
 		height = Ti.Platform.displayCaps.platformHeight,
@@ -65,6 +68,7 @@ if (Ti.version < 1.8 ) {
 	}
 	new Window().open({fullscreen:true});
 	//ここでfullscreen設定をしておかないと Undefinedが出る
+<<<<<<< HEAD
 	
 	require('/ui/common/Opening/OpeningWindow').openWindow();
 	
@@ -75,3 +79,8 @@ if (Ti.version < 1.8 ) {
 })();
 
 
+=======
+	if(Titanium.App.Properties.getString('user_name') == null)
+		require('/ui/common/CreateUserView').CreateUserWin();
+})();
+>>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
