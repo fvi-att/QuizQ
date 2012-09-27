@@ -20,28 +20,11 @@ if (Ti.version < 1.8) {
 
 	//データベース管理をここで行う
 	require('/DB/SQL').CreateTable();
-
-	//パラメータ値の管理
-	//人間のおしゃべり機能に関するパラメータ　を文字列で表現する
-	if (!Titanium.App.Properties.hasProperty('prmt_talk'))
-		Titanium.App.Properties.setString('prmt_talk', 'first_contact');
-
-	if (!Titanium.App.Properties.hasProperty('civ_population'))
-		Titanium.App.Properties.setInt('civ_population', 10);
-
-	if (!Titanium.App.Properties.hasProperty('civ_food'))
-		Titanium.App.Properties.setInt('civ_food', 30);
-
-	if (!Titanium.App.Properties.hasProperty('civ_culture'))
-		Titanium.App.Properties.setInt('civ_culture', 5);
-
-	if (!Titanium.App.Properties.hasProperty('civ_money'))
-		Titanium.App.Properties.setInt('civ_money', 50);
-
+	//プロパティの定義に関する処理
+	require('/util/setProperty').setProperty();
+	
 	var osname = Ti.Platform.osname, version = Ti.Platform.version, height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
-	//considering tablet to have one dimension over 900px - this is imperfect, so you should feel free to decide
-	//yourself what you consider a tablet form factor for android
 	var isTablet = osname === 'ipad' || (osname === 'android' && (width > 899 || height > 899));
 
 	var Window;
@@ -60,7 +43,7 @@ if (Ti.version < 1.8) {
 		fullscreen : true
 	});
 	//ここでfullscreen設定をしておかないと Undefinedが出る
-
+	//オープニング
 	require('/ui/common/Opening/OpeningWindow').openWindow();
 
 	/*
@@ -70,9 +53,5 @@ if (Ti.version < 1.8) {
 	 require('/ui/common/CreateUserView').CreateUserWin();
 	 */
 })();
-/*
-if (!Titanium.App.Properties.hasProperty('user_name'))
-	require('/ui/common/CreateUserView').CreateUserWin();
-*/
-//})();
+
 

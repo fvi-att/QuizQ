@@ -5,13 +5,15 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.062000 seconds on emulator to get ready
+[DEBUG] waited 0.046000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\app.js => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\app.js
-[TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\ui\common\MyCivilizationWindow.js => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\ui\common\MyCivilizationWindow.js
 [TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\ui\handheld\android\ApplicationWindow.js => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\ui\handheld\android\ApplicationWindow.js
+[TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\ui\handheld\ApplicationWindow.js => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\ui\handheld\ApplicationWindow.js
+[TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\ui\tablet\ApplicationWindow.js => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\ui\tablet\ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\util\setProperty.js => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\util\setProperty.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\appico.png
@@ -225,6 +227,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
 [DEBUG] from resource zip => assets/Resources/util/getbackPathWithTime.js
 [DEBUG] from resource zip => assets/Resources/util/random.js
+[DEBUG] from resource zip => assets/Resources/util/setProperty.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
 [DEBUG] from resource zip => assets/Resources/app.js
@@ -276,6 +279,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.032000 seconds on emulator to get ready
+[DEBUG] waited 0.047000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
