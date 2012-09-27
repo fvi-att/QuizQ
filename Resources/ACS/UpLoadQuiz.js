@@ -10,7 +10,7 @@ exports.UploadQuiz = function(quiz) {
 		bottom : 10,
 		height : 100,
 		width : 100,
-		message : 'now Loading',
+		message : '追加中・・・少しお待ちを',
 		font:{fontFamily:'Helvetica Neue', fontSize:15,fontWeight:'bold'}
 		// style:Titanium.UI.iPhone.ActivityIndicatorStyle.PLAIN
 	});
