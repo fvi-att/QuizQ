@@ -5,14 +5,12 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-<<<<<<< HEAD
 [DEBUG] waited 0.047000 seconds on emulator to get ready
-=======
-[DEBUG] waited 0.032000 seconds on emulator to get ready
->>>>>>> a1ee9ca053942d1af0dfa42a64966cc048d54bc1
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
+[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\images\tmp\Left.png => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\images\tmp\Left.png
+[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\images\tmp\right.png => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\images\tmp\right.png
 [TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\Resources\ui\common\SelectBoard\selectItems.js => C:\Documents and Settings\nishi\TitaniumWorkPlace\QuizQ\build\android\bin\assets\Resources\ui\common\SelectBoard\selectItems.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
@@ -281,6 +279,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.029000 seconds on emulator to get ready
+[DEBUG] waited 0.032000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
