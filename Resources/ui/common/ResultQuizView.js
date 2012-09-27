@@ -57,7 +57,7 @@ function ResultView(download,result_arr,fromwin){
 			url : '/images/number/' + point_child[p_cnt] + '.PNG',
 
 			center : {
-				x : width / 4+ p_cnt * width / 7,
+				x : width * 0.5+ p_cnt * width / 7,
 				y : height *0.15
 			}
 		});
