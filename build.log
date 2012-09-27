@@ -5,7 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.047000 seconds on emulator to get ready
+=======
+[DEBUG] waited 0.032000 seconds on emulator to get ready
+>>>>>>> a1ee9ca053942d1af0dfa42a64966cc048d54bc1
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
@@ -184,6 +188,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/share/OK_button2_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/share/OK_button_2.png
 [DEBUG] from resource zip => assets/Resources/images/tag/hash_1.png
+[DEBUG] from resource zip => assets/Resources/images/tmp/Left.png
+[DEBUG] from resource zip => assets/Resources/images/tmp/right.png
 [DEBUG] from resource zip => assets/Resources/images/note.jpg
 [DEBUG] from resource zip => assets/Resources/images/transparent.png
 [DEBUG] from resource zip => assets/Resources/ui/common/AddField/3ChoiceField
@@ -275,6 +281,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.031000 seconds on emulator to get ready
+[DEBUG] waited 0.029000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
