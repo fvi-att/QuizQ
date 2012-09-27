@@ -11,6 +11,7 @@ exports.openCivilView = function() {
 	var food_arr = [];
 
 	var background_path = require('/util/getbackPathWithTime').getPath();
+	
 	var view = Titanium.UI.createView({
 		backgroundImage : background_path
 	});
@@ -151,7 +152,7 @@ exports.openCivilView = function() {
 		//背景黒のビューを設定
 		var invest_view = require('/ui/common/SelectBoard/SelectBoard').openView(view);
 		var invest_label = Titanium.UI.createLabel({
-			text : 'これはてすとです',
+			text : '今現時点のあなたの文明は\n人類の夜明け\nの段階です',
 			textAlign : 'center',
 			color : 'black',
 			width : invest_view.width * 0.9,
