@@ -52,13 +52,7 @@ function ApplicationWindow() {
 				  
 	var status_message = '人口：'	+status.population;+',食料：'+status.food;//+',文化値：'status.culture+',財政：'+status.money;
 	
-	var self = Ti.UI.createWindow({
-		title:status_message,
-		backgroundColor : '#ffffff',
-		orientationModes : [Titanium.UI.PORTRAIT],
-		exitOnClose : true,
-		fullscreen : true
-	});
+	var self = require('/ui/common/MyCivilizationWindow').openCivilView()
 
 	
 	//簡単な説明文の機能をカットするよ
@@ -73,7 +67,7 @@ function ApplicationWindow() {
 			introViews.push(introView)
 		}
 	}
-
+	/*
 	//introViews.push(new require('/ui/common/TopView')());
 	introViews.push(require('/ui/common/MyCivilizationWindow').openCivilView());
 	//トップビューは別の機会に表示することに変更
@@ -93,7 +87,7 @@ function ApplicationWindow() {
 	});
 	// スクロールビューを配置する
 	self.add(scrollView);
-
+	*/
 	if (Titanium.Platform.osname == 'android') {
 
 		//まずはじめにメニューを表示できるようにする

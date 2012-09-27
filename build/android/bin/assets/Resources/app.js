@@ -64,6 +64,8 @@ if (Ti.version < 1.8) {
 	require('/ui/common/Opening/OpeningWindow').openWindow();
 
 	/*
+	 * 
+	 *ユーザ登録をさせようと思ったけど初期の段階では使わないことが決定
 	 if(Titanium.App.Properties.getString('user_name') == null)
 	 require('/ui/common/CreateUserView').CreateUserWin();
 	 */

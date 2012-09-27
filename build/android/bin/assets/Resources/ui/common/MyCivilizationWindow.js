@@ -11,11 +11,13 @@ exports.openCivilView = function() {
 	var food_arr = [];
 
 	var background_path = require('/util/getbackPathWithTime').getPath();
-	var view = Titanium.UI.createView({
-		backgroundImage : background_path
-	});
 	
-
+	var civ_window = Titanium.UI.createWindow({
+		backgroundImage : background_path,
+		exitOnClose : false,
+		fullscreen : false,
+		orientationModes : [Titanium.UI.PORTRAIT]
+	});
 	
 	var house_image = Titanium.UI.createImageView({
 		image : '/images/civ/ancient/house/house1.png',
@@ -28,7 +30,7 @@ exports.openCivilView = function() {
 	});
 	
 
-	view.add(house_image);
+	civ_window.add(house_image);
 
 	var man_image = Titanium.UI.createImageView({
 		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
@@ -42,12 +44,12 @@ exports.openCivilView = function() {
 
 	man_image.addEventListener('click', function(e) {
 
-		require('/ui/common/serifView/Serif').openView(view);
+		require('/ui/common/serifView/Serif').openView(civ_window);
 		Titanium.App.Properties.setString('first_contact', 'need_apple')
 
 	});
 
-	view.add(man_image);
+	civ_window.add(man_image);
 
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
@@ -59,7 +61,7 @@ exports.openCivilView = function() {
 		}
 	});
 
-	view.add(cupcell_image);
+	civ_window.add(cupcell_image);
 
 	var item_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/give/give.png',
@@ -71,10 +73,10 @@ exports.openCivilView = function() {
 		}
 	});
 
-	view.add(item_button);
+	civ_window.add(item_button);
 
 	item_button.addEventListener('click', function(e) {
-		var item_view = require('/ui/common/SelectBoard/selectItems').openView(view);
+		var item_view = require('/ui/common/SelectBoard/selectItems').openView(civ_window);
 		item_button.setTouchEnabled(false);
 		//StartAnimation(); このメソッドでアニメーションを開始するよ
 		
@@ -108,7 +110,7 @@ exports.openCivilView = function() {
 						y : height * 0.4
 					}
 				}));
-				view.add(food_arr[0]);
+				civ_window.add(food_arr[0]);
 
 				var disappear_time = setTimeout(function(e) {
 					//cupcell_image.setCenter({x:width * 0.5,y:-1 * height});
@@ -128,7 +130,7 @@ exports.openCivilView = function() {
 
 				var item_disappear_time = setTimeout(function(e) {
 					//STUB的処理
-					view.remove(food_arr[0]);
+					civ_window.remove(food_arr[0]);
 					clearTimeout(item_disappear_time);
 				}, 2500);
 			})
@@ -149,9 +151,9 @@ exports.openCivilView = function() {
 
 	invest_button.addEventListener('click', function(e) {
 		//背景黒のビューを設定
-		var invest_view = require('/ui/common/SelectBoard/SelectBoard').openView(view);
+		var invest_view = require('/ui/common/SelectBoard/SelectBoard').openView(civ_window);
 		var invest_label = Titanium.UI.createLabel({
-			text : 'これはてすとです',
+			text : '今現時点のあなたの文明は\n人類の夜明け\nの段階です',
 			textAlign : 'center',
 			color : 'black',
 			width : invest_view.width * 0.9,
@@ -161,12 +163,12 @@ exports.openCivilView = function() {
 
 	});
 
-	view.add(invest_button);
+	civ_window.add(invest_button);
 
 	//ボードに関する設定
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
-	view.add(board);
+	civ_window.add(board);
 
-	return view;
+	return civ_window;
 }
