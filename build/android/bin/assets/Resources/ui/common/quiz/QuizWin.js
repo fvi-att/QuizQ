@@ -212,16 +212,18 @@ exports.CreateQuizWin = function(download) {
 	});
 	
 	function setResultAnimation(img){
+		win.add(img);
+		
 		var opac_num = 1.0;
 		
 				//アニメーション処理
 		var interval_resultAnimation = setInterval(function() {
-			if (opac_num < 0) {
+			if (opac_num < 0.2) {
 				
 				
 				clearInterval(interval_resultAnimation);
 				img.setOpacity(1.0);
-				img.setImage(null);
+				win.remove(img);
 				return;
 			}
 				opac_num -= 0.03
