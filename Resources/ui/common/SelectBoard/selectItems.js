@@ -41,8 +41,8 @@ exports.openView = function(view) {
 	var item = Titanium.UI.createView({
 		backgroundImage : selected_item_image,
 		width : width * 0.75,
-		height : height * 0.2,
-		top : height * 0.1
+		height : height * 0.3,
+		top : height * 0.07
 	});
 
 	old_paper.add(item);
@@ -52,8 +52,8 @@ exports.openView = function(view) {
 	var item_explain_area = Titanium.UI.createView({
 		backgroundImage : '/images/background/note.jpg',
 		width : width * 0.75,
-		height : height * 0.2,
-		top : height * 0.35
+		height : height * 0.1,
+		top : height * 0.39
 	});
 
 	old_paper.add(item_explain_area);
@@ -61,45 +61,73 @@ exports.openView = function(view) {
 	//アイテムのリストを表示
 	
 	item_list_view = new Array(5);
-	item_list_view[0] = Titanium.UI.createView({
-		backgroundImage : item_image[0],
-		width : width * 0.15,
-		height : height * 0.1,
-		top : height * 0.55,
-		left : width * 0.02
-	});
-	item_list_view[1] = Titanium.UI.createView({
-		backgroundImage : item_image[1],
-		width : width * 0.15,
-		height : height * 0.1,
-		top : height * 0.55,
-		left : width * 0.2
-	});
-	item_list_view[2] = Titanium.UI.createView({
-		backgroundImage : item_image[2],
-		width : width * 0.15,
-		height : height * 0.1,
-		top : height * 0.55,
-		left : width * 0.40
-	});
-	item_list_view[3] = Titanium.UI.createView({
-		backgroundImage : item_image[3],
-		width : width * 0.15,
-		height : height * 0.1,
-		top : height * 0.55,
-		left : width * 0.60
-	});
-
-	for (i=0;i<=3;i++){
-		old_paper.add(item_list_view[i]);
-	}
-	/*
-	old_paper.add(item_list_view0);
-	old_paper.add(item_list_view1);
-	old_paper.add(item_list_view2);
-	old_paper.add(item_list_view3);
-	*/
 	
+	
+	//アイテムのリストを画面下部に表示する関数の定義
+	function itemList(i){
+		item_list_view[0] = Titanium.UI.createView({
+			backgroundImage : item_image[i],
+			width : width * 0.15,
+			height : height * 0.1,
+			top : height * 0.5,
+			left : width * 0.02
+		});
+		i=i+1;
+		item_list_view[1] = Titanium.UI.createView({
+			backgroundImage : item_image[i],
+			width : width * 0.15,
+			height : height * 0.1,
+			top : height * 0.5,
+			left : width * 0.2
+		});
+		i=i+1;
+		item_list_view[2] = Titanium.UI.createView({
+			backgroundImage : item_image[i],
+			width : width * 0.15,
+			height : height * 0.1,
+			top : height * 0.5,
+			left : width * 0.40
+		});
+		i=i+1;
+		item_list_view[3] = Titanium.UI.createView({
+			backgroundImage : item_image[i],
+			width : width * 0.15,
+			height : height * 0.1,
+			top : height * 0.5,
+			left : width * 0.60
+		});
+
+		for (j=0;j<=3;j++){
+			old_paper.add(item_list_view[j]);
+		};
+	
+	}
+	
+	itemList(0);	
+	//ボタンの設置
+	var left_button = Titanium.UI.createButton({
+		backgroundImage : '/images/tmp/Left.png',
+		width : width * 0.07,
+		height : height * 0.05,
+		top : height * 0.62,
+		left : width * 0.55
+	});
+	left_button.addEventListener('click',function(e){
+		alert('left');
+	})
+	
+	var right_button = Titanium.UI.createButton({
+		backgroundImage : '/images/tmp/right.png',
+		width : width * 0.07,
+		height : height * 0.05,
+		top : height * 0.62,
+		left : width * 0.65
+	});
+	right_button.addEventListener('click',function(e){
+		alert('right');
+	})
+	old_paper.add(left_button);
+	old_paper.add(right_button);
 
 	//ここまでhachi_927によるもの
 
