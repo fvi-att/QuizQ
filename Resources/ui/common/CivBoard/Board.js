@@ -74,7 +74,7 @@ exports.createBoard = function() {
 	board.add(money_label);
 	
 
-	board.addEventListener('click', function(e) {
+	board.addEventListener('touchstart', function(e) {
 		var move = height * -0.08;
 		if (!board.isAppear) {
 			move = height * 0.15;

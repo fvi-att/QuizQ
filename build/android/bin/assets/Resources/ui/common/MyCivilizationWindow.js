@@ -15,9 +15,7 @@ exports.openCivilView = function() {
 		backgroundImage : background_path
 	});
 	
-	view.addEventListener('click',function(e){
-		alert(view.getBackgroundImage())
-	});
+
 	
 	var house_image = Titanium.UI.createImageView({
 		image : '/images/civ/ancient/house/house1.png',
