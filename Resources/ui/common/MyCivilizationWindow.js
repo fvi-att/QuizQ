@@ -69,11 +69,11 @@ exports.openCivilView = function() {
 		width : width * 0.3,
 		center : {
 			x : width * 0.7,
-			y : height * 0.9
+			y : height * 0.12
 		}
 	});
 
-	civ_window.add(item_button);
+	//civ_window.add(item_button);
 
 	item_button.addEventListener('click', function(e) {
 		var item_view = require('/ui/common/SelectBoard/selectItems').openView(civ_window);
@@ -143,7 +143,7 @@ exports.openCivilView = function() {
 
 		center : {
 			x : width * 0.3,
-			y : height * 0.9
+			y : height * 0.12
 		}
 
 	});
@@ -161,8 +161,31 @@ exports.openCivilView = function() {
 		invest_view.add(invest_label);
 
 	});
+	var move_button = Titanium.UI.createButton({
+		backgroundImage:'/images/transparent.png',
+		width:width * 0.25,
+		height:height *0.06,
+		top:0,
+		left:width *0.02
+	});
+	move_button.addEventListener('click',function(e){
+		alert('STUB::move view');
+	});
+	
+	var under_bar = Titanium.UI.createView({
+		backgroundImage:'/images/civ/bar/underbar1.png',
+		width:width,
+		height:height * 0.5,
+		top:height * 0.8
+	});
+	
+	under_bar.add(move_button);
+	
+	under_bar.add(invest_button);
+	under_bar.add(item_button);
+	
+	civ_window.add(under_bar);
 
-	civ_window.add(invest_button);
 
 	//ボードに関する設定
 	var board = require('/ui/common/CivBoard/Board').createBoard();
