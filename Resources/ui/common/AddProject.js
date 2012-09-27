@@ -129,5 +129,7 @@ exports.AddProject = function() {
 	win.add(button);
 
 	win.open();
+	
+	return win;
 }
 

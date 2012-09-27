@@ -14,8 +14,9 @@ exports.openCivilView = function() {
 	
 	var civ_window = Titanium.UI.createWindow({
 		backgroundImage : background_path,
+		
 		exitOnClose : false,
-		fullscreen : false,
+		fullscreen : true,
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
 	
@@ -63,23 +64,6 @@ exports.openCivilView = function() {
 
 	civ_window.add(cupcell_image);
 
-	var item_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/give/give.png',
-		height : height * 0.1,
-		width : width * 0.3,
-		center : {
-			x : width * 0.7,
-			y : height * 0.12
-		}
-	});
-
-	//civ_window.add(item_button);
-
-	item_button.addEventListener('click', function(e) {
-		var item_view = require('/ui/common/SelectBoard/selectItems').openView(civ_window);
-		//StartAnimation(); このメソッドでアニメーションを開始するよ
-		
-	});
 
 	//変更　アイテムに関するアニメーションを関数に変更
 	function StartAnimation() {
@@ -136,54 +120,7 @@ exports.openCivilView = function() {
 		})
 	}
 
-	var invest_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/invest/investment.png',
-		height : height * 0.1,
-		width : width * 0.3,
-
-		center : {
-			x : width * 0.3,
-			y : height * 0.12
-		}
-
-	});
-
-	invest_button.addEventListener('click', function(e) {
-		//背景黒のビューを設定
-		var invest_view = require('/ui/common/SelectBoard/SelectBoard').openView(civ_window);
-		var invest_label = Titanium.UI.createLabel({
-			text : '今現時点のあなたの文明は\n人類の夜明け\nの段階です',
-			textAlign : 'center',
-			color : 'black',
-			width : invest_view.width * 0.9,
-			height : invest_view.height * 0.7
-		});
-		invest_view.add(invest_label);
-
-	});
-	var move_button = Titanium.UI.createButton({
-		backgroundImage:'/images/transparent.png',
-		width:width * 0.25,
-		height:height *0.06,
-		top:0,
-		left:width *0.02
-	});
-	move_button.addEventListener('click',function(e){
-		alert('STUB::move view');
-	});
-	
-	var under_bar = Titanium.UI.createView({
-		backgroundImage:'/images/civ/bar/underbar1.png',
-		width:width,
-		height:height * 0.5,
-		top:height * 0.8
-	});
-	
-	under_bar.add(move_button);
-	
-	under_bar.add(invest_button);
-	under_bar.add(item_button);
-	
+	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
 	civ_window.add(under_bar);
 
 
