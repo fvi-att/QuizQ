@@ -17,24 +17,19 @@ exports.CreateQuizWin = function(download) {
 	//ユーザーの正解数、問題数に関する変数郡
 	var result = [];
 	//正解　=1 ,不正解  = -1 ,それ以外　0
-<<<<<<< HEAD
+
 	var background_path = require('/util/getbackPathWithTime').getPath();
 	var win = Titanium.UI.createWindow({
 		title : 'クイズ！：' + download.length + '問中' + quizNum + '問目',
 		backgroundImage : background_path,
-=======
 
-	var win = Titanium.UI.createWindow({
-		title : 'クイズ！：' + download.length + '問中' + quizNum + '問目',
-		backgroundImage : '/images/background/note.jpg',
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		exitOnClose : false,
 		fullscreen : false,
 		orientationModes : [Titanium.UI.PORTRAIT],
 		quizNum : 1
 	});
 
-<<<<<<< HEAD
+
 	var quiz_background = Titanium.UI.createView({
 		backgroundImage : '/images/opening/old_paper.jpg',
 		width : width * 0.9,
@@ -44,8 +39,7 @@ exports.CreateQuizWin = function(download) {
 
 	win.add(quiz_background);
 
-=======
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 	var timerImage = Titanium.UI.createImageView({
 		image : '/images/icon/time1.png',
 		width : width * 0.1,
@@ -71,11 +65,7 @@ exports.CreateQuizWin = function(download) {
 			//ForceFinishQuiz();
 			ForceFinishQuiz();
 			clearInterval(interval);
-<<<<<<< HEAD
 
-=======
-			
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		}
 	}, 1000);
 
@@ -83,20 +73,18 @@ exports.CreateQuizWin = function(download) {
 	var text_label = Titanium.UI.createLabel({
 		text : 'クイズ　第' + quizNum + '問\n' + download.quizs.Quiz[0].text,
 		color : 'black',
-<<<<<<< HEAD
+
 		width : width * 0.8,
-=======
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 		top : height * 0.1
 
 	});
 	win.add(text_label);
 
 	var ans_view = Titanium.UI.createView({
-<<<<<<< HEAD
+
 		backgroundImage : '/images/opening/old_paper.jpg',
-=======
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 		top : height * 0.4,
 		height : height * 0.3,
 		width : width * 0.9,
@@ -110,10 +98,9 @@ exports.CreateQuizWin = function(download) {
 		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		title : download.quizs.Quiz[0].Answer.s1,
-<<<<<<< HEAD
+
 		color : 'black',
-=======
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 		value : false,
 		top : 0,
 		width : width * 0.8,
@@ -133,10 +120,9 @@ exports.CreateQuizWin = function(download) {
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		title : download.quizs.Quiz[0].Answer.s2,
 		value : false,
-<<<<<<< HEAD
+
 		color : 'black',
-=======
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 		top : ans_view.height * 0.33,
 		width : width * 0.8,
 		height : ans_view.height / 3// necessary for textAlign to be effective
@@ -155,10 +141,8 @@ exports.CreateQuizWin = function(download) {
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		title : download.quizs.Quiz[0].Answer.s3,
 		value : false,
-<<<<<<< HEAD
 		color : 'black',
-=======
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 		top : ans_view.height * 0.66,
 		width : width * 0.8,
 		height : ans_view.height / 3 // necessary for textAlign to be effective
@@ -175,30 +159,20 @@ exports.CreateQuizWin = function(download) {
 	ans_view.add(switch2);
 	ans_view.add(switch3);
 
-<<<<<<< HEAD
+
 	var button = new require('/ui/common/button/button')('ok_new');
-=======
-	var button = new require('/ui/common/button/button')('ok');
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 	button.setTop(height * 0.75);
 	win.add(button);
 
 	function ForceFinishQuiz() {
 		//時間切れなどの場合に強制的に終了させる
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		while (download.length >= quizNum) {
 			result.push(-1);
 			quizNum++;
 		}
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 		win.add(new require('/ui/common/ResultQuizView')(download, result, win));
 
 	}
@@ -235,7 +209,7 @@ exports.CreateQuizWin = function(download) {
 
 	}
 
-<<<<<<< HEAD
+
 	var img = Titanium.UI.createImageView({
 		width : 'auto',
 		height : 'auto'
@@ -345,39 +319,6 @@ exports.CreateQuizWin = function(download) {
 });
 
 win.open();
-=======
 
-	button.addEventListener('click', function(e) {
-		//アンケート形式の場合の処理
-		if (download.quizs.Quiz[quizNum - 1].type == 4) {
-			alert('アンケートありがとうございます');
-			result.push(1);
-			quizNum++;
-			SetQuiz();
-			return;
-
-		}
-		//問題に関する　正解、不正解の処理
-		if (answer == download.quizs.Quiz[quizNum - 1].Answer.text) {
-			//正解処理
-			alert('正解です');
-			result.push(1);
-			answer = '';
-			quizNum++;
-			SetQuiz();
-
-		} else {
-			//不正解処理
-			alert('不正解です　answer:' + answer);
-			result.push(-1);
-			answer = '';
-			quizNum++;
-			SetQuiz();
-
-		}
-	});
-
-	win.open();
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
 
 }

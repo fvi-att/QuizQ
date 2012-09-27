@@ -18,7 +18,7 @@ function createButton(text){
 			break;
 		
 		case 'tweet':
-<<<<<<< HEAD
+
 			image_path ='/images/button/tweet/';
 			break;
 		
@@ -28,13 +28,7 @@ function createButton(text){
 		
 		case 'ok_new':
 			image_path = '/images/button/OK/trans/';
-=======
-			image_path ='/images/button/tweet/'
-			break;
-		
-		case 'ok':
-			image_path ='/images/button/OK/'
->>>>>>> 0e5682e4bab3d01c10cddd79355ba1fe0ab22cc8
+
 			break;
 		
 		case 'share':

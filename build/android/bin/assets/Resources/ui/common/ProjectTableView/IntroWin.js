@@ -13,6 +13,7 @@ exports.createIntroduction = function(quizID,download){
 
 		title : 'クイズペディア:ID::'+quizID,
 		backgroundImage : '/images/opening/old_paper.jpg',
+
 		exitOnClose : false,
 		fullscreen : false
 	});

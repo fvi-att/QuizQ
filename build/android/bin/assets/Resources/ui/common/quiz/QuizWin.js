@@ -29,6 +29,7 @@ exports.CreateQuizWin = function(download) {
 		quizNum : 1
 	});
 
+
 	var quiz_background = Titanium.UI.createView({
 		backgroundImage : '/images/opening/old_paper.jpg',
 		width : width * 0.9,
@@ -37,6 +38,7 @@ exports.CreateQuizWin = function(download) {
 	});
 
 	win.add(quiz_background);
+
 
 	var timerImage = Titanium.UI.createImageView({
 		image : '/images/icon/time1.png',
@@ -63,6 +65,7 @@ exports.CreateQuizWin = function(download) {
 			//ForceFinishQuiz();
 			ForceFinishQuiz();
 			clearInterval(interval);
+
 		}
 	}, 1000);
 
@@ -70,7 +73,9 @@ exports.CreateQuizWin = function(download) {
 	var text_label = Titanium.UI.createLabel({
 		text : 'クイズ　第' + quizNum + '問\n' + download.quizs.Quiz[0].text,
 		color : 'black',
+
 		width : width * 0.8,
+
 		top : height * 0.1
 
 	});
@@ -79,6 +84,7 @@ exports.CreateQuizWin = function(download) {
 	var ans_view = Titanium.UI.createView({
 
 		backgroundImage : '/images/opening/old_paper.jpg',
+
 		top : height * 0.4,
 		height : height * 0.3,
 		width : width * 0.9,
@@ -114,7 +120,9 @@ exports.CreateQuizWin = function(download) {
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		title : download.quizs.Quiz[0].Answer.s2,
 		value : false,
+
 		color : 'black',
+
 		top : ans_view.height * 0.33,
 		width : width * 0.8,
 		height : ans_view.height / 3// necessary for textAlign to be effective
@@ -133,7 +141,6 @@ exports.CreateQuizWin = function(download) {
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		title : download.quizs.Quiz[0].Answer.s3,
 		value : false,
-
 		color : 'black',
 
 		top : ans_view.height * 0.66,
@@ -151,6 +158,7 @@ exports.CreateQuizWin = function(download) {
 	ans_view.add(switch1);
 	ans_view.add(switch2);
 	ans_view.add(switch3);
+
 
 	var button = new require('/ui/common/button/button')('ok_new');
 
@@ -201,198 +209,116 @@ exports.CreateQuizWin = function(download) {
 
 	}
 
+
 	var img = Titanium.UI.createImageView({
 		width : 'auto',
 		height : 'auto'
 	});
+	
+	
+	
 
 	button.addEventListener('click', function(e) {
-		//アンケート形式の場合の処理
-		if (download.quizs.Quiz[quizNum - 1].type == 4) {
-			alert('アンケートありがとうございます');
-			result.push(1);
-			quizNum++;
-			SetQuiz();
-			return;
+	//アンケート形式の場合の処理
+	if (download.quizs.Quiz[quizNum - 1].type == 4) {
+	alert('アンケートありがとうございます');
+	result.push(1);
+	quizNum++;
+	SetQuiz();
+	return;
 
-		}
-		//問題に関する　正解、不正解の処理
-		if (answer == download.quizs.Quiz[quizNum - 1].Answer.text) {
-			//正解処理
-			//alert('正解です');
-			//アニメーション開始
-			img.setImage('/images/result/circle2.png');
-			var positions = [];
-			positions.push({
-				x : 170,
-				y : 300
-			});
-			positions.push({
-				x : 130,
-				y : 280
-			});
-			positions.push({
-				x : 170,
-				y : 260
-			});
-			positions.push({
-				x : 130,
-				y : 240
-			});
-			positions.push({
-				x : 170,
-				y : 220
-			});
-			positions.push({
-				x : 130,
-				y : 200
-			});
-			positions.push({
-				x : 170,
-				y : 180
-			});
+	}
+	//問題に関する　正解、不正解の処理
+	if (answer == download.quizs.Quiz[quizNum - 1].Answer.text) {
+	//正解処理
+	//alert('正解です');
+	//アニメーション開始
+	img.setImage('/images/result/circle2.png');
+	var positions = [];
+	positions.push({x: 170, y: 300});
+	positions.push({x: 130, y: 280});
+	positions.push({x: 170, y: 260});
+	positions.push({x: 130, y: 240});
+	positions.push({x: 170, y: 220});
+	positions.push({x: 130, y: 200});
+	positions.push({x: 170, y: 180});
+	
+	win.add(img);
 
-			win.add(img);
-
-			img.animate({
-				center : positions[0],
-				opacity : 1,
-				duration : 300
-			}, function() {
-				img.center = positions[0];
-				img.animate({
-					center : positions[1],
-					duration : 300
-				}, function() {
-					img.center = positions[1];
-					img.animate({
-						center : positions[2],
-						duration : 300
-					}, function() {
-						img.center = positions[2];
-						img.animate({
-							center : positions[3],
-							duration : 300
-						}, function() {
-							img.center = positions[3];
-							img.animate({
-								center : positions[4],
-								duration : 300
-							}, function() {
-								img.center = positions[4];
-								img.animate({
-									center : positions[5],
-									duration : 300
-								}, function() {
-									img.center = positions[5];
-									img.animate({
-										center : positions[6],
-										opacity : 0,
-										duration : 500
-									}, function() {
-										win.remove(img);
-									});
-								});
-							});
-						});
-					});
-				});
-			});
-			//アニメーション終了
-			result.push(1);
-			answer = '';
-			quizNum++;
-			SetQuiz();
-
-		} else {
-			//不正解処理
-			//alert('不正解です　answer:' + answer);
-			//アニメーション開始
-			img.setImage('/images/result/cross2.png');
-			var positions = [];
-			positions.push({
-				x : 170,
-				y : 300
-			});
-			positions.push({
-				x : 130,
-				y : 280
-			});
-			positions.push({
-				x : 170,
-				y : 260
-			});
-			positions.push({
-				x : 130,
-				y : 240
-			});
-			positions.push({
-				x : 170,
-				y : 220
-			});
-			positions.push({
-				x : 130,
-				y : 200
-			});
-			positions.push({
-				x : 170,
-				y : 180
-			});
-
-			win.add(img);
-
-			img.animate({
-				center : positions[0],
-				opacity : 1,
-				duration : 300
-			}, function() {
-				img.center = positions[0];
-				img.animate({
-					center : positions[1],
-					duration : 300
-				}, function() {
-					img.center = positions[1];
-					img.animate({
-						center : positions[2],
-						duration : 300
-					}, function() {
-						img.center = positions[2];
-						img.animate({
-							center : positions[3],
-							duration : 300
-						}, function() {
-							img.center = positions[3];
-							img.animate({
-								center : positions[4],
-								duration : 300
-							}, function() {
-								img.center = positions[4];
-								img.animate({
-									center : positions[5],
-									duration : 300
-								}, function() {
-									img.center = positions[5];
-									img.animate({
-										center : positions[6],
-										opacity : 0,
-										duration : 500
-									}, function() {
-										win.remove(img);
-									});
-								});
-							});
-						});
-					});
-				});
-			});
-			//アニメーション終了
-			result.push(-1);
-			answer = '';
-			quizNum++;
-			SetQuiz();
-
-		}
+	img.animate({center: positions[0], opacity: 1, duration: 300}, function (){
+	img.center = positions[0];
+	img.animate({center: positions[1], duration: 300}, function (){
+	img.center = positions[1];
+	img.animate({center: positions[2], duration: 300}, function (){
+	img.center = positions[2];
+	img.animate({center: positions[3], duration: 300}, function (){
+	img.center = positions[3];
+	img.animate({center: positions[4], duration: 300}, function (){
+	img.center = positions[4];
+	img.animate({center: positions[5], duration: 300}, function (){
+	img.center = positions[5];
+	img.animate({center: positions[6], opacity: 0, duration: 500}, function (){
+	win.remove(img);
 	});
+	});
+	});
+	});
+	});
+	});
+	});
+	//アニメーション終了
+	result.push(1);
+	answer = '';
+	quizNum++;
+	SetQuiz();
 
-	win.open();
+	} else {
+		//不正解処理
+		//alert('不正解です　answer:' + answer);
+		//アニメーション開始
+	img.setImage('/images/result/cross2.png');
+	var positions = [];
+	positions.push({x: 170, y: 300});
+	positions.push({x: 130, y: 280});
+	positions.push({x: 170, y: 260});
+	positions.push({x: 130, y: 240});
+	positions.push({x: 170, y: 220});
+	positions.push({x: 130, y: 200});
+	positions.push({x: 170, y: 180});
+	
+	win.add(img);
+
+	img.animate({center: positions[0], opacity: 1, duration: 300}, function (){
+	img.center = positions[0];
+	img.animate({center: positions[1], duration: 300}, function (){
+	img.center = positions[1];
+	img.animate({center: positions[2], duration: 300}, function (){
+	img.center = positions[2];
+	img.animate({center: positions[3], duration: 300}, function (){
+	img.center = positions[3];
+	img.animate({center: positions[4], duration: 300}, function (){
+	img.center = positions[4];
+	img.animate({center: positions[5], duration: 300}, function (){
+	img.center = positions[5];
+	img.animate({center: positions[6], opacity: 0, duration: 500}, function (){
+	win.remove(img);
+	});
+	});
+	});
+	});
+	});
+	});
+	});
+	//アニメーション終了
+		result.push(-1);
+		answer = '';
+		quizNum++;
+		SetQuiz();
+
+	}
+});
+
+win.open();
+
+
 }
