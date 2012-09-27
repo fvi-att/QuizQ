@@ -1,2 +1,59 @@
-function TableRow(f,c){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;var a=Titanium.UI.createTableViewRow({height:height*0.2}),b=a.getHeight(),e=Titanium.UI.createLabel({text:"\u9762\u767d\u3044\u306d\u3092\u62bc\u3057\u3066\u304a\u6c17\u306b\u5165\u308a\u3067\n\u89e3\u8aac\u3001\u8c46\u77e5\u8b58\u3092\u898b\u3066\u307f\u3088\u3046\uff01",color:"black",textAlign:"center",top:b*0.05});a.add(e);var d=Titanium.UI.createButton({backgroundImage:"/images/button/good/button.png",
-backgroundSelectedImage:"/images/button/good/button_pressed.png",backgroundDisabledImage:"/images/button/good/good_added.png",height:b*0.4,width:b*1.2,top:b*0.55});d.addEventListener("click",function(){d.setEnabled(!1);Titanium.App.fireEvent("addFavorite",{content:c});try{require("/DB/SQL").InsertRow(c.ID,c.text,"BOOKMARK"),alert("STUB::"+require("/DB/SQL").getBookMark().getRowCount())}catch(a){alert("DBERR::"+a.message)}});a.add(d);return a}module.exports=TableRow;
+/*
+ * created by fvi@ 
+ * 
+ * created @ 2012 08 17
+ * 
+ */
+
+function TableRow(rowNum,download){
+	
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+	
+	var row = Titanium.UI.createTableViewRow({
+		height:height * 0.2
+	});
+	
+	var row_height = row.getHeight();
+	
+	var label = Titanium.UI.createLabel({
+		text  : '面白いねを押してお気に入りで\n解説、豆知識を見てみよう！',
+		color : 'black',
+		textAlign:'center',
+		top : row_height *0.05,
+	});
+	
+	row.add(label);
+	
+	var good_button = Titanium.UI.createButton({
+		backgroundImage:'/images/button/good/button.png',
+		backgroundSelectedImage:'/images/button/good/button_pressed.png',
+		backgroundDisabledImage:'/images/button/good/good_added.png',
+		
+		height:row_height*0.4,
+		width:row_height* 1.2 ,//'auto　だとうまくいかなかったか　画像サイズに合わせてこうした。
+		
+		top:row_height *0.55
+	});
+	
+	good_button.addEventListener('click',function(e){
+		good_button.setEnabled(false);
+		//alert('受け取りました::'+ download.text);
+		
+		Titanium.App.fireEvent('addFavorite',{content:download});
+		try{
+		require('/DB/SQL').InsertRow(download.ID,download.text,'BOOKMARK');
+		alert('STUB::'+require('/DB/SQL').getBookMark().getRowCount());
+		}catch(err){
+			alert('DBERR::'+err.message);
+		}
+		
+	});
+	
+	
+	row.add(good_button);
+	
+	
+	return row;
+}
+
+module.exports = TableRow;
