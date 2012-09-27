@@ -24,7 +24,7 @@ if (Ti.version < 1.8) {
 	require('/util/setProperty').setProperty();
 	
 	var osname = Ti.Platform.osname, version = Ti.Platform.version, height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
-
+	
 	var isTablet = osname === 'ipad' || (osname === 'android' && (width > 899 || height > 899));
 
 	var Window;

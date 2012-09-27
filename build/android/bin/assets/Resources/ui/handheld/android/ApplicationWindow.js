@@ -1,2 +1,47 @@
-function ApplicationWindow(){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;require("ui/common/FirstView");Titanium.App.Properties.getInt("civ_population");Titanium.App.Properties.getInt("civ_food");Titanium.App.Properties.getInt("civ_culture");Titanium.App.Properties.getInt("civ_money");var d=require("/ui/common/MyCivilizationWindow").openCivilView();Titanium.App.Properties.setBool("isIntroNeed",!1);var e=[];if(Titanium.App.Properties.getBool("isIntroNeed"))for(var b=
-0;b<10;b++){var c=""+(b+1),c=(new require("/ui/common/first_intro/first_introView"))("intro_mes"+c,"/xicolo.png");e.push(c)}if(Titanium.Platform.osname=="android")d.activity.onCreateOptionsMenu=function(a){a=a.menu.add({title:"\u8a2d\u5b9a"});a.setIcon("/images/icon/light_gears.png");a.addEventListener("click",function(){require("/ui/common/ConfigWin").OpenConfigWin()})};return d}module.exports=ApplicationWindow;
+//Application Window Component Constructor
+function ApplicationWindow() {
+
+
+	//load component dependencies
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+	
+	var self = require('/ui/common/MyCivilizationWindow').openCivilView()
+
+	
+	//簡単な説明文の機能をカットするよ
+	Titanium.App.Properties.setBool('isIntroNeed',false);
+
+	//上の設定がfalseの限りこのコードは停止しています
+	var INTRODUCE_PAGES = 10;	
+	var introViews = [];
+	if (Titanium.App.Properties.getBool('isIntroNeed')) {
+		for (var cnt = 0; cnt < INTRODUCE_PAGES; cnt++) {
+			var cnt_char = "" + (cnt + 1);
+			var introView = new require('/ui/common/first_intro/first_introView')('intro_mes' + cnt_char, '/xicolo.png');
+			introViews.push(introView)
+		}
+	}
+
+	if (Titanium.Platform.osname == 'android') {
+
+		//まずはじめにメニューを表示できるようにする
+
+		self.activity.onCreateOptionsMenu = function(e) {
+			var menu = e.menu;
+			var menuItem = menu.add({
+				title : "設定"
+			});
+			menuItem.setIcon("/images/icon/light_gears.png");
+			menuItem.addEventListener("click", function(e) {
+				require('/ui/common/ConfigWin').OpenConfigWin();
+				//設定画面を展開する。
+			});
+		};
+
+	}
+
+	return self;
+}
+
+//make constructor function the public component interface
+module.exports = ApplicationWindow;
