@@ -15,6 +15,7 @@ if (Ti.version < 1.8) {
 }
 
 // This is a single context application with mutliple windows in a stack
+//(function で即時関数なんだって～　そうなの)
 (function() {
 	//determine platform and form factor and render approproate components
 
@@ -49,6 +50,7 @@ if (Ti.version < 1.8) {
 	/*
 	 * 
 	 *ユーザ登録をさせようと思ったけど初期の段階では使わないことが決定
+	 * かなしいかぎりじゃ
 	 if(Titanium.App.Properties.getString('user_name') == null)
 	 require('/ui/common/CreateUserView').CreateUserWin();
 	 */

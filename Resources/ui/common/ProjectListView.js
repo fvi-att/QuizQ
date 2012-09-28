@@ -7,14 +7,14 @@
 
 function ProjectList() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
-	
-		
+
+	//デバッグメッセージ
 	var debug_text = Titanium.UI.createLabel({
 		text : 'DEBUG:',
 		textAlign : 'center',
-		top :  0,
+		top : 0,
 		color : 'black',
-		width : width ,
+		width : width,
 		height : height * 0.1,
 		visible : false	//DEBUG専用
 
@@ -45,8 +45,6 @@ function ProjectList() {
 		height : height * 0.7
 	});
 
-
-
 	//新規でたしてみる  sample
 	(function AddSample() {
 		if (Titanium.App.Properties.getBool('isSampleNeed')) {
@@ -72,10 +70,10 @@ function ProjectList() {
 		var db_results;
 		//カラムの表記
 		db_results = require('/DB/SQL').getBookMark();
-		debug_text.setText('DEBUG::'+db_results.getRowCount())
+		debug_text.setText('DEBUG::' + db_results.getRowCount())
 
 		while (db_results.isValidRow()) {
-			var row = require('/ui/common/CollectionTable/ProjectTableRow').createRowObject('', db_results.fieldByName('TITLE'), 0,db_results.fieldByName('BOOK_ID'));
+			var row = require('/ui/common/CollectionTable/ProjectTableRow').createRowObject('', db_results.fieldByName('TITLE'), 0, db_results.fieldByName('BOOK_ID'));
 			row.row.quizID = db_results.fieldByName('BOOK_ID');
 			aTableView.insertRowAfter(0, row.row);
 			db_results.next();
@@ -91,22 +89,21 @@ function ProjectList() {
 
 	//Titanium.App.fireEvent('addFavorite',{content:download}); お気に入り登録させる
 	/*
-	Titanium.App.addEventListener('addFavorite', function(e) {
-		var content = e.content;
-		var row = require('/ui/common/ProjectTableRow').createRowObject('', content.text, 0,content.ID);
+	 Titanium.App.addEventListener('addFavorite', function(e) {
+	 var content = e.content;
+	 var row = require('/ui/common/ProjectTableRow').createRowObject('', content.text, 0,content.ID);
 
-		aTableView.insertRowAfter(0, row.row);
-	});
-	*/
+	 aTableView.insertRowAfter(0, row.row);
+	 });
+	 */
 	var view = Titanium.UI.createWindow({
-		title:'クイズこれくしょん',
-		backgroundImage:'/images/opening/old_paper.jpg',
-		
+		title : 'クイズこれくしょん',
+		backgroundImage : '/images/opening/old_paper.jpg',
+
 		exitOnClose : false,
 		fullscreen : true,
 		orientationModes : [Titanium.UI.PORTRAIT]
 	})
-	
 
 	//image cork board
 	var back_cork = Titanium.UI.createImageView({
@@ -135,9 +132,8 @@ function ProjectList() {
 	 view.add(tabView.view);
 	 */
 
-
 	view.add(debug_text);
-	
+
 	view.open();
 
 	return view;

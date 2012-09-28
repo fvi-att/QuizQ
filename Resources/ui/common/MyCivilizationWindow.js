@@ -66,6 +66,7 @@ exports.openCivilView = function() {
 
 
 	//変更　アイテムに関するアニメーションを関数に変更
+	//長すぎ　ワロリーヌ　
 	function StartAnimation() {
 		cupcell_image.animate({
 			center : {
@@ -112,7 +113,7 @@ exports.openCivilView = function() {
 				}, 2000);
 
 				var item_disappear_time = setTimeout(function(e) {
-					//STUB的処理
+					//STUB的処理←　あとでちゃんと消しといてね
 					civ_window.remove(food_arr[0]);
 					clearTimeout(item_disappear_time);
 				}, 2500);
@@ -124,7 +125,7 @@ exports.openCivilView = function() {
 	civ_window.add(under_bar);
 
 
-	//ボードに関する設定
+	//ボードに関する設定　
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
 	civ_window.add(board);
