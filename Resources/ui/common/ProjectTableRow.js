@@ -4,7 +4,7 @@
  *
  */
 
-exports.createRowObject = function(image_path,title,side) {
+exports.createRowObject = function(image_path,title,side,id) {
 	
 	
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
@@ -21,13 +21,16 @@ exports.createRowObject = function(image_path,title,side) {
 	if(side == 0)
 		leftImagePath = '/images/result/clear1.png';
 		
+	
+	if(!id)
+		id='STUB';
 	var row = Titanium.UI.createTableViewRow({
 		leftImage:leftImagePath,
 		backgroundImage:'/images/opening/old_paper.jpg',
 		hasChild:true,
 		height : height * 0.15,
 		className : 'todo_row',
-		id : 'STUB',
+		id : id,
 		
 	});
 	var row_height = row.getHeight();
@@ -38,7 +41,8 @@ exports.createRowObject = function(image_path,title,side) {
 		width:'auto',
 		center:{x:width * 0.15,y:row_height/2}
 	});
-	row.add(row_img);
+	//row.add(row_img);
+	//画像貼り付けコード封印
 	
 	var label = Titanium.UI.createLabel({
 		text:title,
@@ -65,7 +69,6 @@ exports.createRowObject = function(image_path,title,side) {
 		
 	});
 	row.add(arrow_img);
-	
 	
 	return {row:row,image:row_img,label:label,side_img:arrow_img};
 

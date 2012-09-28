@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.219000 seconds on emulator to get ready
+[DEBUG] waited 0.069000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\quiz\QuizWin.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\quiz\QuizWin.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\CollectionTable\ProjectTableRow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\CollectionTable\ProjectTableRow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\appico.png
@@ -195,6 +195,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/AddField/Three_Choice_Filed.js
 [DEBUG] from resource zip => assets/Resources/ui/common/AddField/Word_Field.js
 [DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CollectionTable/ProjectTableRow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/InstructionWin.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWin.js
@@ -279,6 +280,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.194000 seconds on emulator to get ready
+[DEBUG] waited 0.066000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

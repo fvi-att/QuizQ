@@ -38,11 +38,11 @@ function TableRow(rowNum,download){
 	good_button.addEventListener('click',function(e){
 		good_button.setEnabled(false);
 		//alert('受け取りました::'+ download.text);
-		
-		Titanium.App.fireEvent('addFavorite',{content:download});
+			
+		//Titanium.App.fireEvent('addFavorite',{content:download});
 		try{
 		require('/DB/SQL').InsertRow(download.ID,download.text,'BOOKMARK');
-		alert('STUB::'+require('/DB/SQL').getBookMark().getRowCount());
+		//alert('STUB::'+require('/DB/SQL').getBookMark().getRowCount());
 		}catch(err){
 			alert('DBERR::'+err.message);
 		}

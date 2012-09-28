@@ -1,2 +1,75 @@
-exports.createRowObject=function(c,d,b){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;var a="";b<0&&(a="/images/result/cross2.png");b>0&&(a="/images/result/circle2.png");b==0&&(a="/images/result/clear1.png");var a=Titanium.UI.createTableViewRow({leftImage:a,backgroundImage:"/images/opening/old_paper.jpg",hasChild:!0,height:height*0.15,className:"todo_row",id:"STUB"}),e=a.getHeight(),c=Titanium.UI.createImageView({image:c,height:e*0.9,width:"auto",center:{x:width*
-0.15,y:e/2}});a.add(c);d=Titanium.UI.createLabel({text:d,color:"black",font:{fontSize:width/20},textAlign:"left"});a.add(d);var f="/images/Table/arrowUp1.png";b<0&&(f="/images/Table/arrowDown1.png");b==0&&(f="/images/Table/complete_stamp.gif");b=Titanium.UI.createImageView({image:f,width:"auto",height:e*0.9,right:0,opacity:0});a.add(b);return{row:a,image:c,label:d,side_img:b}};
+/**
+ * @author fvi
+ * create 2012 07 19
+ *
+ */
+
+exports.createRowObject = function(image_path,title,side,id) {
+	
+	
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+	
+	var leftImagePath = '';
+	
+
+	if(side < 0)
+		leftImagePath ='/images/result/cross2.png';
+		
+	if(side > 0)
+		leftImagePath = '/images/result/circle2.png';
+		
+	if(side == 0)
+		leftImagePath = '/images/result/clear1.png';
+		
+	
+	if(!id)
+		id='STUB';
+	var row = Titanium.UI.createTableViewRow({
+		leftImage:leftImagePath,
+		backgroundImage:'/images/opening/old_paper.jpg',
+		hasChild:true,
+		height : height * 0.15,
+		className : 'todo_row',
+		id : id,
+		
+	});
+	var row_height = row.getHeight();
+	
+	var row_img = Titanium.UI.createImageView({
+		image:image_path,
+		height:row_height * 0.9,
+		width:'auto',
+		center:{x:width * 0.15,y:row_height/2}
+	});
+	//row.add(row_img);
+	//画像貼り付けコード封印
+	
+	var label = Titanium.UI.createLabel({
+		text:title,
+		color:'black',
+		font:{fontSize:width /20},
+		textAlign:'left'
+	});
+	row.add(label);
+	
+	var arrow_path = '/images/Table/arrowUp1.png';
+	if(side < 0)
+		arrow_path = '/images/Table/arrowDown1.png';
+		
+	if(side == 0)
+		arrow_path = '/images/Table/complete_stamp.gif'
+		
+	var arrow_img = Titanium.UI.createImageView({
+		image:arrow_path,
+		width:'auto',
+		height:row_height * 0.9,
+		right:0,
+		//今回はここは隠蔽
+		opacity:0
+		
+	});
+	row.add(arrow_img);
+	
+	return {row:row,image:row_img,label:label,side_img:arrow_img};
+
+}

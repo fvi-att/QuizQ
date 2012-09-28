@@ -97,16 +97,30 @@ exports.createBar = function(fromView) {
 	//civ_window.add(item_button);
 
 	quizFavorite.addEventListener('click', function(e) {
-		
+
 		require('/ui/common/AddProject').AddProject();
 
 	});
+
+	var quiz_collection_button = Titanium.UI.createButton({
+		backgroundImage : '/images/button/construction/construction.png',
+		height : height * 0.1,
+		width : width * 0.3,
+		center : {
+			x : width * 0.7,
+			y : height * 0.35
+		}
+	});
+	quiz_collection_button.addEventListener('click',function(e){
+		new require('/ui/common/ProjectListView')();
+	})
 
 	under_bar.add(move_button);
 
 	under_bar.add(invest_button);
 	under_bar.add(item_button);
 	under_bar.add(quizFavorite);
+	under_bar.add(quiz_collection_button);
 
 	return under_bar;
 }
