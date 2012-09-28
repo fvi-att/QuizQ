@@ -1,15 +1,9 @@
 Logfile initialized
 [INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build.log
-[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\builder.py install xicolo    QuizQ C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.app 2
+[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\builder.py distribute xicolo    QuizQ C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.app C:\Users\fvi\Dropbox\xicolo_quizProvisioning jisakujienndesitab0801230 provision C:\Users\fvi\Desktop 1
 [INFO] Titanium SDK version: 2.1.1 (07/27/12 14:01 0fd84a2)
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.069000 seconds on emulator to get ready
-[DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\CollectionTable\ProjectTableRow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\CollectionTable\ProjectTableRow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\appico.png
@@ -36,25 +30,15 @@ Logfile initialized
 [DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-mdpi\background.png
 [DEBUG] found splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\default.png
 [TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\AssetCryptImpl.java to javac build list
 [DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\R.java to javac build list
 [DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqActivity.java to javac build list
 [DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqAppInfo.java to javac build list
 [DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqApplication.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\R.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqActivity.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqAppInfo.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqApplication.java"
+[DEBUG] Building Java Sources: "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\AssetCryptImpl.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\R.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqActivity.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqAppInfo.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\app-unsigned.apk
-[DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
-[DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
-[DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
-[DEBUG] from resource zip => assets/Resources/ACS/Quiz.js
-[DEBUG] from resource zip => assets/Resources/ACS/UpLoadQuiz.js
-[DEBUG] from resource zip => assets/Resources/DB/SQL.js
-[DEBUG] from resource zip => assets/Resources/Quiz/Quiz2BookMark.js
-[DEBUG] from resource zip => assets/Resources/Quiz/QuizStarter.js
-[DEBUG] from resource zip => assets/Resources/Quiz/SaveQuiz2BookMark.js
-[DEBUG] from resource zip => assets/Resources/Serif/Serif.js
-[DEBUG] from resource zip => assets/Resources/counter/counter.js
 [DEBUG] from resource zip => assets/Resources/images/And/And.png
 [DEBUG] from resource zip => assets/Resources/images/And/And_Pressed.png
 [DEBUG] from resource zip => assets/Resources/images/And/button.png
@@ -190,52 +174,12 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/note.jpg
 [DEBUG] from resource zip => assets/Resources/images/transparent.png
 [DEBUG] from resource zip => assets/Resources/ui/common/AddField/3ChoiceField
-[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Three_Choice_Field.js
 [DEBUG] from resource zip => assets/Resources/ui/common/AddField/Three_Choice_Fieldjs
-[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Three_Choice_Filed.js
-[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Word_Field.js
-[DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
-[DEBUG] from resource zip => assets/Resources/ui/common/CollectionTable/ProjectTableRow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/InstructionWin.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWin.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWinStarter.js
-[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/SelectBoard.js
-[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/selectItems.js
-[DEBUG] from resource zip => assets/Resources/ui/common/button/button.js
-[DEBUG] from resource zip => assets/Resources/ui/common/first_intro/first_introView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/imageFrame/MenuProjectFrame.js
-[DEBUG] from resource zip => assets/Resources/ui/common/menuTab/MenuTab.js
-[DEBUG] from resource zip => assets/Resources/ui/common/menuTab/ScrollPage.js
-[DEBUG] from resource zip => assets/Resources/ui/common/quiz/ChildResultTableRow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/quiz/QuizWin.js
-[DEBUG] from resource zip => assets/Resources/ui/common/serifView/Serif.js
-[DEBUG] from resource zip => assets/Resources/ui/common/underbar/underbar.js
-[DEBUG] from resource zip => assets/Resources/ui/common/AddProject.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfigWin.js
-[DEBUG] from resource zip => assets/Resources/ui/common/CreateUserView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/FirstView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/MatomeView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/MenuIcon.js
-[DEBUG] from resource zip => assets/Resources/ui/common/MyCivilizationWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/PointFrame.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ProjectListView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableRow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ResultQuizView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/TopView.js
-[DEBUG] from resource zip => assets/Resources/ui/handheld/android/ApplicationWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/handheld/ApplicationWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
-[DEBUG] from resource zip => assets/Resources/util/getbackPathWithTime.js
-[DEBUG] from resource zip => assets/Resources/util/random.js
-[DEBUG] from resource zip => assets/Resources/util/setProperty.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
-[DEBUG] from resource zip => assets/Resources/app.js
 [DEBUG] from resource zip => assets/Resources/appico.png
 [DEBUG] from resource zip => assets/Resources/appicon.png
 [DEBUG] from resource zip => assets/Resources/default.png
-[DEBUG] from resource zip => assets/Resources/ti.cloud.js
 [DEBUG] from resource zip => assets/Resources/xicolo.png
 [DEBUG] from resource zip => assets/app.json
 [DEBUG] from resource zip => assets/index.json
@@ -277,9 +221,3 @@ Logfile initialized
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.1.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
 [DEBUG] installing native SDK libs
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.066000 seconds on emulator to get ready
-[INFO] Installing application on device
-[INFO] Application installed. Launch from drawer on Home Screen
