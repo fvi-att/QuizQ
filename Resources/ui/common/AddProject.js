@@ -13,14 +13,14 @@ exports.AddProject = function() {
 	var background_path = require('/util/getbackPathWithTime').getPath();
 	var win = Titanium.UI.createWindow({
 		title : 'クイズを作る',
-		backgroundImage : '/images/background/note.jpg',
+		backgroundImage : background_path,
 		exitOnClose : false,
 		fullscreen : false,
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
 
 	var backImageView = Titanium.UI.createImageView({
-		image : '/images/background/back_lightblue.png',
+		image : '/images/opening/old_paper.jpg',
 		width : width,
 		height : height * 0.8,
 		top : 0
@@ -36,16 +36,20 @@ exports.AddProject = function() {
 
 	win.add(textArea);
 
-	var type_label = Titanium.UI.createLabel({
-		text : 'クイズ形式:',
-		color : 'black',
+	var junel_button = Titanium.UI.createButton({
+		title : 'ジャンル',
 		width : width * 0.5,
 		height : height * 0.1,
 		top : height * 0.15,
 		left : width * 0.05
 	});
+	
+	junel_button.addEventListener('click',function(e){
+		require('/ui/common/AddField/Selectjunel').openView(win);
+		
+	});
 
-	win.add(type_label);
+	win.add(junel);
 	var type_picker = Ti.UI.createPicker({
 		height : height * 0.1,
 		width : width * 0.5,
@@ -90,6 +94,7 @@ exports.AddProject = function() {
 	})
 
 	win.add(type_picker);
+	
 
 	var answerView = new require('/ui/common/AddField/Three_Choice_Field')();
 	answerView.view.setBackgroundImage('/images/background/back_lightblue.png');

@@ -35,8 +35,7 @@ exports.AddItems = function(name, id, status) {
 		alert('err:' + err.message);
 		return false;
 	}
-
-	return true;
+		return true;
 
 }
 
