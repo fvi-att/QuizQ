@@ -52,7 +52,8 @@ exports.openView = function(view) {
    			    	transform:t,
    			    	duration:500,
    			    	top:height *0.1,
-   			    	width:old_paper.width * 0.25,
+   			    	width:old_paper.width * 0.5,
+   			    	height:height *0.1,
    			    	autoreverse:false
    			    });					
    				picker1.animate(animation);

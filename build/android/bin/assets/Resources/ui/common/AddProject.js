@@ -9,7 +9,9 @@
 exports.AddProject = function() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
-	
+	var quizType = 3;
+	//3=>3択問題　4=>4択問題
+
 	var background_path = require('/util/getbackPathWithTime').getPath();
 	var win = Titanium.UI.createWindow({
 		title : '知識、知恵を分け与える',
@@ -43,10 +45,10 @@ exports.AddProject = function() {
 		top : height * 0.15,
 		left : width * 0.05
 	});
-	
-	junel_button.addEventListener('click',function(e){
+
+	junel_button.addEventListener('click', function(e) {
 		require('/ui/common/AddField/Selectjunel').openView(win);
-		
+
 	});
 
 	win.add(junel_button);
@@ -66,32 +68,34 @@ exports.AddProject = function() {
 		custom_item : '4'
 	});
 	/*
-	type_data[2] = Ti.UI.createPickerRow({
-		title : 'アンケート',
-		custom_item : '5'
-	});
-	*/
+	 type_data[2] = Ti.UI.createPickerRow({
+	 title : 'アンケート',
+	 custom_item : '5'
+	 });
+	 */
 	type_picker.add(type_data);
 
 	type_picker.addEventListener('change', function(e) {
 		win.remove(answerView.view);
 		delete answerView;
-		
-		
-		if (e.rowIndex == 0){
+
+		if (e.rowIndex == 0) {
 			answerView = new require('/ui/common/AddField/Three_Choice_Field')();
 			answerView.view.setBackgroundImage('/images/transparent.png');
 			win.add(answerView.view);
+
+			quizType = 3;
 		}
 		if (e.rowIndex == 1) {
 			answerView = new require('/ui/common/AddField/Word_Field')();
 			win.add(answerView.view);
+
+			quizType = 4;
 		}
 
 	});
 
 	win.add(type_picker);
-	
 
 	var answerView = new require('/ui/common/AddField/Three_Choice_Field')();
 	answerView.view.setBackgroundImage('/images/transparent.png');
@@ -116,29 +120,74 @@ exports.AddProject = function() {
 	});
 	and_button.setTouchEnabled(false);
 	and_button.setOpacity(0.7);
-	
+
 	win.add(and_button);
 
 	var button = new require('/ui/common/button/button')('add');
 	button.setTop(height * 0.8);
+	var select3;
+	
+
+	function UploadQuiz(e){
+		var s3			　    = null;
+		var collect_answer = null;
+		
+		if(quizType == 3){
+			s3 = answerView.choice3.value;
+			collect_answer = answerView.picker.custom_item;
+		}else{
+			s3 ='';
+			collect_answer ='';
+		}
+		
+		require('/ACS/UpLoadQuiz').UploadQuiz({
+			ID : require('/util/random').getRandom(20),
+			type : quizType,
+			text : textArea.value,
+			junel : ['テスト', '練習'],
+			Answer : {
+				s1 : answerView.choice1.value,
+				s2 : answerView.choice2.value,
+				s3 : s3,
+				text : '' + collect_answer
+			},
+			junelNum : 9999,
+			other : {}
+		});
+	}
+	function AddThreeChoice(e) {
+		if (textArea.value == '' || answerView.choice1.value == '' || answerView.choice2.value == '' || answerView.choice3.value == '') {
+			alert('まだ　埋まっていない欄があるようです');
+			return;
+		}
+		
+		UploadQuiz(e);
+	}
+
+	function AddWordChoice(e) {
+		if (textArea.value == '' || answerView.choice1.value == '' || answerView.choice2.value == '' ) {
+			alert('まだ　埋まっていない欄があるようです');
+			return;
+		}
+		UploadQuiz(e);
+	}
+
 
 	button.addEventListener('click', function(e) {
 		//見記入データが存在していた場合撤去する
-		if(textArea.value =='' || answerView.choice1.value == ''||answerView.choice2.value == ''||answerView.choice3.value == ''){
-			alert('まだ　埋まっていない欄があるようです');
-			return;
-		}	
-		
-		require('/ACS/UpLoadQuiz').UploadQuiz({ID:require('/util/random').getRandom(20),type:3,text:textArea.value,junel:['テスト','練習'],Answer:{s1:answerView.choice1.value,s2:answerView.choice2.value,s3:answerView.choice3.value,text:''+answerView.picker.custom_item},junelNum:9999,other:{}});
-		
+			if(quizType == 3)
+				AddThreeChoice(e);
+			
+			if(quizType == 4)
+				AddWordChoice(e);
+			
 		win.close();
-		
 		delete win;
 	})
 	win.add(button);
 
 	win.open();
-	
+
 	return win;
 }
 
