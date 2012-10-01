@@ -1,5 +1,152 @@
-exports.OpenConfigWin=function(){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;var b=Titanium.UI.createWindow({title:"\u8a2d\u5b9a",backgroundImage:"/images/opening/old_paper.jpg",exitOnClose:!1,fullscreen:!1,orientationModes:[Titanium.UI.PORTRAIT]}),e=Titanium.UI.createLabel({text:"\u8d77\u52d5\u6642\u306b\u8aac\u660e\u753b\u9762\u3092\u3064\u3051\u308b",color:"black",top:height*0.3,font:{fontSize:25}}),d=Titanium.UI.createSwitch({value:Titanium.App.Properties.getBool("isIntroNeed"),
-top:height*0.4});d.addEventListener("change",function(a){Titanium.App.Properties.setBool("isIntroNeed",a.value);Titanium.UI.createNotification({duration:2E3,message:"\u8a2d\u5b9a\u3092\u5909\u66f4\u3057\u307e\u3057\u305f\n\u6b21\u56de\u8d77\u52d5\u6642\u304b\u3089\u53cd\u6620\u3055\u308c\u307e\u3059"}).show()});var c=Titanium.UI.createLabel({text:"\u30b5\u30f3\u30d7\u30eb\u306e\u554f\u984c\u3092\u8868\u793a\u3059\u308b",color:"black",top:height*0.55,font:{fontSize:25}}),f=Titanium.UI.createSwitch({value:Titanium.App.Properties.getBool("isSampleNeed"),
-top:height*0.65});f.addEventListener("change",function(a){Titanium.App.Properties.setBool("isSampleNeed",a.value);Titanium.App.fireEvent("addSampleQuiz");Titanium.UI.createNotification({duration:2E3,message:"\u8a2d\u5b9a\u3092\u5909\u66f4\u3057\u307e\u3057\u305f"}).show()});b.add(c);b.add(f);c=Titanium.UI.createButton({title:"\u30a2\u30ab\u30a6\u30f3\u30c8\u7ba1\u7406",textAlign:"center",top:height*0.8,width:width*0.75});c.addEventListener("click",function(){var a=Titanium.UI.createView({backgroundColor:"white",
-width:Titanium.UI.FILL,height:height*0.1,opacity:1,layout:"vertical"}),b=Ti.UI.createTextField({hintText:"ID",width:Titanium.UI.FILL,textAlign:"center",opacity:1,left:0}),c=Ti.UI.createTextField({hintText:"Password",width:Titanium.UI.FILL,textAlign:"center",passwordMask:!0,opacity:1,left:a.width*0.5});a.add(b);a.add(c);var d="\u30b2\u30b9\u30c8";Titanium.App.Properties.hasProperty("user_name")&&(d=Titanium.App.Properties.getString("user_name"));a=Ti.UI.createOptionDialog({title:"account status\n ID:"+
-d,androidView:a,buttonNames:["Cancel","Ok"]});a.addEventListener("click",function(a){a.index==1&&(require("/ACS/LogoutACS").LogoutACS(),require("/ACS/LoginACS").LoginACS(b.value,c.value))});a.show()});b.add(e);b.add(d);b.add(e);b.add(d);b.add(c);b.open()};
+/**
+ * @author fvi
+ * created at 2012 07 19
+ */
+
+exports.OpenConfigWin = function() {
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+
+	var win = Titanium.UI.createWindow({
+		title : '設定',
+		backgroundImage:'/images/opening/old_paper.jpg',
+		exitOnClose : false,
+		fullscreen : false,
+		orientationModes : [Titanium.UI.PORTRAIT]
+	});
+
+	var introSW_label = Titanium.UI.createLabel({
+		text : '起動時に説明画面をつける',
+		color : 'black',
+		top : height * 0.3,
+		font : {
+			fontSize : 25
+		}
+	});
+
+	var introSW = Titanium.UI.createSwitch({
+		value : Titanium.App.Properties.getBool('isIntroNeed'),
+		top : height * 0.4
+	});
+
+	introSW.addEventListener('change', function(e) {
+		// e.valueにはスイッチの新しい値が true もしくは falseとして設定されます。
+
+		Titanium.App.Properties.setBool('isIntroNeed', e.value);
+
+		Titanium.UI.createNotification({
+			duration : 2000,
+			message : "設定を変更しました\n次回起動時から反映されます"
+		}).show();
+
+	});
+	//サンプルに対する処理
+	var introSW_label2 = Titanium.UI.createLabel({
+		text : 'サンプルの問題を表示する',
+		color : 'black',
+		top : height * 0.55,
+		font : {
+			fontSize : 25
+		}
+	});
+
+	var introSW2 = Titanium.UI.createSwitch({
+		value : Titanium.App.Properties.getBool('isSampleNeed'),
+		top : height * 0.65
+	});
+
+	introSW2.addEventListener('change', function(e) {
+		Titanium.App.Properties.setBool('isSampleNeed', e.value);
+		
+		Titanium.App.fireEvent('addSampleQuiz');
+		
+
+		Titanium.UI.createNotification({
+			duration : 2000,
+			message : "設定を変更しました"
+		}).show();
+
+	});
+
+	win.add(introSW_label2);
+	win.add(introSW2);
+
+	/*
+	 * 
+	 * アカウント管理処理
+	 * 
+	 *
+	*/
+	var account_man = Titanium.UI.createButton({
+		title : 'アカウント管理',
+		textAlign : 'center',
+		top : height * 0.8,
+		width : width * 0.75
+	});
+
+	account_man.addEventListener('click', function(e) {
+		var back_view = Titanium.UI.createView({
+			backgroundColor : 'white',
+			width : Titanium.UI.FILL,
+			height : height * 0.1,
+			opacity : 1.0,
+			layout : 'vertical'
+
+		})
+		var input_text = Ti.UI.createTextField({
+			hintText : 'ID',
+			width : Titanium.UI.FILL,
+			textAlign : 'center',
+			opacity : 1.0,
+			left : 0
+		});
+		var input_password = Ti.UI.createTextField({
+			hintText : 'Password',
+			width : Titanium.UI.FILL,
+			textAlign : 'center',
+			passwordMask : true,
+			opacity : 1.0,
+			left : back_view.width * 0.5
+		});
+
+		back_view.add(input_text);
+		back_view.add(input_password);
+		
+		var user_name='ゲスト';
+		
+		if(Titanium.App.Properties.hasProperty('user_name'))
+			user_name = Titanium.App.Properties.getString('user_name');
+			
+		var dialog = Ti.UI.createOptionDialog({
+			title : 'account status\n ID:'+user_name,
+			androidView : back_view,
+			buttonNames : ['Cancel', 'Ok']
+		});
+
+		dialog.addEventListener('click', function(e) {
+			if (e.index == 1) {// we read it only if get it is pressed
+				require('/ACS/LogoutACS').LogoutACS();
+				
+				require('/ACS/LoginACS').LoginACS(input_text.value,input_password.value);
+				
+				
+				
+				
+			}
+		});
+
+		dialog.show();
+	});
+
+	win.add(introSW_label);
+	win.add(introSW);
+	
+
+
+	win.add(introSW_label);
+	win.add(introSW);
+	win.add(account_man);
+
+
+	win.open();
+
+}

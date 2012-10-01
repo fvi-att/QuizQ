@@ -12,7 +12,7 @@ exports.AddProject = function() {
 	
 	var background_path = require('/util/getbackPathWithTime').getPath();
 	var win = Titanium.UI.createWindow({
-		title : 'クイズを作る',
+		title : '知識、知恵を分け与える',
 		backgroundImage : background_path,
 		exitOnClose : false,
 		fullscreen : false,
@@ -38,7 +38,7 @@ exports.AddProject = function() {
 
 	var junel_button = Titanium.UI.createButton({
 		title : 'ジャンル',
-		width : width * 0.5,
+		width : width * 0.4,
 		height : height * 0.1,
 		top : height * 0.15,
 		left : width * 0.05
@@ -49,7 +49,7 @@ exports.AddProject = function() {
 		
 	});
 
-	win.add(junel);
+	win.add(junel_button);
 	var type_picker = Ti.UI.createPicker({
 		height : height * 0.1,
 		width : width * 0.5,
@@ -65,39 +65,36 @@ exports.AddProject = function() {
 		title : '単語問題',
 		custom_item : '4'
 	});
+	/*
 	type_data[2] = Ti.UI.createPickerRow({
 		title : 'アンケート',
 		custom_item : '5'
 	});
+	*/
 	type_picker.add(type_data);
 
 	type_picker.addEventListener('change', function(e) {
-		alert('column::' + e.rowIndex);
 		win.remove(answerView.view);
-		answerView = null;
+		delete answerView;
 		
 		
 		if (e.rowIndex == 0){
 			answerView = new require('/ui/common/AddField/Three_Choice_Field')();
-			answerView.view.setBackgroundImage('/images/background/back_lightblue.png');
+			answerView.view.setBackgroundImage('/images/transparent.png');
 			win.add(answerView.view);
 		}
 		if (e.rowIndex == 1) {
 			answerView = new require('/ui/common/AddField/Word_Field')();
 			win.add(answerView.view);
 		}
-		if(e.rowIndex==0){
-			answerView = new require('/ui/common/AddField/Three_Choice_Field')();
-			answerView.view.setBackgroundImage('/images/background/back_lightblue.png');
-			win.add(answerView.view);
-		}
-	})
+
+	});
 
 	win.add(type_picker);
 	
 
 	var answerView = new require('/ui/common/AddField/Three_Choice_Field')();
-	answerView.view.setBackgroundImage('/images/background/back_lightblue.png');
+	answerView.view.setBackgroundImage('/images/transparent.png');
 
 	win.add(answerView.view);
 
@@ -126,10 +123,17 @@ exports.AddProject = function() {
 	button.setTop(height * 0.8);
 
 	button.addEventListener('click', function(e) {
-
+		//見記入データが存在していた場合撤去する
+		if(textArea.value =='' || answerView.choice1.value == ''||answerView.choice2.value == ''||answerView.choice3.value == ''){
+			alert('まだ　埋まっていない欄があるようです');
+			return;
+		}	
+		
 		require('/ACS/UpLoadQuiz').UploadQuiz({ID:require('/util/random').getRandom(20),type:3,text:textArea.value,junel:['テスト','練習'],Answer:{s1:answerView.choice1.value,s2:answerView.choice2.value,s3:answerView.choice3.value,text:''+answerView.picker.custom_item},junelNum:9999,other:{}});
 		
 		win.close();
+		
+		delete win;
 	})
 	win.add(button);
 
