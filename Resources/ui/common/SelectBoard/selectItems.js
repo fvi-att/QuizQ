@@ -72,25 +72,25 @@ exports.openView = function(view) {
 			top : height * 0.5,
 			left : width * 0.02
 		});
-		i=i+1;
+		//i=i+1;
 		item_list_view[1] = Titanium.UI.createView({
-			backgroundImage : item_image[i],
+			backgroundImage : item_image[i+1],
 			width : width * 0.15,
 			height : height * 0.1,
 			top : height * 0.5,
 			left : width * 0.2
 		});
-		i=i+1;
+		//i=i+1;
 		item_list_view[2] = Titanium.UI.createView({
-			backgroundImage : item_image[i],
+			backgroundImage : item_image[i+2],
 			width : width * 0.15,
 			height : height * 0.1,
 			top : height * 0.5,
 			left : width * 0.40
 		});
-		i=i+1;
+		//i=i+1;
 		item_list_view[3] = Titanium.UI.createView({
-			backgroundImage : item_image[i],
+			backgroundImage : item_image[i+3],
 			width : width * 0.15,
 			height : height * 0.1,
 			top : height * 0.5,
