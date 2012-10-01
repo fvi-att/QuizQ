@@ -8,16 +8,12 @@
 
 exports.getPath = function(){
 	
-	//return '/images/civ/ancient/back/background.png';
-	
-	
-	
 	var time = new Date().getHours();
 	
 	if((time > 6) && (time < 18))
 		return '/images/civ/ancient/back/background.png';
 	
-		
-		return '/images/civ/ancient/back/background_night.png';
+	
+	return '/images/civ/ancient/back/background_night.PNG';
 	
 }

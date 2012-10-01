@@ -6,7 +6,6 @@
 
 exports.CreateUserWin = function() {
 
-	
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var win = Titanium.UI.createWindow({
 		title : 'ようこそ　xicolo Quizへ',

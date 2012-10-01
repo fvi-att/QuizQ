@@ -1,20 +1,2 @@
-//Application Window Component Constructor
-function ApplicationWindow() {
-	//load component dependencies
-	var FirstView = require('ui/common/FirstView');
-		
-	//create component instance
-	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff',
-		orientationModes : [Titanium.UI.PORTRAIT ]
-	});
-		
-	//construct UI
-	var firstView = new FirstView();
-	self.add(firstView);
-	
-	return self;
-}
-
-//make constructor function the public component interface
-module.exports = ApplicationWindow;
+function ApplicationWindow(){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;require("ui/common/FirstView");Titanium.App.Properties.getInt("civ_population");Titanium.App.Properties.getInt("civ_food");Titanium.App.Properties.getInt("civ_culture");Titanium.App.Properties.getInt("civ_money");var d=require("/ui/common/MyCivilizationWindow").openCivilView();Titanium.App.Properties.setBool("isIntroNeed",!1);var e=[];if(Titanium.App.Properties.getBool("isIntroNeed"))for(var b=
+0;b<10;b++){var c=""+(b+1),c=(new require("/ui/common/first_intro/first_introView"))("intro_mes"+c,"/xicolo.png");e.push(c)}if(Titanium.Platform.osname=="android")d.activity.onCreateOptionsMenu=function(a){a=a.menu.add({title:"\u8a2d\u5b9a"});a.setIcon("/images/icon/light_gears.png");a.addEventListener("click",function(){require("/ui/common/ConfigWin").OpenConfigWin()})};return d}module.exports=ApplicationWindow;

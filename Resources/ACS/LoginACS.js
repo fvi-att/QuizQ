@@ -14,6 +14,8 @@ exports.LoginACS = function(id,password){
 		font:{fontFamily:'Helvetica Neue', fontSize:15,fontWeight:'bold'}
 		// style:Titanium.UI.iPhone.ActivityIndicatorStyle.PLAIN
 	});
+	
+	actInd.show();
 	  
     var Cloud = require('ti.cloud');  
       
@@ -23,18 +25,14 @@ exports.LoginACS = function(id,password){
     }, function (e) {
         if (e.success) {
             var user = e.users[0];
-            alert('Success:\\n' +
-                'id: ' + user.id + '\\n' +
-                'first name: ' + user.first_name + '\\n' +
-                'last name: ' + user.last_name);
+            alert('ユーザー名：'+user.lastname+'としてログインしました');
                 
                 Titanium.App.Properties.setString('user_name',user.username);
                 
                 Titanium.App.fireEvent('ReLogin');
                 actInd.hide();
         } else {
-            alert('Error:\n' +
-                ((e.error && e.message) || JSON.stringify(e)));
+           alert('ユーザー認証に失敗しました。もう一度入力してください')
                 actInd.hide();
                 
         }

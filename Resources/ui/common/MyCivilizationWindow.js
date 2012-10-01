@@ -11,9 +11,15 @@ exports.openCivilView = function() {
 	var food_arr = [];
 
 	var background_path = require('/util/getbackPathWithTime').getPath();
-	var view = Titanium.UI.createView({
-		backgroundImage : background_path
+	
+	var civ_window = Titanium.UI.createWindow({
+		backgroundImage : background_path,
+		
+		exitOnClose : false,
+		fullscreen : true,
+		orientationModes : [Titanium.UI.PORTRAIT]
 	});
+	
 	var house_image = Titanium.UI.createImageView({
 		image : '/images/civ/ancient/house/house1.png',
 		width : 'auto',
@@ -23,8 +29,9 @@ exports.openCivilView = function() {
 			y : height * 0.4
 		}
 	});
+	
 
-	view.add(house_image);
+	civ_window.add(house_image);
 
 	var man_image = Titanium.UI.createImageView({
 		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
@@ -38,12 +45,12 @@ exports.openCivilView = function() {
 
 	man_image.addEventListener('click', function(e) {
 
-		require('/ui/common/serifView/Serif').openView(view);
+		require('/ui/common/serifView/Serif').openView(civ_window);
 		Titanium.App.Properties.setString('first_contact', 'need_apple')
 
 	});
 
-	view.add(man_image);
+	civ_window.add(man_image);
 
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
@@ -55,28 +62,11 @@ exports.openCivilView = function() {
 		}
 	});
 
-	view.add(cupcell_image);
+	civ_window.add(cupcell_image);
 
-	var item_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/give/give.png',
-		height : height * 0.1,
-		width : width * 0.3,
-		center : {
-			x : width * 0.7,
-			y : height * 0.9
-		}
-	});
-
-	view.add(item_button);
-
-	item_button.addEventListener('click', function(e) {
-		var item_view = require('/ui/common/SelectBoard/selectItems').openView(view);
-		item_button.setTouchEnabled(false);
-		//StartAnimation(); このメソッドでアニメーションを開始する
-		
-	});
 
 	//変更　アイテムに関するアニメーションを関数に変更
+	//長すぎ　ワロリーヌ　
 	function StartAnimation() {
 		cupcell_image.animate({
 			center : {
@@ -104,7 +94,7 @@ exports.openCivilView = function() {
 						y : height * 0.4
 					}
 				}));
-				view.add(food_arr[0]);
+				civ_window.add(food_arr[0]);
 
 				var disappear_time = setTimeout(function(e) {
 					//cupcell_image.setCenter({x:width * 0.5,y:-1 * height});
@@ -123,46 +113,22 @@ exports.openCivilView = function() {
 				}, 2000);
 
 				var item_disappear_time = setTimeout(function(e) {
-					//STUB的処理
-					view.remove(food_arr[0]);
+					//STUB的処理←　あとでちゃんと消しといてね
+					civ_window.remove(food_arr[0]);
 					clearTimeout(item_disappear_time);
 				}, 2500);
 			})
 		})
 	}
 
-	var invest_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/invest/investment.png',
-		height : height * 0.1,
-		width : width * 0.3,
+	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
+	civ_window.add(under_bar);
 
-		center : {
-			x : width * 0.3,
-			y : height * 0.9
-		}
 
-	});
-
-	invest_button.addEventListener('click', function(e) {
-		//背景黒のビューを設定
-		var invest_view = require('/ui/common/SelectBoard/SelectBoard').openView(view);
-		var invest_label = Titanium.UI.createLabel({
-			text : 'これはてすとです',
-			textAlign : 'center',
-			color : 'black',
-			width : invest_view.width * 0.9,
-			height : invest_view.height * 0.7
-		});
-		invest_view.add(invest_label);
-
-	});
-
-	view.add(invest_button);
-
-	//ボードに関する設定
+	//ボードに関する設定　
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
-	view.add(board);
+	civ_window.add(board);
 
-	return view;
+	return civ_window;
 }

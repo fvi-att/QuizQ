@@ -47,7 +47,7 @@ exports.openWindow = function() {
 		height:height * 0.8,
 		color:'black',
 		top:0,
-		font:{fontSize:20}
+		font:{fontSize:17}
 	});
 	
 	win.add(label);
