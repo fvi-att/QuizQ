@@ -17,6 +17,7 @@ exports.openCivilView = function() {
 		
 		exitOnClose : false,
 		fullscreen : true,
+		navBarHidden: true, //タイトルバーを隠す
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
 	
