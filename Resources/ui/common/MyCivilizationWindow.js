@@ -31,6 +31,10 @@ exports.openCivilView = function() {
 		}
 	});
 	
+	house_image.addEventListener('click',function(e){
+		require('/ui/common/SelectBoard/CivGrowthBoard').openView(civ_window);
+	})
+	
 
 	civ_window.add(house_image);
 
