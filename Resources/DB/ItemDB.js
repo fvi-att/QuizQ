@@ -45,8 +45,9 @@ exports.AddItems = function(name, id, status) {
 
 	try {
 		sql.execute('INSERT INTO ITEMS VALUES(NULL,?,?,?)', name, id, status);
+		alert('アイテム追加しました')
 	} catch(err) {
-		alert('err:' + err.message);
+		alert('エラー::アイテムに関するデータベースにアクセス出来ませんでした');
 		return false;
 	}
 		return true;
