@@ -20,6 +20,20 @@ exports.getItems = function(id) {
 		return false;
 	}
 }
+exports.getItemsStauts = function(id) {
+	try {
+		var sql = require('/DB/SQL').getDB();
+		if (!id) {
+			var result = sql.execute('SELECT STATUS FROM ITEMS WHERE _ID = ?', id)
+		} else {
+			var result = sql.execute('SELECT STATUS FROM ITEMS');
+		}
+	} catch(err) {
+		alert('err:' + err.message);
+		return false;
+	}
+}
+
 exports.AddItems = function(name, id, status) {
 	var sql = require('/DB/SQL').getDB();
 	if (!name)
