@@ -29,6 +29,15 @@ exports.openView = function(view) {
 		top : height * 0.1
 
 	});
+	
+	var label = Titanium.UI.createLabel({
+		text:'ジャンルを選ぼう！',
+		color:'black',
+		width:old_paper.width * 0.9,
+		top:old_paper.height * 0.1,
+		textAlign:'center'
+	});
+	old_paper.add(label);
 
 	var tmp_closeButton = Titanium.UI.createButton({
 		backgroundImage : '/images/button/OK/trans/button.png',
@@ -40,11 +49,12 @@ exports.openView = function(view) {
 	old_paper.add(tmp_closeButton);
 
 	tmp_closeButton.addEventListener('click', function(e) {
-		/*
+		
 		view.remove(back_temp_view);
 		view.remove(old_paper);
-		*/
+		
 		//ここにジャンル設定に関する内容を記述する 　アニメーションに関する処理を書き加える
+		/*
 		    var t = Ti.UI.create2DMatrix();
    			　　　 t = t.scale(0.5);
    			
@@ -57,7 +67,7 @@ exports.openView = function(view) {
    			    	autoreverse:false
    			    });					
    				picker1.animate(animation);
-   				
+   		*/		
 
 			
 	});
@@ -84,8 +94,8 @@ exports.openView = function(view) {
 
 	old_paper.add(cancel_button);
 	//ピッカーに関する処理
-	var names = ['Joanie', 'Mickey', 'Jean-Pierre', 'Gustav', 'Raul', 'Mimi', 'Emily', 'Sandra', 'Carrie', 'Chachi'];
-	var verbs = ['loves', 'likes', 'visits', 'loathes', 'waves to', 'babysits', 'accompanies', 'teaches', 'announces', 'supports', 'knows', 'high-fives'];
+	var names = ['常識問題', '笑い', '小ネタ', '飲み会用', 'へぇ～', 'マニアック', 'その他'];
+	var verbs = ['素養', '文化', 'マニア', '経済', '国際', '小ネタ', 'カワイイ', 'ニュース', 'びっくり'];
 
 	var rows1 = [];
 	for (var i = 0; i < names.length; i++) {
@@ -110,12 +120,20 @@ exports.openView = function(view) {
 
 	var column1 = Ti.UI.createPickerColumn({
 		rows : rows1,
+		top:height *0.05,
+		width:old_paper.width   *0.35,
+		height:old_paper.height *0.5,
+		left:old_paper.width    *0.05,
 		font : {
 			fontSize : "24"
 		}
 	});
 	var column2 = Ti.UI.createPickerColumn({
 		rows : rows2,
+		top:height*0.05,
+		width:old_paper.width *0.35,
+		height:old_paper.height*0.5,
+		left:old_paper.width *0.5,
 		font : {
 			fontSize : "24"
 		}
@@ -124,9 +142,8 @@ exports.openView = function(view) {
 	var picker1 = Ti.UI.createPicker({
 		useSpinner : true,
 		visibleItems : 7,
+		width:old_paper.width *0.95,
 		type : Ti.UI.PICKER_TYPE_PLAIN,
-		height : height * 0.4,
-		width:old_paper.width * 0.9,
 		columns : [column1, column2]
 	});
 

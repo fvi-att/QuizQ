@@ -103,16 +103,7 @@ function ProjectList() {
 		exitOnClose : false,
 		fullscreen : true,
 		orientationModes : [Titanium.UI.PORTRAIT]
-	})
-
-	//image cork board
-	var back_cork = Titanium.UI.createImageView({
-		image : '/images/background/back_lightblue.png',
-		top : height * 0.05,
-		height : height * 0.6,
-		width : width
-	})
-	view.add(back_cork);
+	});
 
 	//	view.add(searchBar);
 	view.add(aTableView);
@@ -126,11 +117,6 @@ function ProjectList() {
 		require('/ui/common/AddProject').AddProject();
 
 	});
-
-	/*
-	 var tabView = require('/ui/common/menuTab/MenuTab').createMenuTab(2);
-	 view.add(tabView.view);
-	 */
 
 	view.add(debug_text);
 
