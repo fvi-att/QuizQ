@@ -5,44 +5,22 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.031000 seconds on emulator to get ready
+[DEBUG] waited 0.032000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\DB\ItemDB.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\DB\ItemDB.js
-[TRACE] Generating Java Classes
+[INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
-[DEBUG] copying app icon: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\appico.png
-[DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-land-hdpi\background.png
 [DEBUG] found drawable-long-land-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-land-ldpi\background.png
 [DEBUG] found drawable-long-port-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-port-hdpi\background.png
 [DEBUG] found drawable-long-port-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-port-ldpi\background.png
 [DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-land-hdpi\background.png
 [DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-land-ldpi\background.png
 [DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-land-mdpi\background.png
 [DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-port-hdpi\background.png
 [DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-port-ldpi\background.png
 [DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-port-mdpi\background.png
-[DEBUG] found splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\default.png
-[TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\R.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqActivity.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqAppInfo.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqApplication.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\R.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqActivity.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqAppInfo.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqApplication.java"
-[INFO] Compiling Android Resources... This could take some time
-[DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
