@@ -1,18 +1,1 @@
-/**
- * @author fvi@ created@ 20120627
- */
-
-
-exports.getCounter = function(number){
-	
-	var result = [];
-	
-	var from = ''+number;
-	for(cnt = 0;cnt < from.length;cnt++){
-		
-		result.push(from.charAt(cnt));
-		
-	}
-	
-	return result;
-}
+exports.getCounter=function(a){var b=[],a=""+a;for(cnt=0;cnt<a.length;cnt++)b.push(a.charAt(cnt));return b};
