@@ -24,8 +24,12 @@ exports.openView = function(view) {
 	});
 
 	//ここからhachi_927によるもの
+	
+	//
 	//アイテム画像読み込み
-	item_image = new Array(5);
+	//
+	var totaltemImage = 5;										//アイテム数を仮に定める
+	item_image = new Array(totaltemImage);
 	item_image[0] = '/images/background/back_green.png';
 
 	item_image[1] = '/images/background/back_lightblue.png';
@@ -36,17 +40,22 @@ exports.openView = function(view) {
 
 	item_image[4] = '/images/background/open_background.png';
 
-	var selected_item_image = item_image[0];
+	var selectedItem = 0;											//選択されたアイテム番号を格納する変数　初期設定を0とする
+	
+	
+	//選択されたアイテムを画面中央に表示するための関数
+	function SelectedItemView(){
+		var item = Titanium.UI.createView({
+			backgroundImage : item_image[selectedItem],
+			width : width * 0.75,
+			height : height * 0.3,
+			top : height * 0.07
+		});
 
-	var item = Titanium.UI.createView({
-		backgroundImage : selected_item_image,
-		width : width * 0.75,
-		height : height * 0.3,
-		top : height * 0.07
-	});
-
-	old_paper.add(item);
-
+		old_paper.add(item);
+	}
+	
+	SelectedItemView();												//ここで実際に画面に画像を表示
 
 	//説明部分の背景
 	var item_explain_area = Titanium.UI.createView({
@@ -56,15 +65,18 @@ exports.openView = function(view) {
 		top : height * 0.39
 	});
 
-	old_paper.add(item_explain_area);
+	old_paper.add(item_explain_area);								//何度も呼び出す必要は無いのでここは特に関数にしない
 
+	//
 	//アイテムのリストを表示
-	
-	item_list_view = new Array(5);
-	
+	//
+	//ItemList関数に必要な変数の定義
+	itemNumber = 0;
+	leftItem = 0;									//アイテムリストの左端のアイテムの番号を記憶する変数(「消えたアイテム」っぽいから名前を変えたい)
+	item_list_view = new Array(4);
 	
 	//アイテムのリストを画面下部に表示する関数の定義
-	function itemList(i){
+	function ItemList(i){
 		item_list_view[0] = Titanium.UI.createView({
 			backgroundImage : item_image[i],
 			width : width * 0.15,
@@ -72,7 +84,12 @@ exports.openView = function(view) {
 			top : height * 0.5,
 			left : width * 0.02
 		});
-		i=i+1;
+		
+		i++;
+		if(i >= totaltemImage){
+			i = 0;
+		}
+		
 		item_list_view[1] = Titanium.UI.createView({
 			backgroundImage : item_image[i],
 			width : width * 0.15,
@@ -80,7 +97,12 @@ exports.openView = function(view) {
 			top : height * 0.5,
 			left : width * 0.2
 		});
-		i=i+1;
+		
+		i++;
+		if(i >= totaltemImage){
+			i = 0;
+		}
+		
 		item_list_view[2] = Titanium.UI.createView({
 			backgroundImage : item_image[i],
 			width : width * 0.15,
@@ -88,7 +110,12 @@ exports.openView = function(view) {
 			top : height * 0.5,
 			left : width * 0.40
 		});
-		i=i+1;
+		
+		i++;
+		if(i >= totaltemImage){
+			i = 0;
+		}
+		
 		item_list_view[3] = Titanium.UI.createView({
 			backgroundImage : item_image[i],
 			width : width * 0.15,
@@ -103,8 +130,13 @@ exports.openView = function(view) {
 	
 	}
 	
-	itemList(0);	
-	//ボタンの設置
+	
+	ItemList(leftItem);	
+	
+	//
+	//左右ボタンの設置
+	//
+	
 	var left_button = Titanium.UI.createButton({
 		backgroundImage : '/images/tmp/Left.png',
 		width : width * 0.07,
@@ -113,7 +145,15 @@ exports.openView = function(view) {
 		left : width * 0.55
 	});
 	left_button.addEventListener('click',function(e){
-		alert('left');
+		for(i=0;i<=3;i++){
+			old_paper.remove(item_list_view[i]);
+		}
+		leftItem = leftItem - 1;
+		if(leftItem < 0){
+			leftItem = totalItemImage - 1;
+		}
+		ItemList(leftItem);
+		alert(leftItem);
 	})
 	
 	var right_button = Titanium.UI.createButton({
@@ -124,8 +164,17 @@ exports.openView = function(view) {
 		left : width * 0.65
 	});
 	right_button.addEventListener('click',function(e){
-		alert('right');
+		for(i=0;i<=3;i++){
+			old_paper.remove(item_list_view[i]);
+		}
+		leftItem = leftItem + 1;
+		if(leftItem>=totaltemImage){
+			leftItem = 0;
+		}
+		ItemList(leftItem);
+		alert(leftItem);
 	})
+	
 	old_paper.add(left_button);
 	old_paper.add(right_button);
 
