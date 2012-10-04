@@ -192,6 +192,15 @@ exports.openView = function(view) {
 	tmp_closeButton.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
+		
+		require('/DB/ItemDB').AddItems('テストアイテム','ldjghterihgosjd49036808sdf',require('/itemGood/json').toString({
+			money:100,
+			crops:150
+		}));
+		
+		delete back_temp_view;
+		delete old_paper;
+		
 	});
 
 	old_paper.add(tmp_closeButton);

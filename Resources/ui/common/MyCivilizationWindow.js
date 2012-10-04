@@ -17,12 +17,13 @@ exports.openCivilView = function() {
 		
 		exitOnClose : false,
 		fullscreen : true,
+		navBarHidden: true, //タイトルバーを隠す
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
 	
 	var house_image = Titanium.UI.createImageView({
 		image : '/images/civ/ancient/house/house1.png',
-		width : 'auto',
+		width : width * 0.4,
 		height : 'auto',
 		center : {
 			x : width * 0.3,

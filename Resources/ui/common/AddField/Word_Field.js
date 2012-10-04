@@ -10,7 +10,7 @@ function ThreeChoiceView() {
 
 	
 	var view = Titanium.UI.createView({
-		backgroundImage:'/images/background/back_lightblue.png',
+		backgroundImage:'/images/transparent.png',
 		height:height *0.3,
 		width:Titanium.UI.FILL,
 		top:height*0.27

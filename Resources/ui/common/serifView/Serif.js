@@ -44,7 +44,7 @@ exports.openView = function(view){
 		
 		helloView.addEventListener('click',function(e){
 			view.remove(helloView);
-			helloView = null;
+			delete helloView;  
 		});
 		
 		helloView.animate({top:height * 0.55,duration:500},function(e){

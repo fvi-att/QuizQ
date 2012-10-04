@@ -20,12 +20,22 @@ exports.getBookMark = function() {
 	}
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a3a88f364ef27ede0c22f6c3a54fb24f724b746f
 exports.CreateTable = function() {
 	try {
 		sql.execute('CREATE TABLE IF NOT EXISTS BOOKMARK(_ID INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT,BOOK_ID TEXT NOT NULL ,TITLE TEXT,TYPE TEXT NOT NULL)');
 
 		sql.execute('CREATE TABLE IF NOT EXISTS CIVSTATUS(_ID INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT,NAME TEXT NOT NULL ,STATUS TEXT,POSITION TEXT NOT NULL)');
+<<<<<<< HEAD
 
+=======
+		
+		sql.execute('CREATE TABLE IF NOT EXISTS ITEMS(_ID INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT,NAME TEXT NOT NULL,ITEM_ID TEXT NOT NULL,STATUS TEXT)');
+		
+>>>>>>> a3a88f364ef27ede0c22f6c3a54fb24f724b746f
 		return true;
 	} catch(err) {
 		Titanium.API.info('ERR::Database::'+JSON.stringify(err));
