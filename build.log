@@ -1,10 +1,16 @@
 Logfile initialized
+<<<<<<< HEAD
 [INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build.log
 [DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\builder.py install xicolo    QuizQ C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.app 2
+=======
+[INFO] logfile = C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build.log
+[DEBUG] C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\builder.py install xicolo    QuizQ C:\Program Files (x86)\Android\android-sdk\tools C:\Users\ety\My Documents\WorkPlace\QuizQ-1 com.xicolo.app 4
+>>>>>>> 415af42b026754b1fef64a9e95f18d403300a993
 [INFO] Titanium SDK version: 2.1.2 (08/24/12 14:46 ed7f777)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.060000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
@@ -44,6 +50,244 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\app-unsigned.apk
+=======
+[DEBUG] waited 0.025000 seconds on emulator to get ready
+[DEBUG] com.xicolo.app installed? False
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ACS\CreateUserACS.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ACS\CreateUserACS.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ACS\LoginACS.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ACS\LoginACS.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ACS\LogoutACS.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ACS\LogoutACS.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ACS\Quiz.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ACS\Quiz.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ACS\UpLoadQuiz.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ACS\UpLoadQuiz.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\appicon.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\appicon.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\default.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\default.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\app.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\app.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\appico.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\appico.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\counter\counter.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\counter\counter.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\DB\ItemDB.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\DB\ItemDB.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\DB\SQL.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\DB\SQL.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\And\And.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\And\And.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\And\And_Pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\And\And_Pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\And\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\And\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\And\button_pressed => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\And\button_pressed
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\And\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\And\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\background\background.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\background\background.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\background\back_green.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\background\back_green.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\background\back_lightblue.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\background\back_lightblue.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\background\back_white.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\background\back_white.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\background\cork.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\background\cork.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\background\note.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\background\note.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\background\open_background.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\background\open_background.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\board\board.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\board\board.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\add\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\add\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\add\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\add\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\And\And(1).png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\And\And(1).png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\And\And_Pressed(1).png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\And\And_Pressed(1).png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\And\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\And\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\And\button_pressed => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\And\button_pressed
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\And\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\And\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\construction\construction.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\construction\construction.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\give\give.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\give\give.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\good\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\good\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\good\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\good\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\good\good.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\good\good.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\good\good_added.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\good\good_added.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\good\good_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\good\good_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\invest\investment.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\invest\investment.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\later\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\later\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\later\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\later\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\OK\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\OK\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\OK\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\OK\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\OK\button_pressed1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\OK\button_pressed1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\OK\trans\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\OK\trans\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\OK\trans\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\OK\trans\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\OK_button2_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\OK_button2_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\OK_button_2.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\OK_button_2.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\share\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\share\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\share\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\share\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\try\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\try\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\try\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\try\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\tweet\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\tweet\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\button\tweet\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\button\tweet\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\cancel\cancel.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\cancel\cancel.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\back\background.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\back\background.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\back\background_night.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\back\background_night.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\house\house1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\house\house1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\item\fire.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\item\fire.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\man\man0.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\man\man0.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\man\man10.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\man\man10.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\man\man11.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\man\man11.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\ancient\man\man12.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\ancient\man\man12.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\bar\underbar1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\bar\underbar1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\bar\underbar2.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\bar\underbar2.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\cupcell\cupcell.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\cupcell\cupcell.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\cupcell\cupcell_open.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\cupcell\cupcell_open.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\food\apple.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\food\apple.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\food\grape.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\food\grape.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\religion\flask\flask.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\religion\flask\flask.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\civ\religion\FSL\FSL.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\civ\religion\FSL\FSL.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\FirstIntro\arrow.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\FirstIntro\arrow.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\FirstIntro\slide.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\FirstIntro\slide.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\FirstIntro\xicolo.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\FirstIntro\xicolo.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\dark_gears.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\dark_gears.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\dark_link.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\dark_link.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\dark_thumb-up.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\dark_thumb-up.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\light_gears.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\light_gears.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\light_pegman.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\light_pegman.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\light_pictures.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\light_pictures.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\pallet_default.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\pallet_default.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\pallet_default_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\pallet_default_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\plus1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\plus1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\icon\time1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\icon\time1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\MenuTab\menu1_1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\MenuTab\menu1_1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\MenuTab\menu2_1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\MenuTab\menu2_1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\MenuTab\menu3_1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\MenuTab\menu3_1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\MenuTab\menuTab1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\MenuTab\menuTab1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\MenuTab\menuTab2.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\MenuTab\menuTab2.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\MenuTab\menuTab3.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\MenuTab\menuTab3.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\note.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\note.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\0.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\0.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\1.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\1.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\2.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\2.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\3.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\3.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\4.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\4.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\5.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\5.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\6.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\6.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\7.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\7.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\8.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\8.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\9.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\9.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\Plate.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\Plate.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\slash.PNG => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\slash.PNG
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\number\slash1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\number\slash1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\opening\old_paper.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\opening\old_paper.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\postit\backpost.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\postit\backpost.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\postit\blue_post1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\postit\blue_post1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\postit\green_post1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\postit\green_post1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\postit\purple_post2.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\postit\purple_post2.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\postit\red_post1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\postit\red_post1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\postit\yellow_post1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\postit\yellow_post1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\result\circle.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\result\circle.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\result\circle2.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\result\circle2.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\result\clear1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\result\clear1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\result\cross.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\result\cross.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\result\cross2.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\result\cross2.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\result\resultImage1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\result\resultImage1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\sample\freedom.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\sample\freedom.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\sample\spl_chokin.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\sample\spl_chokin.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\sample\spl_idea.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\sample\spl_idea.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\sample\spl_manzai.jpg => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\sample\spl_manzai.jpg
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\serif\serif.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\serif\serif.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\add\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\add\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\add\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\add\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\And\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\And\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\And\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\And\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\good\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\good\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\good\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\good\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\good\good_added.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\good\good_added.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\OK\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\OK\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\OK\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\OK\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\OK_button2_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\OK_button2_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\OK_button_2.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\OK_button_2.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\try\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\try\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\try\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\try\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\tweet\button.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\tweet\button.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\share\tweet\button_pressed.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\share\tweet\button_pressed.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\Table\arrowDown1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\Table\arrowDown1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\Table\arrowUp1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\Table\arrowUp1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\Table\complete_stamp.gif => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\Table\complete_stamp.gif
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\Table\favorite_1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\Table\favorite_1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\Table\section1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\Table\section1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\Table\section_1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\Table\section_1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\tag\hash_1.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\tag\hash_1.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\tmp\Left.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\tmp\Left.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\tmp\right.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\tmp\right.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\images\transparent.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\images\transparent.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\itemGood\json.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\itemGood\json.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\KS_nav_ui.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\KS_nav_ui.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\KS_nav_views.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\KS_nav_views.png
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\Quiz\Quiz2BookMark.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\Quiz\Quiz2BookMark.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\Quiz\QuizStarter.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\Quiz\QuizStarter.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\Quiz\SaveQuiz2BookMark.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\Quiz\SaveQuiz2BookMark.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\Serif\Serif.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\Serif\Serif.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\AddField\Selectjunel.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\AddField\Selectjunel.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\AddField\Three_Choice_Field.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\AddField\Three_Choice_Field.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\AddField\TypePicker.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\AddField\TypePicker.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\AddField\Word_Field.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\AddField\Word_Field.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\AddProject.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\AddProject.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\button\button.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\button\button.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\CivBoard\Board.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\CivBoard\Board.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\CollectionTable\ProjectTableRow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\CollectionTable\ProjectTableRow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\ConfigWin.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\ConfigWin.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\CreateUserView.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\CreateUserView.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\FirstView.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\FirstView.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\first_intro\first_introView.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\first_intro\first_introView.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\imageFrame\MenuProjectFrame.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\imageFrame\MenuProjectFrame.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\MatomeView.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\MatomeView.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\MenuIcon.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\MenuIcon.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\menuTab\MenuTab.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\menuTab\MenuTab.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\menuTab\ScrollPage.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\menuTab\ScrollPage.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\MyCivilizationWindow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\MyCivilizationWindow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\Opening\OpeningWindow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\Opening\OpeningWindow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\PointFrame.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\PointFrame.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\ProjectListView.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\ProjectListView.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\ProjectTableRow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\ProjectTableRow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\ProjectTableView\InstructionWin.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\ProjectTableView\InstructionWin.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\ProjectTableView\IntroWin.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\ProjectTableView\IntroWin.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\ProjectTableView\IntroWinStarter.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\ProjectTableView\IntroWinStarter.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\quiz\ChildResultTableRow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\quiz\ChildResultTableRow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\quiz\QuizWin.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\quiz\QuizWin.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\ResultQuizView.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\ResultQuizView.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\SelectBoard\SelectBoard.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\SelectBoard\SelectBoard.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\SelectBoard\selectItems.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\SelectBoard\selectItems.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\serifView\Serif.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\serifView\Serif.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\TopView.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\TopView.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\common\underbar\underbar.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\common\underbar\underbar.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\handheld\android\ApplicationWindow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\handheld\android\ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\handheld\ApplicationWindow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\handheld\ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\ui\tablet\ApplicationWindow.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\ui\tablet\ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\util\getbackPathWithTime.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\util\getbackPathWithTime.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\util\random.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\util\random.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\util\setProperty.js => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\util\setProperty.js
+[TRACE] COPYING CREATED FILE: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\xicolo.png => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\xicolo.png
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] app stylesheet => C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\gen\com\xicolo\app\ApplicationStylesheet.java
+[DEBUG] copying app icon: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\appico.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-long-land-hdpi\background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-long-land-ldpi\background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-long-port-hdpi\background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-long-port-ldpi\background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-notlong-land-hdpi\background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-notlong-land-ldpi\background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-notlong-land-mdpi\background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-notlong-port-hdpi\background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-notlong-port-ldpi\background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] copying C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\res\drawable-notlong-port-mdpi\background.png
+[DEBUG] found splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\assets\Resources\default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\gen\com\xicolo\app\ApplicationStylesheet.java to javac build list
+[DEBUG] adding C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\gen\com\xicolo\app\R.java to javac build list
+[DEBUG] adding C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\gen\com\xicolo\app\XicoloQuizqActivity.java to javac build list
+[DEBUG] adding C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\gen\com\xicolo\app\XicoloQuizqAppInfo.java to javac build list
+[DEBUG] adding C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\gen\com\xicolo\app\XicoloQuizqApplication.java to javac build list
+[DEBUG] Building Java Sources: "C:\\Users\\ety\\My Documents\\WorkPlace\\QuizQ-1\\build\\android\\gen\\com\\xicolo\\app\\ApplicationStylesheet.java" "C:\\Users\\ety\\My Documents\\WorkPlace\\QuizQ-1\\build\\android\\gen\\com\\xicolo\\app\\R.java" "C:\\Users\\ety\\My Documents\\WorkPlace\\QuizQ-1\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqActivity.java" "C:\\Users\\ety\\My Documents\\WorkPlace\\QuizQ-1\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqAppInfo.java" "C:\\Users\\ety\\My Documents\\WorkPlace\\QuizQ-1\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqApplication.java"
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\app-unsigned.apk
+>>>>>>> 415af42b026754b1fef64a9e95f18d403300a993
 [DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
@@ -124,6 +368,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/civ/ancient/man/man11.png
 [DEBUG] from resource zip => assets/Resources/images/civ/ancient/man/man12.png
 [DEBUG] from resource zip => assets/Resources/images/civ/bar/underbar1.png
+[DEBUG] from resource zip => assets/Resources/images/civ/bar/underbar2.PNG
 [DEBUG] from resource zip => assets/Resources/images/civ/cupcell/cupcell.png
 [DEBUG] from resource zip => assets/Resources/images/civ/cupcell/cupcell_open.png
 [DEBUG] from resource zip => assets/Resources/images/civ/food/apple.png
@@ -258,6 +503,7 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+<<<<<<< HEAD
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
@@ -279,10 +525,37 @@ Logfile initialized
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+=======
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+>>>>>>> 415af42b026754b1fef64a9e95f18d403300a993
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.060000 seconds on emulator to get ready
+=======
+[DEBUG] waited 0.025000 seconds on emulator to get ready
+>>>>>>> 415af42b026754b1fef64a9e95f18d403300a993
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

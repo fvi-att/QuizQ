@@ -96,7 +96,7 @@ function ResultView(download,result_arr,fromwin){
 
 		view.add(p_image);
 	}
-<<<<<<< HEAD
+
 	*/
 
 	var result_tableView = Titanium.UI.createTableView({
