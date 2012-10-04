@@ -1,6 +1,140 @@
-exports.CreateUserWin=function(){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;var b=Titanium.UI.createWindow({title:"\u3088\u3046\u3053\u305d\u3000xicolo Quiz\u3078",backgroundImage:"/images/background/note.jpg",exitOnClose:!1,fullscreen:!1,orientationModes:[Titanium.UI.PORTRAIT]}),a=Titanium.UI.createScrollView({width:Titanium.UI.FILL,height:Titanium.UI.FILL,contentHeight:height*2,contentWidth:width,top:0,backgroundDisabledImage:"/images/background/note.jpg"});
-b.add(a);var g=Titanium.UI.createLabel({text:"xicolo Quiz\u3078\u3088\u3046\u3053\u305d\uff01\n\u307e\u305a\u306f\u3058\u3081\u306b\u30e1\u30f3\u30d0\u30fc\u306e\u767b\u9332\u3092\u884c\u3044\u307e\u3059\u3002\n\u767b\u9332\u306f\u3042\u3068\u304b\u3089\u3067\u3082\u884c\u3048\u307e\u3059\u3002",textAlign:"center",color:"black",top:height*0.05});a.add(g);var d=Titanium.UI.createTextField({hintText:"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\uff1aexample@abc.com",textAlign:"left",width:Titanium.UI.FILL,
-height:height*0.1,top:height*0.2});a.add(d);var c=Titanium.UI.createTextField({hintText:"\u30e6\u30fc\u30b6\u30fcID:(\u4f8b) tom cat123",textAlign:"left",width:Titanium.UI.FILL,height:height*0.1,top:height*0.3});a.add(c);var e=Titanium.UI.createTextField({hintText:"\u30d1\u30b9\u30ef\u30fc\u30c9",textAlign:"left",width:Titanium.UI.FILL,height:height*0.1,top:height*0.4});a.add(e);var f=Titanium.UI.createTextField({hintText:"\u30d1\u30b9\u30ef\u30fc\u30c9\u78ba\u8a8d\u7528",textAlign:"left",width:Titanium.UI.FILL,
-height:height*0.1,top:height*0.5});a.add(f);a=(new require("/ui/common/button/button"))("later");a.setTop(height*0.75);a.setWidth(width*0.51);a.setHeight(width*0.17);a.setLeft(width*0.01);b.add(a);a.addEventListener("click",function(){b.close()});a=(new require("/ui/common/button/button"))("ok");a.setTop(height*0.75);a.setWidth(width*0.51);a.setHeight(width*0.17);a.setLeft(width*0.5);b.add(a);a.addEventListener("click",function(){e.value!=f.value?alert("\u30d1\u30b9\u30ef\u30fc\u30c9\u3068\u78ba\u8a8d\u7528\u30d1\u30b9\u30ef\u30fc\u30c9\u304c\u7570\u306a\u308a\u307e\u3059\u3002"):
-d.value.match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)?c.value==""?alert("\u30e6\u30fc\u30b6\u30fc\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"):(require("/ACS/LogoutACS").LogoutACS(),require("/ACS/CreateUserACS").CreateUserACS(d.value,c.value,e.value,f.value)):alert("\u6b63\u3057\u3044\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002\n\u3082\u3046\u4e00\u5ea6\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044")});
-Titanium.App.addEventListener("createdUser",function(a){Titanium.App.Properties.setString("user_name",c.value);(a.command="createuserview")&&b.close()});b.open()};
+/**
+ * @author fvi
+ *
+ * created @ 2012 08 16
+ */
+
+exports.CreateUserWin = function() {
+
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+	var win = Titanium.UI.createWindow({
+		title : 'ようこそ　xicolo Quizへ',
+		backgroundImage : '/images/background/note.jpg',
+		exitOnClose : false,
+		fullscreen : false,
+		orientationModes : [Titanium.UI.PORTRAIT],
+	});
+	
+	var scrollView = Titanium.UI.createScrollView({
+		width:Titanium.UI.FILL,
+		height:Titanium.UI.FILL,
+		contentHeight:height*2,
+		contentWidth:width,
+		top:0,
+		backgroundDisabledImage:'/images/background/note.jpg'
+	});
+	win.add(scrollView);
+
+	var introLabel = Titanium.UI.createLabel({
+		
+		text : 'xicolo Quizへようこそ！\nまずはじめにメンバーの登録を行います。\n登録はあとからでも行えます。',
+		textAlign : 'center',
+		color:'black',
+		top : height * 0.05
+	});
+		scrollView.add(introLabel);
+		
+		
+	var mail = Titanium.UI.createTextField({
+		hintText:'メールアドレス：example@abc.com',
+		textAlign:'left',
+		width:Titanium.UI.FILL,
+		height:height *0.1,
+		
+		top:height * 0.2
+	});
+	
+	scrollView.add(mail);
+	
+	var name = Titanium.UI.createTextField({
+		hintText:'ユーザーID:(例) tom cat123',
+		textAlign:'left',
+		width:Titanium.UI.FILL,
+		height:height *0.1,
+		
+		top:height * 0.3
+	});
+	
+	scrollView.add(name);
+
+	
+	var pw = Titanium.UI.createTextField({
+		hintText:'パスワード',
+		textAlign:'left',
+		width:Titanium.UI.FILL,
+		height:height *0.1,
+		
+		top:height * 0.4
+	});
+	
+	scrollView.add(pw);
+	
+		var pw2 = Titanium.UI.createTextField({
+		hintText:'パスワード確認用',
+		textAlign:'left',
+		width:Titanium.UI.FILL,
+		height:height *0.1,
+		
+		top:height * 0.5
+	});
+	
+	scrollView.add(pw2);
+
+	var later_button = new require('/ui/common/button/button')('later');
+	later_button.setTop(height * 0.75);
+	later_button.setWidth(width * 0.51);//アスペクト比は絶対！！
+	later_button.setHeight(width * 0.17);
+	later_button.setLeft(width *0.01);
+	
+	win.add(later_button);
+	
+	later_button.addEventListener('click',function(e){
+		win.close();
+	});
+	
+	
+
+	var button = new require('/ui/common/button/button')('ok');
+	
+	button.setTop(height * 0.75);
+	button.setWidth(width * 0.51);//アスペクト比は絶対！！
+	button.setHeight(width * 0.17);
+	button.setLeft(width * 0.50);
+	
+	win.add(button);
+
+	button.addEventListener('click', function(e) {
+		if(pw.value != pw2.value){
+			alert('パスワードと確認用パスワードが異なります。');
+			return;
+		}
+		
+		if(!mail.value.match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)){
+			alert("正しいメールアドレスではありません。\nもう一度入力してください");
+			return;
+		}
+		
+		if(name.value == '')	{
+			alert('ユーザー名を入力してください');
+			return;
+		}
+		
+		require('/ACS/LogoutACS').LogoutACS();
+		
+		require('/ACS/CreateUserACS').CreateUserACS(mail.value, name.value,pw.value, pw2.value);
+
+			
+	});
+	
+	Titanium.App.addEventListener('createdUser',function(e){
+		Titanium.App.Properties.setString('user_name',name.value);
+		
+		
+		if(e.command = 'createuserview')
+			win.close();
+	})
+
+	win.open();
+
+}
+

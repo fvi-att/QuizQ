@@ -33,7 +33,6 @@ public final class XicoloQuizqApplication extends TiApplication
 		appInfo = new XicoloQuizqAppInfo(this);
 		postAppInfo();
 
-		    KrollAssetHelper.setAssetCrypt(new AssetCryptImpl());
 
 
 		V8Runtime runtime = new V8Runtime();
@@ -56,5 +55,7 @@ public final class XicoloQuizqApplication extends TiApplication
 	@Override
 	public void verifyCustomModules(TiRootActivity rootActivity)
 	{
+		org.appcelerator.titanium.TiVerify verify = new org.appcelerator.titanium.TiVerify(rootActivity, this);
+		verify.verify();
 	}
 }

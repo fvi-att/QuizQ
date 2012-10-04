@@ -59,4 +59,4 @@
     <modules>
         <module platform="commonjs" version="2.1.0">ti.cloud</module>
     </modules>
-<property name="ti.deploytype">production</property></ti:app>
+<property name="ti.deploytype">test</property></ti:app>
