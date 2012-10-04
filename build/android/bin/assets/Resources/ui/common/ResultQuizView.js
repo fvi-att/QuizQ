@@ -96,14 +96,11 @@ function ResultView(download,result_arr,fromwin){
 
 		view.add(p_image);
 	}
-<<<<<<< HEAD
+
 	*/
 
 	var result_tableView = Titanium.UI.createTableView({
-<<<<<<< HEAD
-=======
 		backgroundImage:'/images/transparent.png',
->>>>>>> a3a88f364ef27ede0c22f6c3a54fb24f724b746f
 		showVerticalScrollIndicator:true,
 		top:height*0.25,
 		width:Titanium.UI.FILL,
@@ -139,10 +136,7 @@ function ResultView(download,result_arr,fromwin){
 	
 	button.addEventListener('click',function(e){
 		fromwin.close();
-<<<<<<< HEAD
-=======
 		delete fromwin;
->>>>>>> a3a88f364ef27ede0c22f6c3a54fb24f724b746f
 	});
 	
 	return view;
