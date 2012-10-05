@@ -1,0 +1,7 @@
+/**
+ * @author fvi@
+ * 
+ * created @ 20121005
+ * 
+ */
+//		sql.execute('CREATE TABLE IF NOT EXISTS CONFESS(_ID INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT,NAME TEXT NOT NULL,ID TEXT NOT NULL)');
