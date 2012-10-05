@@ -26,8 +26,8 @@ public final class XicoloQuizqAppInfo implements ITiAppInfo
 					properties.setString("acs-oauth-secret-development", "klortVoPmCdE6WtqQjJfGfZsijWSH9DT");
 					appProperties.setString("acs-oauth-secret-development", "klortVoPmCdE6WtqQjJfGfZsijWSH9DT");
 					
-					properties.setString("ti.deploytype", "test");
-					appProperties.setString("ti.deploytype", "test");
+					properties.setString("ti.deploytype", "production");
+					appProperties.setString("ti.deploytype", "production");
 					
 					properties.setString("ti.ui.defaultunit", "system");
 					appProperties.setString("ti.ui.defaultunit", "system");
