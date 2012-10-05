@@ -14,9 +14,14 @@ exports.InsertPost = function(ID,TITLE, MESSAGE) {
 		return false;
 	}
 }
-exports.getPost = function() {
+exports.getPost = function(where) {
 	try {
-		var result = sql.execute('SELECT * FROM CONFESS');
+		var result;
+		if(!where){
+			result = sql.execute('SELECT * FROM CONFESS');
+		}else{
+			result = sql.execute('SELECT * FROM CONFESS WHERE ID =?',where);
+		}
 
 		return result;
 	} catch(err) {
