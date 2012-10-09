@@ -1,1 +1,0 @@
-exports.Query=function(){require("ti.cloud").Objects.query({classname:"Quiz",where:{junelNum:9999}},function(a){if(a.success)return{quizs:a,length:a.Quiz.length};else alert("Error:\\n"+(a.error&&a.message||JSON.stringify(a)))})};

@@ -1,2 +1,0 @@
-Ti.version<1.8&&alert("Sorry - this application template requires Titanium Mobile SDK 1.8 or later");
-(function(){require("/DB/SQL").CreateTable();require("/util/setProperty").setProperty();var a=Ti.Platform.osname,b=Ti.Platform.displayCaps.platformHeight,c=Ti.Platform.displayCaps.platformWidth;(new (a==="ipad"||a==="android"&&(c>899||b>899)?require("ui/tablet/ApplicationWindow"):a==="android"?require("ui/handheld/android/ApplicationWindow"):require("ui/handheld/ApplicationWindow"))).open({fullscreen:!0});require("/ui/common/Opening/OpeningWindow").openWindow()})();

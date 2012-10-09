@@ -43,8 +43,8 @@ exports.createBar = function(fromView) {
 
 	var invest_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/invest/investment.png',
-		height : height * 0.1,
-		width : width * 0.3,
+		height : height * 0.12,
+		width : width * 0.4,
 
 		center : {
 			x : width * 0.3,
@@ -69,8 +69,8 @@ exports.createBar = function(fromView) {
 
 	var item_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/give/give.png',
-		height : height * 0.1,
-		width : width * 0.3,
+		height : height * 0.12,
+		width : width * 0.4,
 		center : {
 			x : width * 0.7,
 			y : height * 0.15
@@ -85,9 +85,9 @@ exports.createBar = function(fromView) {
 	});
 
 	var quizFavorite = Titanium.UI.createButton({
-		backgroundImage : '/images/button/construction/construction.png',
-		height : height * 0.1,
-		width : width * 0.3,
+		backgroundImage : '/images/button/secret_tweet/tweet1.png',
+		height : height * 0.12,
+		width : width * 0.4,
 		center : {
 			x : width * 0.3,
 			y : height * 0.35
@@ -98,14 +98,16 @@ exports.createBar = function(fromView) {
 
 	quizFavorite.addEventListener('click', function(e) {
 
-		require('/ui/common/AddProject').AddProject();
+		//require('/ui/common/AddProject').AddProject();
+		 require('/ui/common/AddConfess').AddProject();
+		 
 
 	});
 
 	var quiz_collection_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/construction/construction.png',
-		height : height * 0.1,
-		width : width * 0.3,
+		height : height * 0.12,
+		width : width * 0.4,
 		center : {
 			x : width * 0.7,
 			y : height * 0.35
