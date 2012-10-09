@@ -22,7 +22,7 @@
     <url>http://xicolo.com/wordpress</url>
     <description>iOS implemented</description>
     <copyright>2012 by xicolo</copyright>
-    <icon>appico.png</icon>
+    <icon>xicolo.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
@@ -44,7 +44,7 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest android:installLocation="auto">
+        <manifest android:installLocation="auto" android:versionCode="1" android:versionName="dev">
             <supports-screens android:anyDensity="false"/>
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
         </manifest>
