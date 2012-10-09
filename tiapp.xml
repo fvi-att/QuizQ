@@ -16,13 +16,13 @@
     </deployment-targets>
     <sdk-version>2.1.2.GA</sdk-version>
     <id>com.xicolo.app</id>
-    <name>xicolo    QuizQ</name>
+    <name>Secret</name>
     <version>0.5</version>
     <publisher>fvi@</publisher>
     <url>http://xicolo.com/wordpress</url>
     <description>iOS implemented</description>
     <copyright>2012 by xicolo</copyright>
-    <icon>xicolo.png</icon>
+    <icon>title1.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>

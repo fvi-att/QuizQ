@@ -1,2 +1,40 @@
-exports.LoginACS=function(c,d){var b=Titanium.UI.createActivityIndicator({bottom:10,height:100,width:100,message:"\u30ed\u30b0\u30a4\u30f3\u4e2d",font:{fontFamily:"Helvetica Neue",fontSize:15,fontWeight:"bold"}});b.show();require("ti.cloud").Users.login({login:c,password:d},function(a){a.success?(a=a.users[0],alert("\u30e6\u30fc\u30b6\u30fc\u540d\uff1a"+a.lastname+"\u3068\u3057\u3066\u30ed\u30b0\u30a4\u30f3\u3057\u307e\u3057\u305f"),Titanium.App.Properties.setString("user_name",a.username),Titanium.App.fireEvent("ReLogin")):
-alert("\u30e6\u30fc\u30b6\u30fc\u8a8d\u8a3c\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002\u3082\u3046\u4e00\u5ea6\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044");b.hide()})};
+/**
+ * @author fvi
+ * 
+ * created @ 2012 08 02
+ */
+
+exports.LoginACS = function(id,password){
+	  // Loginのサンプル
+	  	var actInd = Titanium.UI.createActivityIndicator({
+		bottom : 10,
+		height : 100,
+		width : 100,
+		message : 'ログイン中',
+		font:{fontFamily:'Helvetica Neue', fontSize:15,fontWeight:'bold'}
+		// style:Titanium.UI.iPhone.ActivityIndicatorStyle.PLAIN
+	});
+	
+	actInd.show();
+	  
+    var Cloud = require('ti.cloud');  
+      
+    Cloud.Users.login({
+        login:    id,
+        password: password
+    }, function (e) {
+        if (e.success) {
+            var user = e.users[0];
+            alert('ユーザー名：'+user.lastname+'としてログインしました');
+                
+                Titanium.App.Properties.setString('user_name',user.username);
+                
+                Titanium.App.fireEvent('ReLogin');
+                actInd.hide();
+        } else {
+           alert('ユーザー認証に失敗しました。もう一度入力してください')
+                actInd.hide();
+                
+        }
+        });
+}

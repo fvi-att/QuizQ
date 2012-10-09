@@ -1,2 +1,58 @@
-exports.UploadQuiz=function(b){var c=Titanium.UI.createActivityIndicator({bottom:10,height:100,width:100,message:"\u8ffd\u52a0\u4e2d\u30fb\u30fb\u30fb\u5c11\u3057\u304a\u5f85\u3061\u3092",font:{fontFamily:"Helvetica Neue",fontSize:15,fontWeight:"bold"}});c.show();require("ti.cloud").Objects.create({classname:"Quiz",fields:{ID:b.ID,type:b.type,text:b.text,junel:b.junel,Answer:b.Answer,junelNum:b.junelNum}},function(a){a.success?(alert("\u30af\u30a4\u30ba\u306e\u8ffd\u52a0\u304b\u5b8c\u4e86\u3057\u307e\u3057\u305f\uff01\u3000\u7279\u5178\u306b\uff11\uff10Q\u8ffd\u52a0\u3055\u308c\u307e\u3057\u305f"),
-c.hide(),Titanium.UI.createNotification({duration:3E3,message:"\u30af\u30a4\u30ba\u3092\u8ffd\u52a0\u3057\u305f\u306e\u3067\u300010Q\u304c\u8ffd\u52a0\u3055\u308c\u307e\u3057\u305f"}).show(),a=Titanium.App.Properties.getInt("point"),a<=0&&(a=0),a+=10,Titanium.App.Properties.setInt("point",a)):(c.hide(),alert("\u767b\u9332\u306b\u5931\u6557\u3057\u307e\u3057\u305f:\\n"+(a.error&&a.message||JSON.stringify(a))))})};
+/**
+ * @author fvi@
+ *
+ * created @ 2012 08/06
+ *
+ */
+
+exports.UploadQuiz = function(quiz) {
+	var actInd = Titanium.UI.createActivityIndicator({
+		bottom : 10,
+		height : 100,
+		width : 100,
+		message : '追加中・・・少しお待ちを',
+		font:{fontFamily:'Helvetica Neue', fontSize:15,fontWeight:'bold'}
+		// style:Titanium.UI.iPhone.ActivityIndicatorStyle.PLAIN
+	});
+
+	actInd.show();
+
+	var Cloud = require('ti.cloud');
+	Cloud.Objects.create({
+		classname : 'Quiz',
+		fields : {
+			ID : quiz.ID,
+			type : quiz.type,
+			text : quiz.text,
+			junel : quiz.junel,
+			Answer : quiz.Answer,
+			junelNum : quiz.junelNum
+		}
+	}, function(e) {
+		if (e.success) {
+			//alert('success:\\n' + 'Count: ' + e.Quiz.length + '\n' + 'ID:' + e.Quiz[0].id);
+			alert('クイズの追加か完了しました！　特典に１０Q追加されました');
+			actInd.hide();
+			
+			Titanium.UI.createNotification({
+			duration : 3000,
+			message : "クイズを追加したので　10Qが追加されました"
+		}).show();
+		
+		var rst = Titanium.App.Properties.getInt('point')
+
+		if (rst <= 0)
+			rst = 0;
+
+		//起動特典　一回あたり　１ポイント
+		rst += 10;
+
+		Titanium.App.Properties.setInt('point', rst);
+
+			
+		} else {
+			actInd.hide();
+			alert('登録に失敗しました:\\n' + ((e.error && e.message) || JSON.stringify(e)));
+		}
+	});
+}

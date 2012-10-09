@@ -1,7 +1,12 @@
 Logfile initialized
 [INFO] logfile = C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build.log
-[DEBUG] C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.2.GA\android\builder.py distribute xicolo    QuizQ C:\android-sdk\ C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ com.xicolo.app C:\Documents and Settings\nishi\デスクトップ\xicoloConfessProvision javasukidesukab0801230 confess C:\Documents and Settings\nishi\デスクトップ 7
+[DEBUG] C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.2.GA\android\builder.py install Secret C:\android-sdk\ C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ com.xicolo.app 7
 [INFO] Titanium SDK version: 2.1.2 (08/24/12 14:46 ed7f777)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.046000 seconds on emulator to get ready
+[DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
@@ -164,6 +169,7 @@ Logfile initialized
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Quiz\QuizStarter.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Quiz\QuizStarter.js
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Quiz\SaveQuiz2BookMark.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Quiz\SaveQuiz2BookMark.js
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Serif\Serif.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Serif\Serif.js
+[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\title1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddField\Selectjunel.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddField\Selectjunel.js
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddField\Three_Choice_Field.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddField\Three_Choice_Field.js
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddField\TypePicker.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddField\TypePicker.js
@@ -203,11 +209,10 @@ Logfile initialized
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\util\getbackPathWithTime.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\util\getbackPathWithTime.js
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\util\random.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\util\random.js
 [TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\util\setProperty.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\util\setProperty.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\xicolo.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\xicolo.png
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] app stylesheet => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\ApplicationStylesheet.java
-[DEBUG] copying app icon: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\appico.png
+[DEBUG] copying app icon: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
 [DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png
 [DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-land-hdpi\background.png
@@ -232,15 +237,30 @@ Logfile initialized
 [DEBUG] found splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\default.png
 [TRACE] Writing out AndroidManifest.xml
 [DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\ApplicationStylesheet.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\AssetCryptImpl.java to javac build list
 [DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\R.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqActivity.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqAppInfo.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\XicoloQuizqApplication.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\ApplicationStylesheet.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\AssetCryptImpl.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\R.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqActivity.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqAppInfo.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\XicoloQuizqApplication.java"
+[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\SecretActivity.java to javac build list
+[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\SecretAppInfo.java to javac build list
+[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\app\SecretApplication.java to javac build list
+[DEBUG] Building Java Sources: "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\ApplicationStylesheet.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\R.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\SecretActivity.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\SecretAppInfo.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\app\\SecretApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/CreatePost.js
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/CreateUser.js
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/RemovePost.js
+[DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/Quiz.js
+[DEBUG] from resource zip => assets/Resources/ACS/UpLoadQuiz.js
+[DEBUG] from resource zip => assets/Resources/DB/ConfessDB.js
+[DEBUG] from resource zip => assets/Resources/DB/ItemDB.js
+[DEBUG] from resource zip => assets/Resources/DB/SQL.js
+[DEBUG] from resource zip => assets/Resources/Quiz/Quiz2BookMark.js
+[DEBUG] from resource zip => assets/Resources/Quiz/QuizStarter.js
+[DEBUG] from resource zip => assets/Resources/Quiz/SaveQuiz2BookMark.js
+[DEBUG] from resource zip => assets/Resources/Serif/Serif.js
+[DEBUG] from resource zip => assets/Resources/counter/counter.js
 [DEBUG] from resource zip => assets/Resources/images/And/And.png
 [DEBUG] from resource zip => assets/Resources/images/And/And_Pressed.png
 [DEBUG] from resource zip => assets/Resources/images/And/button.png
@@ -377,12 +397,54 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/tmp/right.png
 [DEBUG] from resource zip => assets/Resources/images/note.jpg
 [DEBUG] from resource zip => assets/Resources/images/transparent.png
+[DEBUG] from resource zip => assets/Resources/itemGood/json.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Selectjunel.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Three_Choice_Field.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/TypePicker.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Word_Field.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CollectionTable/ProjectTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/InstructionWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWinStarter.js
+[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/SelectBoard.js
+[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/selectItems.js
+[DEBUG] from resource zip => assets/Resources/ui/common/button/button.js
+[DEBUG] from resource zip => assets/Resources/ui/common/first_intro/first_introView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/imageFrame/MenuProjectFrame.js
+[DEBUG] from resource zip => assets/Resources/ui/common/menuTab/MenuTab.js
+[DEBUG] from resource zip => assets/Resources/ui/common/menuTab/ScrollPage.js
+[DEBUG] from resource zip => assets/Resources/ui/common/quiz/ChildResultTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/quiz/QuizWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/serifView/Serif.js
+[DEBUG] from resource zip => assets/Resources/ui/common/underbar/underbar.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddProject.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfigWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CreateUserView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/FirstView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MatomeView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MenuIcon.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MyCivilizationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/PointFrame.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectListView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ResultQuizView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/TopView.js
+[DEBUG] from resource zip => assets/Resources/ui/handheld/android/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/handheld/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/util/getbackPathWithTime.js
+[DEBUG] from resource zip => assets/Resources/util/random.js
+[DEBUG] from resource zip => assets/Resources/util/setProperty.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
+[DEBUG] from resource zip => assets/Resources/app.js
 [DEBUG] from resource zip => assets/Resources/appico.png
 [DEBUG] from resource zip => assets/Resources/appicon.png
 [DEBUG] from resource zip => assets/Resources/default.png
-[DEBUG] from resource zip => assets/Resources/xicolo.png
+[DEBUG] from resource zip => assets/Resources/ti.cloud.js
+[DEBUG] from resource zip => assets/Resources/title1.png
 [DEBUG] from resource zip => assets/app.json
 [DEBUG] from resource zip => assets/index.json
 [DEBUG] from resource zip => assets/tiapp.xml
@@ -423,3 +485,9 @@ Logfile initialized
 [DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
 [DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
 [DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.062000 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Application installed. Launch from drawer on Home Screen

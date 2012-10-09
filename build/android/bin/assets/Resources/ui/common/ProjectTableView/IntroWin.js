@@ -1,4 +1,128 @@
-exports.createIntroduction=function(e,c){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;var d=Titanium.UI.createWindow({title:"\u30af\u30a4\u30ba\u30da\u30c7\u30a3\u30a2:ID::"+e,backgroundImage:"/images/opening/old_paper.jpg",exitOnClose:!1,fullscreen:!1}),a=Titanium.UI.createTableView({data:[],width:Titanium.UI.FILL,height:height*0.7,top:height*0.05,showVerticalScrollIndicator:!0});a.appendRow(Ti.UI.createTableViewRow({title:"\u30af\u30a4\u30ba\u6587\n"+
-c.text,color:"black",height:height*0.2,width:Titanium.UI.FILL}));var b="";switch(c.type){case 1:b="\u3078\u3047\u3000\u8c46\u77e5\u8b58\u554f\u984c";break;case 2:b="\uff12\u629e\u554f\u984c";break;case 3:b="\uff13\u629e\u554f\u984c";break;case 4:b="\u30a2\u30f3\u30b1\u30fc\u30c8\u5f62\u5f0f\u554f\u984c";break;case 5:b="\u5358\u8a9e\u5f62\u5f0f\u554f\u984c";break;default:b="\u307e\u3060\u3000\u6307\u5b9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093"}a.appendRow(Ti.UI.createTableViewRow({title:"\u30af\u30a4\u30ba\u5f62\u5f0f\n"+
-b,color:"black",height:height*0.1,width:Titanium.UI.FILL}));a.appendRow(Ti.UI.createTableViewRow({title:"\u9078\u629e\u80a2\n"+JSON.stringify(c.Answer),color:"black",height:height*0.2,width:Titanium.UI.FILL}));a.appendRow(Ti.UI.createTableViewRow({title:"\u6b63\u89e3\n"+c.Answer.text,color:"black",height:height*0.1,width:Titanium.UI.FILL}));b="";(b=c.comment)||(b="\u307e\u3060\u3053\u306e\u30af\u30a4\u30ba\u306b\u306f\u8c46\u77e5\u8b58\u304c\u8ffd\u52a0\u3055\u308c\u3066\u3044\u306a\u3044\u3088\u3046\u3067\u3059\u3002\n\u8c46\u77e5\u8b58\u306f\u8ab0\u3082\u304c\u66f8\u304d\u8fbc\u3081\u307e\u3059\u3002\n\u77e5\u3063\u3066\u3044\u308b\u8c46\u77e5\u8b58\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044\uff01");
-a.appendRow(Ti.UI.createTableViewRow({title:"\u8c46\u77e5\u8b58\n"+b,color:"black",height:height*0.3,width:Titanium.UI.FILL}));d.add(a);a=(new require("/ui/common/button/button"))("share");a.setTop(height*0.8);a.setWidth(width*0.51);a.setHeight(width*0.17);a.setLeft(width*0.01);d.add(a);a=(new require("/ui/common/button/button"))("ok");a.setTop(height*0.8);a.setWidth(width*0.51);a.setHeight(width*0.17);a.setLeft(width*0.5);d.add(a);a.addEventListener("click",function(){d.close()});d.open()};
+/*
+ * created @ 2012 08 18
+ * 
+ * created by fvi@
+ * 
+ */
+
+
+exports.createIntroduction = function(quizID,download){
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+
+	var discribe_window = Titanium.UI.createWindow({
+
+		title : 'クイズペディア:ID::'+quizID,
+		backgroundImage : '/images/opening/old_paper.jpg',
+
+		exitOnClose : false,
+		fullscreen : false
+	});
+
+	var rows =[];
+	var tableView = Titanium.UI.createTableView({
+		data : rows,
+		width : Titanium.UI.FILL,
+		height : height * 0.7,
+		top : height * 0.05,
+		showVerticalScrollIndicator:true
+
+	});
+	
+	tableView.appendRow(Ti.UI.createTableViewRow({
+		title:'クイズ文\n'+download.text,
+		color:'black',
+		height:height *0.2,
+		width:Titanium.UI.FILL
+	}));
+	var quiz_type = '';
+	
+	switch(download.type){
+		case 1:
+			quiz_type = 'へぇ　豆知識問題';
+			break;
+		
+		case 2:
+			quiz_type = '２択問題';
+			break;
+		
+		case 3:
+			quiz_type = '３択問題';
+			break;
+		
+		case 4:
+			quiz_type ='アンケート形式問題';
+			break;
+		
+		case 5:
+			quiz_type = '単語形式問題';
+			break;
+			
+		default :
+			quiz_type ='まだ　指定されていません';
+		
+	}
+	tableView.appendRow(Ti.UI.createTableViewRow({
+		title:'クイズ形式\n'+quiz_type,
+		color:'black',
+		height:height *0.1,
+		width:Titanium.UI.FILL
+	}));
+	
+	tableView.appendRow(Ti.UI.createTableViewRow({
+		title:'選択肢\n'+JSON.stringify(download.Answer),
+		color:'black',
+		height:height *0.2,
+		width:Titanium.UI.FILL
+	}));
+	tableView.appendRow(Ti.UI.createTableViewRow({
+		title:'正解\n'+download.Answer.text,
+		color:'black',
+		height:height *0.1,
+		width:Titanium.UI.FILL
+	}));
+	
+	var comment ='';
+	 	comment = download.comment;
+	 	
+	 	
+	if(!download.comment)
+		comment = 'まだこのクイズには豆知識が追加されていないようです。\n豆知識は誰もが書き込めます。\n知っている豆知識を教えてください！'
+		
+		
+	tableView.appendRow(Ti.UI.createTableViewRow({
+		title:'豆知識\n'+comment,
+		color:'black',
+		height:height *0.3,
+		width:Titanium.UI.FILL
+	}));
+	
+	discribe_window.add(tableView);
+	
+	var share_button = new require('/ui/common/button/button')('share');
+
+	share_button.setTop(height * 0.8);
+	share_button.setWidth(width * 0.51);//アスペクト比は絶対！！
+	share_button.setHeight(width * 0.17);
+	share_button.setLeft(width *0.01);
+	
+
+	
+	discribe_window.add(share_button);
+	
+	var ok_button = new require('/ui/common/button/button')('ok');
+
+	ok_button.setTop(height * 0.8);
+	ok_button.setWidth(width * 0.51);//アスペクト比は絶対！！
+	ok_button.setHeight(width * 0.17);
+	ok_button.setLeft(width * 0.50);
+	discribe_window.add(ok_button);
+	
+	ok_button.addEventListener('click',function(e){
+		discribe_window.close();
+	});
+	
+	discribe_window.open();
+
+
+
+}
