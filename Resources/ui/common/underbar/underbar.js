@@ -98,7 +98,9 @@ exports.createBar = function(fromView) {
 
 	quizFavorite.addEventListener('click', function(e) {
 
-		require('/ui/common/AddProject').AddProject();
+		//require('/ui/common/AddProject').AddProject();
+		 require('/ui/common/AddConfess').AddProject();
+		 
 
 	});
 
