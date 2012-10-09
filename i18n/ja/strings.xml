@@ -26,7 +26,24 @@
 								</string>
 								
 								
-	<string name="open_text"></string>
+	<string name="open_text">昔々、やることのない人達は自分の内緒やつぶやきを川に流すという\n
+							 お祭りを始めました。\n
+							 流れたつぶやきはやがて見知らぬ誰かのメッセージと共に\n
+							 海岸に流れついていたそうな。\n
+							川に流れたつぶやきは誰のものかわからない・・・・・\n
+							でもどんな内緒かとても気になる。\n
+							あなたも身近な人には言えないけど聞いてもらいたい\n
+							秘密やつぶやきを水に流してみませんか\n
+							さぁ不思議なお祭りのはじまりはじまり</string>
+	
+	
+	<string name="youdead">そりゃヤヴァいね・・</string>
+	<string name="neverdo">もうやっちゃダメだゾ！</string>
+	<string name="interest">面白いね</string>
+	<string name="laughdown">m9(^Д^)ﾌﾟｷﾞｬｰ</string>
+	<string name="tweet">ツイートターイム！</string>
+	<string name="like">イイね！</string>
+	<string name="tanpopo">早くたんぽぽを載せる仕事に戻るのだ</string>
 
 	
 	
