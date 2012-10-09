@@ -85,7 +85,7 @@ exports.createBar = function(fromView) {
 	});
 
 	var quizFavorite = Titanium.UI.createButton({
-		backgroundImage : '/images/button/construction/construction.png',
+		backgroundImage : '/images/button/secret_tweet/tweet1.png',
 		height : height * 0.1,
 		width : width * 0.3,
 		center : {
