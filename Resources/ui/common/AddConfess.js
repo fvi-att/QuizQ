@@ -23,7 +23,7 @@ exports.AddProject = function() {
 	var backImageView = Titanium.UI.createImageView({
 		image : '/images/opening/old_paper.jpg',
 		width : width,
-		height : height * 0.8,
+		height : height * 0.82,
 		top : 0
 	});
 	win.add(backImageView);
@@ -75,7 +75,7 @@ exports.AddProject = function() {
 	win.add(and_button);
 
 	var button = new require('/ui/common/button/button')('add');
-	button.setTop(height * 0.8);
+	button.setTop(height * 0.82);
 	var select3;
 	
 
