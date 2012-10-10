@@ -12,7 +12,7 @@ exports.LoginACS = function(){
 	  	return false;
 	  	
 	  
-	  require('/ACS/LoginACS').LoginACS(Titanium.App.Properties.getString('username'),Titanium.App.Properties.getString('username'));
+	  require('/ACS/LoginACS').LoginACS(Titanium.App.Properties.getString('username'),Titanium.App.Properties.getString('password'));
 	  
 	 
 }

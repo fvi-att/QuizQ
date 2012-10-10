@@ -27,12 +27,12 @@ exports.LoginACS = function(id,password){
             var user = e.users[0];
             alert('名無しさんとしてログインしました');
                 
-                Titanium.App.Properties.setString('user_name',user.username);
                 
                 Titanium.App.fireEvent('ReLogin');
                 actInd.hide();
         } else {
-           alert('通信に失敗しました。通信状態を確認して再起動してください');
+        	alert('error::'+e.message+'\n'+id+'\n'+password)
+           //alert('通信に失敗しました。通信状態を確認して再起動してください');
                 actInd.hide();
                 
         }

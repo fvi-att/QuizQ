@@ -111,11 +111,8 @@ exports.OpenConfigWin = function() {
 		back_view.add(input_text);
 		back_view.add(input_password);
 		
-		var user_name='ゲスト';
-		
-		if(Titanium.App.Properties.hasProperty('user_name'))
-			user_name = Titanium.App.Properties.getString('user_name');
-			
+		var user_name='名無しさん';
+					
 		var dialog = Ti.UI.createOptionDialog({
 			title : 'account status\n ID:'+user_name,
 			androidView : back_view,

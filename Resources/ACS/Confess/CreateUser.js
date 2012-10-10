@@ -44,7 +44,7 @@ exports.createUser = function(){
             
             
             Titanium.App.Properties.setString('username',user.username);
-            Titanium.App.Properties.setString('password',user.password);
+            Titanium.App.Properties.setString('password',password);
             
            alert('"名無しさん"で登録しました。');
              
