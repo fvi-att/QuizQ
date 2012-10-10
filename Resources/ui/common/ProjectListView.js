@@ -97,22 +97,13 @@ function ProjectList() {
 	 });
 	 */
 	var view = Titanium.UI.createWindow({
-		title : 'クイズこれくしょん',
+		title : L('collection'),
 		backgroundImage : '/images/opening/old_paper.jpg',
 
 		exitOnClose : false,
 		fullscreen : true,
 		orientationModes : [Titanium.UI.PORTRAIT]
 	})
-
-	//image cork board
-	var back_cork = Titanium.UI.createImageView({
-		image : '/images/background/back_lightblue.png',
-		top : height * 0.05,
-		height : height * 0.6,
-		width : width
-	})
-	view.add(back_cork);
 
 	//	view.add(searchBar);
 	view.add(aTableView);

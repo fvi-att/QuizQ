@@ -25,14 +25,14 @@ exports.LoginACS = function(id,password){
     }, function (e) {
         if (e.success) {
             var user = e.users[0];
-            alert('ユーザー名：'+user.lastname+'としてログインしました');
+            alert('名無しさんとしてログインしました');
                 
                 Titanium.App.Properties.setString('user_name',user.username);
                 
                 Titanium.App.fireEvent('ReLogin');
                 actInd.hide();
         } else {
-           alert('ユーザー認証に失敗しました。もう一度入力してください')
+           alert('通信に失敗しました。通信状態を確認して再起動してください');
                 actInd.hide();
                 
         }

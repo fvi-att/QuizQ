@@ -4,7 +4,7 @@
  * created @20121005
  * 匿名性の高いユーザーアカウントを作成する。
  */
-exports.createAccount = function(){
+exports.createUser = function(){
 	
 	if(Titanium.App.Properties.hasProperty('username'))
 		return false;
@@ -26,7 +26,7 @@ exports.createAccount = function(){
 	
 	var Cloud = require('ti.cloud');
 	
-	var username = require('/util/random').getRandom(20);
+	var username = require('/util/random').getRandom(15);
 	var password = require('/util/random').getRandom(20);
 	
 	 
@@ -42,21 +42,20 @@ exports.createAccount = function(){
         	
             var user = e.users[0];
             
+            
             Titanium.App.Properties.setString('username',user.username);
-            Titanium.App.Properties.setString('password',password);
+            Titanium.App.Properties.setString('password',user.password);
             
-            
-           /*alert('Success:\\n' +
-                'id: ' + user.id + '\\n' +
-                'first name: ' + user.first_name + '\\n' +
-                'last name: ' + user.last_name);
-            */
-           alert('誰かさんで登録しました。');
+           alert('"名無しさん"で登録しました。');
              
              result = true;
                 
         } else {
-            alert('何らかしらの原因で掲示板にアクセスできませんでした。もう一度起動してみてください')   
+            alert('何らかしらの原因で掲示板にアクセスできませんでした。もう一度起動してみてください');
+            
+            
+            actInd.hide();
+               
         }
     });
     

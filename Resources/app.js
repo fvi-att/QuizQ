@@ -18,6 +18,7 @@ if (Ti.version < 1.8) {
 //(function で即時関数なんだって～　そうなの)
 (function() {
 	//determine platform and form factor and render approproate components
+	
 
 	//データベース管理をここで行う
 	require('/DB/SQL').CreateTable();
