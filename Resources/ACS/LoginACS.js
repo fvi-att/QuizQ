@@ -31,8 +31,8 @@ exports.LoginACS = function(id,password){
                 Titanium.App.fireEvent('ReLogin');
                 actInd.hide();
         } else {
-        	alert('error::'+e.message+'\n'+id+'\n'+password)
-           //alert('通信に失敗しました。通信状態を確認して再起動してください');
+        	//alert('error::'+e.message+'\n'+id+'\n'+password)
+          	 alert('通信に失敗しました。通信状態を確認して再起動してください');
                 actInd.hide();
                 
         }

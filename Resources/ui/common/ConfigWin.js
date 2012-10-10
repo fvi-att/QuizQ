@@ -124,10 +124,7 @@ exports.OpenConfigWin = function() {
 				require('/ACS/LogoutACS').LogoutACS();
 				
 				require('/ACS/LoginACS').LoginACS(input_text.value,input_password.value);
-				
-				
-				
-				
+					
 			}
 		});
 
