@@ -2,6 +2,8 @@
  * @author nishi
  * @created 2012/04/24
  * renewal at 2012 07 22
+ * 
+ * renewal at 2012 1011
  */
 function MenuProjectFrame() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
@@ -82,8 +84,11 @@ function MenuProjectFrame() {
 							
 							var imageFile = Ti.Filesystem.getFile(dir.resolve(), require('/util/random').getRandom(10) + '.jpg');
 
-							if(imageFile.write(event.media) == false)
+							if(imageFile.write(event.media)){
+								alert('画像の保存に成功しました:' + imageFile.getNativePath());
+							}else{
 								alert('画像の保存に失敗しました:' + self.imageName);
+							}
 						}
 
 					},
