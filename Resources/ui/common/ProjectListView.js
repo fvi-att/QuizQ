@@ -103,7 +103,9 @@ function ProjectList() {
 		exitOnClose : false,
 		fullscreen : true,
 		orientationModes : [Titanium.UI.PORTRAIT]
-	})
+
+	});
+
 
 	//	view.add(searchBar);
 	view.add(aTableView);
@@ -117,11 +119,6 @@ function ProjectList() {
 		require('/ui/common/AddProject').AddProject();
 
 	});
-
-	/*
-	 var tabView = require('/ui/common/menuTab/MenuTab').createMenuTab(2);
-	 view.add(tabView.view);
-	 */
 
 	view.add(debug_text);
 
