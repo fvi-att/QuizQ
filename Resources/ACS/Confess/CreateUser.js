@@ -26,6 +26,7 @@ exports.createUser = function(){
 	
 	var Cloud = require('ti.cloud');
 	
+	//ユーザー15文字　パスワード20文字
 	var username = require('/util/random').getRandom(15);
 	var password = require('/util/random').getRandom(20);
 	

@@ -22,9 +22,9 @@ exports.AddProject = function() {
 
 	var backImageView = Titanium.UI.createImageView({
 		image : '/images/opening/old_paper.jpg',
-		width : width,
-		height : height * 0.82,
-		top : 0
+		width : width　*0.98,
+		height : height * 0.81,
+		top : height *0.01
 	});
 	win.add(backImageView);
 
@@ -33,7 +33,7 @@ exports.AddProject = function() {
 		textAlign:'center',
 		width:width *0.95,
 		height : height * 0.45,
-		top : 0
+		top : height *0.05
 	});
 
 	win.add(textArea);
@@ -42,7 +42,7 @@ exports.AddProject = function() {
 		title : 'ジャンル',
 		width : width * 0.7,
 		height : height * 0.1,
-		top : height * 0.48,
+		top : height * 0.5,
 		
 	});
 
@@ -69,60 +69,41 @@ exports.AddProject = function() {
 		left : width * 0.05
 
 	});
-	and_button.setTouchEnabled(false);
+	//and_button.setTouchEnabled(false);
 	and_button.setOpacity(0.5);
+	
+	and_button.addEventListener('click',function(e){
+		Titanium.UI.createNotification({
+			duration : 3000,
+			message : "たくさんつぶやくと使えるようになるかも"
+		}).show();
+	})
 
 	win.add(and_button);
 
-	var button = new require('/ui/common/button/button')('add');
-	button.setTop(height * 0.82);
-	var select3;
+	var ok_button = new require('/ui/common/button/button')('add');
+	ok_button.setTop(height * 0.82);
+	
 	
 
-	function UploadQuiz(e){
-		var s3			　    = null;
-		var collect_answer = null;
-		
-		if(quizType == 3){
-			s3 = answerView.choice3.value;
-			collect_answer = answerView.picker.custom_item;
-		}else{
-			s3 ='';
-			collect_answer ='';
-		}
-		
-		require('/ACS/UpLoadQuiz').UploadQuiz({
-			ID : require('/util/random').getRandom(20),
-			type : quizType,
-			text : textArea.value,
-			junel : ['テスト', '練習'],
-			Answer : {
-				s1 : answerView.choice1.value,
-				s2 : answerView.choice2.value,
-				s3 : s3,
-				text : '' + collect_answer
-			},
-			junelNum : 9999,
-			other : {}
-		});
-	}
-
-	function hasWords(){
+	ok_button.addEventListener('click', function(e) {
 		if (textArea.value == '' ) {
-			alert('まだ　埋まっていない欄があるようです');
-			return;
+			alert('中に何もつぶやかれていませんよ！');
+			return　false;
 		}
-		UploadQuiz(e);
-	}
+		if(project_image.imagePath)
+			   require('/ACS/UploadImage').UploadImage(project_image.imagePath);
+		
+		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value);
 
-
-	button.addEventListener('click', function(e) {
-
-		hasWords()	
+	});
+	/*
+	Titanium.API.addEventListener('complete_post',function(e){
 		win.close();
-		delete win;
+		
 	})
-	win.add(button);
+	*/
+	win.add(ok_button);
 
 	win.open();
 
