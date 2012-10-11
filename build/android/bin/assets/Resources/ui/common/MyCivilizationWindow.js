@@ -134,6 +134,7 @@ exports.openCivilView = function() {
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
 	civ_window.add(board);
+	
 
 	return civ_window;
 }

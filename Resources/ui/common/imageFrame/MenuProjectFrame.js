@@ -46,8 +46,12 @@ function MenuProjectFrame() {
 							}
 							var imageFile = Ti.Filesystem.getFile(dir.resolve(), require('/util/random').getRandom(10)+ '.jpg');
 
-							if(imageFile.write(event.media) == false)
-								alert('画像の保存に失敗しました:' + self.imageName);
+							if(imageFile.write(event.media)){
+								self.imagePath = imageFile.getNativePath();
+							}else{
+								alert('カメラから画像を取得できませんでした');
+							}
+								
 
 						}
 						//取得成功時　end
@@ -56,10 +60,12 @@ function MenuProjectFrame() {
 
 					cancel : function(event) {
 							self.setImage('/images/icon/pallet_default.png');
+							self.imageName=null;
 					},
 
 					error : function(event) {
 						alert('カメラから画像を取得できませんでした');
+						self.imageName=null;
 					},
 
 					saveToPhotoGallery : true,
@@ -85,18 +91,22 @@ function MenuProjectFrame() {
 							var imageFile = Ti.Filesystem.getFile(dir.resolve(), require('/util/random').getRandom(10) + '.jpg');
 
 							if(imageFile.write(event.media)){
-								alert('画像の保存に成功しました:' + imageFile.getNativePath());
+								//alert('画像の保存に成功しました:' + imageFile.getNativePath());
+								self.imagePath = imageFile.getNativePath();
+								
 							}else{
-								alert('画像の保存に失敗しました:' + self.imageName);
+								alert('画像の保存に失敗しました:');
 							}
 						}
 
 					},
 					error : function(err) {
-						alert(err.message);
+						alert('エラーが発生しました。画像を検出できませんでした');
+						self.imagePath = null;
 					},
 					cancel : function() {
 						self.setImage('/images/icon/pallet_default.png');
+						self.imagePath = null;
 						return;
 					}
 				});

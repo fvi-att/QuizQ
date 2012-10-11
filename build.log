@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.032000 seconds on emulator to get ready
+[DEBUG] waited 0.047000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddConfess.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddConfess.js
+[TRACE] COPYING MODIFIED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\underbar\underbar.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\underbar\underbar.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
@@ -53,6 +53,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/Quiz.js
 [DEBUG] from resource zip => assets/Resources/ACS/UpLoadQuiz.js
+[DEBUG] from resource zip => assets/Resources/ACS/UploadImage.js
 [DEBUG] from resource zip => assets/Resources/DB/ConfessDB.js
 [DEBUG] from resource zip => assets/Resources/DB/ItemDB.js
 [DEBUG] from resource zip => assets/Resources/DB/SQL.js
@@ -111,6 +112,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/button/invest/investment.png
 [DEBUG] from resource zip => assets/Resources/images/button/later/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/later/button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/button/mylist/mylist.png
 [DEBUG] from resource zip => assets/Resources/images/button/secret_tweet/tweet.PNG
 [DEBUG] from resource zip => assets/Resources/images/button/secret_tweet/tweet1.png
 [DEBUG] from resource zip => assets/Resources/images/button/share/button.png
@@ -294,6 +296,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.031000 seconds on emulator to get ready
+[DEBUG] waited 0.047000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

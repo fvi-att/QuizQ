@@ -72,8 +72,8 @@ exports.createBar = function(fromView) {
 		height : height * 0.12,
 		width : width * 0.4,
 		center : {
-			x : width * 0.7,
-			y : height * 0.15
+			x : width * 0.3,
+			y : height * 0.35
 		}
 	});
 
@@ -84,28 +84,8 @@ exports.createBar = function(fromView) {
 
 	});
 
-	var quizFavorite = Titanium.UI.createButton({
+	var addConfess_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/secret_tweet/tweet1.png',
-		height : height * 0.12,
-		width : width * 0.4,
-		center : {
-			x : width * 0.3,
-			y : height * 0.35
-		}
-	});
-
-	//civ_window.add(item_button);
-
-	quizFavorite.addEventListener('click', function(e) {
-
-		//require('/ui/common/AddProject').AddProject();
-		 require('/ui/common/AddConfess').AddProject();
-		 
-
-	});
-
-	var confess_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/construction/construction.png',
 		height : height * 0.12,
 		width : width * 0.4,
 		center : {
@@ -113,7 +93,25 @@ exports.createBar = function(fromView) {
 			y : height * 0.15
 		}
 	});
-	confess_button.addEventListener('click',function(e){
+
+	//civ_window.add(item_button);
+
+	addConfess_button.addEventListener('click', function(e) {
+
+		//require('/ui/common/AddProject').AddProject();
+		 require('/ui/common/AddConfess').AddProject();
+	});
+
+	var list_button = Titanium.UI.createButton({
+		backgroundImage : '/images/button/mylist/mylist.png',
+		height : height * 0.12,
+		width : width * 0.4,
+		center : {
+			x : width * 0.7,
+			y : height * 0.15
+		}
+	});
+	list_button.addEventListener('click',function(e){
 		new require('/ui/common/ProjectListView')();
 		
 		
@@ -123,8 +121,8 @@ exports.createBar = function(fromView) {
 
 //	under_bar.add(invest_button);
 	under_bar.add(item_button);
-	under_bar.add(quizFavorite);
-	under_bar.add(confess_button);
+	under_bar.add(addConfess_button);
+	under_bar.add(list_button);
 
 	return under_bar;
 }

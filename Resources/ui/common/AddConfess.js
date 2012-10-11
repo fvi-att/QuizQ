@@ -91,6 +91,8 @@ exports.AddProject = function() {
 			return　false;
 		}
 		
+			   require('/ACS/UploadImage').UploadImage(project_image.imagePath);
+		
 		return require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value);
 	}
 
