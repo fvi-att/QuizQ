@@ -115,6 +115,8 @@ exports.createBar = function(fromView) {
 	});
 	quiz_collection_button.addEventListener('click',function(e){
 		new require('/ui/common/ProjectListView')();
+		require('/ACS/Confess/CreateUser').createUser();
+		
 	})
 
 	under_bar.add(move_button);
