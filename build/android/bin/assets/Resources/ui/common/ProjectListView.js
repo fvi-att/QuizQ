@@ -1,10 +1,132 @@
-<<<<<<< HEAD
-function ProjectList(){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;var c=Titanium.UI.createLabel({text:"DEBUG:",textAlign:"center",top:0,color:"black",width:width,height:height*0.1,visible:!1}),b=[];b.push(Titanium.UI.createTableViewRow({width:Titanium.UI.FILL,height:height/15,focusable:!1,backgroundImage:"/images/Table/favorite_1.png"}));b.push(Titanium.UI.createTableViewRow({width:Titanium.UI.FILL,height:height/15,focusable:!1,backgroundImage:"/images/Table/section_1.png"}));
-b=Ti.UI.createTableView({data:b,showVerticalScrollIndicator:!0,top:height*0.05,width:Titanium.UI.FILL,height:height*0.7});try{var a;a=require("/DB/SQL").getBookMark();for(c.setText("DEBUG::"+a.getRowCount());a.isValidRow();){var d=require("/ui/common/CollectionTable/ProjectTableRow").createRowObject("",a.fieldByName("TITLE"),0,a.fieldByName("BOOK_ID"));d.row.quizID=a.fieldByName("BOOK_ID");b.insertRowAfter(0,d.row);a.next()}}catch(e){alert("\u30c6\u30fc\u30d6\u30eb\u306e\u4f5c\u6210\u306b\u5931\u6557\u3057\u307e\u3057\u305f \u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u306b\u554f\u984c\u304c\u3042\u308a\u307e\u3057\u305f")}Titanium.App.addEventListener("addSampleQuiz",
-function(){AddSample()});a=Titanium.UI.createWindow({title:"\u30af\u30a4\u30ba\u3053\u308c\u304f\u3057\u3087\u3093",backgroundImage:"/images/opening/old_paper.jpg",exitOnClose:!1,fullscreen:!0,orientationModes:[Titanium.UI.PORTRAIT]});a.add(b);b=(new require("/ui/common/button/button"))("add");b.setTop(height*0.8);a.add(b);b.addEventListener("click",function(){require("/ui/common/AddProject").AddProject()});a.add(c);a.open();return a}module.exports=ProjectList;
-=======
-function ProjectList(){height=Ti.Platform.displayCaps.platformHeight;width=Ti.Platform.displayCaps.platformWidth;var d=Titanium.UI.createLabel({text:"DEBUG:",textAlign:"center",top:0,color:"black",width:width,height:height*0.1,visible:!1}),b=[];b.push(Titanium.UI.createTableViewRow({width:Titanium.UI.FILL,height:height/15,focusable:!1,backgroundImage:"/images/Table/favorite_1.png"}));b.push(Titanium.UI.createTableViewRow({width:Titanium.UI.FILL,height:height/15,focusable:!1,backgroundImage:"/images/Table/section_1.png"}));
-b=Ti.UI.createTableView({data:b,showVerticalScrollIndicator:!0,top:height*0.05,width:Titanium.UI.FILL,height:height*0.7});try{var a;a=require("/DB/SQL").getBookMark();for(d.setText("DEBUG::"+a.getRowCount());a.isValidRow();){var c=require("/ui/common/CollectionTable/ProjectTableRow").createRowObject("",a.fieldByName("TITLE"),0,a.fieldByName("BOOK_ID"));c.row.quizID=a.fieldByName("BOOK_ID");b.insertRowAfter(0,c.row);a.next()}}catch(e){alert("\u30c6\u30fc\u30d6\u30eb\u306e\u4f5c\u6210\u306b\u5931\u6557\u3057\u307e\u3057\u305f \u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u306b\u554f\u984c\u304c\u3042\u308a\u307e\u3057\u305f")}Titanium.App.addEventListener("addSampleQuiz",
-function(){AddSample()});a=Titanium.UI.createWindow({title:"\u30af\u30a4\u30ba\u3053\u308c\u304f\u3057\u3087\u3093",backgroundImage:"/images/opening/old_paper.jpg",exitOnClose:!1,fullscreen:!0,orientationModes:[Titanium.UI.PORTRAIT]});c=Titanium.UI.createImageView({image:"/images/background/back_lightblue.png",top:height*0.05,height:height*0.6,width:width});a.add(c);a.add(b);b=(new require("/ui/common/button/button"))("add");b.setTop(height*0.8);a.add(b);b.addEventListener("click",function(){require("/ui/common/AddProject").AddProject()});
-a.add(d);a.open();return a}module.exports=ProjectList;
->>>>>>> 098e94963bf88804cd8e13a4677ea9f2079dc026
+/**
+ * @author fvi
+ *
+ * created@ 2012 07 19
+ *
+ */
+
+function ProjectList() {
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+
+	//デバッグメッセージ
+	var debug_text = Titanium.UI.createLabel({
+		text : 'DEBUG:',
+		textAlign : 'center',
+		top : 0,
+		color : 'black',
+		width : width,
+		height : height * 0.1,
+		visible : false	//DEBUG専用
+
+	});
+
+	var projectList = [];
+
+	//plus section
+	projectList.push(Titanium.UI.createTableViewRow({
+		width : Titanium.UI.FILL,
+		height : height / 15,
+		focusable : false,
+		backgroundImage : '/images/Table/favorite_1.png'
+	}));
+	projectList.push(Titanium.UI.createTableViewRow({
+		width : Titanium.UI.FILL,
+		height : height / 15,
+		focusable : false,
+		backgroundImage : '/images/Table/section_1.png'
+	}));
+
+	// Create a TableView.
+	var aTableView = Ti.UI.createTableView({
+		data : projectList,
+		showVerticalScrollIndicator : true,
+		top : height * 0.05,
+		width : Titanium.UI.FILL,
+		height : height * 0.7
+	});
+
+	//新規でたしてみる  sample
+	(function AddSample() {
+		if (Titanium.App.Properties.getBool('isSampleNeed')) {
+			/*
+
+			 var spl_row = require('/ui/common/ProjectTableRow').createRowObject('', '(例)りんごは林檎ですがゴリラの漢字名は？', 0);
+			 var spl_row2 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)2012年のサラリーマン川柳受賞作は？',0);
+			 var spl_row3 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)ユニークな貯金法ってある？', 0);
+			 var spl_row4 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)アメリカのおもしろ観光スポットってある？', 0);
+
+			 aTableView.appendRow(spl_row.row);
+			 aTableView.appendRow(spl_row2.row);
+			 aTableView.appendRow(spl_row3.row);
+			 aTableView.appendRow(spl_row4.row);
+
+			 一時停止
+			 */
+
+		}
+	})
+	//DBから呼び出していろいろやる
+	try {
+		var db_results;
+		//カラムの表記
+		db_results = require('/DB/SQL').getBookMark();
+		debug_text.setText('DEBUG::' + db_results.getRowCount())
+
+		while (db_results.isValidRow()) {
+			var row = require('/ui/common/CollectionTable/ProjectTableRow').createRowObject('', db_results.fieldByName('TITLE'), 0, db_results.fieldByName('BOOK_ID'));
+			row.row.quizID = db_results.fieldByName('BOOK_ID');
+			aTableView.insertRowAfter(0, row.row);
+			db_results.next();
+		}
+	} catch(dberr) {
+		alert('テーブルの作成に失敗しました データベースに問題がありました');
+	}
+	//end
+
+	Titanium.App.addEventListener('addSampleQuiz', function(e) {
+		AddSample();
+	});
+
+	//Titanium.App.fireEvent('addFavorite',{content:download}); お気に入り登録させる
+	/*
+	 Titanium.App.addEventListener('addFavorite', function(e) {
+	 var content = e.content;
+	 var row = require('/ui/common/ProjectTableRow').createRowObject('', content.text, 0,content.ID);
+
+	 aTableView.insertRowAfter(0, row.row);
+	 });
+	 */
+	var view = Titanium.UI.createWindow({
+		title : L('collection'),
+		backgroundImage : '/images/opening/old_paper.jpg',
+
+		exitOnClose : false,
+		fullscreen : true,
+		orientationModes : [Titanium.UI.PORTRAIT]
+
+	});
+
+
+	//	view.add(searchBar);
+	view.add(aTableView);
+
+	var add_button = new require('/ui/common/button/button')('add');
+
+	add_button.setTop(height * 0.8);
+	view.add(add_button);
+
+	add_button.addEventListener('click', function(e) {
+		require('/ui/common/AddProject').AddProject();
+
+	});
+
+	view.add(debug_text);
+
+	view.open();
+
+	return view;
+
+}
+
+module.exports = ProjectList;
+

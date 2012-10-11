@@ -103,11 +103,9 @@ function ProjectList() {
 		exitOnClose : false,
 		fullscreen : true,
 		orientationModes : [Titanium.UI.PORTRAIT]
-<<<<<<< HEAD
+
 	});
-=======
-	})
->>>>>>> 15f759ca0f9210882d396ddaf03be19339bf45bf
+
 
 	//	view.add(searchBar);
 	view.add(aTableView);

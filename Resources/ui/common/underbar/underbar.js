@@ -40,7 +40,7 @@ exports.createBar = function(fromView) {
 		});
 
 	});
-
+	//クイズシステムから匿名型つぶやきサイトへの仕様変更の予定
 	var invest_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/invest/investment.png',
 		height : height * 0.12,
@@ -104,27 +104,27 @@ exports.createBar = function(fromView) {
 
 	});
 
-	var quiz_collection_button = Titanium.UI.createButton({
+	var confess_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/construction/construction.png',
 		height : height * 0.12,
 		width : width * 0.4,
 		center : {
-			x : width * 0.7,
-			y : height * 0.35
+			x : width * 0.3,
+			y : height * 0.15
 		}
 	});
-	quiz_collection_button.addEventListener('click',function(e){
+	confess_button.addEventListener('click',function(e){
 		new require('/ui/common/ProjectListView')();
 		require('/ACS/Confess/CreateUser').createUser();
 		
-	})
+	});
 
 	under_bar.add(move_button);
 
-	under_bar.add(invest_button);
+//	under_bar.add(invest_button);
 	under_bar.add(item_button);
 	under_bar.add(quizFavorite);
-	under_bar.add(quiz_collection_button);
+	under_bar.add(confess_button);
 
 	return under_bar;
 }
