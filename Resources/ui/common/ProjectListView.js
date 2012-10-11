@@ -48,6 +48,7 @@ function ProjectList() {
 	//新規でたしてみる  sample
 	(function AddSample() {
 		if (Titanium.App.Properties.getBool('isSampleNeed')) {
+			aTableView.appendRow(require('/ui/common/ProjectTableRow').createRowObject('', 'あいつはあまりにも非常識すぎる。', 0))
 			/*
 
 			 var spl_row = require('/ui/common/ProjectTableRow').createRowObject('', '(例)りんごは林檎ですがゴリラの漢字名は？', 0);
@@ -116,7 +117,8 @@ function ProjectList() {
 	view.add(add_button);
 
 	add_button.addEventListener('click', function(e) {
-		require('/ui/common/AddProject').AddProject();
+		//require('/ui/common/AddProject').AddProject();
+		require('/ui/common/AddConfess').AddProject();
 
 	});
 

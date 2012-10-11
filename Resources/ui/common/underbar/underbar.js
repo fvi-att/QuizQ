@@ -115,7 +115,7 @@ exports.createBar = function(fromView) {
 	});
 	confess_button.addEventListener('click',function(e){
 		new require('/ui/common/ProjectListView')();
-		require('/ACS/Confess/CreateUser').createUser();
+		
 		
 	});
 

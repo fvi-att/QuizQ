@@ -18,7 +18,8 @@ if (Ti.version < 1.8) {
 //(function で即時関数なんだって～　そうなの)
 (function() {
 	//determine platform and form factor and render approproate components
-	
+	//初期時点でアカウントの作成を行う
+	require('/ACS/Confess/CreateUser').createUser();
 	//ログイン処理を行う
 	require('/ACS/Confess/LoginACS').LoginACS();
 	//データベース管理をここで行う
