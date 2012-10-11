@@ -81,30 +81,29 @@ exports.AddProject = function() {
 
 	win.add(and_button);
 
-	var button = new require('/ui/common/button/button')('add');
-	button.setTop(height * 0.82);
+	var ok_button = new require('/ui/common/button/button')('add');
+	ok_button.setTop(height * 0.82);
 	
 	
-	function hasWords(){
+
+	ok_button.addEventListener('click', function(e) {
 		if (textArea.value == '' ) {
 			alert('中に何もつぶやかれていませんよ！');
 			return　false;
 		}
-		
+		if(project_image.imagePath)
 			   require('/ACS/UploadImage').UploadImage(project_image.imagePath);
 		
-		return require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value);
-	}
+		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value);
 
-
-	button.addEventListener('click', function(e) {
-
-		if(hasWords()){
-			win.close();
-			delete win;
-		}
+	});
+	/*
+	Titanium.API.addEventListener('complete_post',function(e){
+		win.close();
+		
 	})
-	win.add(button);
+	*/
+	win.add(ok_button);
 
 	win.open();
 
