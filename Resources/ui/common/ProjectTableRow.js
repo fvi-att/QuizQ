@@ -24,11 +24,14 @@ exports.createRowObject = function(image_path,title,side,id) {
 	
 	if(!id)
 		id='STUB';
+		
+	//titleの数で幅を大きくして行く
+	var lf_count = title.split("\n").length - 1;
 	var row = Titanium.UI.createTableViewRow({
 		leftImage:leftImagePath,
 		backgroundImage:'/images/transparent.png',
 		hasChild:true,
-		height : height * 0.15,
+		height : height * 0.15 + height*0.05*lf_count,
 		className : 'todo_row',
 		id : id,
 		
@@ -49,6 +52,7 @@ exports.createRowObject = function(image_path,title,side,id) {
 		color:'black',
 		font:{fontSize:width /20},
 		textAlign:'left'
+		
 	});
 	row.add(label);
 	

@@ -11,16 +11,16 @@ exports.openCivilView = function() {
 	var food_arr = [];
 
 	var background_path = require('/util/getbackPathWithTime').getPath();
-	
+
 	var civ_window = Titanium.UI.createWindow({
 		backgroundImage : background_path,
-		
+
 		exitOnClose : false,
 		fullscreen : true,
-		navBarHidden: true, //タイトルバーを隠す
+		navBarHidden : true, //タイトルバーを隠す
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
-	
+
 	var house_image = Titanium.UI.createImageView({
 		image : '/images/civ/ancient/house/house1.png',
 		width : width * 0.4,
@@ -30,11 +30,10 @@ exports.openCivilView = function() {
 			y : height * 0.4
 		}
 	});
-	
-	house_image.addEventListener('click',function(e){
+
+	house_image.addEventListener('click', function(e) {
 		require('/ui/common/SelectBoard/CivGrowthBoard').openView(civ_window);
 	})
-	
 
 	civ_window.add(house_image);
 
@@ -57,6 +56,19 @@ exports.openCivilView = function() {
 
 	civ_window.add(man_image);
 
+	var STUB_flowWindowButton = Titanium.UI.createButton({
+		top : height * 0.65,
+		title : 'STUB',
+		width : 'auto',
+		height : 'auto'
+	});
+	
+	STUB_flowWindowButton.addEventListener('click',function(e){
+		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac')
+	});
+	
+	civ_window.add(STUB_flowWindowButton);
+
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
 		width : 'auto',
@@ -68,7 +80,6 @@ exports.openCivilView = function() {
 	});
 
 	civ_window.add(cupcell_image);
-
 
 	//変更　アイテムに関するアニメーションを関数に変更
 	//長すぎ　ワロリーヌ　
@@ -129,12 +140,10 @@ exports.openCivilView = function() {
 	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
 	civ_window.add(under_bar);
 
-
 	//ボードに関する設定　
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
 	civ_window.add(board);
-	
 
 	return civ_window;
 }

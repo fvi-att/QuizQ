@@ -120,7 +120,7 @@ exports.createBar = function(fromView) {
 	under_bar.add(move_button);
 
 //	under_bar.add(invest_button);
-	under_bar.add(item_button);
+//	under_bar.add(item_button);
 	under_bar.add(addConfess_button);
 	under_bar.add(list_button);
 
