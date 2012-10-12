@@ -34,14 +34,19 @@ function ProjectList(download) {
 	var aTableView = Ti.UI.createTableView({
 		data : projectList,
 		showVerticalScrollIndicator : true,
-		top : height * 0.05,
+		top : height * 0.1,
 		width : Titanium.UI.FILL,
 		height : height * 0.7
 	});
-	var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[0].title, 0,null);
-	STUB_row.row.setHasChild(false);
 	
-	aTableView.appendRow(STUB_row.row);
+	for(count =0;count < download.length;count++){
+				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].title, 0,null);
+				STUB_row.row.setHasChild(false);
+	
+				aTableView.appendRow(STUB_row.row);
+	}
+	
+
 	
 	
 	aTableView.addEventListener('click',function(e){

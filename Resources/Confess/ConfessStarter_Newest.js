@@ -23,18 +23,31 @@ exports.FlowdownloadStart = function(post_id) {
 	});
 
 	actInd.show();
+	
+	var condition = new Date()
+	//condition.setDate(condition.getDate() -1);
+	condition.setHours(condition.getHours() -1);
+	condition.set
+
+	
+	alert('条件：：'+condition)
 
 	var Cloud = require('ti.cloud');
-	Cloud.Posts.show({
-		post_id : post_id
-	}, function(e) {
+	Cloud.Posts.query({
+    page: 1,
+    per_page: 20,
+    where: {
+       // reviews_count: { '$gt': 1.0 }
+       created_at:{'$gt':condition}
+    }
+}, function(e) {
 		if (e.success) {
 			var post = e.posts[0];
 			actInd.hide();
-			
-			 var flowWin = new require('/ui/common/ConfessWindow/FlowView')(e.posts);
-			
-			alert('Success:\\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.updated_at);
+			if(e.posts.length >0){
+			 	var flowWin = new require('/ui/common/ConfessWindow/FlowView')(e.posts);
+				alert('Success:\\n'+'count:'+e.posts.length + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.created_at);
+			}
 		} else {
 			alert('Error:\\n' + ((e.error && e.message) || JSON.stringify(e)));
 			

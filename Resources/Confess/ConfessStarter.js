@@ -13,7 +13,7 @@ exports.FlowdownloadStart = function(post_id) {
 		bottom : 10,
 		height : 100,
 		width : 100,
-		message : 'つぶやきを集めています',
+		message : '名無しのつぶやきを集めています',
 		font : {
 			fontFamily : 'Helvetica Neue',
 			fontSize : 15,

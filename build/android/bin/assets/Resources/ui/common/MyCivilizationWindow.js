@@ -64,7 +64,7 @@ exports.openCivilView = function() {
 	});
 	
 	STUB_flowWindowButton.addEventListener('click',function(e){
-		require('/Confess/ConfessStarter').FlowdownloadStart('5076f115b685534c140d38ac')
+		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac')
 	});
 	
 	civ_window.add(STUB_flowWindowButton);
