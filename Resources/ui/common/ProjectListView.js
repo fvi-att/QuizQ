@@ -111,7 +111,7 @@ function ProjectList() {
 	//	view.add(searchBar);
 	view.add(aTableView);
 
-	var add_button = new require('/ui/common/button/button')('add');
+	var add_button = new require('/ui/common/button/button')('tweet');
 
 	add_button.setTop(height * 0.8);
 	view.add(add_button);
