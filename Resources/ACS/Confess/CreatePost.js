@@ -9,7 +9,7 @@ exports.createPost = function(title, message, junel, photo_path) {
 		bottom : 10,
 		height : 100,
 		width : 100,
-		message : '内緒で投稿中',
+		message : '名無しさんとして投稿中',
 		font : {
 			fontFamily : 'Helvetica Neue',
 			fontSize : 15,
@@ -43,7 +43,7 @@ exports.createPost = function(title, message, junel, photo_path) {
 
 			//投稿用ウィンドウを閉じるイベントを発生させる
 			Titanium.App.fireEvent('complete_post');
-			alert('Success:\\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'photo: ' + post.photo);
+			//alert('Success:\\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'photo: ' + post.photo);
 
 			return true;
 

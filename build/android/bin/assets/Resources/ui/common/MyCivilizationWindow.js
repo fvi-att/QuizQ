@@ -56,7 +56,7 @@ exports.openCivilView = function() {
 
 	civ_window.add(man_image);
 
-	var STUB_flowWindowButton = Titanium.UI.createButton({
+	var flowWindowButton = Titanium.UI.createButton({
 		backgroundImage:'/images/flowboard/board.png',
 		top : height * 0.6,
 		left:width * 0.7,
@@ -64,11 +64,11 @@ exports.openCivilView = function() {
 		height : height *0.2
 	});
 	
-	STUB_flowWindowButton.addEventListener('click',function(e){
+	flowWindowButton.addEventListener('click',function(e){
 		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac')
 	});
 	
-	civ_window.add(STUB_flowWindowButton);
+	civ_window.add(flowWindowButton);
 
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',

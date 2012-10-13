@@ -12,6 +12,17 @@ function ProjectList(download) {
 	 * 
 	 */
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+		var view = Titanium.UI.createWindow({
+		title : L('collection'),
+		navBarHidden : true, //タイトルバーを隠す
+		//backgroundImage : '/images/opening/old_paper.jpg',
+		backgroundColor:'rgb(255,235,205)',//ivory color
+
+		exitOnClose : false,
+		fullscreen : true,
+		orientationModes : [Titanium.UI.PORTRAIT]
+
+	});
 
 
 	var projectList = [];
@@ -35,12 +46,12 @@ function ProjectList(download) {
 		data : projectList,
 		showVerticalScrollIndicator : true,
 		top : height * 0.1,
-		width : Titanium.UI.FILL,
-		height : height * 0.7
+		width : width,
+		height : height * 0.8
 	});
 	
 	for(count =0;count < download.length;count++){
-				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].title, 0,null);
+				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].title, 0,null,view);
 				STUB_row.row.setHasChild(false);
 	
 				aTableView.appendRow(STUB_row.row);
@@ -48,23 +59,13 @@ function ProjectList(download) {
 	
 
 	
-	
+	/*
 	aTableView.addEventListener('click',function(e){
 		alert(JSON.stringify(e));
 	})
+	*/
 
 
-	var view = Titanium.UI.createWindow({
-		title : L('collection'),
-		navBarHidden : true, //タイトルバーを隠す
-		//backgroundImage : '/images/opening/old_paper.jpg',
-		backgroundColor:'rgb(255,235,205)',//ivory color
-
-		exitOnClose : false,
-		fullscreen : true,
-		orientationModes : [Titanium.UI.PORTRAIT]
-
-	});
 
 
 	//	view.add(searchBar);

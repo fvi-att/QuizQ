@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.106000 seconds on emulator to get ready
+[DEBUG] waited 0.095000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ACS\LoginACS.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ACS\LoginACS.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\ConfessWindow\FlowRow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowRow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
@@ -299,6 +299,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.079000 seconds on emulator to get ready
+[DEBUG] waited 0.072000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

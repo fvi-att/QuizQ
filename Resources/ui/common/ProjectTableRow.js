@@ -28,7 +28,7 @@ exports.createRowObject = function(image_path,title,side,id) {
 	//titleの数で幅を大きくして行く
 	var lf_count = title.split("\n").length - 1;
 	var row = Titanium.UI.createTableViewRow({
-		leftImage:leftImagePath,
+//		leftImage:leftImagePath,
 		backgroundImage:'/images/transparent.png',
 		hasChild:true,
 		height : height * 0.15 + height*0.05*lf_count,
@@ -37,6 +37,7 @@ exports.createRowObject = function(image_path,title,side,id) {
 		
 	});
 	var row_height = row.getHeight();
+	var row_width  = row.getWidth();
 	
 	var row_img = Titanium.UI.createImageView({
 		image:image_path,
@@ -51,7 +52,8 @@ exports.createRowObject = function(image_path,title,side,id) {
 		text:title,
 		color:'black',
 		font:{fontSize:width /20},
-		textAlign:'left'
+		textAlign:'center',
+		left:width * 0.25
 		
 	});
 	row.add(label);

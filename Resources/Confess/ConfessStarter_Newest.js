@@ -27,11 +27,7 @@ exports.FlowdownloadStart = function(post_id) {
 	var condition = new Date()
 	//condition.setDate(condition.getDate() -1);
 	condition.setHours(condition.getHours() -1);
-	condition.set
-
 	
-	alert('条件：：'+condition)
-
 	var Cloud = require('ti.cloud');
 	Cloud.Posts.query({
     page: 1,
@@ -46,7 +42,7 @@ exports.FlowdownloadStart = function(post_id) {
 			actInd.hide();
 			if(e.posts.length >0){
 			 	var flowWin = new require('/ui/common/ConfessWindow/FlowView')(e.posts);
-				alert('Success:\\n'+'count:'+e.posts.length + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.created_at);
+			//	alert('Success:\\n'+'count:'+e.posts.length + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.created_at);
 			}
 		} else {
 			alert('Error:\\n' + ((e.error && e.message) || JSON.stringify(e)));
