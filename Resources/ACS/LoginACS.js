@@ -37,7 +37,19 @@ exports.LoginACS = function(id,password){
                 actInd.hide();
         } else {
         	//alert('error::'+e.message+'\n'+id+'\n'+password)
-          	 alert('通信に失敗しました。通信状態を確認して再起動してください');
+          var dialog = Ti.UI.createOptionDialog({
+			title : '匿名ログインできませんでした　再ログインしますか？',
+			buttonNames : ['Cancel', 'Ok']
+		});
+				dialog.addEventListener('click', function(e) {
+			if (e.index == 1) {// we read it only if get it is pressed
+				require('/ACS/LoginACS').LoginACS(id,password);
+					
+			}
+		});
+
+		dialog.show();
+	
                 actInd.hide();
                 
         }

@@ -54,7 +54,7 @@ exports.createRowObject = function(image_path, title, side, id,from_win) {
 	
 	response_button.addEventListener('click',function(e){
 		
-		require('/ui/common/SelectBoard/SelectBoard').openView(from_win);
+		require('/ui/common/ConfessWindow/ResponseBoard').openView(from_win);
 	});
 	
 	source_row.row.add(response_button);

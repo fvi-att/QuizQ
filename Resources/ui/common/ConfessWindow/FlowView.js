@@ -58,18 +58,24 @@ function ProjectList(download) {
 	}
 	
 
-	
-	/*
-	aTableView.addEventListener('click',function(e){
-		alert(JSON.stringify(e));
-	})
-	*/
-
-
-
-
 	//	view.add(searchBar);
 	view.add(aTableView);
+	
+	
+	var close_button = Titanium.UI.createButton({
+		title:'閉じる',
+		width:width*0.6,
+		height:'auto',
+		top:height*0.85
+	});
+	
+	close_button.addEventListener('click',function(e){
+		view.close();
+		delete view;
+	});
+	
+	view.add(close_button);
+	
 
 
 
