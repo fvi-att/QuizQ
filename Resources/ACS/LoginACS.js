@@ -25,7 +25,12 @@ exports.LoginACS = function(id,password){
     }, function (e) {
         if (e.success) {
             var user = e.users[0];
-            alert('名無しさんとしてログインしました');
+            //alert('名無しさんとしてログインしました');
+            Titanium.UI.createNotification({
+			duration : 3000,
+			message : "名無しさんでログインしました"
+			}).show();
+
                 
                 
                 Titanium.App.fireEvent('ReLogin');

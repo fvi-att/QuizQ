@@ -31,7 +31,7 @@ exports.openView = function(view) {
 	});
 	
 	var label = Titanium.UI.createLabel({
-		text:'ジャンルを選ぼう！',
+		text:'ジャンルを選んでください\n今後ジャンルを増やしていく予定です',
 		color:'black',
 		width:old_paper.width * 0.9,
 		top:old_paper.height * 0.1,
@@ -88,14 +88,16 @@ exports.openView = function(view) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
 		
+		Titanium.App.fireEvent('select_junel',{junel:column1.getSelectedRow().getTitle()})
+		
 		delete old_paper;
 		delete back_temp_view;
 	});
 
 	old_paper.add(cancel_button);
 	//ピッカーに関する処理
-	var names = ['常識問題', '笑い', '小ネタ', '飲み会用', 'へぇ～', 'マニアック', 'その他'];
-	var verbs = ['素養', '文化', 'マニア', '経済', '国際', '小ネタ', 'カワイイ', 'ニュース', 'びっくり'];
+	var names = ['ひとりごと'];
+//	var verbs = ['素養', '文化', 'マニア', '経済', '国際', '小ネタ', 'カワイイ', 'ニュース', 'びっくり'];
 
 	var rows1 = [];
 	for (var i = 0; i < names.length; i++) {
@@ -104,12 +106,14 @@ exports.openView = function(view) {
 		}));
 	}
 
+/*
 	var rows2 = [];
 	for ( i = 0; i < verbs.length; i++) {
 		rows2.push(Ti.UI.createPickerRow({
 			title : verbs[i]
 		}));
 	}
+	
 
 	var rows3 = [];
 	for ( i = (names.length - 1); i >= 0; i--) {
@@ -117,17 +121,17 @@ exports.openView = function(view) {
 			title : names[i]
 		}));
 	}
+	*/
 
 	var column1 = Ti.UI.createPickerColumn({
 		rows : rows1,
-		top:height *0.05,
-		width:old_paper.width   *0.35,
-		height:old_paper.height *0.5,
-		left:old_paper.width    *0.05,
+		width:width * 0.6,
+		height:'auto',
 		font : {
-			fontSize : "24"
+			fontSize : "25"
 		}
 	});
+	/*
 	var column2 = Ti.UI.createPickerColumn({
 		rows : rows2,
 		top:height*0.05,
@@ -138,16 +142,20 @@ exports.openView = function(view) {
 			fontSize : "24"
 		}
 	});
+	*/
 
 	var picker1 = Ti.UI.createPicker({
 		useSpinner : true,
 		visibleItems : 7,
-		width:old_paper.width *0.95,
 		type : Ti.UI.PICKER_TYPE_PLAIN,
-		columns : [column1, column2]
+		columns : [column1]
 	});
+	
+
+
 
 	old_paper.add(picker1);
+
 
 	view.add(old_paper);
 

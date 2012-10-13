@@ -7,6 +7,8 @@
 
 //STUB ADD HELLO BOY
 exports.AddProject = function() {
+	
+	var junel ='ひとりごと'//デフォルト　ジャンル
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
 
@@ -91,18 +93,27 @@ exports.AddProject = function() {
 			alert('中に何もつぶやかれていませんよ！');
 			return　false;
 		}
-		if(project_image.imagePath)
-			   require('/ACS/UploadImage').UploadImage(project_image.imagePath);
+		//if(project_image.imagePath)
+			  // require('/ACS/UploadImage').UploadImage(project_image.imagePath);
 		
-		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value);
+		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath);
 
 	});
-	/*
-	Titanium.API.addEventListener('complete_post',function(e){
+	Titanium.App.addEventListener('select_junel',function(e){
+		junel = e.junel;
+	})
+	Titanium.App.addEventListener('complete_post',function(e){
 		win.close();
+		delete win;
+		
+		Titanium.UI.createNotification({
+			duration : 3000,
+			message : "つぶやきました"
+		}).show();
+
 		
 	})
-	*/
+	
 	win.add(ok_button);
 
 	win.open();
