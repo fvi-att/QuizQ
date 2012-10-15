@@ -73,6 +73,7 @@ exports.createPost = function(title, message, junel, photo_path) {
 	}
 
 	function Upload() {
+		//初期型の３つを定義ておく。
 		var init_comment = {interest:0,noway:0,bad:0};
 		
 		var comment =  JSON.stringify(init_comment)

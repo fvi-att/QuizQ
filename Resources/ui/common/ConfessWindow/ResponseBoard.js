@@ -31,7 +31,7 @@ exports.openView = function(view,about){
 		
 		});
 	var status_label = Titanium.UI.createLabel({
-		text : about.status,
+		text : 'by 名無しさん',
 		color : 'black',
 		font : {
 			fontSize : width / 25
@@ -137,8 +137,15 @@ exports.openView = function(view,about){
 			view.remove(old_paper);
 			
 			
+			if(switch1.value)
+				about.status.interest ++;
+			if(switch2.value)
+				about.status.noway ++;
+			if(switch3.value)
+				about.status.bad++;
+				
 			//更新系の処理を書いておくこと
-			require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id)
+			require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id,JSON.stringify(about.status))
 		});
 		
 		old_paper.add(tmp_closeButton);

@@ -6,8 +6,7 @@
  *
  */
 
-exports.UpdatePost = function(post_id) {
-	alert('id::'+post_id);
+exports.UpdatePost = function(post_id,message) {
 	
 	
 	var actInd = Titanium.UI.createActivityIndicator({
@@ -29,12 +28,18 @@ exports.UpdatePost = function(post_id) {
 
 	Cloud.Posts.update({
 		post_id : post_id,
-		//content:'オッホホテストです'
+		content:message
 	}, function(e) {
 		if (e.success) {
 			var post = e.posts[0];
 			actInd.hide();
-			alert('Success:\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'test_photo: ' + post.photo);
+			Titanium.UI.createNotification({
+			duration : 3000,
+			message : "レスを投稿しました。"
+			}).show();
+			//完了とともに要素の更新を行う。
+			Titanium.App.fireEvent('update_row',{id:post_id,status:post.content})
+			//alert('Success:\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'test_photo: ' + post.photo);
 		} else {
 			actInd.hide();
 			alert('Error:\\n' + ((e.error && e.message) || JSON.stringify(e)));
