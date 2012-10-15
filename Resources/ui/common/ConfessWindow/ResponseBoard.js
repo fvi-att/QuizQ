@@ -6,7 +6,7 @@
  */
 
 
-exports.openView = function(view){
+exports.openView = function(view,about){
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 		var back_temp_view = Titanium.UI.createView({
 			backgroundColor:'black',
@@ -30,6 +30,97 @@ exports.openView = function(view){
 			top:height * 0.1
 		
 		});
+	var status_label = Titanium.UI.createLabel({
+		text : about.status,
+		color : 'black',
+		font : {
+			fontSize : width / 25
+		},
+		textAlign : 'center',
+		top:old_paper.height *0.15,
+		
+		
+	});
+	old_paper.add(status_label);
+	
+	var title_label = Titanium.UI.createLabel({
+		text : about.title,
+		color : 'black',
+		font : {
+			fontSize : width / 20
+		},
+		textAlign : 'center',
+		top:old_paper.height *0.25,
+		
+		
+	});
+	old_paper.add(title_label);
+	
+	var everyone_label = Titanium.UI.createLabel({
+		text:'みんなのレス一欄',
+		textAlign:'left',
+		top:old_paper.height *0.38,
+		color:'black',
+				font : {
+			fontSize : width / 30
+		},
+	})
+	old_paper.add(everyone_label);
+	var switch1 = Ti.UI.createSwitch({
+		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+		title :'面白いネ！',
+		value : false,
+
+		color : 'black',
+
+		top : old_paper.height *0.45,
+		width : old_paper.width * 0.8,
+		height : old_paper.height *0.1// necessary for textAlign to be effective
+	});
+	old_paper.add(switch1);
+	var switch2 = Ti.UI.createSwitch({
+		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+		title :'ありえないっー！！',
+		value : false,
+
+		color : 'black',
+
+		top : old_paper.height *0.55,
+		width : old_paper.width * 0.8,
+		height : old_paper.height *0.1// necessary for textAlign to be effective
+	});
+	old_paper.add(switch2);
+	
+	var switch3 = Ti.UI.createSwitch({
+		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+		title :'だめだこりゃ',
+		value : false,
+
+		color : 'black',
+
+		top : old_paper.height *0.65,
+		width : old_paper.width * 0.8,
+		height : old_paper.height *0.1// necessary for textAlign to be effective
+	});
+	old_paper.add(switch3);
+	
+	var add_button = Titanium.UI.createButton({
+		title:'新しいレスを加える',
+		width:old_paper.width * 0.7,
+		height:old_paper.height *0.1,
+		top:old_paper.height *0.75
+	});
+//	old_paper.add(add_button);
+	
+	add_button.addEventListener('click',function(e){
+		   Titanium.UI.createNotification({
+			duration : 3000,
+			message : "もうしばらくするとつかえるようになるかも"
+			}).show();
+	})
 		
 		
 		var tmp_closeButton = Titanium.UI.createButton({
@@ -45,9 +136,9 @@ exports.openView = function(view){
 			view.remove(back_temp_view);
 			view.remove(old_paper);
 			
-			//クイズ　投入
 			
-			require('/Quiz/QuizStarter').QuizDownLoadStart({type:'example',shuffle:true});
+			//更新系の処理を書いておくこと
+			require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id)
 		});
 		
 		old_paper.add(tmp_closeButton);

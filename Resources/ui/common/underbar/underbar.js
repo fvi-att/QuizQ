@@ -89,7 +89,7 @@ exports.createBar = function(fromView) {
 		height : height * 0.12,
 		width : width * 0.4,
 		center : {
-			x : width * 0.3,
+			x : width * 0.5,
 			y : height * 0.15
 		}
 	});
@@ -122,7 +122,7 @@ exports.createBar = function(fromView) {
 //	under_bar.add(invest_button);
 //	under_bar.add(item_button);
 	under_bar.add(addConfess_button);
-	under_bar.add(list_button);
+//	under_bar.add(list_button);
 
 	return under_bar;
 }

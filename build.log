@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.065000 seconds on emulator to get ready
+[DEBUG] waited 0.098000 seconds on emulator to get ready
 [DEBUG] com.xicolo.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\ConfessWindow\FlowView.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowView.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ACS\Confess\CreatePost.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ACS\Confess\CreatePost.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
@@ -48,6 +48,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/CreateUser.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/LoginACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/RemovePost.js
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/UpdatePost.js
 [DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
@@ -213,6 +214,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/CollectionTable/ProjectTableRow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowRow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ResponseBoard.js
 [DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/InstructionWin.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWin.js
@@ -299,6 +301,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.106000 seconds on emulator to get ready
+[DEBUG] waited 0.072000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

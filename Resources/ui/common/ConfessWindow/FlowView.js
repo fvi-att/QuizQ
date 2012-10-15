@@ -51,7 +51,7 @@ function ProjectList(download) {
 	});
 	
 	for(count =0;count < download.length;count++){
-				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].title, 0,null,view);
+				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].title,download[count].content, 0,download[count].id,view);
 				STUB_row.row.setHasChild(false);
 	
 				aTableView.appendRow(STUB_row.row);

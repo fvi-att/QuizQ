@@ -5,7 +5,7 @@
  *
  */
 
-exports.createRowObject = function(image_path, title, side, id,from_win) {
+exports.createRowObject = function(image_path,title,comment, side, id,from_win) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
 	var source_row = require('/ui/common/ProjectTableRow').createRowObject(image_path, title, side, id);
@@ -31,7 +31,7 @@ exports.createRowObject = function(image_path, title, side, id,from_win) {
 	
 	
 	var comment_label = Titanium.UI.createLabel({
-		text : 'ワロスww :6  　だめだこりゃ!:10',
+		text : comment,
 		color : 'black',
 		font : {
 			fontSize : width / 25
@@ -54,7 +54,7 @@ exports.createRowObject = function(image_path, title, side, id,from_win) {
 	
 	response_button.addEventListener('click',function(e){
 		
-		require('/ui/common/ConfessWindow/ResponseBoard').openView(from_win);
+		require('/ui/common/ConfessWindow/ResponseBoard').openView(from_win,{status:'by 名無しさん　2012年10月12日',title:title,post_id:id});
 	});
 	
 	source_row.row.add(response_button);
