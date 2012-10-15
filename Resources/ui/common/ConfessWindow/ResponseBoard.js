@@ -147,7 +147,7 @@ exports.openView = function(view,about){
 			if(switch3.value)
 				about.status.noway++;
 				
-			alert('uploading::'+JSON.stringify(about.status))
+		//	alert('uploading::'+JSON.stringify(about.status))
 				
 			//更新系の処理を書いておくこと
 			require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id,JSON.stringify(about.status))

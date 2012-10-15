@@ -82,7 +82,7 @@ exports.createRowObject = function(image_path,title,comment, side, id,from_win) 
 	
 	Titanium.App.addEventListener('update_row',function(e){
 		if(e.id == id){
-			alert('changin;;'+e.status)
+			comment = e.status;
 			comment_label.setText(setCommentText(JSON.parse(e.status)));
 		}
 	})

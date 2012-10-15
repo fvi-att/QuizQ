@@ -39,7 +39,7 @@ exports.UpdatePost = function(post_id,message) {
 			}).show();
 			//完了とともに要素の更新を行う。
 			Titanium.App.fireEvent('update_row',{id:post_id,status:post.content});
-			alert('OK::200::'+post.content);
+			//alert('OK::200::'+post.content);
 			//alert('Success:\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'test_photo: ' + post.photo);
 		} else {
 			actInd.hide();
