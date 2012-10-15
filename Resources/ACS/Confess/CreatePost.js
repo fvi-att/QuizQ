@@ -43,7 +43,7 @@ exports.createPost = function(title, message, junel, photo_path) {
 
 			//投稿用ウィンドウを閉じるイベントを発生させる
 			Titanium.App.fireEvent('complete_post');
-			//alert('Success:\\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'photo: ' + post.photo);
+			alert('Success:\\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'photo: ' + post.photo+ post.content + '\\n' + ': ' + post.photo);
 			
 			return true;
 
@@ -66,7 +66,8 @@ exports.createPost = function(title, message, junel, photo_path) {
 			content :comment,
 			title : title,
 			tags : [junel],
-			photo : Titanium.Filesystem.getFile(photo_path)
+			photo : Titanium.Filesystem.getFile(photo_path),
+			acl_name :'All_Public'
 		}, function(e) {
 			return ReturnMessage(e);
 		});
@@ -81,6 +82,7 @@ exports.createPost = function(title, message, junel, photo_path) {
 			content : comment,
 			title : title,
 			tags : [junel],
+			acl_name :'All_Public'
 		}, function(e) {
 			return ReturnMessage(e);
 		});

@@ -69,7 +69,7 @@ exports.openView = function(view,about){
 	var switch1 = Ti.UI.createSwitch({
 		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		title :'面白いネ！',
+		title :'イイね！',
 		value : false,
 
 		color : 'black',
@@ -82,7 +82,7 @@ exports.openView = function(view,about){
 	var switch2 = Ti.UI.createSwitch({
 		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		title :'ありえないっー！！',
+		title :'マズイね！',
 		value : false,
 
 		color : 'black',
@@ -96,7 +96,7 @@ exports.openView = function(view,about){
 	var switch3 = Ti.UI.createSwitch({
 		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		title :'だめだこりゃ',
+		title :'あり得ない！',
 		value : false,
 
 		color : 'black',
@@ -132,17 +132,22 @@ exports.openView = function(view,about){
 		});
 		old_paper.add(tmp_closeButton);
 		
+		
 		tmp_closeButton.addEventListener('click',function(e){
 			view.remove(back_temp_view);
 			view.remove(old_paper);
 			
 			
+			
+			
 			if(switch1.value)
 				about.status.interest ++;
 			if(switch2.value)
-				about.status.noway ++;
+				about.status.bad ++;
 			if(switch3.value)
-				about.status.bad++;
+				about.status.noway++;
+				
+			alert('uploading::'+JSON.stringify(about.status))
 				
 			//更新系の処理を書いておくこと
 			require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id,JSON.stringify(about.status))
