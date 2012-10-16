@@ -56,7 +56,7 @@ function ApplicationWindow() {
 	if (Titanium.Platform.osname == 'android') {
 
 		//まずはじめにメニューを表示できるようにする
-
+		/*
 		self.activity.onCreateOptionsMenu = function(e) {
 			var menu = e.menu;
 			var menuItem = menu.add({
@@ -68,6 +68,7 @@ function ApplicationWindow() {
 				//設定画面を展開する。
 			});
 		};
+		*/
 
 	}
 
