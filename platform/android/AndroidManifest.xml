@@ -7,7 +7,7 @@
 
 		<!-- TI_APPLICATION -->
 
-		<activity android:configChanges="keyboardHidden|orientation" android:label="Secret" android:name=".SecretActivity" android:theme="@style/Theme.Titanium">
+		<activity android:configChanges="keyboardHidden|orientation" android:label="@string/appname" android:name=".SecretActivity" android:theme="@style/Theme.Titanium">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
