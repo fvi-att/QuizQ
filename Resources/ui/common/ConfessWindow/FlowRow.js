@@ -5,10 +5,10 @@
  *
  */
 
-exports.createRowObject = function(image_path,title,comment, side, id,from_win) {
+exports.createRowObject = function(image_path,created_at,title,comment, side, id,photo,from_win) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
-	var source_row = require('/ui/common/ProjectTableRow').createRowObject(image_path, title, side, id);
+	var source_row = require('/ui/common/ConfessWindow/ProjectTableRow').createRowObject(image_path, title, side, photo,id);
 
 	//source_row.row.setLeftImage(null);
 	var row_height = source_row.row.getHeight();
@@ -17,13 +17,13 @@ exports.createRowObject = function(image_path,title,comment, side, id,from_win) 
 	
 	//日付を一旦削除　後日追加予定
 	var status_label = Titanium.UI.createLabel({
-		text : 'by 名無しさん　',
+		text : 'by 名無しさん'+created_at,
 		color : 'black',
 		font : {
 			fontSize : width / 25
 		},
-		textAlign : 'center',
-		top:row_height *0.1,
+		textAlign : 'left',
+		top:row_height *0.05,
 		left:width * 0.25
 		
 	});

@@ -51,7 +51,7 @@ function ProjectList(download) {
 	});
 	
 	for(count =0;count < download.length;count++){
-				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].title,download[count].content, 0,download[count].id,view);
+				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].created_at,download[count].title,download[count].content, 0,download[count].id,download[count].photo,view);
 				STUB_row.row.setHasChild(false);
 	
 				aTableView.appendRow(STUB_row.row);
@@ -66,7 +66,7 @@ function ProjectList(download) {
 		title:'閉じる',
 		width:width*0.6,
 		height:'auto',
-		top:height*0.85
+		top:height*0.9
 	});
 	
 	close_button.addEventListener('click',function(e){

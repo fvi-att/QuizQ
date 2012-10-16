@@ -32,7 +32,7 @@ exports.openCivilView = function() {
 	});
 
 	house_image.addEventListener('click', function(e) {
-		require('/ui/common/SelectBoard/CivGrowthBoard').openView(civ_window);
+		//require('/ui/common/SelectBoard/CivGrowthBoard').openView(civ_window);
 	})
 
 	civ_window.add(house_image);
@@ -48,10 +48,10 @@ exports.openCivilView = function() {
 	man_image.start();
 
 	man_image.addEventListener('click', function(e) {
-
+		/*
 		require('/ui/common/serifView/Serif').openView(civ_window);
 		Titanium.App.Properties.setString('first_contact', 'need_apple')
-
+		*/
 	});
 
 	civ_window.add(man_image);

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
+	<string name="appname">ひみつぶやき</string>
 	<string name="welcome">%sへようこそ!</string>
 	<string name="add">かっこイイネ！　を追加する</string>
 	

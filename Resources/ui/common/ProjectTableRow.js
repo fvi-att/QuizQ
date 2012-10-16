@@ -53,6 +53,7 @@ exports.createRowObject = function(image_path,title,side,id) {
 		color:'black',
 		font:{fontSize:width /20},
 		textAlign:'center',
+		top:height *0.12 + hasPhoto *height *0.7,
 		left:width * 0.25
 		
 	});
