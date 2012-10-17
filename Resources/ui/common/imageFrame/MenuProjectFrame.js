@@ -60,12 +60,12 @@ function MenuProjectFrame() {
 
 					cancel : function(event) {
 							self.setImage('/images/icon/pallet_default.png');
-							self.imageName=null;
+							self.imagePath=null;
 					},
 
 					error : function(event) {
 						alert('カメラから画像を取得できませんでした');
-						self.imageName=null;
+						self.imagePath=null;
 					},
 
 					saveToPhotoGallery : true,
@@ -115,6 +115,7 @@ function MenuProjectFrame() {
 			if(dialog_button.cancel == true) {
 				
 				self.setImage('/images/icon/pallet_default.png');
+				self.imagePath = null;
 				return;
 			}
 			//addevent end
