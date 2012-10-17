@@ -4,7 +4,6 @@
     <property name="acs-oauth-secret-production" type="string">qocryb4EFuWH2TShVECBXht4nX0e8Z89</property>
     <property name="acs-oauth-key-production" type="string">sys5x5vA0rpddWKrS8ll6TU0xTl7wjj9</property>
     <property name="acs-api-key-production" type="string">0VmTBmEnR04JaL6RbAC98wrmwSKWsYru</property>
-    
     <property name="acs-oauth-secret-development" type="string">klortVoPmCdE6WtqQjJfGfZsijWSH9DT</property>
     <property name="acs-oauth-key-development" type="string">AqUPnCkrzk7iHb1sf5DVkboAjlIzpMQD</property>
     <property name="acs-api-key-development" type="string">BfoWoMRclEOytZr6rb7rilmjBugpXtvm</property>
@@ -16,7 +15,7 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.3.GA</sdk-version>
-    <id>com.xicolo.app</id>
+    <id>com.xicolo.confess.app</id>
     <name>Secret</name>
     <version>1.00</version>
     <publisher>fvi@</publisher>
