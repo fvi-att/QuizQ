@@ -1,0 +1,1 @@
+/Users/simichan/Desktop/ConfessMode/ConfessSystem/Resources/ui/common/first_intro/first_introView.js

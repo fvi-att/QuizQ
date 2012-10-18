@@ -1,0 +1,54 @@
+/*
+ * 
+ * created by fvi@
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+exports.setProperty = function(){
+	//ゲーム全般に関する設定
+	var INITIAL_POINT = 15;
+	if (Ti.App.Properties.getBool('isIntroNeed') == null)
+		Ti.App.Properties.setBool('isIntroNeed', true);
+
+	if (Ti.App.Properties.getBool('isSampleNeed') == null)
+		Ti.App.Properties.setBool('isSampleNeed', true);
+
+	if (Ti.App.Properties.getDouble('lastTime') == null)
+		Ti.App.Properties.setDouble('lastTime', (new Date).getTime())
+
+	if (Ti.App.Properties.getInt('point') == null) {
+		Ti.App.Properties.setInt('point', INITIAL_POINT);
+	} else {
+
+		var rst = Ti.App.Properties.getInt('point')
+
+		if (rst <= 0)
+			rst = 0;
+
+		//起動特典　一回あたり　１ポイント
+		rst++;
+
+		Ti.App.Properties.setInt('point', rst);
+	}
+	
+	//パラメータ値の管理
+	//人間のおしゃべり機能に関するパラメータ　を文字列で表現する
+	if (!Ti.App.Properties.hasProperty('prmt_talk'))
+		Ti.App.Properties.setString('prmt_talk', 'first_contact');
+
+	if (!Ti.App.Properties.hasProperty('civ_population'))
+		Ti.App.Properties.setInt('civ_population', 10);
+
+	if (!Ti.App.Properties.hasProperty('civ_food'))
+		Ti.App.Properties.setInt('civ_food', 30);
+
+	if (!Ti.App.Properties.hasProperty('civ_culture'))
+		Ti.App.Properties.setInt('civ_culture', 5);
+
+	if (!Ti.App.Properties.hasProperty('civ_money'))
+		Ti.App.Properties.setInt('civ_money', 50);
+}

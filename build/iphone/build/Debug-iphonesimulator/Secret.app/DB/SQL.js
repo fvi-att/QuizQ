@@ -1,0 +1,1 @@
+/Users/simichan/Desktop/ConfessMode/ConfessSystem/Resources/DB/SQL.js

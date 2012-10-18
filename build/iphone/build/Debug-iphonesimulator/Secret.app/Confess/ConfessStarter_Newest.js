@@ -1,0 +1,1 @@
+/Users/simichan/Desktop/ConfessMode/ConfessSystem/Resources/Confess/ConfessStarter_Newest.js

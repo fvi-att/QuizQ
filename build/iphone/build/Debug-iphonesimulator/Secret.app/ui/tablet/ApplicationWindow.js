@@ -1,0 +1,1 @@
+/Users/simichan/Desktop/ConfessMode/ConfessSystem/Resources/ui/tablet/ApplicationWindow.js
