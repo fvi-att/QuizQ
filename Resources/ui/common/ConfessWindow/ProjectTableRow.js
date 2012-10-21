@@ -32,7 +32,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 		//		leftImage:leftImagePath,
 		backgroundImage : '/images/transparent.png',
 		hasChild : true,
-		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.3,
+		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.15,
 		className : 'todo_row',
 		id : id,
 
@@ -43,7 +43,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 	if (photo) {
 		
 		var row_img = Titanium.UI.createImageView({
-			image : photo.urls.small_240,
+			image : photo.urls.thumb_100,
 			height : 'auto',
 			left:width *0.25,
 			width : 'auto',
@@ -65,7 +65,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 		font : {
 			fontSize : width / 20
 		},
-		top:height * 0.08 + hasPhoto * height *0.3,
+		top:height * 0.08 + hasPhoto * height *0.15,
 		textAlign : 'center',
 		left : width * 0.25
 
@@ -79,13 +79,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 	if (side == 0)
 		arrow_path = '/images/Table/complete_stamp.gif'
 	*/
-	var stamp_img = Titanium.UI.createImageView({
-		image : '/images/Stamp/kijyo.png',
-		width : 'auto',
-		height : row_height * 0.9,
-		right : 0,
-	});
-	row.add(stamp_img);
+
 	
 	return {
 		row : row,
