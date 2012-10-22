@@ -27,7 +27,9 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 	if (photo)
 		hasPhoto = 1;
 
-	var lf_count = title.split("\n").length - 1;
+
+	
+	var lf_count = Math.max(title.split("\n").length - 1,title.length / 12)
 	var row = Titanium.UI.createTableViewRow({
 		//		leftImage:leftImagePath,
 		backgroundImage : '/images/transparent.png',

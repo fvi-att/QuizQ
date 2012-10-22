@@ -62,8 +62,9 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 	PlusStamp();
 
 	//日付を一旦削除　後日追加予定
+	var time_label = require('/util/GetJSTime').getJST(created_at)
 	var status_label = Titanium.UI.createLabel({
-		text : 'by 名無しさん\n' + created_at.toLocaleString(),
+		text : 'by 名無しさん\n' + time_label,
 		color : 'black',
 		font : {
 			fontSize : width / 27
@@ -84,6 +85,14 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 		status_string += 'マズイね：' + com_json.bad + ',';
 
 		status_string += 'あり得ない！：' + com_json.noway;
+		
+		if(com_json.miserable)
+			status_string += '\n辛いね！わかるよ：'+com_json.miserable;
+		if(com_json.cheear)
+			status_string += '\n勝負時！じゃん！：'+com_json.cheear;
+		if(com_json.boon)
+			status_string += '\n（^ω^)ﾌﾞｰﾝ・・：'+com_json.boon;
+			
 
 		return status_string;
 	}
