@@ -12,7 +12,7 @@ exports.createBoard = function() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var point_num = Titanium.UI.createLabel({
 		color : 'black',
-		text : 'ひみつぶやきポイント：０ポイント',
+		text : 'ひみつぶやきポイント\n０ポイント',
 		backgroundImage : '/images/transparent.png',
 		width : width * 0.5,
 		font:{fontSize:15},

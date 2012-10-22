@@ -32,7 +32,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 		//		leftImage:leftImagePath,
 		backgroundImage : '/images/transparent.png',
 		hasChild : true,
-		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.15,
+		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.3,
 		className : 'todo_row',
 		id : id,
 
@@ -43,7 +43,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 	if (photo) {
 		
 		var row_img = Titanium.UI.createImageView({
-			image : photo.urls.thumb_100,
+			url : photo.urls.thumb_240,
 			height : 'auto',
 			left:width *0.25,
 			width : 'auto',
