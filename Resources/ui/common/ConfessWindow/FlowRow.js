@@ -24,11 +24,30 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 				var stamp_img = Titanium.UI.createImageView({
 					image : '/images/Stamp/kijyo.png',
 					width : 'auto',
-					height : row_height * 0.9,
+					height : row_height * 0.8,
 					right : 0,
 				});
 				source_row.row.add(stamp_img);
 
+			}
+			if(json_status.noway >0){
+				var stamp_img = Titanium.UI.createImageView({
+					image : '/images/Stamp/kijyo.png',
+					width : 'auto',
+					height : row_height * 0.8,
+					right : 0,
+				});
+				source_row.row.add(stamp_img);
+			}
+			
+			if(json_status.interest >0){
+				var stamp_img = Titanium.UI.createImageView({
+					image : '/images/Stamp/kijyo.png',
+					width : 'auto',
+					height : row_height * 0.8,
+					right : 0,
+				});
+				source_row.row.add(stamp_img);
 			}
 		}
 
@@ -38,10 +57,10 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 
 	//日付を一旦削除　後日追加予定
 	var status_label = Titanium.UI.createLabel({
-		text : 'by 名無しさん' + created_at,
+		text : 'by 名無しさん\n' + created_at,
 		color : 'black',
 		font : {
-			fontSize : width / 25
+			fontSize : width / 27
 		},
 		textAlign : 'left',
 		top : row_height * 0.05,
