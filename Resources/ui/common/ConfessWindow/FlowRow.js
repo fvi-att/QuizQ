@@ -91,7 +91,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 			fontSize : width / 25
 		},
 		textAlign : 'center',
-		top : row_height * 0.85,
+		bottom:0,
 		left : width * 0.25
 
 	});
