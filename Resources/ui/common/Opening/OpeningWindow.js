@@ -45,7 +45,7 @@ exports.openWindow = function() {
 		width:width * 0.6,
 		top:0,
 		images:views_path,
-		duration:5000,
+		duration:2500,
 		repeatCount:0
 	});
 	

@@ -17,7 +17,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 	var json_status = JSON.parse(comment);
 
 	function PlusStamp() {
-		if (!photo) {
+	//	if (!photo) {
 
 			if (json_status.bad > 0) {
 
@@ -28,9 +28,22 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 					right : 0,
 				});
 				source_row.row.add(stamp_img);
+				
+				return;
 
-			}
-			if(json_status.noway >0){
+			}else if(json_status.noway >0){
+				var stamp_img = Titanium.UI.createImageView({
+					image : '/images/Stamp/angry_cat.png',
+					width : 'auto',
+					height : row_height * 0.8,
+					bottom : 0,
+				});
+				source_row.row.setHeight(source_row.row.getHeight() + height *0.15)
+				source_row.row.add(stamp_img);
+				
+				return;
+			}else if(json_status.interest >0){
+				/*
 				var stamp_img = Titanium.UI.createImageView({
 					image : '/images/Stamp/kijyo.png',
 					width : 'auto',
@@ -38,18 +51,11 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 					right : 0,
 				});
 				source_row.row.add(stamp_img);
+				
+				return;
+				*/
 			}
-			
-			if(json_status.interest >0){
-				var stamp_img = Titanium.UI.createImageView({
-					image : '/images/Stamp/kijyo.png',
-					width : 'auto',
-					height : row_height * 0.8,
-					right : 0,
-				});
-				source_row.row.add(stamp_img);
-			}
-		}
+		
 
 	}
 
@@ -57,7 +63,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 
 	//日付を一旦削除　後日追加予定
 	var status_label = Titanium.UI.createLabel({
-		text : 'by 名無しさん\n' + created_at,
+		text : 'by 名無しさん\n' + created_at.toLocaleString(),
 		color : 'black',
 		font : {
 			fontSize : width / 27

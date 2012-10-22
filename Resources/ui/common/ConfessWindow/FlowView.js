@@ -50,7 +50,12 @@ function ProjectList(download) {
 		height : height * 0.8
 	});
 	
-	for(count =0;count < download.length;count++){
+
+	
+	for(count =download.length;count > -1;count--){
+			if(!download[count])
+				continue;
+				
 				var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',download[count].created_at,download[count].title,download[count].content, 0,download[count].id,download[count].photo,view);
 				STUB_row.row.setHasChild(false);
 	
@@ -60,6 +65,8 @@ function ProjectList(download) {
 
 	//	view.add(searchBar);
 	view.add(aTableView);
+	
+	
 	
 	
 	var close_button = Titanium.UI.createButton({

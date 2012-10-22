@@ -32,8 +32,8 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 		//		leftImage:leftImagePath,
 		backgroundImage : '/images/transparent.png',
 		hasChild : true,
-		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.45,
-		className : 'todo_row',
+		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.30,
+		className : 'todo_row'+title+id,
 		id : id,
 
 	});
@@ -71,14 +71,6 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 
 	});
 	row.add(label);
-	/*
-	var arrow_path = '/images/Table/arrowUp1.png';
-	if (side < 0)
-		arrow_path = '/images/Table/arrowDown1.png';
-
-	if (side == 0)
-		arrow_path = '/images/Table/complete_stamp.gif'
-	*/
 
 	
 	return {
