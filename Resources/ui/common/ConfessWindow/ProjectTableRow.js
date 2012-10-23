@@ -27,13 +27,15 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 	if (photo)
 		hasPhoto = 1;
 
-	var lf_count = title.split("\n").length - 1;
+
+	
+	var lf_count = Math.max(title.split("\n").length - 1,title.length / 12)
 	var row = Titanium.UI.createTableViewRow({
 		//		leftImage:leftImagePath,
 		backgroundImage : '/images/transparent.png',
 		hasChild : true,
-		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.3,
-		className : 'todo_row',
+		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.30,
+		className : 'todo_row'+title+id,
 		id : id,
 
 	});
@@ -57,7 +59,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 		
 		row.add(row_img);
 
-		//画像貼り付けコード封印
+		
 	}
 	var label = Titanium.UI.createLabel({
 		text : title,
@@ -71,25 +73,8 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 
 	});
 	row.add(label);
-	/*
-	var arrow_path = '/images/Table/arrowUp1.png';
-	if (side < 0)
-		arrow_path = '/images/Table/arrowDown1.png';
 
-	if (side == 0)
-		arrow_path = '/images/Table/complete_stamp.gif'
-
-	var arrow_img = Titanium.UI.createImageView({
-		image : arrow_path,
-		width : 'auto',
-		height : row_height * 0.9,
-		right : 0,
-		//今回はここは隠蔽
-		opacity : 0
-
-	});
-	row.add(arrow_img);
-	*/
+	
 	return {
 		row : row,
 		image : row_img,

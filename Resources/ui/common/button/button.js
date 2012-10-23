@@ -39,6 +39,11 @@ function createButton(text){
 			image_path ='/images/button/later/';
 			break;
 			
+		case 'start':
+
+			image_path ='/images/button/start/';
+			break;
+			
 		
 		default:
 			image_path = '/images/button/add/';

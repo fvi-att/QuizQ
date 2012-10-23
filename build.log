@@ -1,261 +1,72 @@
 Logfile initialized
-[INFO] logfile = C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build.log
-[DEBUG] C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\builder.py distribute Secret C:\android-sdk\ C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ com.xicolo.confess.app C:\Documents and Settings\nishi\My Documents\Dropbox\xicoloConfessProvision javasukidesukab0801230 confess C:\Documents and Settings\nishi\デスクトップ 7
+[INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build.log
+[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\builder.py install Secret C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.confess.app 2
 [INFO] Titanium SDK version: 2.1.3 (10/02/12 16:16 15997d0)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.026000 seconds on emulator to get ready
+[DEBUG] com.xicolo.confess.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\Confess\CreatePost.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\Confess\CreatePost.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\Confess\CreateUser.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\Confess\CreateUser.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\Confess\LoginACS.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\Confess\LoginACS.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\Confess\RemovePost.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\Confess\RemovePost.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\Confess\UpdatePost.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\Confess\UpdatePost.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\CreateUserACS.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\CreateUserACS.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\LoginACS.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\LoginACS.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\LogoutACS.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\LogoutACS.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\Quiz.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\Quiz.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\UploadImage.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\UploadImage.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ACS\UpLoadQuiz.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ACS\UpLoadQuiz.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\appicon.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\appicon.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\default.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\default.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\app.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\app.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\appico.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\appico.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Confess\ConfessStarter.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Confess\ConfessStarter.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Confess\ConfessStarter_Newest.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Confess\ConfessStarter_Newest.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\counter\counter.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\counter\counter.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\DB\ConfessDB.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\DB\ConfessDB.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\DB\ItemDB.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\DB\ItemDB.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\DB\SQL.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\DB\SQL.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\And\And.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\And\And.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\And\And_Pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\And\And_Pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\And\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\And\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\And\button_pressed => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\And\button_pressed
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\And\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\And\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\background\background.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\background\background.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\background\back_green.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\background\back_green.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\background\back_lightblue.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\background\back_lightblue.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\background\back_white.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\background\back_white.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\background\cork.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\background\cork.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\background\note.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\background\note.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\background\open_background.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\background\open_background.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\board\board.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\board\board.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\add\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\add\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\add\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\add\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\And\And(1).png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\And\And(1).png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\And\And_Pressed(1).png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\And\And_Pressed(1).png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\And\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\And\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\And\button_pressed => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\And\button_pressed
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\And\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\And\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\construction\construction.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\construction\construction.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\give\give.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\give\give.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\good\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\good\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\good\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\good\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\good\good.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\good\good.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\good\good_added.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\good\good_added.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\good\good_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\good\good_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\invest\investment.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\invest\investment.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\later\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\later\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\later\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\later\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\mylist\mylist.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\mylist\mylist.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\OK\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\OK\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\OK\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\OK\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\OK\button_pressed1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\OK\button_pressed1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\OK\trans\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\OK\trans\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\OK\trans\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\OK\trans\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\OK_button2_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\OK_button2_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\OK_button_2.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\OK_button_2.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\secret_tweet\tweet.PNG => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\secret_tweet\tweet.PNG
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\secret_tweet\tweet1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\secret_tweet\tweet1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\share\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\share\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\share\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\share\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\try\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\try\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\try\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\try\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\tweet\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\tweet\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\button\tweet\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\button\tweet\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\cancel\cancel.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\cancel\cancel.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\back\background.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\back\background.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\back\background_night.PNG => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\back\background_night.PNG
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\house\house1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\house\house1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\item\fire.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\item\fire.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\man\man0.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\man\man0.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\man\man10.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\man\man10.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\man\man11.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\man\man11.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\ancient\man\man12.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\ancient\man\man12.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\bar\underbar1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\bar\underbar1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\bar\underbar2.PNG => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\bar\underbar2.PNG
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\cupcell\cupcell.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\cupcell\cupcell.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\cupcell\cupcell_open.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\cupcell\cupcell_open.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\food\apple.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\food\apple.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\food\grape.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\food\grape.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\religion\flask\flask.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\religion\flask\flask.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\civ\religion\FSL\FSL.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\civ\religion\FSL\FSL.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\FirstIntro\arrow.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\FirstIntro\arrow.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\FirstIntro\slide.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\FirstIntro\slide.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\FirstIntro\xicolo.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\FirstIntro\xicolo.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\flowboard\board.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\flowboard\board.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\dark_gears.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\dark_gears.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\dark_link.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\dark_link.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\dark_thumb-up.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\dark_thumb-up.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\light_gears.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\light_gears.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\light_pegman.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\light_pegman.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\light_pictures.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\light_pictures.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\pallet_default.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\pallet_default.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\pallet_default_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\pallet_default_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\plus1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\plus1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\icon\time1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\icon\time1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\MenuTab\menu1_1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\MenuTab\menu1_1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\MenuTab\menu2_1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\MenuTab\menu2_1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\MenuTab\menu3_1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\MenuTab\menu3_1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\MenuTab\menuTab1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\MenuTab\menuTab1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\MenuTab\menuTab2.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\MenuTab\menuTab2.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\MenuTab\menuTab3.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\MenuTab\menuTab3.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\note.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\note.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\0.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\0.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\2.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\2.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\3.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\3.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\4.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\4.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\5.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\5.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\6.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\6.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\7.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\7.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\8.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\8.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\9.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\9.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\Plate.PNG => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\Plate.PNG
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\slash.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\slash.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\number\slash1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\number\slash1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\opening\old_paper.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\opening\old_paper.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\postit\backpost.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\postit\backpost.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\postit\blue_post1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\postit\blue_post1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\postit\green_post1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\postit\green_post1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\postit\purple_post2.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\postit\purple_post2.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\postit\red_post1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\postit\red_post1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\postit\yellow_post1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\postit\yellow_post1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\result\circle.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\result\circle.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\result\circle2.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\result\circle2.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\result\clear1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\result\clear1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\result\cross.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\result\cross.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\result\cross2.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\result\cross2.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\result\resultImage1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\result\resultImage1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\sample\freedom.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\sample\freedom.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\sample\spl_chokin.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\sample\spl_chokin.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\sample\spl_idea.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\sample\spl_idea.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\sample\spl_manzai.jpg => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\sample\spl_manzai.jpg
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\serif\serif.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\serif\serif.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\add\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\add\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\add\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\add\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\And\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\And\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\And\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\And\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\good\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\good\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\good\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\good\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\good\good_added.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\good\good_added.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\OK\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\OK\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\OK\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\OK\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\OK_button2_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\OK_button2_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\OK_button_2.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\OK_button_2.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\try\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\try\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\try\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\try\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\tweet\button.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\tweet\button.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\share\tweet\button_pressed.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\share\tweet\button_pressed.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\Table\arrowDown1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\Table\arrowDown1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\Table\arrowUp1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\Table\arrowUp1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\Table\complete_stamp.gif => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\Table\complete_stamp.gif
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\Table\favorite_1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\Table\favorite_1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\Table\section1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\Table\section1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\Table\section_1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\Table\section_1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\tag\hash_1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\tag\hash_1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\tmp\Left.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\tmp\Left.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\tmp\right.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\tmp\right.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\images\transparent.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\images\transparent.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\itemGood\json.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\itemGood\json.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\KS_nav_ui.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\KS_nav_ui.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\KS_nav_views.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\KS_nav_views.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Quiz\Quiz2BookMark.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Quiz\Quiz2BookMark.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Quiz\QuizStarter.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Quiz\QuizStarter.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Quiz\SaveQuiz2BookMark.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Quiz\SaveQuiz2BookMark.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\Serif\Serif.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\Serif\Serif.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\title1.png => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddConfess.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddConfess.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddField\Selectjunel.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddField\Selectjunel.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddField\Three_Choice_Field.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddField\Three_Choice_Field.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddField\TypePicker.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddField\TypePicker.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddField\Word_Field.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddField\Word_Field.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\AddProject.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\AddProject.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\button\button.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\button\button.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\CivBoard\Board.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\CivBoard\Board.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\CollectionTable\ProjectTableRow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\CollectionTable\ProjectTableRow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ConfessWindow\FlowRow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowRow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ConfessWindow\FlowView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ConfessWindow\ProjectTableRow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\ProjectTableRow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ConfessWindow\ResponseBoard.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\ResponseBoard.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ConfigWin.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfigWin.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\CreateUserView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\CreateUserView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\FirstView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\FirstView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\first_intro\first_introView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\first_intro\first_introView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\imageFrame\MenuProjectFrame.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\imageFrame\MenuProjectFrame.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\MatomeView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\MatomeView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\MenuIcon.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\MenuIcon.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\menuTab\MenuTab.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\menuTab\MenuTab.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\menuTab\ScrollPage.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\menuTab\ScrollPage.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\MyCivilizationWindow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\MyCivilizationWindow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\Opening\OpeningWindow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\Opening\OpeningWindow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\PointFrame.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\PointFrame.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ProjectListView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ProjectListView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ProjectTableRow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ProjectTableRow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ProjectTableView\InstructionWin.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ProjectTableView\InstructionWin.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ProjectTableView\IntroWin.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ProjectTableView\IntroWin.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ProjectTableView\IntroWinStarter.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ProjectTableView\IntroWinStarter.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\quiz\ChildResultTableRow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\quiz\ChildResultTableRow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\quiz\QuizWin.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\quiz\QuizWin.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\ResultQuizView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ResultQuizView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\SelectBoard\CivGrowthBoard.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\SelectBoard\CivGrowthBoard.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\SelectBoard\SelectBoard.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\SelectBoard\SelectBoard.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\SelectBoard\selectItems.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\SelectBoard\selectItems.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\serifView\Serif.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\serifView\Serif.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\TopView.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\TopView.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\common\underbar\underbar.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\underbar\underbar.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\handheld\android\ApplicationWindow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\handheld\android\ApplicationWindow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\handheld\ApplicationWindow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\handheld\ApplicationWindow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\ui\tablet\ApplicationWindow.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\ui\tablet\ApplicationWindow.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\util\getbackPathWithTime.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\util\getbackPathWithTime.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\util\random.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\util\random.js
-[TRACE] COPYING CREATED FILE: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\util\setProperty.js => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\util\setProperty.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\util\GetJSTime.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\util\GetJSTime.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
-[DEBUG] app stylesheet => C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\ApplicationStylesheet.java
-[DEBUG] copying app icon: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
+[DEBUG] found special platform files dir = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\platform\android
+[DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
 [DEBUG] generating theme.xml
-[DEBUG] found drawable-long-land-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-land-hdpi\background.png
-[DEBUG] found drawable-long-land-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-land-ldpi\background.png
-[DEBUG] found drawable-long-port-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-port-hdpi\background.png
-[DEBUG] found drawable-long-port-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-long-port-ldpi\background.png
-[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-land-hdpi\background.png
-[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-land-ldpi\background.png
-[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-land-mdpi\background.png
-[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-port-hdpi\background.png
-[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-port-ldpi\background.png
-[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png
-[DEBUG] copying C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\res\drawable-notlong-port-mdpi\background.png
-[DEBUG] found splash screen at C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\assets\Resources\default.png
+[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-land-hdpi\background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-land-ldpi\background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-port-hdpi\background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-port-ldpi\background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-hdpi\background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-ldpi\background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-mdpi\background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-hdpi\background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-ldpi\background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-mdpi\background.png
+[DEBUG] found splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\default.png
+[INFO] Detected custom ApplicationManifest.xml -- no Titanium version migration supported
 [TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\ApplicationStylesheet.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\AssetCryptImpl.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\R.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\SecretActivity.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\SecretAppInfo.java to javac build list
-[DEBUG] adding C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\SecretApplication.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\ApplicationStylesheet.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\AssetCryptImpl.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\R.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretActivity.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretAppInfo.java" "C:\\Documents and Settings\\nishi\\My Documents\\Titanium Studio Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretApplication.java"
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\R.java to javac build list
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\SecretActivity.java to javac build list
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\SecretAppInfo.java to javac build list
+[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\app\SecretApplication.java to javac build list
+[DEBUG] Building Java Sources: "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\R.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretActivity.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretAppInfo.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
-[DEBUG] creating unsigned apk: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\QuizQ\build\android\bin\app-unsigned.apk
+[DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/CreatePost.js
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/CreateUser.js
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/LoginACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/RemovePost.js
+[DEBUG] from resource zip => assets/Resources/ACS/Confess/UpdatePost.js
+[DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/Quiz.js
+[DEBUG] from resource zip => assets/Resources/ACS/UpLoadQuiz.js
+[DEBUG] from resource zip => assets/Resources/ACS/UploadImage.js
+[DEBUG] from resource zip => assets/Resources/Confess/ConfessStarter.js
+[DEBUG] from resource zip => assets/Resources/Confess/ConfessStarter_Newest.js
+[DEBUG] from resource zip => assets/Resources/DB/ConfessDB.js
+[DEBUG] from resource zip => assets/Resources/DB/ItemDB.js
+[DEBUG] from resource zip => assets/Resources/DB/SQL.js
+[DEBUG] from resource zip => assets/Resources/Quiz/Quiz2BookMark.js
+[DEBUG] from resource zip => assets/Resources/Quiz/QuizStarter.js
+[DEBUG] from resource zip => assets/Resources/Quiz/SaveQuiz2BookMark.js
+[DEBUG] from resource zip => assets/Resources/Serif/Serif.js
+[DEBUG] from resource zip => assets/Resources/counter/counter.js
 [DEBUG] from resource zip => assets/Resources/images/And/And.png
 [DEBUG] from resource zip => assets/Resources/images/And/And_Pressed.png
 [DEBUG] from resource zip => assets/Resources/images/And/button.png
@@ -270,6 +81,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menuTab1.png
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menuTab2.png
 [DEBUG] from resource zip => assets/Resources/images/MenuTab/menuTab3.png
+[DEBUG] from resource zip => assets/Resources/images/Stamp/angry_cat.png
+[DEBUG] from resource zip => assets/Resources/images/Stamp/kijyo.png
 [DEBUG] from resource zip => assets/Resources/images/Table/arrowDown1.png
 [DEBUG] from resource zip => assets/Resources/images/Table/arrowUp1.png
 [DEBUG] from resource zip => assets/Resources/images/Table/complete_stamp.gif
@@ -311,6 +124,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/button/secret_tweet/tweet1.png
 [DEBUG] from resource zip => assets/Resources/images/button/share/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/share/button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/button/start/button.png
+[DEBUG] from resource zip => assets/Resources/images/button/start/button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/try/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/try/button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/tweet/button.png
@@ -345,19 +160,26 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/icon/pallet_default_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/icon/plus1.png
 [DEBUG] from resource zip => assets/Resources/images/icon/time1.png
-[DEBUG] from resource zip => assets/Resources/images/number/0.png
-[DEBUG] from resource zip => assets/Resources/images/number/1.png
-[DEBUG] from resource zip => assets/Resources/images/number/2.png
-[DEBUG] from resource zip => assets/Resources/images/number/3.png
-[DEBUG] from resource zip => assets/Resources/images/number/4.png
-[DEBUG] from resource zip => assets/Resources/images/number/5.png
-[DEBUG] from resource zip => assets/Resources/images/number/6.png
-[DEBUG] from resource zip => assets/Resources/images/number/7.png
-[DEBUG] from resource zip => assets/Resources/images/number/8.png
-[DEBUG] from resource zip => assets/Resources/images/number/9.png
+[DEBUG] from resource zip => assets/Resources/images/number/0.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/1.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/2.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/3.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/4.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/5.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/6.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/7.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/8.PNG
+[DEBUG] from resource zip => assets/Resources/images/number/9.PNG
 [DEBUG] from resource zip => assets/Resources/images/number/Plate.PNG
-[DEBUG] from resource zip => assets/Resources/images/number/slash.png
+[DEBUG] from resource zip => assets/Resources/images/number/slash.PNG
 [DEBUG] from resource zip => assets/Resources/images/number/slash1.png
+[DEBUG] from resource zip => assets/Resources/images/opening/images/movie1.png
+[DEBUG] from resource zip => assets/Resources/images/opening/images/movie2.png
+[DEBUG] from resource zip => assets/Resources/images/opening/images/movie3.png
+[DEBUG] from resource zip => assets/Resources/images/opening/slide_button/left_button.png
+[DEBUG] from resource zip => assets/Resources/images/opening/slide_button/left_button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/opening/slide_button/right_button.png
+[DEBUG] from resource zip => assets/Resources/images/opening/slide_button/right_button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/opening/old_paper.jpg
 [DEBUG] from resource zip => assets/Resources/images/postit/backpost.png
 [DEBUG] from resource zip => assets/Resources/images/postit/blue_post1.png
@@ -396,11 +218,61 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/tmp/right.png
 [DEBUG] from resource zip => assets/Resources/images/note.jpg
 [DEBUG] from resource zip => assets/Resources/images/transparent.png
+[DEBUG] from resource zip => assets/Resources/itemGood/json.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Selectjunel.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Three_Choice_Field.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/TypePicker.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Word_Field.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Removed_Board.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CollectionTable/ProjectTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ProjectTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ResponseBoard.js
+[DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/InstructionWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableView/IntroWinStarter.js
+[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/CivGrowthBoard.js
+[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/SelectBoard.js
+[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/selectItems.js
+[DEBUG] from resource zip => assets/Resources/ui/common/button/button.js
+[DEBUG] from resource zip => assets/Resources/ui/common/first_intro/first_introView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/imageFrame/MenuProjectFrame.js
+[DEBUG] from resource zip => assets/Resources/ui/common/menuTab/MenuTab.js
+[DEBUG] from resource zip => assets/Resources/ui/common/menuTab/ScrollPage.js
+[DEBUG] from resource zip => assets/Resources/ui/common/quiz/ChildResultTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/quiz/QuizWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/serifView/Serif.js
+[DEBUG] from resource zip => assets/Resources/ui/common/underbar/underbar.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddConfess.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddProject.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfigWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CreateUserView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/FirstView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MatomeView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MenuIcon.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MyCivilizationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/PointFrame.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectListView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ResultQuizView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/TopView.js
+[DEBUG] from resource zip => assets/Resources/ui/handheld/android/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/handheld/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/util/GetJSTime.js
+[DEBUG] from resource zip => assets/Resources/util/getbackPathWithTime.js
+[DEBUG] from resource zip => assets/Resources/util/random.js
+[DEBUG] from resource zip => assets/Resources/util/setProperty.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
+[DEBUG] from resource zip => assets/Resources/app.js
 [DEBUG] from resource zip => assets/Resources/appico.png
 [DEBUG] from resource zip => assets/Resources/appicon.png
 [DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/Resources/ti.cloud.js
 [DEBUG] from resource zip => assets/Resources/title1.png
 [DEBUG] from resource zip => assets/app.json
 [DEBUG] from resource zip => assets/index.json
@@ -420,25 +292,31 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
-[DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
 [DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.020000 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Application installed. Launch from drawer on Home Screen

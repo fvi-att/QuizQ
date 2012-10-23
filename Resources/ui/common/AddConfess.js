@@ -83,7 +83,7 @@ exports.AddProject = function() {
 
 	win.add(and_button);
 
-	var ok_button = new require('/ui/common/button/button')('add');
+	var ok_button = new require('/ui/common/button/button')('tweet');
 	ok_button.setTop(height * 0.82);
 	
 	

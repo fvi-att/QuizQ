@@ -26,7 +26,7 @@ exports.FlowdownloadStart = function(post_id) {
 	
 	var condition = new Date()
 	//condition.setDate(condition.getDate() -1);
-	condition.setHours(condition.getHours() -1);
+	condition.setDate(condition.getDate() -1);
 	
 	var Cloud = require('ti.cloud');
 	Cloud.Posts.query({

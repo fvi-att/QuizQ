@@ -2,55 +2,24 @@
  * created by fvi@
  *
  * created @ 2012 09 11
+ * 
+ * recreated @ 2012 10 22
  *
  */
 
 exports.createBoard = function() {
 
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
-	var people_num = Titanium.UI.createLabel({
+	var point_num = Titanium.UI.createLabel({
 		color : 'black',
-		text : '人口:10人',
+		text : 'ひみつぶやきポイント\n０ポイント',
 		backgroundImage : '/images/transparent.png',
 		width : width * 0.5,
-		height : height * 0.1,
-		textAlign : 'left',
-		top : 0,
-		left : width * 0.05
+		font:{fontSize:15},
+		height : height * 0.15,
+		textAlign : 'center',
 	});
 
-	var status_label = Titanium.UI.createLabel({
-		color : 'black',
-		text : '文明：人類の夜明け',
-		backgroundImage : '/images/transparent.png',
-		width : width * 0.5,
-		height : height * 0.1,
-		textAlign : 'left',
-		top : height * 0.08,
-		left : width * 0.05
-	});
-	
-	var caltural_label = Titanium.UI.createLabel({
-		color : 'black',
-		text : '文化値:2/10(20%)',
-		backgroundImage : '/images/transparent.png',
-		width : width * 0.5,
-		height : height * 0.1,
-		textAlign : 'left',
-		top : 0,
-		left : width *0.6
-	});
-	
-	var money_label = Titanium.UI.createLabel({
-		color : 'black',
-		text : '財政:5P',
-		backgroundImage : '/images/transparent.png',
-		width : width * 0.5,
-		height : height * 0.1,
-		textAlign : 'left',
-		top : height * 0.08,
-		left : width *0.6
-	});
 	
 	var board = Titanium.UI.createView({
 		backgroundImage : '/images/board/board.png',
@@ -62,16 +31,11 @@ exports.createBoard = function() {
 		},
 		isAppear : false,
 
-		people_num : people_num,
-		status_label:status_label,
-		caltural_label:caltural_label,
-		money_label:money_label
+
 	});
 
-	board.add(people_num);
-	board.add(status_label);
-	board.add(caltural_label);
-	board.add(money_label);
+	board.add(point_num);
+
 	
 
 	board.addEventListener('touchstart', function(e) {
