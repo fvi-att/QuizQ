@@ -9,7 +9,7 @@ Logfile initialized
 [DEBUG] com.xicolo.confess.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\ConfessWindow\ResponseBoard.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\ResponseBoard.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\ConfessWindow\FlowView.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowView.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] found special platform files dir = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\platform\android
@@ -226,6 +226,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
 [DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Removed_Board.js
 [DEBUG] from resource zip => assets/Resources/ui/common/CollectionTable/ProjectTableRow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ConfigWin.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowRow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ProjectTableRow.js
@@ -317,6 +318,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.024000 seconds on emulator to get ready
+[DEBUG] waited 0.019000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

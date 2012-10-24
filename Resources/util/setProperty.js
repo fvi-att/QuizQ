@@ -51,4 +51,8 @@ exports.setProperty = function(){
 
 	if (!Titanium.App.Properties.hasProperty('civ_money'))
 		Titanium.App.Properties.setInt('civ_money', 50);
+		
+	//情報フローに関する制御処理
+		if (!Titanium.App.Properties.hasProperty('flow_side'))
+		Titanium.App.Properties.setBool('flow_side', true);
 }

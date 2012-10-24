@@ -60,7 +60,7 @@ exports.openView = function(view, about) {
 		textAlign : 'center',
 		height:'auto',
 		width:old_paper.width * 0.9,
-		top : 0,
+		top : old_paper.height *0.05,
 
 	});
 	scrollView.add(title_label);
@@ -68,7 +68,7 @@ exports.openView = function(view, about) {
 	old_paper.add(scrollView);
 
 	var everyone_label = Titanium.UI.createLabel({
-		text : 'みんなのレス一欄',
+		text : 'みんなのレストップ一覧',
 		textAlign : 'left',
 		top : old_paper.height * 0.44,
 		color : 'black',
