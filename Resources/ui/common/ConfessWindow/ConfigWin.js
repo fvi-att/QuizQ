@@ -79,7 +79,7 @@ exports.OpenConfigWin = function() {
 	 *
 	*/
 	var account_man = Titanium.UI.createButton({
-		title : 'アカウント管理',
+		title : 'ログイン管理',
 		textAlign : 'center',
 		top : height * 0.8,
 		width : width * 0.75

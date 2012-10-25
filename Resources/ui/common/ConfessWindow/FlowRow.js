@@ -59,7 +59,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 
 	}
 
-	PlusStamp();
+//	PlusStamp();
 
 	//日付を一旦削除　後日追加予定
 	//var time_label = require('/util/GetJSTime').getJST(created_at)
@@ -92,7 +92,10 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 			status_string += '\n勝負時！じゃん！：'+com_json.cheear;
 		if(com_json.boon)
 			status_string += '\n（^ω^)ﾌﾞｰﾝ・・：'+com_json.boon;
-			
+		if(com_json.aruaru)
+			status_string += '\nあるある！';
+		if(com_json.aruaruneyo)
+			status_string += '\nあるあるあ・・ねーよ'
 
 		return status_string;
 	}

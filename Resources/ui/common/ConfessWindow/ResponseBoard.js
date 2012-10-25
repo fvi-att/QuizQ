@@ -152,6 +152,7 @@ exports.openView = function(view, about) {
 		if (switch3.value)
 			about.status.noway++;
 
+			about.status['boon'] =1;
 		//	alert('uploading::'+JSON.stringify(about.status))
 
 		//更新系の処理を書いておくこと
@@ -173,6 +174,9 @@ exports.openView = function(view, about) {
 	cancel_button.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
+		
+		delete old_paper;
+		delete back_temp_view;
 	});
 
 	old_paper.add(cancel_button);

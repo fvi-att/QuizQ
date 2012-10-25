@@ -15,6 +15,8 @@ exports.openCivilView = function() {
 	var civ_window = Titanium.UI.createWindow({
 		backgroundImage : background_path,
 
+
+
 		exitOnClose : false,
 		fullscreen : true,
 		navBarHidden : true, //タイトルバーを隠す
