@@ -7,37 +7,13 @@
 
 exports.openView = function(view, about) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
-	/*
 
-		status_string += 'イイね：' + com_json.interest + ',';
-
-		status_string += 'マズイね：' + com_json.bad + ',';
-
-		status_string += 'あり得ない！：' + com_json.noway;
-		
-		if(com_json.miserable)
-			status_string += '\n辛いね！わかるよ：'+com_json.miserable;
-		if(com_json.cheear)
-			status_string += '\n勝負時！じゃん！：'+com_json.cheear;
-		if(com_json.boon)
-			status_string += '\n（^ω^)ワロタ・・：'+com_json.boon;
-		if(com_json.aruaru)
-			status_string += '\nあるある！';
-		if(com_json.aruaruneyo)
-			status_string += '\nあるあるあ・・ねーよ';
-		if(com_json.orealy)
-			status_string += '\n本当かなぁ？byゴ●リ';
-	 */
 	var slide_num = 0;
 	var comment_data =[['イイね！','マズイね！','あり得ない！'],
 					   ['辛いね、わかるよ','勝負時！じゃん！','（^ω^)ワロタ・・'],
 					   ['あるある','あるあるあ・・ねーよ','本当かなぁ？'],
 					  ];
-	
-	
-	
-	
-	
+
 	var back_temp_view = Titanium.UI.createView({
 		backgroundColor : 'black',
 		width : Titanium.UI.FILL,
@@ -148,6 +124,17 @@ exports.openView = function(view, about) {
 		height : old_paper.height * 0.1// necessary for textAlign to be effective
 	});
 	old_paper.add(switch3);
+	
+	function rePaintSwitch(){
+		switch1.setValue(false);
+		switch2.setValue(false);
+		switch3.setValue(false);
+		
+		
+		switch1.setTitle(comment_data[slide_num][0]);
+		switch2.setTitle(comment_data[slide_num][1]);
+		switch3.setTitle(comment_data[slide_num][2]);
+	}
 
 	var left_shift_button = Titanium.UI.createButton({
 		title : '←',
@@ -162,15 +149,8 @@ exports.openView = function(view, about) {
 		if(slide_num -1 <0)
 			return;
 		slide_num--;
-		switch1.setTitle(comment_data[slide_num][0]);
-		switch2.setTitle(comment_data[slide_num][1]);
-		switch3.setTitle(comment_data[slide_num][2]);
-		/*
-		Titanium.UI.createNotification({
-			duration : 3000,
-			message : "もうしばらくするとつかえるようになるかも"
-		}).show();
-		*/
+		rePaintSwitch();
+
 	});
 	
 	var right_shift_button = Titanium.UI.createButton({
@@ -185,16 +165,7 @@ exports.openView = function(view, about) {
 		if(slide_num +2 >comment_data.length)
 			return;
 		slide_num++;
-		
-		switch1.setTitle(comment_data[slide_num][0]);
-		switch2.setTitle(comment_data[slide_num][1]);
-		switch3.setTitle(comment_data[slide_num][2]);
-		/*
-		Titanium.UI.createNotification({
-			duration : 3000,
-			message : "もうしばらくするとつかえるようになるかも"
-		}).show();
-		*/
+		rePaintSwitch();
 	});
 	var tmp_closeButton = Titanium.UI.createButton({
 		backgroundImage : '/images/button/OK/trans/button.png',
@@ -205,18 +176,85 @@ exports.openView = function(view, about) {
 	});
 	old_paper.add(tmp_closeButton);
 
+	function setCommentStatus(com_num){
+		switch(com_num){
+			case 0:
+				if(about.status.interesting){
+					about.status.interesting++;
+				}else{
+					about.status['interesting'] = 1;
+				}
+				break;
+			case 1:
+				if(about.status.bad){
+					about.status.bad++;
+				}else{
+					about.status['bad'] = 1;
+				}
+				break;
+			case 2:
+				if(about.status.noway){
+					about.status.noway++;
+				}else{
+					about.status['noway'] = 1;
+				}
+				break;
+			case 3:
+				if(about.status.miserable){
+					about.status.miserable++;
+				}else{
+					about.status['miserable'] = 1;
+				}
+				break;
+			case 4:
+				if(about.status.cheear){
+					about.status.cheear++;
+				}else{
+					about.status['cheear'] = 1;
+				}
+				break;
+			case 5:
+				if(about.status.boon){
+					about.status.boon++;
+				}else{
+					about.status['boon'] = 1;
+				}
+				break;
+			case 6:
+				if(about.status.aruaru){
+					about.status.aruaru++;
+				}else{
+					about.status['aruaru'] = 1;
+				}
+				break;
+			case 7:
+				if(about.status.aruaruneyo){
+					about.status.aruaruneyo++;
+				}else{
+					about.status['aruaruneyo'] = 1;
+				}
+				break;
+			case 8:
+				if(about.status.orealy){
+					about.status.orealy++;
+				}else{
+					about.status['orealy'] = 1;
+				}
+				break;			
+		}
+	}
+
 	tmp_closeButton.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
 
 		if (switch1.value)
-			about.status.interest++;
+			setCommentStatus(3*slide_num +0);
 		if (switch2.value)
-			about.status.bad++;
+			setCommentStatus(3*slide_num +1);
 		if (switch3.value)
-			about.status.noway++;
+			setCommentStatus(3*slide_num +2);
 
-			about.status['boon'] =1;
 		//	alert('uploading::'+JSON.stringify(about.status))
 
 		//更新系の処理を書いておくこと
