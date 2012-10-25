@@ -91,11 +91,13 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 		if(com_json.cheear)
 			status_string += '\n勝負時！じゃん！：'+com_json.cheear;
 		if(com_json.boon)
-			status_string += '\n（^ω^)ﾌﾞｰﾝ・・：'+com_json.boon;
+			status_string += '\n（^ω^)ワロタ・・：'+com_json.boon;
 		if(com_json.aruaru)
 			status_string += '\nあるある！';
 		if(com_json.aruaruneyo)
-			status_string += '\nあるあるあ・・ねーよ'
+			status_string += '\nあるあるあ・・ねーよ';
+		if(com_json.orealy)
+			status_string += '\n本当かなぁ？byゴ●リ';
 
 		return status_string;
 	}

@@ -31,7 +31,7 @@ exports.AddProject = function() {
 	win.add(backImageView);
 
 	var textArea = Titanium.UI.createTextArea({
-		hintText : 'あなたの秘密のつぶやきをどうぞ\n(100字以内)',
+		hintText : 'あなたの秘密のつぶやきをどうぞ\n(200字以内)',
 		textAlign:'center',
 		width:width *0.95,
 		height : height * 0.45,
@@ -92,6 +92,11 @@ exports.AddProject = function() {
 		if (textArea.value == '' ) {
 			alert('中に何もつぶやかれていませんよ！');
 			return　false;
+		}
+		
+		if(textArea.value.length > 200){
+			alert('200文字以上は投稿できません');
+			return false;
 		}
 		//if(project_image.imagePath)
 			  // require('/ACS/UploadImage').UploadImage(project_image.imagePath);

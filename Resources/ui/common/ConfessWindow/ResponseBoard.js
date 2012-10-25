@@ -7,6 +7,37 @@
 
 exports.openView = function(view, about) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+	/*
+
+		status_string += 'イイね：' + com_json.interest + ',';
+
+		status_string += 'マズイね：' + com_json.bad + ',';
+
+		status_string += 'あり得ない！：' + com_json.noway;
+		
+		if(com_json.miserable)
+			status_string += '\n辛いね！わかるよ：'+com_json.miserable;
+		if(com_json.cheear)
+			status_string += '\n勝負時！じゃん！：'+com_json.cheear;
+		if(com_json.boon)
+			status_string += '\n（^ω^)ワロタ・・：'+com_json.boon;
+		if(com_json.aruaru)
+			status_string += '\nあるある！';
+		if(com_json.aruaruneyo)
+			status_string += '\nあるあるあ・・ねーよ';
+		if(com_json.orealy)
+			status_string += '\n本当かなぁ？byゴ●リ';
+	 */
+	var slide_num = 0;
+	var comment_data =[['イイね！','マズイね！','あり得ない！'],
+					   ['辛いね、わかるよ','勝負時！じゃん！','（^ω^)ワロタ・・'],
+					   ['あるある','あるあるあ・・ねーよ','本当かなぁ？'],
+					  ];
+	
+	
+	
+	
+	
 	var back_temp_view = Titanium.UI.createView({
 		backgroundColor : 'black',
 		width : Titanium.UI.FILL,
@@ -68,7 +99,7 @@ exports.openView = function(view, about) {
 	old_paper.add(scrollView);
 
 	var everyone_label = Titanium.UI.createLabel({
-		text : 'みんなのレストップ一覧',
+		text : 'みんなのレス一覧',
 		textAlign : 'left',
 		top : old_paper.height * 0.44,
 		color : 'black',
@@ -80,7 +111,7 @@ exports.openView = function(view, about) {
 	var switch1 = Ti.UI.createSwitch({
 		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		title : 'イイね！',
+		title :comment_data[0][0],
 		value : false,
 
 		color : 'black',
@@ -93,7 +124,7 @@ exports.openView = function(view, about) {
 	var switch2 = Ti.UI.createSwitch({
 		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		title : 'マズイね！',
+		title : comment_data[0][1],
 		value : false,
 
 		color : 'black',
@@ -107,7 +138,7 @@ exports.openView = function(view, about) {
 	var switch3 = Ti.UI.createSwitch({
 		style : Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		title : 'あり得ない！',
+		title : comment_data[0][2],
 		value : false,
 
 		color : 'black',
@@ -118,20 +149,53 @@ exports.openView = function(view, about) {
 	});
 	old_paper.add(switch3);
 
-	var add_button = Titanium.UI.createButton({
-		title : '新しいレスを加えてみる',
-		width : old_paper.width * 0.7,
+	var left_shift_button = Titanium.UI.createButton({
+		title : '←',
+		width : old_paper.width * 0.3,
 		height : old_paper.height * 0.1,
-		top : old_paper.height * 0.75
+		center:{x:old_paper.width * 0.3,y:old_paper.height * 0.8}
 	});
-	old_paper.add(add_button);
+	old_paper.add(left_shift_button);
 
-	add_button.addEventListener('click', function(e) {
+	left_shift_button.addEventListener('click', function(e) {
+		
+		if(slide_num -1 <0)
+			return;
+		slide_num--;
+		switch1.setTitle(comment_data[slide_num][0]);
+		switch2.setTitle(comment_data[slide_num][1]);
+		switch3.setTitle(comment_data[slide_num][2]);
+		/*
 		Titanium.UI.createNotification({
 			duration : 3000,
 			message : "もうしばらくするとつかえるようになるかも"
 		}).show();
-	})
+		*/
+	});
+	
+	var right_shift_button = Titanium.UI.createButton({
+		title : '→',
+		width : old_paper.width * 0.3,
+		height : old_paper.height * 0.1,
+		center:{x:old_paper.width * 0.7,y:old_paper.height * 0.8}
+	});
+	old_paper.add(right_shift_button);
+
+	right_shift_button.addEventListener('click', function(e) {
+		if(slide_num +2 >comment_data.length)
+			return;
+		slide_num++;
+		
+		switch1.setTitle(comment_data[slide_num][0]);
+		switch2.setTitle(comment_data[slide_num][1]);
+		switch3.setTitle(comment_data[slide_num][2]);
+		/*
+		Titanium.UI.createNotification({
+			duration : 3000,
+			message : "もうしばらくするとつかえるようになるかも"
+		}).show();
+		*/
+	});
 	var tmp_closeButton = Titanium.UI.createButton({
 		backgroundImage : '/images/button/OK/trans/button.png',
 		backgroundSelectedImage : '/images/button/OK/trans/button_pressed.png',
