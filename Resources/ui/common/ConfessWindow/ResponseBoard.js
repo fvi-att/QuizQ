@@ -179,10 +179,10 @@ exports.openView = function(view, about) {
 	function setCommentStatus(com_num){
 		switch(com_num){
 			case 0:
-				if(about.status.interesting){
-					about.status.interesting++;
+				if(about.status.interest){
+					about.status.interest++;
 				}else{
-					about.status['interesting'] = 1;
+					about.status['interest'] = 1;
 				}
 				break;
 			case 1:

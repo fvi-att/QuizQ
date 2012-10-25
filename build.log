@@ -1,9 +1,10 @@
 Logfile initialized
 [INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build.log
-[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\builder.py distribute Secret C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.confess.app C:\Users\fvi\Dropbox\xicoloConfessProvision javasukidesukab0801230 confess C:\Users\fvi\Dropbox\xicolo\xicolo_share\SquareDevelop\apk\20121025_2 1
+[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\builder.py distribute Secret C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ com.xicolo.confess.app C:\Users\fvi\Dropbox\xicoloConfessProvision javasukidesukab0801230 confess C:\Users\fvi\Dropbox\xicolo\xicolo_share\SquareDevelop\apk\20121025_3 1
 [INFO] Titanium SDK version: 2.1.3 (10/02/12 16:16 15997d0)
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\ConfessWindow\ResponseBoard.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\ResponseBoard.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] found special platform files dir = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\platform\android
