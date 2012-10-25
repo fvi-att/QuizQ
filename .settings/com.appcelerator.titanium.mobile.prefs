@@ -1,15 +1,9 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=cb1a1ed94c144262d92238c706efbef30d8bb022
+>>>>>>>=9675dd4bded8fbf399ca8d1db8f66844e69142ac
 android/alias=confess
-<<<<<<< HEAD
 android/keystore=C\:\\Documents and Settings\\nishi\\My Documents\\Dropbox\\xicoloConfessProvision
-android/output_location=C\:\\Documents and Settings\\nishi\\My Documents\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121024
-android/recent_output=C\:\\Documents and Settings\\nishi\\My Documents\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121024,C\:\\Documents and Settings\\nishi\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\apk20121024,C\:\\Documents and Settings\\nishi\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\apk20121022,C\:\\Users\\fvi\\Desktop\\apk20121022,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121022,C\:\\
-=======
-android/keystore=C\:\\Users\\fvi\\Dropbox\\xicoloConfessProvision
-android/output_location=C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121025_3
-android/recent_output=C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121025_3,C\:\\Users\\fvi\\Desktop\\20121025,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121025_2,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121025,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121024_2,C\:\\
->>>>>>> 9675dd4bded8fbf399ca8d1db8f66844e69142ac
+android/output_location=C\:\\Documents and Settings\\nishi\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\20121025
+android/recent_output=C\:\\Documents and Settings\\nishi\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\20121025,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121025_3,C\:\\Users\\fvi\\Desktop\\20121025,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121025_2,C\:\\Users\\fvi\\Dropbox\\xicolo\\xicolo_share\\SquareDevelop\\apk\\20121025,C\:\\
 android/sdk=Android 2.2
 eclipse.preferences.version=1
