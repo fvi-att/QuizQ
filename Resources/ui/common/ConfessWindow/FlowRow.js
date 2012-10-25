@@ -59,7 +59,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 
 	}
 
-	PlusStamp();
+//	PlusStamp();
 
 	//日付を一旦削除　後日追加予定
 	//var time_label = require('/util/GetJSTime').getJST(created_at)
@@ -85,14 +85,19 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 		status_string += 'マズイね：' + com_json.bad + ',';
 
 		status_string += 'あり得ない！：' + com_json.noway;
-		
+	
 		if(com_json.miserable)
 			status_string += '\n辛いね！わかるよ：'+com_json.miserable;
 		if(com_json.cheear)
 			status_string += '\n勝負時！じゃん！：'+com_json.cheear;
 		if(com_json.boon)
-			status_string += '\n（^ω^)ﾌﾞｰﾝ・・：'+com_json.boon;
-			
+			status_string += '\n（^ω^)ワロタ・・：'+com_json.boon;
+		if(com_json.aruaru)
+			status_string += '\nあるある！:'+com_json.aruaru;
+		if(com_json.aruaruneyo)
+			status_string += '\nあるあるあ・・ねーよ:'+com_json.aruaruneyo;
+		if(com_json.orealy)
+			status_string += '\nえっ　本当かなぁ？:'+com_json.orealy;
 
 		return status_string;
 	}
