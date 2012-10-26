@@ -1,4 +1,5 @@
 Logfile initialized
+<<<<<<< HEAD
 [INFO] logfile = C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\Confess\build.log
 [DEBUG] C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\builder.py distribute Secret C:\android-sdk\ C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\Confess com.xicolo.confess.app C:\Documents and Settings\nishi\My Documents\Dropbox\xicoloConfessProvision javasukidesukab0801230 confess C:\Documents and Settings\nishi\デスクトップ\apk520121025 7
 [INFO] Titanium SDK version: 2.1.3 (10/02/12 16:16 15997d0)
@@ -41,6 +42,43 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Documents and Settings\nishi\My Documents\Titanium Studio Workspace\Confess\build\android\bin\app-unsigned.apk
+=======
+[INFO] logfile = C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build.log
+[DEBUG] C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.2.GA\android\builder.py install xicolo    QuizQ C:\Program Files (x86)\Android\android-sdk\tools C:\Users\ety\My Documents\WorkPlace\QuizQ-1 com.xicolo.app 4
+[INFO] Titanium SDK version: 2.1.2 (08/24/12 14:46 ed7f777)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.048000 seconds on emulator to get ready
+[DEBUG] com.xicolo.app installed? False
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\ety\My Documents\WorkPlace\QuizQ-1\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] creating unsigned apk: C:\Users\ety\My Documents\WorkPlace\QuizQ-1\build\android\bin\app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
+[DEBUG] from resource zip => assets/Resources/ACS/Quiz.js
+[DEBUG] from resource zip => assets/Resources/ACS/UpLoadQuiz.js
+[DEBUG] from resource zip => assets/Resources/DB/ItemDB.js
+[DEBUG] from resource zip => assets/Resources/DB/SQL.js
+[DEBUG] from resource zip => assets/Resources/Quiz/Quiz2BookMark.js
+[DEBUG] from resource zip => assets/Resources/Quiz/QuizStarter.js
+[DEBUG] from resource zip => assets/Resources/Quiz/SaveQuiz2BookMark.js
+[DEBUG] from resource zip => assets/Resources/Serif/Serif.js
+[DEBUG] from resource zip => assets/Resources/counter/counter.js
+>>>>>>> 2c124efeafee84c77d68b75bb30210b539eb5817
 [DEBUG] from resource zip => assets/Resources/images/And/And.png
 [DEBUG] from resource zip => assets/Resources/images/And/And_Pressed.png
 [DEBUG] from resource zip => assets/Resources/images/And/button.png
@@ -238,3 +276,12 @@ Logfile initialized
 [DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
 [DEBUG] from JAR C:\Documents and Settings\nishi\Application Data\Titanium\mobilesdk\win32\2.1.3.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
 [DEBUG] installing native SDK libs
+<<<<<<< HEAD
+=======
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.029000 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Application installed. Launch from drawer on Home Screen
+>>>>>>> 2c124efeafee84c77d68b75bb30210b539eb5817
