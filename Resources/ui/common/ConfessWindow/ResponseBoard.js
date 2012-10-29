@@ -7,7 +7,12 @@
 
 exports.openView = function(view, about) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
-
+	
+	
+	//現時点のポイントを取得する
+	
+	
+	
 	var slide_num = 0;
 	var comment_data =[['イイね！','マズイね！','あり得ない！'],
 					   ['辛いね、わかるよ','勝負時！じゃん！','（^ω^)ワロタ・・'],
@@ -247,18 +252,29 @@ exports.openView = function(view, about) {
 	tmp_closeButton.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
+		
+		var point_cnt =0;
 
-		if (switch1.value)
+		if (switch1.value){
+			point_cnt++;
 			setCommentStatus(3*slide_num +0);
-		if (switch2.value)
+		}
+		if (switch2.value){
+			point_cnt++;
 			setCommentStatus(3*slide_num +1);
-		if (switch3.value)
+		}
+		if (switch3.value){
+			point_cnt++;
 			setCommentStatus(3*slide_num +2);
-
+		}
 		//	alert('uploading::'+JSON.stringify(about.status))
-
-		//更新系の処理を書いておくこと
+		//更新系の処理を書いておくこと 		ポイントを加算し　投稿コメントに関する処理を行う。
 		require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id, JSON.stringify(about.status))
+		require('/ACS/Confess/UpdatePointKVS').UpdateDelta (Titanium.App.Properties.getString('username'),point_cnt);
+		
+		delete back_temp_view;
+		delete old_paper;
+		
 	});
 
 	old_paper.add(tmp_closeButton);

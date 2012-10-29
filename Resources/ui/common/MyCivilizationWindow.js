@@ -71,6 +71,25 @@ exports.openCivilView = function() {
 	});
 	
 	civ_window.add(flowWindowButton);
+	
+	//AddPointSystem
+	var getCommentButton = Titanium.UI.createButton({
+		title:'反応数',
+		top : height * 0.3,
+		right:0,
+		width : width *0.3,
+		height : height *0.2
+	});
+	
+	getCommentButton.addEventListener('click',function(e){
+		//Titanium.App.Properties.getString('username')
+		//ゲットしたポイントを取得し零に戻す
+		require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'));
+		
+		
+	});
+	civ_window.add(getCommentButton);
+	
 
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
