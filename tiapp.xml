@@ -15,7 +15,7 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.3.GA</sdk-version>
-    <id>com.xicolo.confess.app</id>
+    <id>com.xicolo.confess.dev.app</id>
     <name>Secret</name>
     <version>1.15</version>
     <publisher>fvi@</publisher>
