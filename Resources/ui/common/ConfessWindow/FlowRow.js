@@ -60,7 +60,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 	}
 
 //	PlusStamp();
-
+	//なんか書いたよ
 	//日付を一旦削除　後日追加予定
 	//var time_label = require('/util/GetJSTime').getJST(created_at)
 	var status_label = Titanium.UI.createLabel({
