@@ -15,8 +15,6 @@ exports.openCivilView = function() {
 	var civ_window = Titanium.UI.createWindow({
 		backgroundImage : background_path,
 
-
-
 		exitOnClose : false,
 		fullscreen : true,
 		navBarHidden : true, //タイトルバーを隠す
@@ -50,73 +48,65 @@ exports.openCivilView = function() {
 	man_image.start();
 
 	man_image.addEventListener('click', function(e) {
-		
+
 		require('/ui/common/serifView/Serif').openView(civ_window);
 		Titanium.App.Properties.setString('first_contact', 'second_contact')
-		
+
 	});
 
 	civ_window.add(man_image);
 
 	var flowWindowButton = Titanium.UI.createButton({
-		backgroundImage:'/images/flowboard/board.png',
+		backgroundImage : '/images/flowboard/board.png',
 		top : height * 0.6,
-		left:width * 0.7,
-		width : width *0.3,
-		height : height *0.2
+		left : width * 0.7,
+		width : width * 0.3,
+		height : height * 0.2
 	});
-	
-	flowWindowButton.addEventListener('click',function(e){
+
+	flowWindowButton.addEventListener('click', function(e) {
 		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac')
 	});
-	
+
 	civ_window.add(flowWindowButton);
-	
-	function Merge_Point(point){
-		
-		var rst = Titanium.App.Properties.getInt('point');
-		rst += point;
-		
-		Titanium.App.Properties.setInt('point', rst);
-				//初期化を行う。
-		require('/ACS/Confess/UserPointKVS').setPointKVS(Titanium.App.Properties.getString('username'),0);
-		
-		Titanium.App.fireEvent('modify_point');
-		
-	}
-	
+
 	//AddPointSystem
 	var getCommentButton = Titanium.UI.createButton({
-		title:'反応数',
+		title : '反応数',
 		top : height * 0.3,
-		right:0,
-		width : width *0.3,
-		height : height *0.2
+		right : 0,
+		width : width * 0.3,
+		height : height * 0.2
 	});
-	
-	getCommentButton.addEventListener('click',function(e){
+
+	getCommentButton.addEventListener('click', function(e) {
 		//Titanium.App.Properties.getString('username')
 		//ゲットしたポイントを取得し零に戻す
 		//イベント　got_finishが実行される
-		require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'),'my_civ');
-		
-		
+		require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'), 'my_civ');
+
 	});
 	civ_window.add(getCommentButton);
 	
-	Titanium.App.addEventListener('finish_getPoint',function(e){
-		if(!e.command == 'my_civ')
-			return;
-		
-		//alert('Success:\\n' + 'name: ' + e.keyvalue.name + '\\n' + 'value: ' + e.keyvalue.value);
-		getCommentButton.setTitle('レス数：'+e.keyvalue.value);
-		
-		Merge_Point(Number(e.keyvalue.value));
-		
-		
-	})
 	
+	function Merge_Point(point) {
+		require('/util/MergePoint').Merge_point(point);
 
+		Titanium.App.fireEvent('modify_point');
+
+	}
+
+
+	Titanium.App.addEventListener('finish_getPoint', function(e) {
+		if (!e.command == 'my_civ')
+			return;
+
+		//alert('Success:\\n' + 'name: ' + e.keyvalue.name + '\\n' + 'value: ' + e.keyvalue.value);
+		getCommentButton.setTitle('レス数：' + e.keyvalue.value);
+
+		Merge_Point(Number(e.keyvalue.value));
+
+	})
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
 		width : 'auto',
