@@ -10,9 +10,12 @@
 exports.createBoard = function() {
 
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
+	var point = Titanium.App.Properties.getInt('point');
+	
+	
 	var point_num = Titanium.UI.createLabel({
 		color : 'black',
-		text : 'ひみつぶやきポイント\n０ポイント',
+		text : 'ひみつぶやきポイント\n'+point+'ポイント',
 		backgroundImage : '/images/transparent.png',
 		width : width * 0.5,
 		font:{fontSize:15},
@@ -55,6 +58,11 @@ exports.createBoard = function() {
 			duration : 400
 		});
 
+	});
+	
+	Titanium.App.addEventListener('modify_point',function(e){
+		var rst = Titanium.App.Properties.getInt('point');
+		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント');
 	});
 
 	return board;

@@ -28,8 +28,9 @@ exports.setPointKVS = function(username, point) {
 		}
 	});
 }
-exports.getPointKVS = function(username) {
+exports.getPointKVS = function(username,command) {
 
+	
 	var Cloud = require('ti.cloud');
 	Cloud.KeyValues.get({
 		name : username
@@ -37,9 +38,9 @@ exports.getPointKVS = function(username) {
 		if (e.success) {
 			var keyvalue = e.keyvalues[0];
 			
-			alert('Success:\\n' + 'name: ' + keyvalue.name + '\\n' + 'value: ' + keyvalue.value);
 			
-			Titanium.App.fireEvent('finish_getPoint');
+			
+			Titanium.App.fireEvent('finish_getPoint',{command:command,keyvalue:keyvalue});
 			
 			return keyvalue.value;
 			

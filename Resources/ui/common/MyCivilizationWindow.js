@@ -72,6 +72,19 @@ exports.openCivilView = function() {
 	
 	civ_window.add(flowWindowButton);
 	
+	function Merge_Point(point){
+		
+		var rst = Titanium.App.Properties.getInt('point');
+		rst += point;
+		
+		Titanium.App.Properties.setInt('point', rst);
+				//初期化を行う。
+		require('/ACS/Confess/UserPointKVS').setPointKVS(Titanium.App.Properties.getString('username'),0);
+		
+		Titanium.App.fireEvent('modify_point');
+		
+	}
+	
 	//AddPointSystem
 	var getCommentButton = Titanium.UI.createButton({
 		title:'反応数',
@@ -84,11 +97,24 @@ exports.openCivilView = function() {
 	getCommentButton.addEventListener('click',function(e){
 		//Titanium.App.Properties.getString('username')
 		//ゲットしたポイントを取得し零に戻す
-		require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'));
+		//イベント　got_finishが実行される
+		require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'),'my_civ');
 		
 		
 	});
 	civ_window.add(getCommentButton);
+	
+	Titanium.App.addEventListener('finish_getPoint',function(e){
+		if(!e.command == 'my_civ')
+			return;
+		
+		//alert('Success:\\n' + 'name: ' + e.keyvalue.name + '\\n' + 'value: ' + e.keyvalue.value);
+		getCommentButton.setTitle('レス数：'+e.keyvalue.value);
+		
+		Merge_Point(Number(e.keyvalue.value));
+		
+		
+	})
 	
 
 	var cupcell_image = Titanium.UI.createImageView({

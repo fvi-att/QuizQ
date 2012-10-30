@@ -10,17 +10,22 @@
 
 exports.setProperty = function(){
 	//ゲーム全般に関する設定
-	var INITIAL_POINT = 15;
-	if (Titanium.App.Properties.getBool('isIntroNeed') == null)
+	var INITIAL_POINT = 10;
+	var INITIAL_RESPONSE_POINT = 3;
+	
+	if (!Titanium.App.Properties.hasProperty('isIntroNeed'))
 		Titanium.App.Properties.setBool('isIntroNeed', true);
 
-	if (Titanium.App.Properties.getBool('isSampleNeed') == null)
+	if (!Titanium.App.Properties.hasProperty('isSampleNeed'))
 		Titanium.App.Properties.setBool('isSampleNeed', true);
 
-	if (Titanium.App.Properties.getDouble('lastTime') == null)
+	if (!Titanium.App.Properties.hasProperty('lastTime'))
 		Titanium.App.Properties.setDouble('lastTime', (new Date).getTime())
-
-	if (Titanium.App.Properties.getInt('point') == null) {
+		
+	
+	//下のポイントシステムに関する処理は本当に困るね
+	
+	if (!Titanium.App.Properties.hasProperty('point')) {
 		Titanium.App.Properties.setInt('point', INITIAL_POINT);
 	} else {
 
