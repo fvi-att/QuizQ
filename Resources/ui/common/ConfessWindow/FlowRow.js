@@ -133,7 +133,8 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 		require('/ui/common/ConfessWindow/ResponseBoard').openView(from_win, {
 			status : JSON.parse(comment),
 			title : title,
-			post_id : id
+			post_id : id,
+			post_username:source_row.row.post_username
 		});
 
 	});

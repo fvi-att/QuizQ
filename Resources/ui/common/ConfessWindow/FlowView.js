@@ -25,21 +25,7 @@ function ProjectList(download) {
 	});
 
 	var projectList = [];
-	/*
-	//plus section
-	projectList.push(Titanium.UI.createTableViewRow({
-	width : Titanium.UI.FILL,
-	height : height / 15,
-	focusable : false,
-	backgroundImage : '/images/Table/favorite_1.png'
-	}));
-	projectList.push(Titanium.UI.createTableViewRow({
-	width : Titanium.UI.FILL,
-	height : height / 15,
-	focusable : false,
-	backgroundImage : '/images/Table/section_1.png'
-	}));
-	*/
+
 	// Create a TableView.
 	var aTableView = Ti.UI.createTableView({
 		data : projectList,
@@ -55,6 +41,8 @@ function ProjectList(download) {
 
 		var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', download[count].created_at, download[count].title, download[count].content, 0, download[count].id, download[count].photo, view);
 		STUB_row.row.setHasChild(false);
+		STUB_row.row.post_username = download[count].user;
+		
 
 		aTableView.appendRow(STUB_row.row);
 	}

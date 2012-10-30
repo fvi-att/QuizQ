@@ -33,7 +33,6 @@ exports.FlowdownloadStart = function(post_id) {
     page: 1,
     per_page: 20,
     where: {
-       // reviews_count: { '$gt': 1.0 }
        created_at:{'$gt':condition}
     }
 }, function(e) {
@@ -41,7 +40,7 @@ exports.FlowdownloadStart = function(post_id) {
 			var post = e.posts[0];
 			actInd.hide();
 			if(e.posts.length >0){
-			 	var flowWin = new require('/ui/common/ConfessWindow/FlowView')(e.posts);
+			 /*	var flowWin = */new require('/ui/common/ConfessWindow/FlowView')(e.posts);
 			//	alert('Success:\\n'+'count:'+e.posts.length + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.created_at);
 			}
 		} else {

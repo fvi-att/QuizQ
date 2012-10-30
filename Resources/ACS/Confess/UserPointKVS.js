@@ -16,7 +16,8 @@ exports.setPointKVS = function(username, point) {
 
 	Cloud.KeyValues.set({
 		name : username,
-		value : point
+		value : point,
+		acl_name :'All_Public'
 	}, function(e) {
 		if (e.success) {
 			return true;
@@ -33,7 +34,8 @@ exports.getPointKVS = function(username,command) {
 	
 	var Cloud = require('ti.cloud');
 	Cloud.KeyValues.get({
-		name : username
+		name : username,
+		acl_name :'All_Public'
 	}, function(e) {
 		if (e.success) {
 			var keyvalue = e.keyvalues[0];

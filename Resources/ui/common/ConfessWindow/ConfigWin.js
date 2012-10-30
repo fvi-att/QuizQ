@@ -40,44 +40,7 @@ exports.OpenConfigWin = function() {
 		}).show();
 
 	});
-	//サンプルに対する処理
-	/*
-	var introSW_label2 = Titanium.UI.createLabel({
-		text : 'サンプルの問題を表示する',
-		color : 'black',
-		top : height * 0.55,
-		font : {
-			fontSize : 25
-		}
-	});
 
-	var introSW2 = Titanium.UI.createSwitch({
-		value : Titanium.App.Properties.getBool('isSampleNeed'),
-		top : height * 0.65
-	});
-
-	introSW2.addEventListener('change', function(e) {
-		Titanium.App.Properties.setBool('isSampleNeed', e.value);
-		
-		Titanium.App.fireEvent('addSampleQuiz');
-		
-
-		Titanium.UI.createNotification({
-			duration : 2000,
-			message : "設定を変更しました"
-		}).show();
-
-	});
-
-	win.add(introSW_label2);
-	win.add(introSW2);
-	*/
-	/*
-	 * 
-	 * アカウント管理処理
-	 * 
-	 *
-	*/
 	var account_man = Titanium.UI.createButton({
 		title : 'ログイン管理',
 		textAlign : 'center',
