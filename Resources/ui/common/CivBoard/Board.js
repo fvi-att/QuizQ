@@ -30,7 +30,7 @@ exports.createBoard = function() {
 		height : height * 0.25,
 		center : {
 			x : width * 0.5,
-			y : -0.08 * height
+			y : -0.05 * height
 		},
 		isAppear : false,
 
@@ -42,7 +42,7 @@ exports.createBoard = function() {
 	
 
 	board.addEventListener('touchstart', function(e) {
-		var move = height * -0.09;
+		var move = height * -0.05;
 		if (!board.isAppear) {
 			move = height * 0.15;
 			board.isAppear = true;

@@ -80,16 +80,24 @@ exports.openCivilView = function() {
 	});
 
 	getCommentButton.addEventListener('click', function(e) {
+		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 * 60*60*24)) {
+			Titanium.UI.createNotification({
+				duration : 3000,
+				message : "レスポイントは１日一回だけ収穫できるようです。"
+			}).show();
+
+			return;
+		}
 		//Titanium.App.Properties.getString('username')
 		//ゲットしたポイントを取得し零に戻す
 		//イベント　got_finishが実行される
 		//require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'), 'my_civ');
 		require('/ACS/Confess/PointSystem/GetPoint_fromObject').getPoint();
-		
+		StartAnimation();
+
 	});
 	civ_window.add(getCommentButton);
-	
-	
+
 	function Merge_Point(point) {
 		require('/util/MergePoint').Merge_point(point);
 
@@ -97,17 +105,18 @@ exports.openCivilView = function() {
 
 	}
 
+	/*
+	 Titanium.App.addEventListener('finish_getPoint', function(e) {
+	 if (!e.command == 'my_civ')
+	 return;
 
-	Titanium.App.addEventListener('finish_getPoint', function(e) {
-		if (!e.command == 'my_civ')
-			return;
+	 //alert('Success:\\n' + 'name: ' + e.keyvalue.name + '\\n' + 'value: ' + e.keyvalue.value);
+	 getCommentButton.setTitle('レス数：' + e.keyvalue.value);
 
-		//alert('Success:\\n' + 'name: ' + e.keyvalue.name + '\\n' + 'value: ' + e.keyvalue.value);
-		getCommentButton.setTitle('レス数：' + e.keyvalue.value);
+	 Merge_Point(Number(e.keyvalue.value));
 
-		Merge_Point(Number(e.keyvalue.value));
-
-	})
+	 });
+	 */
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
 		width : 'auto',
@@ -123,6 +132,7 @@ exports.openCivilView = function() {
 	//変更　アイテムに関するアニメーションを関数に変更
 	//長すぎ　ワロリーヌ　
 	function StartAnimation() {
+		getCommentButton.setTouchEnabled(false);
 		cupcell_image.animate({
 			center : {
 				x : width * 0.5,
@@ -141,7 +151,7 @@ exports.openCivilView = function() {
 				//third animation
 				cupcell_image.setImage('/images/civ/cupcell/cupcell_open.png');
 				food_arr.push(Ti.UI.createImageView({
-					image : '/images/civ/food/apple.png',
+					image : '/images/civ/cupcell/coin/coin1.png',
 					width : 'auto',
 					height : 'auto',
 					center : {
@@ -161,7 +171,7 @@ exports.openCivilView = function() {
 						},
 						duration : 500
 					})
-					item_button.setTouchEnabled(true);
+					getCommentButton.setTouchEnabled(true);
 
 					clearTimeout(disappear_time);
 
@@ -171,6 +181,15 @@ exports.openCivilView = function() {
 					//STUB的処理←　あとでちゃんと消しといてね
 					civ_window.remove(food_arr[0]);
 					clearTimeout(item_disappear_time);
+					//delete food_arr[0];
+
+					Titanium.UI.createNotification({
+						duration : 3000,
+						message : "レスポイントが追加されました！\n上のタブで確認ができます"
+					}).show();
+
+					//ボタン確認処理時間を登録する
+					Titanium.App.Properties.setDouble('lastTime', (new Date).getTime());
 				}, 2500);
 			})
 		})
