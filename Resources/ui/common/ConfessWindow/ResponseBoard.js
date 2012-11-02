@@ -270,7 +270,8 @@ exports.openView = function(view, about) {
 		//	alert('uploading::'+JSON.stringify(about.status))
 		//更新系の処理を書いておくこと 		ポイントを加算し　投稿コメントに関する処理を行う。
 		require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id, JSON.stringify(about.status))
-		require('/ACS/Confess/UpdatePointKVS').UpdateDelta (about.post_username,point_cnt);
+	//	require('/ACS/Confess/UpdatePointKVS').UpdateDelta (about.post_username,point_cnt);
+		require('/ACS/Confess/PointSystem/UpdatePoint_fromObject').createPoint(about.post_username.id,point_cnt);
 		
 		delete back_temp_view;
 		delete old_paper;

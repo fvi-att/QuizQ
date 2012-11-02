@@ -83,8 +83,9 @@ exports.openCivilView = function() {
 		//Titanium.App.Properties.getString('username')
 		//ゲットしたポイントを取得し零に戻す
 		//イベント　got_finishが実行される
-		require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'), 'my_civ');
-
+		//require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'), 'my_civ');
+		require('/ACS/Confess/PointSystem/GetPoint_fromObject').getPoint();
+		
 	});
 	civ_window.add(getCommentButton);
 	

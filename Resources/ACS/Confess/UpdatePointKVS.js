@@ -9,11 +9,7 @@
 
 exports.UpdateDelta = function(username,delta){
 	
-	alert('STUB:このデバイス：'+Titanium.App.Properties.getString('username')+'\n'+
-			'これからのname::'+username.username);
-	
-	
-	
+		
 	function setPoint(update_point){
 		
 		return require('/ACS/Confess/UserPointKVS').setPointKVS(username.username,update_point);

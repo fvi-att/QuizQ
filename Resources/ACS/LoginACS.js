@@ -31,7 +31,7 @@ exports.LoginACS = function(id,password){
 			message : "名無しさんでログインしました"
 			}).show();
 
-                
+                Titanium.App.Properties.setString('user_id',user.id);
                 
                 Titanium.App.fireEvent('ReLogin');
                 actInd.hide();
