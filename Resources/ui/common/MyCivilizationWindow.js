@@ -70,21 +70,29 @@ exports.openCivilView = function() {
 
 	civ_window.add(flowWindowButton);
 
+	//下のアンダーバーに関する処理
+	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
+	civ_window.add(under_bar);
+
 	//AddPointSystem
-	var getCommentButton = Titanium.UI.createButton({
-		title : '反応数',
-		top : height * 0.3,
-		right : 0,
-		width : width * 0.3,
-		height : height * 0.2
+	var getCommentButton = Titanium.UI.createImageView({
+		backgroundImage : '/images/button/respoint/cupcell_button.png',
+		
+		top : height *0.1,
+		right : width *0.05,
+		width : width * 0.2,
+		height : height * 0.1
 	});
 
 	getCommentButton.addEventListener('click', function(e) {
-		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 * 60*60*24)) {
+		//一時的に一秒更新にする
+		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *10 )) {
 			Titanium.UI.createNotification({
 				duration : 3000,
 				message : "レスポイントは１日一回だけ収穫できるようです。"
 			}).show();
+			getCommentButton.setImage(null);
+			getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
 
 			return;
 		}
@@ -96,15 +104,16 @@ exports.openCivilView = function() {
 		StartAnimation();
 
 	});
-	civ_window.add(getCommentButton);
+	//civ_window.add(getCommentButton);
+	under_bar.add(getCommentButton);
+	/*
+	 function Merge_Point(point) {
+	 require('/util/MergePoint').Merge_point(point);
 
-	function Merge_Point(point) {
-		require('/util/MergePoint').Merge_point(point);
+	 Titanium.App.fireEvent('modify_point');
 
-		Titanium.App.fireEvent('modify_point');
-
-	}
-
+	 }
+	 */
 	/*
 	 Titanium.App.addEventListener('finish_getPoint', function(e) {
 	 if (!e.command == 'my_civ')
@@ -171,7 +180,6 @@ exports.openCivilView = function() {
 						},
 						duration : 500
 					})
-					getCommentButton.setTouchEnabled(true);
 
 					clearTimeout(disappear_time);
 
@@ -187,16 +195,16 @@ exports.openCivilView = function() {
 						duration : 3000,
 						message : "レスポイントが追加されました！\n上のタブで確認ができます"
 					}).show();
+					getCommentButton.setImage(null);
+					getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
 
+					getCommentButton.setTouchEnabled(true);
 					//ボタン確認処理時間を登録する
 					Titanium.App.Properties.setDouble('lastTime', (new Date).getTime());
 				}, 2500);
 			})
 		})
 	}
-
-	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
-	civ_window.add(under_bar);
 
 	//ボードに関する設定　
 	var board = require('/ui/common/CivBoard/Board').createBoard();
