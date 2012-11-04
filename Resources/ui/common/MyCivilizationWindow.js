@@ -11,6 +11,14 @@ exports.openCivilView = function() {
 	var food_arr = [];
 
 	var background_path = require('/util/getbackPathWithTime').getPath();
+	
+	function isTimeAlreadyPass(){
+		//getTimeはミリ秒で表示されているのでここでは一日を超えているかいなかを確認している
+		if(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *60*60*24)
+			return true;
+		
+		return false;
+	}
 
 	var civ_window = Titanium.UI.createWindow({
 		backgroundImage : background_path,
@@ -85,8 +93,7 @@ exports.openCivilView = function() {
 	});
 
 	getCommentButton.addEventListener('click', function(e) {
-		//一時的に一秒更新にする
-		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *60*60*24)) {
+		if (!isTimeAlreadyPass()) {
 			Titanium.UI.createNotification({
 				duration : 3000,
 				message : "レスポイントは１日一回だけ収穫できるようです。"
@@ -96,21 +103,18 @@ exports.openCivilView = function() {
 
 			return;
 		}
-		//Titanium.App.Properties.getString('username')
 		//ゲットしたポイントを取得し零に戻す
 		//イベント　got_finishが実行される
-		//require('/ACS/Confess/UserPointKVS').getPointKVS(Titanium.App.Properties.getString('username'), 'my_civ');
 		require('/ACS/Confess/PointSystem/GetPoint_fromObject').getPoint();
 		StartAnimation();
 
 	});
-	//civ_window.add(getCommentButton);
+
 	under_bar.add(getCommentButton);
 	
 	//ここでボタンの描写に関する処理を行う。
 	civ_window.addEventListener('focus',function(e){
-		//alert('on focus');
-		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *60 *60*24 )) {
+		if (!isTimeAlreadyPass()) {
 			getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
 		}else{
 			getCommentButton.setImage('/images/button/respoint/cupcell_button.png');
@@ -132,6 +136,7 @@ exports.openCivilView = function() {
 	//変更　アイテムに関するアニメーションを関数に変更
 	//長すぎ　ワロリーヌ　
 	function StartAnimation() {
+		//カプセルのアニメーションに関する処理　とても長いのでいつかはオブジェクト化　＆Mycivilカラの分割を行う
 		getCommentButton.setTouchEnabled(false);
 		cupcell_image.animate({
 			center : {
