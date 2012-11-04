@@ -31,7 +31,7 @@ exports.FlowdownloadStart = function(post_id) {
 	var Cloud = require('ti.cloud');
 	Cloud.Posts.query({
     page: 1,
-    per_page: 20,
+    per_page: 40,
     where: {
        created_at:{'$gt':condition}
     }

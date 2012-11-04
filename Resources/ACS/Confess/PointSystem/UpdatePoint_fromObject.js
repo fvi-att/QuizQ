@@ -17,7 +17,7 @@ exports.createPoint = function(id, delta) {
 	}, function(e) {
 		if (e.success) {
 			var point = e.point[0];
-			alert(JSON.stringify(point));
+			//alert(JSON.stringify(point));
 			
 			
 		} else {

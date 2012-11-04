@@ -86,7 +86,7 @@ exports.openCivilView = function() {
 
 	getCommentButton.addEventListener('click', function(e) {
 		//一時的に一秒更新にする
-		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *10 )) {
+		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *60*60*24)) {
 			Titanium.UI.createNotification({
 				duration : 3000,
 				message : "レスポイントは１日一回だけ収穫できるようです。"
@@ -106,26 +106,17 @@ exports.openCivilView = function() {
 	});
 	//civ_window.add(getCommentButton);
 	under_bar.add(getCommentButton);
-	/*
-	 function Merge_Point(point) {
-	 require('/util/MergePoint').Merge_point(point);
+	
+	//ここでボタンの描写に関する処理を行う。
+	civ_window.addEventListener('focus',function(e){
+		//alert('on focus');
+		if (!(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *60 *60*24 )) {
+			getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
+		}else{
+			getCommentButton.setImage('/images/button/respoint/cupcell_button.png');
+		}
+	})
 
-	 Titanium.App.fireEvent('modify_point');
-
-	 }
-	 */
-	/*
-	 Titanium.App.addEventListener('finish_getPoint', function(e) {
-	 if (!e.command == 'my_civ')
-	 return;
-
-	 //alert('Success:\\n' + 'name: ' + e.keyvalue.name + '\\n' + 'value: ' + e.keyvalue.value);
-	 getCommentButton.setTitle('レス数：' + e.keyvalue.value);
-
-	 Merge_Point(Number(e.keyvalue.value));
-
-	 });
-	 */
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
 		width : 'auto',
@@ -210,6 +201,8 @@ exports.openCivilView = function() {
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
 	civ_window.add(board);
+	
+	
 
 	return civ_window;
 }

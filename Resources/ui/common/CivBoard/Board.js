@@ -39,9 +39,7 @@ exports.createBoard = function() {
 
 	board.add(point_num);
 
-	
-
-	board.addEventListener('touchstart', function(e) {
+	function MoveBoard(){
 		var move = height * -0.05;
 		if (!board.isAppear) {
 			move = height * 0.15;
@@ -57,11 +55,20 @@ exports.createBoard = function() {
 			},
 			duration : 400
 		});
-
+	}
+	function setMovement(set){
+		if(board.isAppear == set)
+			return;
+		MoveBoard();
+	}
+	board.addEventListener('touchstart', function(e) {
+		MoveBoard();
 	});
 	
 	Titanium.App.addEventListener('modify_point',function(e){
 		var rst = Titanium.App.Properties.getInt('point');
+		setMovement(true);
+		//これで表示状態にする。
 		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント');
 	});
 

@@ -20,7 +20,7 @@ exports.setProperty = function(){
 		Titanium.App.Properties.setBool('isSampleNeed', true);
 
 	if (!Titanium.App.Properties.hasProperty('lastTime'))
-		Titanium.App.Properties.setDouble('lastTime', (new Date).getTime())
+		Titanium.App.Properties.setDouble('lastTime', (new Date(2000, 1,1, 23, 59, 59)).getTime())
 		
 	
 	//下のポイントシステムに関する処理は本当に困るね
