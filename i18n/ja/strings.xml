@@ -14,21 +14,7 @@
 								を行うことができます。\n
 								もうしばらくお待ち下さい！\n
 								次のバージョンアップで対応します。</string>
-	
-	<string name="apple_need">おお！偉大なる我が神よ！\n
-							 早速で申し訳ないのですが、食べるものがありません。\n
-							 "右下のモノを与える"ボタンから食べるものを選択し\n
-							 民に食べ物を恵んで下さりませ！\n</string>
-							 
-	<string name="thanks_apple">おお！早速食べ物を！ありがとう御座います！\n
-								ここで知識の林檎を与えなさるとはさすが小粋なことを\n
-								なさりますな！\n
-								</string>
-	
-	<string name="status_intro">わが神よ！現在の文明の状況は左上の家をタップすることに\n
-								よって確認することができますぞ！
-								</string>
-								
+
 								
 	<string name="open_text1">いつものメンバーには言えない\n
 							内緒のことやワイルドなことを\n
@@ -44,56 +30,7 @@
 
 							新型コミュニティ\n　ひみつぶやき　\n始めました。</string>
 	
-	
-	<string name="youdead">そりゃヤヴァいね・・</string>
-	<string name="neverdo">もうやっちゃダメだゾ！</string>
-	<string name="interest">面白いね</string>
-	<string name="laughdown">m9(^Д^)ﾌﾟｷﾞｬｰ</string>
-	<string name="tweet">ツイートターイム！</string>
-	<string name="like">イイね！</string>
-	<string name="tanpopo">早くたんぽぽを載せる仕事に戻るのだ</string>
-	<string name="waros_AA">ワロスww</string>
-	<string name="neet_otsu">ニート乙！</string>
 
-	
-	
-	<string name="intro_mes1">これはみんな知ってるだろ～\n
-							  　これ,みんな知ってるかな？\n
-							  暇だーーーー！\n
-							 　 そんなこと多々ありませんか？\n\n1/10</string>
-	
-	<string name="intro_mes2">このアプリはみんなでクイズを作り\n
-							　 シェアするアプリです。\n\n\n2/10</string>
-							
-	<string name="intro_mes3">暇なときに、みんなのクイズに答えて\n
-							 ちょっとした時間の暇つぶしもできます\n\n3/10</string>
-	
-	<string name="intro_mes4">クイズは気軽に作って\nみんなに見せられます\n\n4/10</string>
-							 
-							 
-	<string name="intro_mes5">クイズに答えてポイントをゲット\nすることもできます。\n\n5/10</string>
-	
-	<string name="intro_mes6">質問や回答をツイッター上で\nつぶやくこともできます\n\n6/10</string>
-							 
-	<string name="intro_mes7">答えがわからない質問をみんなに答えてもらうことも
-							  できます。\n\n7/10</string>
-	
-	<string name="intro_mes8"> &amp; でクイズにジャンルを\nつけたりできます\n\n8/10</string>
-		 					  
-	<string name="intro_mes9"> $ でコミュニティに関連付けられます\n\n9/10</string>
-	
-	<string name="intro_mes10">クイズに答えてランキングトップを目指しましょう！\n\n10/10</string>
-							 
-	<string name="intro_mes11">かっこイイね！はもしかしたら\n
-		 					 いろいろな場面でつかえるように\n
-		 					 なるかもしれません。\n\n11/12</string>
-		 					 
-	<string name="intro_mes12">やりたいことが達成したら\n
-							　SNSで共有してみるといいかも\n\n12/12</string>
-						
-	<string name="intro_mes13">最後にあなたの成功を心より\n
-							 応援します！\n\n説明画面は「メニューボタン」の\n
-							 設定で表示しないようにできます。</string>
 							 
 							  
 </resources>

@@ -77,7 +77,6 @@ exports.createBar = function(fromView) {
 		}
 	});
 
-	//civ_window.add(item_button);
 
 	item_button.addEventListener('click', function(e) {
 		var item_view = require('/ui/common/SelectBoard/selectItems').openView(fromView);
@@ -94,11 +93,11 @@ exports.createBar = function(fromView) {
 		}
 	});
 
-	//civ_window.add(item_button);
+
 
 	addConfess_button.addEventListener('click', function(e) {
 
-		//require('/ui/common/AddProject').AddProject();
+		
 		 require('/ui/common/AddConfess').AddProject();
 	});
 
