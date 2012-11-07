@@ -101,7 +101,7 @@ exports.AddProject = function() {
 		//if(project_image.imagePath)
 			  // require('/ACS/UploadImage').UploadImage(project_image.imagePath);
 		
-		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath);
+		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath,true);
 
 	});
 	Titanium.App.addEventListener('select_junel',function(e){
