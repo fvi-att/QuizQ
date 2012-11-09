@@ -28,111 +28,118 @@ exports.openView = function(view) {
 	//
 	//アイテム画像読み込み
 	//
-	var totaltemImage = 5;										//アイテム数を仮に定める
-	item_image = new Array(totaltemImage);
-	item_image[0] = '/images/background/back_green.png';
-
+	var totalItemImage = 5;										//アイテム数を仮に定める
+	item_image = new Array(totalItemImage);	
+	item_image[0] = '/images/background/back_green.png';		//動作確認用画像読み込み
 	item_image[1] = '/images/background/back_lightblue.png';
-
 	item_image[2] = '/images/background/back_white.png';
-
 	item_image[3] = '/images/background/cork.jpg';
-
 	item_image[4] = '/images/background/open_background.png';
+	
+	itemText = new Array(totalItemImage);
+	itemText[0] = 'test 0'										//動作確認用テキスト
+	itemText[1] = 'test 1'
+	itemText[2] = 'test 2'
+	itemText[3] = 'test 3'
+	itemText[4] = 'test 4'
 
-	var selectedItem = 0;											//選択されたアイテム番号を格納する変数　初期設定を0とする
+	var selectedItem = 0;										//選択されたアイテム番号を格納する変数　初期設定を0とする
 	
 	
-	//選択されたアイテムを画面中央に表示するための関数
-	function SelectedItemView(){
-		var item = Titanium.UI.createView({
-			backgroundImage : item_image[selectedItem],
-			width : width * 0.75,
-			height : height * 0.3,
-			top : height * 0.07
-		});
+	//選択されたアイテム画像、説明部分の表示
+	var item = Titanium.UI.createView({
+		backgroundImage : item_image[selectedItem],
+		width : width * 0.75,
+		height : height * 0.3,
+		top : height * 0.07
+	});
 
-		old_paper.add(item);
-	}
+	old_paper.add(item);
 	
-	SelectedItemView();												//ここで実際に画面に画像を表示
-
-	//説明部分の背景
-	var item_explain_area = Titanium.UI.createView({
+	var itemExplain = Titanium.UI.createTextArea({
 		backgroundImage : '/images/background/note.jpg',
 		width : width * 0.75,
 		height : height * 0.1,
 		top : height * 0.39
 	});
-
-	old_paper.add(item_explain_area);								//何度も呼び出す必要は無いのでここは特に関数にしない
-
+	
+	old_paper.add(itemExplain);	
 	//
 	//アイテムのリストを表示
 	//
 	//ItemList関数に必要な変数の定義
 	itemNumber = 0;
 	leftItem = 0;									//アイテムリストの左端のアイテムの番号を記憶する変数(「消えたアイテム」っぽいから名前を変えたい)
-	item_list_view = new Array(4);
+	visibleItems = 4;
+	item_list_view = new Array(totalItemImage);
+	itemWidth = 0.7/(visibleItems);
+	itemSpace = 0.1/(visibleItems*2);
 	
-	//アイテムのリストを画面下部に表示する関数の定義
-	function ItemList(i){
-		item_list_view[0] = Titanium.UI.createView({
-			backgroundImage : item_image[i],
-			width : width * 0.15,
-			height : height * 0.1,
-			top : height * 0.5,
-			left : width * 0.02
-		});
-		
-		i++;
-		if(i >= totaltemImage){
-			i = 0;
-		}
-		
-		item_list_view[1] = Titanium.UI.createView({
-			backgroundImage : item_image[i],
-			width : width * 0.15,
-			height : height * 0.1,
-			top : height * 0.5,
-			left : width * 0.2
-		});
-		
-		i++;
-		if(i >= totaltemImage){
-			i = 0;
-		}
-		
-		item_list_view[2] = Titanium.UI.createView({
-			backgroundImage : item_image[i],
-			width : width * 0.15,
-			height : height * 0.1,
-			top : height * 0.5,
-			left : width * 0.40
-		});
-		
-		i++;
-		if(i >= totaltemImage){
-			i = 0;
-		}
-		
-		item_list_view[3] = Titanium.UI.createView({
-			backgroundImage : item_image[i],
-			width : width * 0.15,
-			height : height * 0.1,
-			top : height * 0.5,
-			left : width * 0.60
-		});
-
-		for (j=0;j<=3;j++){
-			old_paper.add(item_list_view[j]);
-		};
+	//アイテムのリストを画面下部に表示
 	
+	for(i=0;i<totalItemImage;i++){
+		item_list_view[i] = Titanium.UI.createView({
+			backgroundImage : item_image[i],
+			width : width * 0.15,
+			height : height * 0.1,
+			top : height * 0.5,
+			left : width * (itemSpace*(2*i+1)+itemWidth*i)
+		});
 	}
 	
 	
-	ItemList(leftItem);	
+	item_list_view[0].addEventListener('click',function(e){
+		item.setBackgroundImage(item_image[0]);
+		itemExplain.setValue(itemText[0]);
+	})
+	item_list_view[1].addEventListener('click',function(e){
+		item.setBackgroundImage(item_image[1]);
+		itemExplain.setValue(itemText[1]);
+	})
+	item_list_view[2].addEventListener('click',function(e){
+		item.setBackgroundImage(item_image[2]);
+		itemExplain.setValue(itemText[2]);
+	})
+	item_list_view[3].addEventListener('click',function(e){
+		item.setBackgroundImage(item_image[3]);
+		itemExplain.setValue(itemText[3]);
+	})
+	item_list_view[4].addEventListener('click',function(e){
+		item.setBackgroundImage(item_image[4]);
+		itemExplain.setValue(itemText[4]);
+	})
 	
+	
+	//以下、上記の文をforで書こうとして失敗した残骸(サムネを押して出てくるのが(totalItemImage)番目の画像　functionの中身で上手くカウンタの数が反映されてない?)
+	//whileで書いても同様の現象が起こった
+	/*
+	for(cnt=0;cnt<totalItemImage;cnt++){
+		item_list_view[cnt].addEventListener('click',function(e){
+			item.setBackgroundImage(item_image[cnt]);
+			itemExplain.setValue(itemText[cnt]);
+		})
+	}
+	*/
+	
+	//再帰関数を使って書こうとしたけどやっぱり駄目(0番目の画像にしか反映されない→多分、再帰してない)
+	/*
+	function SetMotion(cnt){
+		if(cnt<totalItemImage){
+			item_list_view[cnt].addEventListener('click',function(e){
+				item.setBackgroundImage(item_image[cnt]);
+				itemExplain.setValue(itemText[cnt]);
+			})
+			arguments.callee(cnt+1);
+		}
+	}
+	
+	SetMotion(0);
+	*/
+	
+	
+	for(i=0;i<totalItemImage;i++){
+		old_paper.add(item_list_view[i]);
+	}
 	//
 	//左右ボタンの設置
 	//
@@ -144,16 +151,23 @@ exports.openView = function(view) {
 		top : height * 0.62,
 		left : width * 0.55
 	});
+	
 	left_button.addEventListener('click',function(e){
-		for(i=0;i<=3;i++){
-			old_paper.remove(item_list_view[i]);
-		}
 		leftItem = leftItem - 1;
-		if(leftItem < 0){
-			leftItem = totalItemImage - 1;
+		if(leftItem<0){
+			leftItem = totalItemImage + leftItem
+			}
+			
+		for(i=0;i<totalItemImage;i++){
+			j = leftItem + i;
+			k = j;
+			if(j>=totalItemImage){
+				k = j - totalItemImage;
+			}
+			item_list_view[i].updateLayout({
+				left : width * (itemSpace*(2*k+1)+itemWidth*k)
+			});
 		}
-		ItemList(leftItem);
-		alert(leftItem);
 	})
 	
 	var right_button = Titanium.UI.createButton({
@@ -164,15 +178,20 @@ exports.openView = function(view) {
 		left : width * 0.65
 	});
 	right_button.addEventListener('click',function(e){
-		for(i=0;i<=3;i++){
-			old_paper.remove(item_list_view[i]);
-		}
 		leftItem = leftItem + 1;
-		if(leftItem>=totaltemImage){
-			leftItem = 0;
+		if(leftItem>totalItemImage){
+			leftItem =  leftItem - totalItemImage
+			}
+		for(i=0;i<totalItemImage;i++){
+			j = leftItem + i;
+			k = j;
+			if(j>=totalItemImage){
+				k = j - totalItemImage;
+			}
+			item_list_view[i].updateLayout({
+				left : width * (itemSpace*(2*k+1)+itemWidth*k)
+			});
 		}
-		ItemList(leftItem);
-		alert(leftItem);
 	})
 	
 	old_paper.add(left_button);

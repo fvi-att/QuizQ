@@ -3,9 +3,11 @@ Logfile initialized
 [DEBUG] C:\Users\ety\AppData\Roaming\Titanium\mobilesdk\win32\2.1.3.GA\android\builder.py install Secret C:\Program Files (x86)\Android\android-sdk\tools C:\Users\ety\My Documents\WorkPlace\QuizQ-1 com.xicolo.confess.dev.app 4
 [INFO] Titanium SDK version: 2.1.3 (10/02/12 16:16 15997d0)
 [DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
 [TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.093000 seconds on emulator to get ready
+[DEBUG] Device connected... (waited 5 seconds)
+[DEBUG] waited 5.091000 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
 [DEBUG] com.xicolo.confess.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
@@ -466,6 +468,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.049000 seconds on emulator to get ready
+[DEBUG] waited 0.031000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
