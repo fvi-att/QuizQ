@@ -63,8 +63,13 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 	//なんか書いたよ
 	//日付を一旦削除　後日追加予定
 	//var time_label = require('/util/GetJSTime').getJST(created_at)
+	var poster_name = JSON.parse(comment)._HN;
+	
+	if(!poster_name)
+		poster_name = '名無しさん';
+		
 	var status_label = Titanium.UI.createLabel({
-		text : 'by 名無しさん\n' + created_at,
+		text : 'by'+poster_name+'\n' + created_at,
 		color : 'black',
 		font : {
 			fontSize : width / 27

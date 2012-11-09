@@ -24,38 +24,15 @@ exports.setProperty = function(){
 		
 	
 	//下のポイントシステムに関する処理は本当に困るね
-	
-	if (!Titanium.App.Properties.hasProperty('point')) {
+	//
+	if (!Titanium.App.Properties.hasProperty('point'))
 		Titanium.App.Properties.setInt('point', INITIAL_POINT);
-	} else {
-
-		var rst = Titanium.App.Properties.getInt('point')
-
-		if (rst <= 0)
-			rst = 0;
-
-		//起動特典　一回あたり　１ポイント
-		rst++;
-
-		Titanium.App.Properties.setInt('point', rst);
-	}
 	
 	//パラメータ値の管理
 	//人間のおしゃべり機能に関するパラメータ　を文字列で表現する
 	if (!Titanium.App.Properties.hasProperty('prmt_talk'))
 		Titanium.App.Properties.setString('prmt_talk', 'first_contact');
 
-	if (!Titanium.App.Properties.hasProperty('civ_population'))
-		Titanium.App.Properties.setInt('civ_population', 10);
-
-	if (!Titanium.App.Properties.hasProperty('civ_food'))
-		Titanium.App.Properties.setInt('civ_food', 30);
-
-	if (!Titanium.App.Properties.hasProperty('civ_culture'))
-		Titanium.App.Properties.setInt('civ_culture', 5);
-
-	if (!Titanium.App.Properties.hasProperty('civ_money'))
-		Titanium.App.Properties.setInt('civ_money', 50);
 		
 	//情報フローに関する制御処理
 		if (!Titanium.App.Properties.hasProperty('flow_side'))
