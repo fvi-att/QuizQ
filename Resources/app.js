@@ -10,6 +10,7 @@
 */
 
 //bootstrap and check dependencies
+//プログラムはここから始まります
 if (Ti.version < 1.8) {
 	alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');
 }
@@ -17,6 +18,7 @@ if (Ti.version < 1.8) {
 // This is a single context application with mutliple windows in a stack
 //(function で即時関数なんだって～　そうなの)
 (function() {
+	//初期の登録作業をここで一括で行います。
 	//determine platform and form factor and render approproate components
 	//初期時点でアカウントの作成を行う
 	require('/ACS/Confess/CreateUser').createUser();
@@ -49,6 +51,7 @@ if (Ti.version < 1.8) {
 	//ここでfullscreen設定をしておかないと Undefinedが出る
 	
 	//オープニング
+	//この時点で　上　オープニング画面　下　メイン画面になっている
 	require('/ui/common/Opening/OpeningWindow').openWindow();
 	
 

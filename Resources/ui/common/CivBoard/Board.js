@@ -66,10 +66,11 @@ exports.createBoard = function() {
 	});
 	
 	Titanium.App.addEventListener('modify_point',function(e){
+		//更新済みの状態のプロパティ値
 		var rst = Titanium.App.Properties.getInt('point');
 		setMovement(true);
 		//これで表示状態にする。
-		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント');
+		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント'+'(+'+e.delta+')');
 	});
 
 	return board;

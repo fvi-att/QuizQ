@@ -4,7 +4,7 @@
  * created @ 201210051050
  *
  */
-exports.createPost = function(title, message, junel, photo_path) {
+exports.createPost = function(title, message, junel, photo_path,use_HN) {
 	var actInd = Titanium.UI.createActivityIndicator({
 		bottom : 10,
 		height : 100,
@@ -72,10 +72,17 @@ exports.createPost = function(title, message, junel, photo_path) {
 			return ReturnMessage(e);
 		});
 	}
-
+	function AddHN(data){
+		if(Titanium.App.Properties.hasProperty('user_HN'))
+				data['_HN'] = Titanium.App.Properties.getString('user_HN');
+		
+	}
 	function Upload() {
 		//初期型の３つを定義ておく。
 		var init_comment = {interest:0,noway:0,bad:0};
+		
+		if(use_HN)
+			 AddHN(init_comment);
 		
 		var comment =  JSON.stringify(init_comment)
 		Cloud.Posts.create({
