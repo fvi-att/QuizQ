@@ -90,7 +90,7 @@ function ProjectList(download) {
 	});
 
 	info_button.addEventListener('click', function(e) {
-		require('/ui/common/Help/helpWin').openWin();
+		require('/ui/common/Help/helpWin').openWin('http://xicolo.com/wordpress/?page_id=179#timeLine');
 	})
 
 	view.add(info_button);

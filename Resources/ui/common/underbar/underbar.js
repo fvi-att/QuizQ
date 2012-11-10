@@ -91,13 +91,13 @@ exports.createBar = function(fromView) {
 	});
 	
 	var help_Button = Titanium.UI.createButton({
-		backgroundImage : '\images\button\front_info\info_nav_button.png',
-		backgroundSelectedImage : '\images\button\front_info\info_nav_button_pressed.png',
+		backgroundImage :'/images/button/front_info/info_nav_button.png',
+		backgroundSelectedImage : '/images/button/front_info/info_nav_button_pressed.png',
 		
 		top : height *0.1,
 		left : width *0.05,
 		width : width * 0.2,
-		height : width *0.2 *7 /15
+		height : height * 0.1
 	});
 	
 	help_Button.addEventListener('click',function(e){

@@ -35,7 +35,7 @@ exports.openCivilView = function() {
 		width : width * 0.4,
 		height : width *0.2,
 		center : {
-			x : width * 0.3,
+			x : width * 0.25,
 			y : height * 0.4
 		}
 	});
@@ -44,7 +44,25 @@ exports.openCivilView = function() {
 		require('/ui/common/SelectBoard/selectItems').openView(civ_window);
 	});
 
-	civ_window.add(get_stamp_button);
+	//civ_window.add(get_stamp_button);
+	
+	var get_tweet_button = Titanium.UI.createButton({
+		backgroundImage:'/images/button/get_flow_button/get_flow_button.png',
+		backgroundSelectedImage:'/images/button/get_flow_button/get_flow_button_pressed.png',
+		width : width * 0.4,
+		height : width *0.2,
+		center : {
+			//x : width * 0.75,
+			x : width *  0.5,
+			y : height * 0.4
+		}
+	});
+
+	get_tweet_button.addEventListener('click', function(e) {
+		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac');
+	});
+
+	civ_window.add(get_tweet_button);
 
 	var man_image = Titanium.UI.createImageView({
 		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
@@ -65,19 +83,7 @@ exports.openCivilView = function() {
 
 	civ_window.add(man_image);
 
-	var flowWindowButton = Titanium.UI.createButton({
-		backgroundImage : '/images/flowboard/board.png',
-		top : height * 0.6,
-		left : width * 0.7,
-		width : width * 0.3,
-		height : height * 0.2
-	});
 
-	flowWindowButton.addEventListener('click', function(e) {
-		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac')
-	});
-
-	civ_window.add(flowWindowButton);
 
 	//下のアンダーバーに関する処理
 	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
