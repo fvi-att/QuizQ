@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.147000 seconds on emulator to get ready
+[DEBUG] waited 0.167000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\SelectBoard\selectItems.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\SelectBoard\selectItems.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\MyCivilizationWindow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\MyCivilizationWindow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
@@ -98,6 +98,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/button/add/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/add/button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/construction/construction.png
+[DEBUG] from resource zip => assets/Resources/images/button/get_stamp/get_stamp_button.png
+[DEBUG] from resource zip => assets/Resources/images/button/get_stamp/get_stamp_button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/give/give.png
 [DEBUG] from resource zip => assets/Resources/images/button/good/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/good/button_pressed.png
@@ -283,6 +285,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.024000 seconds on emulator to get ready
+[DEBUG] waited 0.021000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

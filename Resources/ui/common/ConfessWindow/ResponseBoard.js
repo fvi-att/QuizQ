@@ -17,6 +17,7 @@ exports.openView = function(view, about) {
 	var comment_data =[['イイね！','マズイね！','あり得ない！'],
 					   ['辛いね、わかるよ','勝負時！じゃん！','（^ω^)ワロタ・・'],
 					   ['あるある','あるあるあ・・ねーよ','本当かなぁ？'],
+					   ['カワイイ！','どうしたの？','クズだねぇ'],
 					  ];
 
 	var back_temp_view = Titanium.UI.createView({
@@ -245,7 +246,30 @@ exports.openView = function(view, about) {
 				}else{
 					about.status['orealy'] = 1;
 				}
-				break;			
+				break;
+				
+				case 9:
+				if(about.status.kawaii){
+					about.status.kawaii++;
+				}else{
+					about.status['kawaii'] = 1;
+				}
+				break;
+							case 10:
+				if(about.status.whatsmatter){
+					about.status.whatsmatter++;
+				}else{
+					about.status['whatsmatter'] = 1;
+				}
+				break;
+				case 11:
+				if(about.status.kuzu){
+					about.status.kuzu++;
+				}else{
+					about.status['kuzu'] = 1;
+				}
+				break;
+	
 		}
 	}
 

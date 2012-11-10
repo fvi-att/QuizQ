@@ -29,21 +29,22 @@ exports.openCivilView = function() {
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
 
-	var house_image = Titanium.UI.createImageView({
-		image : '/images/civ/ancient/house/house1.png',
+	var get_stamp_button = Titanium.UI.createButton({
+		backgroundImage:'/images/button/get_stamp/get_stamp_button.png',
+		backgroundSelectedImage:'/images/button/get_stamp/get_stamp_button_pressed.png',
 		width : width * 0.4,
-		height : 'auto',
+		height : width *0.2,
 		center : {
 			x : width * 0.3,
 			y : height * 0.4
 		}
 	});
 
-	house_image.addEventListener('click', function(e) {
-		//require('/ui/common/SelectBoard/CivGrowthBoard').openView(civ_window);
-	})
+	get_stamp_button.addEventListener('click', function(e) {
+		require('/ui/common/SelectBoard/selectItems').openView(civ_window);
+	});
 
-	civ_window.add(house_image);
+	civ_window.add(get_stamp_button);
 
 	var man_image = Titanium.UI.createImageView({
 		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
