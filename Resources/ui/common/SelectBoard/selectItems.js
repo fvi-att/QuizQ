@@ -30,18 +30,18 @@ exports.openView = function(view) {
 	//
 	var totalItemImage = 5;										//アイテム数を仮に定める
 	item_image = new Array(totalItemImage);	
-	item_image[0] = '/images/background/back_green.png';		//動作確認用画像読み込み
-	item_image[1] = '/images/background/back_lightblue.png';
-	item_image[2] = '/images/background/back_white.png';
-	item_image[3] = '/images/background/cork.jpg';
-	item_image[4] = '/images/background/open_background.png';
+	item_image[0] = '/images/Stamp/kijyo.png';		//動作確認用画像読み込み
+	item_image[1] = '/images/Stamp/kijyo.png';
+	item_image[2] = '/images/Stamp/angry_cat.png';
+	item_image[3] = '/images/Stamp/angry_cat.png';
+	item_image[4] = '/images/Stamp/kijyo.png';
 	
 	itemText = new Array(totalItemImage);
-	itemText[0] = 'test 0'										//動作確認用テキスト
-	itemText[1] = 'test 1'
-	itemText[2] = 'test 2'
-	itemText[3] = 'test 3'
-	itemText[4] = 'test 4'
+	itemText[0] = '猫のスタンプ1'										//動作確認用テキスト
+	itemText[1] = '猫のスタンプ2'
+	itemText[2] = '猫のスタンプ3'
+	itemText[3] = '猫のスタンプ4'
+	itemText[4] = '猫のスタンプ5'
 
 	var selectedItem = 0;										//選択されたアイテム番号を格納する変数　初期設定を0とする
 	
@@ -217,6 +217,7 @@ exports.openView = function(view) {
 			crops:150
 		}));
 		
+		delete item_list_view;
 		delete back_temp_view;
 		delete old_paper;
 		
