@@ -5,45 +5,22 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.106000 seconds on emulator to get ready
+[DEBUG] waited 0.018000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\images\button\secret_tweet\tweet1.png => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\images\button\secret_tweet\tweet1.png
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\ui\common\ConfessWindow\FlowView.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowView.js
-[TRACE] Generating Java Classes
+[INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
-[DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\title1.png
-[DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-land-hdpi\background.png
 [DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-land-ldpi\background.png
 [DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-port-hdpi\background.png
 [DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-long-port-ldpi\background.png
 [DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-hdpi\background.png
 [DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-ldpi\background.png
 [DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-land-mdpi\background.png
 [DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-hdpi\background.png
 [DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-ldpi\background.png
 [DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\res\drawable-notlong-port-mdpi\background.png
-[DEBUG] found splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\assets\Resources\default.png
-[TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\dev\app\R.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\dev\app\SecretActivity.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\dev\app\SecretAppInfo.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\gen\com\xicolo\confess\dev\app\SecretApplication.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\dev\\app\\R.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\dev\\app\\SecretActivity.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\dev\\app\\SecretAppInfo.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\QuizQ\\build\\android\\gen\\com\\xicolo\\confess\\dev\\app\\SecretApplication.java"
-[INFO] Compiling Android Resources... This could take some time
-[DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\QuizQ\build\android\bin\app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/GetPoint_fromObject.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/UpdatePoint_fromObject.js
@@ -289,6 +266,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.085000 seconds on emulator to get ready
+[DEBUG] waited 0.024000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

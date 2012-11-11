@@ -7,6 +7,11 @@
     <property name="acs-oauth-secret-development" type="string">klortVoPmCdE6WtqQjJfGfZsijWSH9DT</property>
     <property name="acs-oauth-key-development" type="string">AqUPnCkrzk7iHb1sf5DVkboAjlIzpMQD</property>
     <property name="acs-api-key-development" type="string">BfoWoMRclEOytZr6rb7rilmjBugpXtvm</property>
+    
+    <property name="ti.android.bug2373.title">\u30e1\u30c3\u30bb\u30fc\u30b8</property>
+	<property name="ti.android.bug2373.message">\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306e\u8d77\u52d5\u6e96\u5099\u3092\u884c\u3044\u307e\u3059</property>
+	<property name="ti.android.bug2373.buttonText">\u7d9a\u3051\u308b</property>
+	<property name="ti.android.bug2373.backgroundColor">glay</property>
     <deployment-targets>
         <target device="mobileweb">true</target>
         <target device="iphone">true</target>

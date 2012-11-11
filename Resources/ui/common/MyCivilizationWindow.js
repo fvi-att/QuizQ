@@ -49,8 +49,8 @@ exports.openCivilView = function() {
 	var get_tweet_button = Titanium.UI.createButton({
 		backgroundImage:'/images/button/get_flow_button/get_flow_button.png',
 		backgroundSelectedImage:'/images/button/get_flow_button/get_flow_button_pressed.png',
-		width : width * 0.4,
-		height : width *0.2,
+		width : width * 0.6,
+		height : width *0.3,
 		center : {
 			//x : width * 0.75,
 			x : width *  0.5,
