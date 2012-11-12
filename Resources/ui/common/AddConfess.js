@@ -61,7 +61,34 @@ exports.AddProject = function() {
 	project_image.setLeft(width * 0.5);
 
 	win.add(project_image);
+	var handlename_label = Titanium.UI.createLabel({
+		text : 'ハンドルネーム ',
+		textAligin:'center',
+		color : 'black',
+		top : height * 0.6,
+		left: width * 0.05,
+		font : {
+			fontSize : 15
+		}
+	});
+	win.add(handlename_label);
+	
+	
+	var handlename_SW = Titanium.UI.createSwitch({
 
+		value : Titanium.App.Properties.getBool('use_handlename'),
+		top : height * 0.63,
+		width:width * 0.3,
+		height:height * 0.15,
+		left:width *0.1
+	});
+		handlename_SW.addEventListener('change', function(e) {
+		// e.valueにはスイッチの新しい値が true もしくは falseとして設定されます。
+
+		Titanium.App.Properties.setBool('use_handlename', e.value);
+
+	});
+	win.add(handlename_SW);
 	var and_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/And/button.png',
 		backgroundSelectedImage : '/images/button/And/button_pressed.png',
@@ -81,7 +108,7 @@ exports.AddProject = function() {
 		}).show();
 	})
 
-	win.add(and_button);
+//	win.add(and_button);
 
 	var ok_button = new require('/ui/common/button/button')('tweet');
 	ok_button.setTop(height * 0.82);
@@ -101,7 +128,7 @@ exports.AddProject = function() {
 		//if(project_image.imagePath)
 			  // require('/ACS/UploadImage').UploadImage(project_image.imagePath);
 		
-		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath,true);
+		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
 
 	});
 	Titanium.App.addEventListener('select_junel',function(e){
@@ -117,7 +144,20 @@ exports.AddProject = function() {
 		}).show();
 
 		
-	})
+	});
+	
+		//設定画面を表示する
+	win.activity.onCreateOptionsMenu = function(e) {
+		var menu = e.menu;
+		var menuItem = menu.add({
+			title : "設定"
+		});
+		menuItem.setIcon("/images/icon/light_gears.png");
+		menuItem.addEventListener("click", function(e) {
+			require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin();
+			//設定画面を展開する。
+		});
+	};
 	
 	win.add(ok_button);
 
