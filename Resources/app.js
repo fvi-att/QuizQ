@@ -18,17 +18,20 @@ if (Ti.version < 1.8) {
 // This is a single context application with mutliple windows in a stack
 //(function で即時関数なんだって～　そうなの)
 (function() {
+
 	//初期の登録作業をここで一括で行います。
 	//determine platform and form factor and render approproate components
 	//初期時点でアカウントの作成を行う
+	
 	require('/ACS/Confess/CreateUser').createUser();
 	//ログイン処理を行う
 	require('/ACS/Confess/LoginACS').LoginACS();
+	
 	//データベース管理をここで行う
 	require('/DB/SQL').CreateTable();
 	//プロパティの定義に関する処理
 	require('/util/setProperty').setProperty();
-	
+
 	var osname = Ti.Platform.osname, version = Ti.Platform.version, height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	
 	var isTablet = osname === 'ipad' || (osname === 'android' && (width > 899 || height > 899));
