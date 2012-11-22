@@ -29,21 +29,40 @@ exports.openCivilView = function() {
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
 
-	var house_image = Titanium.UI.createImageView({
-		image : '/images/civ/ancient/house/house1.png',
+	var get_stamp_button = Titanium.UI.createButton({
+		backgroundImage:'/images/button/get_stamp/get_stamp_button.png',
+		backgroundSelectedImage:'/images/button/get_stamp/get_stamp_button_pressed.png',
 		width : width * 0.4,
-		height : 'auto',
+		height : width *0.2,
 		center : {
-			x : width * 0.3,
+			x : width * 0.25,
 			y : height * 0.4
 		}
 	});
 
-	house_image.addEventListener('click', function(e) {
-		//require('/ui/common/SelectBoard/CivGrowthBoard').openView(civ_window);
-	})
+	get_stamp_button.addEventListener('click', function(e) {
+		require('/ui/common/SelectBoard/selectItems').openView(civ_window);
+	});
 
-	civ_window.add(house_image);
+	//civ_window.add(get_stamp_button);
+	
+	var get_tweet_button = Titanium.UI.createButton({
+		backgroundImage:'/images/button/get_flow_button/get_flow_button.png',
+		backgroundSelectedImage:'/images/button/get_flow_button/get_flow_button_pressed.png',
+		width : width * 0.6,
+		height : width *0.3,
+		center : {
+			//x : width * 0.75,
+			x : width *  0.5,
+			y : height * 0.4
+		}
+	});
+
+	get_tweet_button.addEventListener('click', function(e) {
+		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac');
+	});
+
+	civ_window.add(get_tweet_button);
 
 	var man_image = Titanium.UI.createImageView({
 		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
@@ -64,38 +83,13 @@ exports.openCivilView = function() {
 
 	civ_window.add(man_image);
 
-	var flowWindowButton = Titanium.UI.createButton({
-		backgroundImage : '/images/flowboard/board.png',
-		top : height * 0.6,
-		left : width * 0.7,
-		width : width * 0.3,
-		height : height * 0.2
-	});
 
-	flowWindowButton.addEventListener('click', function(e) {
-		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac')
-	});
-
-	civ_window.add(flowWindowButton);
 
 	//下のアンダーバーに関する処理
 	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
 	civ_window.add(under_bar);
 	
-	var help_Button = Titanium.UI.createImageView({
-		backgroundImage : '/images/button/help/help.png',
-		
-		top : height *0.1,
-		left : width *0.05,
-		width : width * 0.2,
-		height : height * 0.1
-	});
-	
-	help_Button.addEventListener('click',function(e){
-		require('/ui/common/Help/helpWin').openWin();
-	});
-	
-	under_bar.add(help_Button);
+
 
 	//AddPointSystem
 	var getCommentButton = Titanium.UI.createImageView({

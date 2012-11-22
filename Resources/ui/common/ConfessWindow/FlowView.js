@@ -6,11 +6,7 @@
  */
 
 function ProjectList(download) {
-	/*
-	 * e.posts[0]
-	 *
-	 *
-	 */
+
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var view = Titanium.UI.createWindow({
 		title : L('collection'),
@@ -42,7 +38,6 @@ function ProjectList(download) {
 		var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', download[count].created_at, download[count].title, download[count].content, 0, download[count].id, download[count].photo, view);
 		STUB_row.row.setHasChild(false);
 		STUB_row.row.post_username = download[count].user;
-		
 
 		aTableView.appendRow(STUB_row.row);
 	}
@@ -73,6 +68,46 @@ function ProjectList(download) {
 	});
 
 	view.add(close_button);
+
+	//ナビゲーションバーの設定
+	var navi_bar = Titanium.UI.createImageView({
+		image : '/images/navibar/flow_navibar.png',
+		width : width,
+		height : 'auto',
+		top : 0
+	});
+
+	view.add(navi_bar);
+
+	var info_button = Titanium.UI.createButton({
+		backgroundImage : '/images/navibar/nav_button/info/info_nav_button.png',
+		backgroundSelectedImage : '/images/navibar/nav_button/info/info_nav_button_pressed.png',
+		width : width * 0.2,
+		height : width *0.2 *7 /15,
+		left : width * 0.03,
+		top : height * 0.02
+
+	});
+
+	info_button.addEventListener('click', function(e) {
+		require('/ui/common/Help/helpWin').openWin('http://xicolo.com/wordpress/?page_id=179#timeLine');
+	})
+
+	view.add(info_button);
+
+	var config_button = Titanium.UI.createButton({
+		backgroundImage : '/images/navibar/nav_button/config/config_nav_button.png',
+		backgroundSelectedImage : '/images/navibar/nav_button/config/config_nav_button_pressed.png',
+		width : width * 0.2,
+		height : width * 0.2 * 7 / 15,
+		right : width * 0.03,
+		top : height * 0.02
+	});
+	config_button.addEventListener('click', function(e) {
+		require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin();
+	});
+
+	view.add(config_button);
 
 	//設定画面を表示する
 	view.activity.onCreateOptionsMenu = function(e) {

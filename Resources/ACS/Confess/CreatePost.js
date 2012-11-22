@@ -73,8 +73,8 @@ exports.createPost = function(title, message, junel, photo_path,use_HN) {
 		});
 	}
 	function AddHN(data){
-		if(Titanium.App.Properties.hasProperty('user_HN'))
-				data['_HN'] = Titanium.App.Properties.getString('user_HN');
+		if(Titanium.App.Properties.hasProperty('handlename'))
+				data['_HN'] = Titanium.App.Properties.getString('handlename');
 		
 	}
 	function Upload() {

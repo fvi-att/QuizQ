@@ -40,24 +40,6 @@ exports.createBar = function(fromView) {
 		});
 
 	});
-	//クイズシステムから匿名型つぶやきサイトへの仕様変更の予定
-	var select_item_Button = Titanium.UI.createButton({
-		title:'STUB:ITEM',
-		height : height * 0.12,
-		width : width * 0.2,
-
-		center : {
-			x : width * 0.2,
-			y : height * 0.15
-		}
-
-	});
-
-	select_item_Button.addEventListener('click', function(e) {
-		//アイテムの選択を行う。
-		require('/ui/common/SelectBoard/selectItems').openView(fromView);
-
-	});
 
 	var item_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/give/give.png',
@@ -107,10 +89,26 @@ exports.createBar = function(fromView) {
 		
 		
 	});
+	
+	var help_Button = Titanium.UI.createButton({
+		backgroundImage :'/images/button/front_info/info_nav_button.png',
+		backgroundSelectedImage : '/images/button/front_info/info_nav_button_pressed.png',
+		
+		top : height *0.1,
+		left : width *0.05,
+		width : width * 0.2,
+		height : height * 0.1
+	});
+	
+	help_Button.addEventListener('click',function(e){
+		require('/ui/common/Help/helpWin').openWin();
+	});
+	
+	under_bar.add(help_Button);
 
 	under_bar.add(move_button);
 
-	under_bar.add(select_item_Button);
+
 //	under_bar.add(item_button);
 	under_bar.add(addConfess_button);
 //	under_bar.add(list_button);

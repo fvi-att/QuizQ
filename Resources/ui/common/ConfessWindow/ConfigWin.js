@@ -11,6 +11,7 @@ exports.OpenConfigWin = function() {
 		backgroundImage:'/images/opening/old_paper.jpg',
 		exitOnClose : false,
 		fullscreen : false,
+		
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
 
@@ -18,7 +19,7 @@ exports.OpenConfigWin = function() {
 		text : 'ひみつぶやきの流れを変更する\n'+
 				'ON:上から下へ,OFF:下から上へ',
 		color : 'black',
-		top : height * 0.25,
+		top : height * 0.15,
 		font : {
 			fontSize : 20
 		}
@@ -26,7 +27,7 @@ exports.OpenConfigWin = function() {
 
 	var introSW = Titanium.UI.createSwitch({
 		value : Titanium.App.Properties.getBool('flow_side'),
-		top : height * 0.4
+		top : height * 0.3
 	});
 
 	introSW.addEventListener('change', function(e) {
@@ -40,6 +41,92 @@ exports.OpenConfigWin = function() {
 		}).show();
 
 	});
+	var handlename = Titanium.App.Properties.getString('handlename');
+	if(!handlename)
+		handlename = '名無しさん';
+		
+		
+	var handlename_label = Titanium.UI.createLabel({
+		text :'現在のハンドルネーム\n'+
+				handlename,
+		textAligin:'center',
+		color : 'black',
+		top : height * 0.55,
+		font : {
+			fontSize : 20
+		}
+	});
+	Titanium.App.addEventListener('change_handlename',function(e){
+		handlename_label.setText('現在のハンドルネーム\n'+Titanium.App.Properties.getString('handlename'));
+		
+	});
+	
+	win.add(handlename_label);
+	
+	var change_handlenameButton = Titanium.UI.createButton({
+		title:'ハンドルネームを変更',
+		textAlign : 'center',
+		top : height * 0.65,
+		width : width * 0.75
+	});
+	
+		change_handlenameButton.addEventListener('click', function(e) {
+		var back_view = Titanium.UI.createView({
+			backgroundColor : 'white',
+			width : Titanium.UI.FILL,
+			height : height * 0.1,
+			opacity : 1.0,
+			layout : 'vertical'
+
+		})
+		var input_text = Ti.UI.createTextField({
+			hintText : 'ハンドルネーム',
+			width : Titanium.UI.FILL,
+			textAlign : 'center',
+			opacity : 1.0,
+			left : 0
+		});
+
+
+		back_view.add(input_text);
+		
+		
+		var user_name=Titanium.App.Properties.getString('handlename');
+		if(!user_name)
+			user_name='名無しさん';
+					
+		var dialog = Ti.UI.createOptionDialog({
+			title : '現在のハンドルネーム\n:'+user_name,
+			androidView : back_view,
+			buttonNames : ['キャンセル', 'Ok']
+		});
+
+		dialog.addEventListener('click', function(e) {
+			if (e.index == 1) {// we read it only if get it is pressed
+				if(input_text.value == ''){
+					alert('ハンドルネームを入れて下さい');
+					return;
+				}
+				if(input_text.value.match(/■/)){
+					alert('■は運営専用の記号です。');
+					return;
+				}
+				if(input_text.value == 'xicolo_dev')
+					input_text.value = '■開発者';
+					
+				
+				Titanium.App.Properties.setString('handlename',input_text.value);
+				
+				Titanium.App.fireEvent('change_handlename');
+					
+			}
+		});
+
+		dialog.show();
+	});
+	win.add(change_handlenameButton);
+	
+	//別のアカウントでログインできる機能を一時的に廃止
 
 	var account_man = Titanium.UI.createButton({
 		title : 'ログイン管理',
@@ -100,12 +187,12 @@ exports.OpenConfigWin = function() {
 	win.add(introSW);
 	
 
-
+	/*
 	win.add(introSW_label);
 	win.add(introSW);
 	win.add(account_man);
 
-
+	*/
 	win.open();
 
 }

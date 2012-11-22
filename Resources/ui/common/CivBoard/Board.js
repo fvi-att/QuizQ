@@ -70,7 +70,10 @@ exports.createBoard = function() {
 		var rst = Titanium.App.Properties.getInt('point');
 		setMovement(true);
 		//これで表示状態にする。
-		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント'+'(+'+e.delta+')');
+		var delta = e.delta;
+		if(delta == null)
+			delta = 0;
+		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント'+'(+'+delta+')');
 	});
 
 	return board;

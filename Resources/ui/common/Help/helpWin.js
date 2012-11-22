@@ -5,7 +5,12 @@
  * created by fvi @
  * created @ 2012 11 08
  */
-exports.openWin = function(){
+exports.openWin = function(url){
+	var page_url =url;
+	if(!page_url)
+		page_url = 'http://xicolo.com/wordpress/?page_id=179';
+		
+		
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var win = Titanium.UI.createWindow({
 		exitOnClose : false,
@@ -16,7 +21,7 @@ exports.openWin = function(){
 	
 	var webView = Titanium.UI.createWebView({
 		
-		url:'http://xicolo.com/wordpress/',
+		url:page_url,
 		weight:Titanium.UI.FILL,
 		height:Titanium.UI.FILL
 	});
