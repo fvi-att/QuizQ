@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.011882 seconds on emulator to get ready
+[DEBUG] waited 0.006894 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/app.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING MODIFIED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Confess/getMyConfessData.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Confess/getMyConfessData.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/title1.png
@@ -51,13 +51,13 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/LoginACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/RemovePost.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/UpdatePost.js
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/UserPointKVS.js
 [DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
 [DEBUG] from resource zip => assets/Resources/ACS/UploadImage.js
 [DEBUG] from resource zip => assets/Resources/Confess/ConfessStarter.js
 [DEBUG] from resource zip => assets/Resources/Confess/ConfessStarter_Newest.js
+[DEBUG] from resource zip => assets/Resources/Confess/getMyConfessData.js
 [DEBUG] from resource zip => assets/Resources/DB/ConfessDB.js
 [DEBUG] from resource zip => assets/Resources/DB/ItemDB.js
 [DEBUG] from resource zip => assets/Resources/DB/SQL.js
@@ -288,6 +288,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.008425 seconds on emulator to get ready
+[DEBUG] waited 0.005765 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

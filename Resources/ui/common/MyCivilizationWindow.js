@@ -63,6 +63,25 @@ exports.openCivilView = function() {
 	});
 
 	civ_window.add(get_tweet_button);
+	
+	
+	var get_my_tweet_button = Titanium.UI.createButton({
+		title:'自分のつぶやきを取得する',
+		width : width * 0.6,
+		height : width *0.3,
+		center : {
+			//x : width * 0.75,
+			x : width *  0.5,
+			y : height * 0.6
+		}
+	});
+
+	get_my_tweet_button.addEventListener('click', function(e) {
+		require('/Confess/getMyConfessData').getMyConfess();
+	});
+
+	civ_window.add(get_my_tweet_button);
+	
 
 	var man_image = Titanium.UI.createImageView({
 		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
