@@ -48,4 +48,7 @@ exports.setProperty = function(){
 		if (!Titanium.App.Properties.hasProperty('handlename'))
 		Titanium.App.Properties.setString('handlename', '名無しさん');
 		
+		if(!Titanium.App.Properties.hasProperty('last_flow_update'))
+		Titanium.App.Properties.setDouble('last_flow_update',(new Date(2000, 1,1, 23, 59, 59)).getTime())
+		
 }

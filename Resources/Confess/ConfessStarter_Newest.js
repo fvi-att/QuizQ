@@ -7,6 +7,9 @@
  * 
  */
 
+var latest_update_posts;
+
+
 exports.FlowdownloadStart = function(post_id) {
 	
 	var actInd = Titanium.UI.createActivityIndicator({
@@ -24,6 +27,19 @@ exports.FlowdownloadStart = function(post_id) {
 
 	actInd.show();
 	
+	if(latest_update_posts && (Titanium.App.Properties.getDouble('last_flow_update') + 1000*30 < new Date().getTime)){
+		//if(latest_update_posts){
+		alert('どうやら再利用できるデータが存在するようです');
+		
+		new require('/ui/common/ConfessWindow/FlowView')(latest_update_posts);
+		actInd.hide();
+		
+		
+		return;
+		
+		
+	}
+	
 	var condition = new Date()
 	//condition.setDate(condition.getDate() -1);
 	condition.setDate(condition.getDate() -1);
@@ -38,7 +54,10 @@ exports.FlowdownloadStart = function(post_id) {
 			var post = e.posts[0];
 			actInd.hide();
 			if(e.posts.length >0){
-			 /*	var flowWin = */new require('/ui/common/ConfessWindow/FlowView')(e.posts);
+			 new require('/ui/common/ConfessWindow/FlowView')(e.posts);
+			 latest_update_posts = e.posts;
+			 
+			 Titanium.App.Properties.setDouble('last_flow_update',new Date().getTime())
 			//	alert('Success:\\n'+'count:'+e.posts.length + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.created_at);
 			}
 		} else {
