@@ -4,8 +4,8 @@ Logfile initialized
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/AddConfess.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/AddConfess.js
-[TRACE] COPYING MODIFIED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/SelectBoard/selectItems.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/SelectBoard/selectItems.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Confess/Flowdata.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Confess/Flowdata.js
+[TRACE] COPYING MODIFIED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ConfessWindow/FlowView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ConfessWindow/FlowView.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/title1.png

@@ -6,6 +6,8 @@
  */
 
 function ProjectList(download) {
+	
+	var flow_data = require('/Confess/Flowdata').createDataObject(download)
 
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var view = Titanium.UI.createWindow({
@@ -32,13 +34,16 @@ function ProjectList(download) {
 	});
 
 	function createRow(count) {
-		if (!download[count])
+		//いつかはセクションごとに分割で切るようにしていく
+		var test = flow_data.getAllData()
+		
+		if (!test[count])
 			return;
 
-		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', download[count].created_at, download[count].title, download[count].content, 0, download[count].id, download[count].photo, view);
+		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', test[count].created_at,test[count].title, test[count].content, 0, test[count].id,test[count].photo, view);
 		createdRow.row.setHasChild(false);
-		createdRow.row.post_username = download[count].user;
-
+		createdRow.row.post_username = test[count].user;
+		
 		flowTableView.appendRow(createdRow.row);
 	}
 	
