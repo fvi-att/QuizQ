@@ -82,7 +82,7 @@ exports.openCivilView = function() {
 
 	civ_window.add(get_my_tweet_button);
 	
-
+	/*
 	var man_image = Titanium.UI.createImageView({
 		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
 		duration : 1500,
@@ -101,7 +101,7 @@ exports.openCivilView = function() {
 	});
 
 	civ_window.add(man_image);
-
+	*/
 
 
 	//下のアンダーバーに関する処理
