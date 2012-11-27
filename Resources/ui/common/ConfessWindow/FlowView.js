@@ -22,8 +22,8 @@ function ProjectList(download) {
 
 	var projectList = [];
 
-	// Create a TableView.
-	var aTableView = Ti.UI.createTableView({
+	// Create a TableView.　フロービューに関する処理
+	var flowTableView = Ti.UI.createTableView({
 		data : projectList,
 		showVerticalScrollIndicator : true,
 		top : height * 0.1,
@@ -35,12 +35,16 @@ function ProjectList(download) {
 		if (!download[count])
 			return;
 
-		var STUB_row = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', download[count].created_at, download[count].title, download[count].content, 0, download[count].id, download[count].photo, view);
-		STUB_row.row.setHasChild(false);
-		STUB_row.row.post_username = download[count].user;
+		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', download[count].created_at, download[count].title, download[count].content, 0, download[count].id, download[count].photo, view);
+		createdRow.row.setHasChild(false);
+		createdRow.row.post_username = download[count].user;
 
-		aTableView.appendRow(STUB_row.row);
+		flowTableView.appendRow(createdRow.row);
 	}
+	
+	
+	
+	
 
 	if (Titanium.App.Properties.getBool('flow_side')) {
 		for ( count = 0; count < download.length; count++)
@@ -53,7 +57,7 @@ function ProjectList(download) {
 	}
 
 	//	view.add(searchBar);
-	view.add(aTableView);
+	view.add(flowTableView);
 
 	var close_button = Titanium.UI.createButton({
 		title : '閉じる',
@@ -69,7 +73,7 @@ function ProjectList(download) {
 
 	view.add(close_button);
 
-	//ナビゲーションバーの設定
+	//ナビゲーションバーの設定 上部分に関する設定
 	var navi_bar = Titanium.UI.createImageView({
 		image : '/images/navibar/flow_navibar.png',
 		width : width,
@@ -108,6 +112,13 @@ function ProjectList(download) {
 	});
 
 	view.add(config_button);
+	
+	
+	
+	
+	
+	
+	
 
 	//設定画面を表示する
 	view.activity.onCreateOptionsMenu = function(e) {

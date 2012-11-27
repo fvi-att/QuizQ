@@ -15,54 +15,10 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 	var row_width = source_row.row.getWidth();
 
 	var json_status = JSON.parse(comment);
+	
 
-	function PlusStamp() {
-		//	if (!photo) {
-
-		if (json_status.bad > 0) {
-
-			var stamp_img = Titanium.UI.createImageView({
-				image : '/images/Stamp/kijyo.png',
-				width : 'auto',
-				height : row_height * 0.8,
-				right : 0,
-			});
-			source_row.row.add(stamp_img);
-
-			return;
-
-		} else if (json_status.noway > 0) {
-			var stamp_img = Titanium.UI.createImageView({
-				image : '/images/Stamp/angry_cat.png',
-				width : 'auto',
-				height : row_height * 0.8,
-				bottom : 0,
-			});
-			source_row.row.setHeight(source_row.row.getHeight() + height * 0.15)
-			source_row.row.add(stamp_img);
-
-			return;
-		} else if (json_status.interest > 0) {
-			/*
-			 var stamp_img = Titanium.UI.createImageView({
-			 image : '/images/Stamp/kijyo.png',
-			 width : 'auto',
-			 height : row_height * 0.8,
-			 right : 0,
-			 });
-			 source_row.row.add(stamp_img);
-
-			 return;
-			 */
-		}
-
-	}
-
-	//	PlusStamp();
-	//なんか書いたよ
-	//日付を一旦削除　後日追加予定
-	//var time_label = require('/util/GetJSTime').getJST(created_at)
-	var poster_name = JSON.parse(comment)._HN;
+//ハンドルネームの設定に関する処理　ここでメッセージ内にハンドルネームが存在していた場合
+//表示を行う
 
 	if (!poster_name)
 		poster_name = '名無しさん';
@@ -128,7 +84,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 			comment_sumCnt++;
 		}
 			
-			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.1 * comment_sumCnt))
+			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.05 * comment_sumCnt))
 
 		return status_string;
 
@@ -150,6 +106,8 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 	comment_label.setText(setCommentText(JSON.parse(comment)));
 
 	source_row.row.add(comment_label);
+	
+	
 
 	var response_button = Titanium.UI.createButton({
 		title : 'レス',
@@ -178,7 +136,54 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 			comment = e.status;
 			comment_label.setText(setCommentText(JSON.parse(e.status)));
 		}
-	})
+	});
+	
+	
+		
+	
+//スタンプを付与するモードについて定義するメソッド 優先度低
+	function PlusStamp() {
+		//	if (!photo) {
+
+		if (json_status.bad > 0) {
+
+			var stamp_img = Titanium.UI.createImageView({
+				image : '/images/Stamp/kijyo.png',
+				width : 'auto',
+				height : row_height * 0.8,
+				right : 0,
+			});
+			source_row.row.add(stamp_img);
+
+			return;
+
+		} else if (json_status.noway > 0) {
+			var stamp_img = Titanium.UI.createImageView({
+				image : '/images/Stamp/angry_cat.png',
+				width : 'auto',
+				height : row_height * 0.8,
+				bottom : 0,
+			});
+			source_row.row.setHeight(source_row.row.getHeight() + height * 0.15)
+			source_row.row.add(stamp_img);
+
+			return;
+		} else if (json_status.interest > 0) {
+			/*
+			 var stamp_img = Titanium.UI.createImageView({
+			 image : '/images/Stamp/kijyo.png',
+			 width : 'auto',
+			 height : row_height * 0.8,
+			 right : 0,
+			 });
+			 source_row.row.add(stamp_img);
+
+			 return;
+			 */
+		}
+
+	}
+
 
 	return source_row;
 }

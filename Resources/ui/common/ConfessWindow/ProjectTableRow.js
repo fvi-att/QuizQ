@@ -1,5 +1,5 @@
 /**
- * @author fvi
+ * @author fvi@
  * create 2012 07 19
  *
  */
@@ -7,17 +7,7 @@
 exports.createRowObject = function(image_path, title, side, photo, id) {
 
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
-
-	var leftImagePath = '';
-
-	if (side < 0)
-		leftImagePath = '/images/result/cross2.png';
-
-	if (side > 0)
-		leftImagePath = '/images/result/circle2.png';
-
-	if (side == 0)
-		leftImagePath = '/images/result/clear1.png';
+	//画像生成に負荷がかかると感じたので一旦削除する　20121128
 
 	if (!id)
 		id = 'STUB';
@@ -31,7 +21,6 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 	
 	var lf_count = Math.max(title.split("\n").length - 1,title.length / 12)
 	var row = Titanium.UI.createTableViewRow({
-		//		leftImage:leftImagePath,
 		backgroundImage : '/images/transparent.png',
 		hasChild : true,
 		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.30,
