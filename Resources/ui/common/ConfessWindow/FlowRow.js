@@ -19,6 +19,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 
 //ハンドルネームの設定に関する処理　ここでメッセージ内にハンドルネームが存在していた場合
 //表示を行う
+	var poster_name = json_status._HN
 
 	if (!poster_name)
 		poster_name = '名無しさん';
@@ -138,52 +139,5 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 		}
 	});
 	
-	
-		
-	
-//スタンプを付与するモードについて定義するメソッド 優先度低
-	function PlusStamp() {
-		//	if (!photo) {
-
-		if (json_status.bad > 0) {
-
-			var stamp_img = Titanium.UI.createImageView({
-				image : '/images/Stamp/kijyo.png',
-				width : 'auto',
-				height : row_height * 0.8,
-				right : 0,
-			});
-			source_row.row.add(stamp_img);
-
-			return;
-
-		} else if (json_status.noway > 0) {
-			var stamp_img = Titanium.UI.createImageView({
-				image : '/images/Stamp/angry_cat.png',
-				width : 'auto',
-				height : row_height * 0.8,
-				bottom : 0,
-			});
-			source_row.row.setHeight(source_row.row.getHeight() + height * 0.15)
-			source_row.row.add(stamp_img);
-
-			return;
-		} else if (json_status.interest > 0) {
-			/*
-			 var stamp_img = Titanium.UI.createImageView({
-			 image : '/images/Stamp/kijyo.png',
-			 width : 'auto',
-			 height : row_height * 0.8,
-			 right : 0,
-			 });
-			 source_row.row.add(stamp_img);
-
-			 return;
-			 */
-		}
-
-	}
-
-
 	return source_row;
 }

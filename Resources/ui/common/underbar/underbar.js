@@ -75,21 +75,7 @@ exports.createBar = function(fromView) {
 		 require('/ui/common/AddConfess').AddProject();
 	});
 
-	var list_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/mylist/mylist.png',
-		height : height * 0.12,
-		width : width * 0.4,
-		center : {
-			x : width * 0.7,
-			y : height * 0.15
-		}
-	});
-	list_button.addEventListener('click',function(e){
-		new require('/ui/common/ProjectListView')();
-		
-		
-	});
-	
+
 	var help_Button = Titanium.UI.createButton({
 		backgroundImage :'/images/button/front_info/info_nav_button.png',
 		backgroundSelectedImage : '/images/button/front_info/info_nav_button_pressed.png',
@@ -111,7 +97,7 @@ exports.createBar = function(fromView) {
 
 //	under_bar.add(item_button);
 	under_bar.add(addConfess_button);
-//	under_bar.add(list_button);
+
 
 	return under_bar;
 }

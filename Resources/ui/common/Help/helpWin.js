@@ -37,7 +37,7 @@ exports.openWin = function(url){
 
 	close_button.addEventListener('click', function(e) {
 		win.close();
-		delete win;
+		//delete win;
 	});
 
 	win.add(close_button);

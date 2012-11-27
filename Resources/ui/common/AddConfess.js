@@ -136,7 +136,7 @@ exports.AddProject = function() {
 	})
 	Titanium.App.addEventListener('complete_post',function(e){
 		win.close();
-		delete win;
+		//delete win;
 		
 		Titanium.UI.createNotification({
 			duration : 3000,

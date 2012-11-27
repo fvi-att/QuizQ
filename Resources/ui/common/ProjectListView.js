@@ -45,27 +45,7 @@ function ProjectList() {
 		height : height * 0.7
 	});
 
-	//新規でたしてみる  sample
-	(function AddSample() {
-		if (Titanium.App.Properties.getBool('isSampleNeed')) {
-			aTableView.appendRow(require('/ui/common/ProjectTableRow').createRowObject('', 'あいつはあまりにも非常識すぎる。', 0))
-			/*
 
-			 var spl_row = require('/ui/common/ProjectTableRow').createRowObject('', '(例)りんごは林檎ですがゴリラの漢字名は？', 0);
-			 var spl_row2 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)2012年のサラリーマン川柳受賞作は？',0);
-			 var spl_row3 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)ユニークな貯金法ってある？', 0);
-			 var spl_row4 = require('/ui/common/ProjectTableRow').createRowObject('', '(例)アメリカのおもしろ観光スポットってある？', 0);
-
-			 aTableView.appendRow(spl_row.row);
-			 aTableView.appendRow(spl_row2.row);
-			 aTableView.appendRow(spl_row3.row);
-			 aTableView.appendRow(spl_row4.row);
-
-			 一時停止
-			 */
-
-		}
-	})
 	//DBから呼び出していろいろやる
 	try {
 		var db_results;
@@ -88,15 +68,6 @@ function ProjectList() {
 		AddSample();
 	});
 
-	//Titanium.App.fireEvent('addFavorite',{content:download}); お気に入り登録させる
-	/*
-	 Titanium.App.addEventListener('addFavorite', function(e) {
-	 var content = e.content;
-	 var row = require('/ui/common/ProjectTableRow').createRowObject('', content.text, 0,content.ID);
-
-	 aTableView.insertRowAfter(0, row.row);
-	 });
-	 */
 	var view = Titanium.UI.createWindow({
 		title : L('collection'),
 		backgroundImage : '/images/opening/old_paper.jpg',

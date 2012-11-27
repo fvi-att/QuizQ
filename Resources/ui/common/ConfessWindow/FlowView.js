@@ -68,7 +68,7 @@ function ProjectList(download) {
 
 	close_button.addEventListener('click', function(e) {
 		view.close();
-		delete view;
+		//delete view;
 	});
 
 	view.add(close_button);

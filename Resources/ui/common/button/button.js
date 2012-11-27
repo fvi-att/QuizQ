@@ -1,9 +1,10 @@
 /*
- * @ creator fvi@
- * created@  2012 07 20
+ * created by fvi@
+ * created at 2012 06 05
+ * 
+ * 
  * 
  */
-
 function createButton(text){
 	
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;

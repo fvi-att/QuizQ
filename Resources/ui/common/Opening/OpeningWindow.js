@@ -121,9 +121,10 @@ exports.openWindow = function() {
 		movie_view.stop();
 		
 		//メモリ解放
+		/*
 		delete movie_view;
 		delete win;
-		
+		*/
 	});
 	
 	win.add(close_button);

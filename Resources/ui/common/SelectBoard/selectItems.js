@@ -216,10 +216,11 @@ exports.openView = function(view) {
 			money:100,
 			crops:150
 		}));
-		
+		/*
 		delete item_list_view;
 		delete back_temp_view;
 		delete old_paper;
+		*/
 		
 	});
 

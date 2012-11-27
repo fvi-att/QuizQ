@@ -89,9 +89,10 @@ exports.openView = function(view) {
 		view.remove(old_paper);
 		
 		Titanium.App.fireEvent('select_junel',{junel:column1.getSelectedRow().getTitle()})
-		
+		/*
 		delete old_paper;
 		delete back_temp_view;
+		*/
 	});
 
 	old_paper.add(cancel_button);
