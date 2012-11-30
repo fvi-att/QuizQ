@@ -2,6 +2,7 @@
 <resources>
 	<string name="appname">ひみつぶやき</string>
 	<string name="welcome">%sへようこそ!</string>
+	<string name="opening">おーぷにんぐ</string>
 	<string name="add">かっこイイネ！　を追加する</string>
 	
 	<string name="collection">つぶやきコレクション</string>

@@ -1,15 +1,9 @@
 Logfile initialized
 [INFO] logfile = /home/fvi/Titanium_Studio_Workspace/Confess/build.log
-[DEBUG] /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/builder.py install Secret_dev /home/fvi/android-sdk-linux/tools /home/fvi/Titanium_Studio_Workspace/Confess com.xicolo.confess.dev.dev.app 3
+[DEBUG] /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/builder.py distribute Secret_dev /home/fvi/android-sdk-linux/tools /home/fvi/Titanium_Studio_Workspace/Confess com.xicolo.confess.dev.dev.app /home/fvi/Dropbox/xicoloConfessProvision javasukidesukab0801230 confess /home/fvi/デスクトップ 2
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.006784 seconds on emulator to get ready
-[DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/MyCivilizationWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/MyCivilizationWindow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/title1.png
@@ -37,33 +31,14 @@ Logfile initialized
 [DEBUG] found splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/default.png
 [TRACE] Writing out AndroidManifest.xml
 [DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devAppInfo.java to javac build list
+[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/AssetCryptImpl.java to javac build list
 [DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/R.java to javac build list
 [DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devApplication.java to javac build list
 [DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devActivity.java to javac build list
-[DEBUG] Building Java Sources: "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devAppInfo.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/R.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devApplication.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devActivity.java"
+[DEBUG] Building Java Sources: "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devAppInfo.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/AssetCryptImpl.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/R.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devApplication.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devActivity.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/app-unsigned.apk
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/GetPoint_fromObject.js
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/UpdatePoint_fromObject.js
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/CreatePost.js
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/CreateUser.js
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/LoginACS.js
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/RemovePost.js
-[DEBUG] from resource zip => assets/Resources/ACS/Confess/UpdatePost.js
-[DEBUG] from resource zip => assets/Resources/ACS/CreateUserACS.js
-[DEBUG] from resource zip => assets/Resources/ACS/LoginACS.js
-[DEBUG] from resource zip => assets/Resources/ACS/LogoutACS.js
-[DEBUG] from resource zip => assets/Resources/ACS/UploadImage.js
-[DEBUG] from resource zip => assets/Resources/Confess/ConfessStarter.js
-[DEBUG] from resource zip => assets/Resources/Confess/ConfessStarter_Newest.js
-[DEBUG] from resource zip => assets/Resources/Confess/Flowdata.js
-[DEBUG] from resource zip => assets/Resources/Confess/getMyConfessData.js
-[DEBUG] from resource zip => assets/Resources/DB/ConfessDB.js
-[DEBUG] from resource zip => assets/Resources/DB/ItemDB.js
-[DEBUG] from resource zip => assets/Resources/DB/SQL.js
-[DEBUG] from resource zip => assets/Resources/Serif/Serif.js
-[DEBUG] from resource zip => assets/Resources/counter/counter.js
 [DEBUG] from resource zip => assets/Resources/images/And/And.png
 [DEBUG] from resource zip => assets/Resources/images/And/And_Pressed.png
 [DEBUG] from resource zip => assets/Resources/images/And/button.png
@@ -204,45 +179,11 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/tmp/right.png
 [DEBUG] from resource zip => assets/Resources/images/note.jpg
 [DEBUG] from resource zip => assets/Resources/images/transparent.png
-[DEBUG] from resource zip => assets/Resources/itemGood/json.js
-[DEBUG] from resource zip => assets/Resources/ui/common/AddField/Selectjunel.js
-[DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ConfigWin.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowRow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ProjectTableRow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ResponseBoard.js
-[DEBUG] from resource zip => assets/Resources/ui/common/Help/helpWin.js
-[DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/CivGrowthBoard.js
-[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/SelectBoard.js
-[DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/selectItems.js
-[DEBUG] from resource zip => assets/Resources/ui/common/button/button.js
-[DEBUG] from resource zip => assets/Resources/ui/common/imageFrame/MenuProjectFrame.js
-[DEBUG] from resource zip => assets/Resources/ui/common/serifView/Serif.js
-[DEBUG] from resource zip => assets/Resources/ui/common/underbar/underbar.js
-[DEBUG] from resource zip => assets/Resources/ui/common/AddConfess.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfigWin.js
-[DEBUG] from resource zip => assets/Resources/ui/common/FirstView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/MyCivilizationWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/PointFrame.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ProjectListView.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ProjectTableRow.js
-[DEBUG] from resource zip => assets/Resources/ui/handheld/android/ApplicationWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/handheld/ApplicationWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
-[DEBUG] from resource zip => assets/Resources/util/GetJSTime.js
-[DEBUG] from resource zip => assets/Resources/util/MergePoint.js
-[DEBUG] from resource zip => assets/Resources/util/getbackPathWithTime.js
-[DEBUG] from resource zip => assets/Resources/util/random.js
-[DEBUG] from resource zip => assets/Resources/util/setProperty.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
-[DEBUG] from resource zip => assets/Resources/app.js
 [DEBUG] from resource zip => assets/Resources/appico.png
 [DEBUG] from resource zip => assets/Resources/appicon.png
 [DEBUG] from resource zip => assets/Resources/default.png
-[DEBUG] from resource zip => assets/Resources/ti.cloud.js
 [DEBUG] from resource zip => assets/Resources/title1.png
 [DEBUG] from resource zip => assets/app.json
 [DEBUG] from resource zip => assets/index.json
@@ -284,9 +225,3 @@ Logfile initialized
 [DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
 [DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
 [DEBUG] installing native SDK libs
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.005585 seconds on emulator to get ready
-[INFO] Installing application on device
-[INFO] Application installed. Launch from drawer on Home Screen
