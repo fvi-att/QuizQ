@@ -3,4 +3,18 @@
 	<string name="appname">anony_mouth</string>
 	<string name="welcome">Welcome to %s!</string>
 	<string name="add">add　your cool!</string>
+	<string name="opening">opening</string>
+		<string name="open_text1">Tweet us what you real feel you cannot
+							tweet or on facebook!!\n
+							with anonymity area\n</string>
+	<string name="open_text3">みんなのひみつぶやきに\n
+							レスを返してみよう！。レスがたまると\n
+							つぶやきにスタンプが貼られるよ！\n
+							（11月上旬登場予定)
+							</string>
+	<string name="open_text2">いつものグループには言えない本音をぶつけよう！\n
+							日々の不満や小さな悩みなど匿名ならではのつぶやきを\n
+							ひみつぶやきで！\n\n
+
+							新型コミュニティ\n　ひみつぶやき　\n始めました。</string>
 </resources>

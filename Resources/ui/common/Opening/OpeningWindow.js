@@ -16,7 +16,7 @@ exports.openWindow = function() {
 	
 	
 	var win = Titanium.UI.createWindow({
-		title : 'おーぷにんぐ',
+		title :L('opening'),
 		backgroundColor:'white',
 		//backgroundImage : '/images/background/open_background.png',
 		exitOnClose : false,
