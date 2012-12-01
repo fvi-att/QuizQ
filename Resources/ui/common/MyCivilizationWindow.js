@@ -66,7 +66,8 @@ exports.openCivilView = function() {
 	
 	
 	var get_my_tweet_button = Titanium.UI.createButton({
-		title:'自分のつぶやきを取得する',
+		backgroundImage:'/images/button/get_my_flow_button/get_flow_button.png',
+		backgroundSelectedImage:'/images/button/get_my_flow_button/get_flow_button_pressed.png',
 		width : width * 0.6,
 		height : width *0.3,
 		center : {

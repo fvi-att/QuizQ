@@ -1,49 +1,27 @@
 Logfile initialized
-[INFO] logfile = /home/fvi/Titanium_Studio_Workspace/Confess/build.log
-[DEBUG] /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/builder.py install Secret_dev /home/fvi/android-sdk-linux/tools /home/fvi/Titanium_Studio_Workspace/Confess com.xicolo.confess.dev.dev.app 3
+[INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build.log
+[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py install Secret_dev C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess com.xicolo.confess.dev.dev.app 2
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.006784 seconds on emulator to get ready
+[DEBUG] waited 0.072000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/MyCivilizationWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/MyCivilizationWindow.js
-[TRACE] Generating Java Classes
+[INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
-[DEBUG] copying app icon: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/title1.png
-[DEBUG] generating theme.xml
-[DEBUG] found drawable-long-port-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-hdpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-port-hdpi/background.png
-[DEBUG] found drawable-notlong-land-mdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-mdpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-land-mdpi/background.png
-[DEBUG] found drawable-long-port-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-ldpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-port-ldpi/background.png
-[DEBUG] found drawable-notlong-port-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-hdpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-port-hdpi/background.png
-[DEBUG] found drawable-long-land-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-ldpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-land-ldpi/background.png
-[DEBUG] found drawable-notlong-land-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-hdpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-land-hdpi/background.png
-[DEBUG] found drawable-notlong-land-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-ldpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-land-ldpi/background.png
-[DEBUG] found drawable-notlong-port-mdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-mdpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-port-mdpi/background.png
-[DEBUG] found drawable-long-land-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-hdpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-land-hdpi/background.png
-[DEBUG] found drawable-notlong-port-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-ldpi/default.png
-[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-port-ldpi/background.png
-[DEBUG] found splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/default.png
-[TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devAppInfo.java to javac build list
-[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/R.java to javac build list
-[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devApplication.java to javac build list
-[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devActivity.java to javac build list
-[DEBUG] Building Java Sources: "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devAppInfo.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/R.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devApplication.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/dev/app/Secret_devActivity.java"
-[INFO] Compiling Android Resources... This could take some time
-[DEBUG] Android classes.dex built
-[DEBUG] creating unsigned apk: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/app-unsigned.apk
+[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/GetPoint_fromObject.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/UpdatePoint_fromObject.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/CreatePost.js
@@ -62,6 +40,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/DB/ConfessDB.js
 [DEBUG] from resource zip => assets/Resources/DB/ItemDB.js
 [DEBUG] from resource zip => assets/Resources/DB/SQL.js
+[DEBUG] from resource zip => assets/Resources/Goal/GoalView.js
+[DEBUG] from resource zip => assets/Resources/Goal/MyGoalView.js
 [DEBUG] from resource zip => assets/Resources/Serif/Serif.js
 [DEBUG] from resource zip => assets/Resources/counter/counter.js
 [DEBUG] from resource zip => assets/Resources/images/And/And.png
@@ -103,6 +83,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/button/front_info/info_nav_button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/get_flow_button/get_flow_button.png
 [DEBUG] from resource zip => assets/Resources/images/button/get_flow_button/get_flow_button_pressed.png
+[DEBUG] from resource zip => assets/Resources/images/button/get_my_flow_button/get_flow_button.png
+[DEBUG] from resource zip => assets/Resources/images/button/get_my_flow_button/get_flow_button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/get_stamp/get_stamp_button.png
 [DEBUG] from resource zip => assets/Resources/images/button/get_stamp/get_stamp_button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/give/give.png
@@ -212,6 +194,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/FlowView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ProjectTableRow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ResponseBoard.js
+[DEBUG] from resource zip => assets/Resources/ui/common/Goal/GoalView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/Goal/MyGoalView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/Help/helpWin.js
 [DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/CivGrowthBoard.js
@@ -262,31 +246,31 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/thirdparty.jar => org/apache/Commons-NOTICE.txt
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/thirdparty.jar => org/apache/mime4j-NOTICE.txt
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/build.properties
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
-[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.005585 seconds on emulator to get ready
+[DEBUG] waited 0.091000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

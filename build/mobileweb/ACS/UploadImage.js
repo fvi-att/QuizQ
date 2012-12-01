@@ -1,0 +1,1 @@
+exports.UploadImage=function(b){require("ti.cloud").Photos.create({photo:Titanium.Filesystem.getFile(b)},function(a){a.success?(a=a.photos[0],alert("\u753b\u50cf\u3092\u6295\u7a3f\u3057\u307e\u3057\u305f:\\nid: "+a.id+"\\nfilename: "+a.filename+"\\nsize: "+a.size,"updated_at: "+a.updated_at)):alert("\u753b\u50cf\u306e\u6295\u7a3f\u306b\u5931\u6557\u3057\u307e\u3057\u305f")})};

@@ -1,0 +1,3 @@
+1.8>Ti.version&&alert("Sorry - this application template requires Titanium Mobile SDK 1.8 or later");
+(function(){require("/ACS/Confess/CreateUser").createUser();require("/ACS/Confess/LoginACS").LoginACS();require("/DB/SQL").CreateTable();require("/util/setProperty").setProperty();var a=Ti.Platform.osname,b=Ti.Platform.displayCaps.platformHeight,c=Ti.Platform.displayCaps.platformWidth;(new ("ipad"===a||"android"===a&&(899<c||899<b)?require("ui/tablet/ApplicationWindow"):"android"===a?require("ui/handheld/android/ApplicationWindow"):require("ui/handheld/ApplicationWindow"))).open({fullscreen:!0});
+require("/ui/common/Opening/OpeningWindow").openWindow()})();

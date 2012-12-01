@@ -1,0 +1,1 @@
+exports.createPoint=function(b,c){require("ti.cloud").Objects.create({classname:"point",fields:{point:c,set:0,to:b}},function(a){a.success||alert("Error:\\n"+(a.error&&a.message||JSON.stringify(a)))})};
