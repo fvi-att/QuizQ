@@ -1,1 +1,0 @@
-exports.toString=function(a){var b="{";a.money&&(b+="money:"+a.money);a.crop&&(b+=",crop:"+a.crops);return b+"}"};exports.eval=function(a){try{return eval(a)}catch(b){return Titanium.API.info("error at perse JSON"),""}};

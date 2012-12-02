@@ -1,2 +1,0 @@
-exports.FlowdownloadStart=function(){var b=Titanium.UI.createActivityIndicator({bottom:10,height:100,width:100,message:"\u3064\u3076\u3084\u304d\u3092\u96c6\u3081\u3066\u3044\u307e\u3059",font:{fontFamily:"Helvetica Neue",fontSize:15,fontWeight:"bold"}});b.show();var c=new Date;c.setDate(c.getDate()-1);require("ti.cloud").Posts.query({page:1,per_page:40,where:{created_at:{$gt:c}}},function(a){a.success?(b.hide(),0<a.posts.length&&(new require("/ui/common/ConfessWindow/FlowView"))(a.posts)):(alert("Error:\\n"+
-(a.error&&a.message||JSON.stringify(a))),b.hide())})};

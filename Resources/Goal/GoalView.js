@@ -12,6 +12,6 @@ exports.createGoalView = function(){
 	//みんなのゴ～～ルを応援する
 	//自分のゴールを作る
 	//自分のゴールをみる
-	var goal = Titanium.
+	
 	
 }

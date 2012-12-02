@@ -1,1 +1,0 @@
-windowFunctions["Logout Current User"]=function(){var b=createWindow();addBackButton(b);var c=Ti.UI.createLabel({text:"Logging out, please wait...",textAlign:"center"});b.add(c);b.open();Cloud.Users.logout(function(a){c.text=a.success?"Logged out!":a.error&&a.message||a})};

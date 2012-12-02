@@ -1,1 +1,0 @@
-exports.LoginACS=function(){if(!Titanium.App.Properties.hasProperty("username")||!Titanium.App.Properties.hasProperty("password"))return!1;require("/ACS/LoginACS").LoginACS(Titanium.App.Properties.getString("username"),Titanium.App.Properties.getString("password"))};
