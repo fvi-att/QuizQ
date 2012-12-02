@@ -6,11 +6,12 @@
  */
 
 function ProjectList(download) {
-	
+	return require('/ui/common/CommonFlowTableWindow')(download)
+	/*
 	var flow_data = require('/Confess/Flowdata').createDataObject(download)
 
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
-	var view = Titanium.UI.createWindow({
+	var win = Titanium.UI.createWindow({
 		title : L('collection'),
 		navBarHidden : true, //タイトルバーを隠す
 		//backgroundImage : '/images/opening/old_paper.jpg',
@@ -24,7 +25,7 @@ function ProjectList(download) {
 
 	var projectList = [];
 
-	// Create a TableView.　フロービューに関する処理
+	// Create a Tablewin.　フロービューに関する処理
 	var flowTableView = Ti.UI.createTableView({
 		data : projectList,
 		showVerticalScrollIndicator : true,
@@ -40,7 +41,7 @@ function ProjectList(download) {
 		if (!test[count])
 			return;
 
-		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', test[count].created_at,test[count].title, test[count].content, 0, test[count].id,test[count].photo, view);
+		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', test[count].created_at,test[count].title, test[count].content, 0, test[count].id,test[count].photo, win);
 		createdRow.row.setHasChild(false);
 		createdRow.row.post_username = test[count].user;
 		
@@ -61,8 +62,8 @@ function ProjectList(download) {
 			createRow(count);
 	}
 
-	//	view.add(searchBar);
-	view.add(flowTableView);
+	//	win.add(searchBar);
+	win.add(flowTableView);
 
 	var close_button = Titanium.UI.createButton({
 		title : '閉じる',
@@ -72,11 +73,11 @@ function ProjectList(download) {
 	});
 
 	close_button.addEventListener('click', function(e) {
-		view.close();
-		//delete view;
+		win.close();
+		//delete win;
 	});
 
-	view.add(close_button);
+	win.add(close_button);
 
 	//ナビゲーションバーの設定 上部分に関する設定
 	var navi_bar = Titanium.UI.createImageView({
@@ -86,7 +87,7 @@ function ProjectList(download) {
 		top : 0
 	});
 
-	view.add(navi_bar);
+	win.add(navi_bar);
 
 	var info_button = Titanium.UI.createButton({
 		backgroundImage : '/images/navibar/nav_button/info/info_nav_button.png',
@@ -102,7 +103,7 @@ function ProjectList(download) {
 		require('/ui/common/Help/helpWin').openWin('http://xicolo.com/wordpress/?page_id=179#timeLine');
 	})
 
-	view.add(info_button);
+	win.add(info_button);
 
 	var config_button = Titanium.UI.createButton({
 		backgroundImage : '/images/navibar/nav_button/config/config_nav_button.png',
@@ -116,7 +117,7 @@ function ProjectList(download) {
 		require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin();
 	});
 
-	view.add(config_button);
+	win.add(config_button);
 	
 	
 	
@@ -126,7 +127,7 @@ function ProjectList(download) {
 	
 
 	//設定画面を表示する
-	view.activity.onCreateOptionsMenu = function(e) {
+	win.activity.onCreateOptionsMenu = function(e) {
 		var menu = e.menu;
 		var menuItem = menu.add({
 			title : "設定"
@@ -138,10 +139,10 @@ function ProjectList(download) {
 		});
 	};
 
-	view.open();
+	win.open();
 
-	return view;
-
+	return win;
+*/
 }
 
 module.exports = ProjectList;
