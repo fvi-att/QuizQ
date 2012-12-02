@@ -31,7 +31,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 	var row_height = row.getHeight();
 	var row_width = row.getWidth();
 
-	if (photo) {
+	if (photo && photo.urls) {
 		
 		var row_img = Titanium.UI.createImageView({
 			image : photo.urls.small_240,

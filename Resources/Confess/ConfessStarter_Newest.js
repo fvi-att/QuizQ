@@ -10,7 +10,7 @@
 var latest_update_posts;
 
 
-exports.FlowdownloadStart = function(post_id) {
+exports.FlowdownloadStart = function() {
 	
 	var actInd = Titanium.UI.createActivityIndicator({
 		bottom : 10,

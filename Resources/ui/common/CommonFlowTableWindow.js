@@ -4,8 +4,7 @@
  * created @ 2012 12 02
  */
 
-function CommonTableWin(download){
-	var flow_data = require('/Confess/Flowdata').createDataObject(download)
+function CommonTableWin(){
 
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var win = Titanium.UI.createWindow({
@@ -30,35 +29,9 @@ function CommonTableWin(download){
 		width : width,
 		height : height * 0.8
 	});
-
-	function createRow(count) {
-		//いつかはセクションごとに分割で切るようにしていく
-		var test = flow_data.getAllData()
-		
-		if (!test[count])
-			return;
-
-		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', test[count].created_at,test[count].title, test[count].content, 0, test[count].id,test[count].photo, win);
-		createdRow.row.setHasChild(false);
-		createdRow.row.post_username = test[count].user;
-		
-		flowTableView.appendRow(createdRow.row);
-	}
 	
+	win.table = flowTableView;
 	
-	
-	
-
-	if (Titanium.App.Properties.getBool('flow_side')) {
-		for ( count = 0; count < download.length; count++)
-			createRow(count);
-
-	} else {
-		//falseのときtwitter形式にする
-		for ( count = download.length; count > -1; count--)
-			createRow(count);
-	}
-
 	//	win.add(searchBar);
 	win.add(flowTableView);
 
@@ -115,13 +88,7 @@ function CommonTableWin(download){
 	});
 
 	win.add(config_button);
-	
-	
-	
-	
-	
-	
-	
+
 
 	//設定画面を表示する
 	win.activity.onCreateOptionsMenu = function(e) {
@@ -137,6 +104,8 @@ function CommonTableWin(download){
 	};
 
 	win.open();
+	
+	
 
 	return win;
 }

@@ -44,7 +44,7 @@ exports.getMyConfess = function(){
 			actInd.hide();
 			if(e.posts.length >0){
 				
-			 /*	var flowWin = */new require('/ui/common/ConfessWindow/FlowView')(e.posts);
+			 new require('/ui/common/MyConfessWindow/FlowView')(e.posts);
 			//	alert('Success:\\n'+'count:'+e.posts.length + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.created_at);
 			}
 		} else {

@@ -5,13 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.038000 seconds on emulator to get ready
+[DEBUG] waited 0.048000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\ui\common\CommonFlowTableWindow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\ui\common\CommonFlowTableWindow.js
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\ui\common\ConfessWindow\FlowRow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowRow.js
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\ui\common\ConfessWindow\FlowView.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowView.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\ui\common\MyConfessWindow\FlowView.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\ui\common\MyConfessWindow\FlowView.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\title1.png
@@ -221,6 +219,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/Goal/GoalView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/Goal/MyGoalView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/Help/helpWin.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MyConfessWindow/FlowView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/Opening/OpeningWindow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/CivGrowthBoard.js
 [DEBUG] from resource zip => assets/Resources/ui/common/SelectBoard/SelectBoard.js
@@ -230,8 +229,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/common/serifView/Serif.js
 [DEBUG] from resource zip => assets/Resources/ui/common/underbar/underbar.js
 [DEBUG] from resource zip => assets/Resources/ui/common/AddConfess.js
+[DEBUG] from resource zip => assets/Resources/ui/common/CommonConfessRow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/CommonFlowTableWindow.js
-[DEBUG] from resource zip => assets/Resources/ui/common/ConfessRowCommon.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfigWin.js
 [DEBUG] from resource zip => assets/Resources/ui/common/FirstView.js
 [DEBUG] from resource zip => assets/Resources/ui/common/MyCivilizationWindow.js
@@ -297,6 +296,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.047000 seconds on emulator to get ready
+[DEBUG] waited 0.055000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

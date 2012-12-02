@@ -59,7 +59,7 @@ exports.openCivilView = function() {
 	});
 
 	get_tweet_button.addEventListener('click', function(e) {
-		require('/Confess/ConfessStarter_Newest').FlowdownloadStart('5076f115b685534c140d38ac');
+		require('/Confess/ConfessStarter_Newest').FlowdownloadStart();
 	});
 
 	civ_window.add(get_tweet_button);
