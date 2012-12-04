@@ -37,7 +37,8 @@ exports.getMyConfess = function(){
 	Cloud.Posts.query({
     where: {
        user_id:user_id
-    }
+    },
+   order:'created_at'
 }, function(e) {
 		if (e.success) {
 			var post = e.posts[0];
