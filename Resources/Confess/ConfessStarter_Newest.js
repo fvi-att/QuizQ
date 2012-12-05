@@ -26,7 +26,7 @@ exports.FlowdownloadStart = function() {
 	});
 
 	actInd.show();
-	
+	/*
 	if(latest_update_posts && (Titanium.App.Properties.getDouble('last_flow_update') + 1000*30 < new Date().getTime)){
 		//if(latest_update_posts){
 		alert('どうやら再利用できるデータが存在するようです');
@@ -39,7 +39,7 @@ exports.FlowdownloadStart = function() {
 		
 		
 	}
-	
+	*/
 	var condition = new Date()
 	//condition.setDate(condition.getDate() -1);
 	condition.setDate(condition.getDate() -1);
