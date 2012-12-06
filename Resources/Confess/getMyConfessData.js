@@ -36,7 +36,8 @@ exports.getMyConfess = function(){
 	var Cloud = require('ti.cloud');
 	Cloud.Posts.query({
     where: {
-       user_id:user_id
+       user_id:user_id,
+       order:'created_at'
     }
 }, function(e) {
 		if (e.success) {
@@ -45,6 +46,8 @@ exports.getMyConfess = function(){
 			if(e.posts.length >0){
 				
 			 new require('/ui/common/MyConfessWindow/FlowView')(e.posts);
+			 
+			 Ti.API.info('getPost::'+e.posts.length);
 			//	alert('Success:\\n'+'count:'+e.posts.length + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'updated_at: ' + post.created_at);
 			}
 		} else {

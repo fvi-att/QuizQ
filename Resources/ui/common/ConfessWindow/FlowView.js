@@ -36,7 +36,16 @@ function FlowWindow(download) {
 		for ( count = download.length; count > -1; count--)
 			createRow(count);
 	}
+	
+	/*
+	 * 
+	 * 広告モジュールを用いて追加
+	 */
+	/*
+	var admob_view = new require('/ui/Android_admob')(1, 450);
 
+		touch_view.add(admob_view);
+	*/
 }
 
 module.exports = FlowWindow;
