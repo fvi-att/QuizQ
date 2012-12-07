@@ -1,11 +1,226 @@
 Logfile initialized
+<<<<<<< HEAD
 [INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build.log
 [DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py distribute Secret C:\adb\android-sdk C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess com.xicolo.confess.app C:\Users\fvi\Dropbox\xicoloConfessProvision javasukidesukab0801230 confess C:\Users\fvi\Desktop\20121206 3
+=======
+[INFO] logfile = /home/fvi/Titanium_Studio_Workspace/Confess/build.log
+[DEBUG] /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/builder.py distribute Secret /home/fvi/android-sdk-linux/tools /home/fvi/Titanium_Studio_Workspace/Confess com.xicolo.confess.dev.app /home/fvi/Dropbox/xicoloConfessProvision javasukidesukab0801230 confess /home/fvi/デスクトップ/20121205 2
+>>>>>>> 196300a0b29947038e9dcb3c9f75bb158a078221
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
+[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/appico.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/appico.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/KS_nav_views.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/KS_nav_views.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/util/setProperty.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/util/setProperty.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/util/random.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/util/random.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/util/MergePoint.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/util/MergePoint.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/util/getbackPathWithTime.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/util/getbackPathWithTime.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/util/GetJSTime.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/util/GetJSTime.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/DB/SQL.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/DB/SQL.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/DB/ConfessDB.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/DB/ConfessDB.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/DB/ItemDB.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/DB/ItemDB.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/app.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Goal/GoalView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Goal/GoalView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Goal/MyGoalView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Goal/MyGoalView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/LoginACS.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/LoginACS.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/UploadImage.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/UploadImage.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/LogoutACS.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/LogoutACS.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/Confess/LoginACS.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/Confess/LoginACS.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/Confess/CreatePost.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/Confess/CreatePost.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/Confess/CreateUser.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/Confess/CreateUser.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/Confess/UpdatePost.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/Confess/UpdatePost.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/Confess/PointSystem/GetPoint_fromObject.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/Confess/PointSystem/GetPoint_fromObject.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/Confess/PointSystem/UpdatePoint_fromObject.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/Confess/PointSystem/UpdatePoint_fromObject.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/Confess/RemovePost.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/Confess/RemovePost.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ACS/CreateUserACS.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ACS/CreateUserACS.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/title1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/title1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Confess/getMyConfessData.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Confess/getMyConfessData.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Confess/ConfessStarter_Newest.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Confess/ConfessStarter_Newest.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Confess/ConfessStarter.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Confess/ConfessStarter.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Confess/Flowdata.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Confess/Flowdata.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/Serif/Serif.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/Serif/Serif.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/transparent.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/transparent.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/And/And_Pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/And/And_Pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/And/button_pressed => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/And/button_pressed
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/And/And.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/And/And.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/And/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/And/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/And/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/And/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/cancel/cancel.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/cancel/cancel.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/back_lightblue.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/back_lightblue.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/cork.jpg => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/cork.jpg
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/coin.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/coin.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/back_green.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/back_green.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/open_background.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/open_background.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/background.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/background.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/back_white.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/back_white.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/background/note.jpg => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/background/note.jpg
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/serif/serif.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/serif/serif.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/time1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/time1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/pallet_default_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/pallet_default_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/plus1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/plus1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/dark_link.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/dark_link.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/pallet_default.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/pallet_default.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/light_pictures.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/light_pictures.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/light_gears.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/light_gears.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/dark_thumb-up.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/dark_thumb-up.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/dark_gears.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/dark_gears.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/icon/light_pegman.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/icon/light_pegman.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/slide_button/right_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/slide_button/right_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/slide_button/right_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/slide_button/right_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/slide_button/left_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/slide_button/left_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/slide_button/left_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/slide_button/left_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/old_paper.jpg => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/old_paper.jpg
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/images/movie2.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/images/movie2.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/images/movie3.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/images/movie3.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/opening/images/movie1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/opening/images/movie1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/board/board.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/board/board.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/result/cross2.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/result/cross2.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/result/resultImage1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/result/resultImage1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/result/circle2.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/result/circle2.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/result/clear1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/result/clear1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/result/circle.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/result/circle.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/result/cross.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/result/cross.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/And/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/And/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/And/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/And/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/OK/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/OK/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/OK/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/OK/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/OK_button2_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/OK_button2_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/OK_button_2.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/OK_button_2.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/tweet/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/tweet/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/tweet/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/tweet/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/try/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/try/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/try/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/try/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/add/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/add/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/add/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/add/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/good/good_added.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/good/good_added.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/good/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/good/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/share/good/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/share/good/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/food/grape.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/food/grape.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/food/apple.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/food/apple.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/item/fire.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/item/fire.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/man/man12.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/man/man12.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/man/man0.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/man/man0.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/man/man11.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/man/man11.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/man/man10.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/man/man10.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/house/house1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/house/house1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/back/background_night.PNG => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/back/background_night.PNG
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/ancient/back/background.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/ancient/back/background.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/bar/underbar1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/bar/underbar1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/bar/underbar2.PNG => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/bar/underbar2.PNG
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/cupcell/cupcell.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/cupcell/cupcell.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/cupcell/cupcell_open.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/cupcell/cupcell_open.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/cupcell/coin/coin.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/cupcell/coin/coin.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/cupcell/coin/coin1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/cupcell/coin/coin1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/religion/FSL/FSL.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/religion/FSL/FSL.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/civ/religion/flask/flask.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/civ/religion/flask/flask.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/postit/blue_post1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/postit/blue_post1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/postit/backpost.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/postit/backpost.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/postit/green_post1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/postit/green_post1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/postit/red_post1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/postit/red_post1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/postit/yellow_post1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/postit/yellow_post1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/postit/purple_post2.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/postit/purple_post2.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/flowboard/board.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/flowboard/board.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/tmp/right.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/tmp/right.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/tmp/Left.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/tmp/Left.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/note.jpg => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/note.jpg
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Stamp/kijyo.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Stamp/kijyo.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Stamp/angry_cat.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Stamp/angry_cat.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/navibar/flow_navibar.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/navibar/flow_navibar.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/navibar/nav_button/config/config_nav_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/navibar/nav_button/config/config_nav_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/navibar/nav_button/config/config_nav_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/navibar/nav_button/config/config_nav_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/navibar/nav_button/info/info_nav_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/navibar/nav_button/info/info_nav_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/navibar/nav_button/info/info_nav_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/navibar/nav_button/info/info_nav_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/construction/construction.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/construction/construction.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/And/button_pressed => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/And/button_pressed
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/And/And(1).png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/And/And(1).png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/And/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/And/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/And/And_Pressed(1).png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/And/And_Pressed(1).png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/And/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/And/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/mylist/mylist.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/mylist/mylist.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/start/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/start/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/start/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/start/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/get_flow_button/get_flow_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/get_flow_button/get_flow_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/get_flow_button/get_flow_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/get_flow_button/get_flow_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/front_info/info_nav_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/front_info/info_nav_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/front_info/info_nav_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/front_info/info_nav_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/respoint/cupcell_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/respoint/cupcell_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/respoint/cupcell_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/respoint/cupcell_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/help/help.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/help/help.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/get_stamp/get_stamp_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/get_stamp/get_stamp_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/get_stamp/get_stamp_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/get_stamp/get_stamp_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/OK/button_pressed1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/OK/button_pressed1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/OK/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/OK/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/OK/trans/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/OK/trans/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/OK/trans/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/OK/trans/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/OK/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/OK/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/OK_button2_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/OK_button2_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/share/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/share/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/share/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/share/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/get_my_flow_button/get_flow_button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/get_my_flow_button/get_flow_button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/get_my_flow_button/get_flow_button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/get_my_flow_button/get_flow_button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/OK_button_2.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/OK_button_2.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/give/give.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/give/give.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/tweet/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/tweet/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/tweet/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/tweet/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/secret_tweet/tweet1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/secret_tweet/tweet1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/secret_tweet/tweet.PNG => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/secret_tweet/tweet.PNG
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/later/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/later/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/later/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/later/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/try/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/try/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/try/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/try/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/add/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/add/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/add/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/add/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/good/good_added.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/good/good_added.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/good/good.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/good/good.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/good/button.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/good/button.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/good/good_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/good/good_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/button/good/button_pressed.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/button/good/button_pressed.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Table/arrowUp1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Table/arrowUp1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Table/arrowDown1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Table/arrowDown1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Table/favorite_1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Table/favorite_1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Table/section1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Table/section1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Table/section_1.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Table/section_1.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/images/Table/complete_stamp.gif => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/images/Table/complete_stamp.gif
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/counter/counter.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/counter/counter.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/itemGood/json.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/itemGood/json.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/KS_nav_ui.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/KS_nav_ui.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/appicon.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/appicon.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/default.png => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/default.png
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/tablet/ApplicationWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/tablet/ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/handheld/ApplicationWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/handheld/ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/handheld/android/ApplicationWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/handheld/android/ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/serifView/Serif.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/serifView/Serif.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/Opening/OpeningWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/Opening/OpeningWindow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/CommonFlowTableWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/CommonFlowTableWindow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/Goal/GoalView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/Goal/GoalView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/Goal/MyGoalView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/Goal/MyGoalView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/AddConfess.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/AddConfess.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/imageFrame/MenuProjectFrame.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/imageFrame/MenuProjectFrame.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ProjectListView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ProjectListView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/MyConfessWindow/FlowView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/MyConfessWindow/FlowView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/SelectBoard/selectItems.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/SelectBoard/selectItems.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/SelectBoard/SelectBoard.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/SelectBoard/SelectBoard.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/SelectBoard/CivGrowthBoard.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/SelectBoard/CivGrowthBoard.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/AddField/Selectjunel.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/AddField/Selectjunel.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/CivBoard/Board.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/CivBoard/Board.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/Help/helpWin.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/Help/helpWin.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/FirstView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/FirstView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/MyCivilizationWindow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/MyCivilizationWindow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ConfigWin.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ConfigWin.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/underbar/underbar.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/underbar/underbar.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/CommonConfessRow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/CommonConfessRow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ConfessWindow/ResponseBoard.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ConfessWindow/ResponseBoard.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ConfessWindow/ConfigWin.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ConfessWindow/ConfigWin.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ConfessWindow/FlowRow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ConfessWindow/FlowRow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ConfessWindow/FlowView.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ConfessWindow/FlowView.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ConfessWindow/ProjectTableRow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ConfessWindow/ProjectTableRow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/PointFrame.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/PointFrame.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/ProjectTableRow.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/ProjectTableRow.js
+[TRACE] COPYING CREATED FILE: /home/fvi/Titanium_Studio_Workspace/Confess/Resources/ui/common/button/button.js => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/ui/common/button/button.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
+<<<<<<< HEAD
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\title1.png
 [DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-long-land-hdpi\default.png
@@ -29,16 +244,43 @@ Logfile initialized
 [DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-port-mdpi\default.png
 [DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\res\drawable-notlong-port-mdpi\background.png
 [DEBUG] found splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\default.png
+=======
+[DEBUG] app stylesheet => /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/ApplicationStylesheet.java
+[DEBUG] copying app icon: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/title1.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-port-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-port-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-mdpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found drawable-long-land-hdpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-long-land-hdpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /home/fvi/Titanium_Studio_Workspace/Confess/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /home/fvi/Titanium_Studio_Workspace/Confess/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG] found splash screen at /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/assets/Resources/default.png
+>>>>>>> 196300a0b29947038e9dcb3c9f75bb158a078221
 [TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\gen\com\xicolo\confess\app\AssetCryptImpl.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\gen\com\xicolo\confess\app\R.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\gen\com\xicolo\confess\app\SecretActivity.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\gen\com\xicolo\confess\app\SecretAppInfo.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\gen\com\xicolo\confess\app\SecretApplication.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\Confess\\build\\android\\gen\\com\\xicolo\\confess\\app\\AssetCryptImpl.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\Confess\\build\\android\\gen\\com\\xicolo\\confess\\app\\R.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\Confess\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretActivity.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\Confess\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretAppInfo.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\Confess\\build\\android\\gen\\com\\xicolo\\confess\\app\\SecretApplication.java"
+[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/AssetCryptImpl.java to javac build list
+[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/SecretApplication.java to javac build list
+[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/SecretAppInfo.java to javac build list
+[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/ApplicationStylesheet.java to javac build list
+[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/R.java to javac build list
+[DEBUG] adding /home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/SecretActivity.java to javac build list
+[DEBUG] Building Java Sources: "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/AssetCryptImpl.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/SecretApplication.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/SecretAppInfo.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/ApplicationStylesheet.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/R.java" "/home/fvi/Titanium_Studio_Workspace/Confess/build/android/gen/com/xicolo/confess/dev/app/SecretActivity.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
-[DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\app-unsigned.apk
+[DEBUG] creating unsigned apk: /home/fvi/Titanium_Studio_Workspace/Confess/build/android/bin/app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/images/And/And.png
 [DEBUG] from resource zip => assets/Resources/images/And/And_Pressed.png
 [DEBUG] from resource zip => assets/Resources/images/And/button.png
@@ -205,25 +447,25 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
-[DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR /home/fvi/.titanium/mobilesdk/linux/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
 [DEBUG] installing native SDK libs

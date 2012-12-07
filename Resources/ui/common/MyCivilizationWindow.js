@@ -11,12 +11,12 @@ exports.openCivilView = function() {
 	var food_arr = [];
 
 	var background_path = require('/util/getbackPathWithTime').getPath();
-	
-	function isTimeAlreadyPass(){
+
+	function isTimeAlreadyPass() {
 		//getTimeはミリ秒で表示されているのでここでは一日を超えているかいなかを確認している
-		if(Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 *60*60*24)
+		if (Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 * 60 * 60 * 24)
 			return true;
-		
+
 		return false;
 	}
 
@@ -30,10 +30,10 @@ exports.openCivilView = function() {
 	});
 
 	var get_stamp_button = Titanium.UI.createButton({
-		backgroundImage:'/images/button/get_stamp/get_stamp_button.png',
-		backgroundSelectedImage:'/images/button/get_stamp/get_stamp_button_pressed.png',
+		backgroundImage : '/images/button/get_stamp/get_stamp_button.png',
+		backgroundSelectedImage : '/images/button/get_stamp/get_stamp_button_pressed.png',
 		width : width * 0.4,
-		height : width *0.2,
+		height : width * 0.2,
 		center : {
 			x : width * 0.25,
 			y : height * 0.4
@@ -45,15 +45,15 @@ exports.openCivilView = function() {
 	});
 
 	//civ_window.add(get_stamp_button);
-	
+
 	var get_tweet_button = Titanium.UI.createButton({
-		backgroundImage:'/images/button/get_flow_button/get_flow_button.png',
-		backgroundSelectedImage:'/images/button/get_flow_button/get_flow_button_pressed.png',
+		backgroundImage : '/images/button/get_flow_button/get_flow_button.png',
+		backgroundSelectedImage : '/images/button/get_flow_button/get_flow_button_pressed.png',
 		width : width * 0.6,
-		height : width *0.3,
+		height : width * 0.3,
 		center : {
 			//x : width * 0.75,
-			x : width *  0.5,
+			x : width * 0.5,
 			y : height * 0.4
 		}
 	});
@@ -63,16 +63,15 @@ exports.openCivilView = function() {
 	});
 
 	civ_window.add(get_tweet_button);
-	
-	
+
 	var get_my_tweet_button = Titanium.UI.createButton({
-		backgroundImage:'/images/button/get_my_flow_button/get_flow_button.png',
-		backgroundSelectedImage:'/images/button/get_my_flow_button/get_flow_button_pressed.png',
+		backgroundImage : '/images/button/get_my_flow_button/get_flow_button.png',
+		backgroundSelectedImage : '/images/button/get_my_flow_button/get_flow_button_pressed.png',
 		width : width * 0.6,
-		height : width *0.3,
+		height : width * 0.3,
 		center : {
 			//x : width * 0.75,
-			x : width *  0.5,
+			x : width * 0.5,
 			y : height * 0.6
 		}
 	});
@@ -82,41 +81,56 @@ exports.openCivilView = function() {
 	});
 
 	civ_window.add(get_my_tweet_button);
-	
+
+	var dec_button = Titanium.UI.createButton({
+		backgroundImage : '/images/button/get_my_flow_button/get_flow_button.png',
+		backgroundSelectedImage : '/images/button/get_my_flow_button/get_flow_button_pressed.png',
+		width : width * 0.6,
+		height : width * 0.3,
+		center : {
+			//x : width * 0.75,
+			x : width * 0.5,
+			y : height * 0.2
+		}
+	});
+
+	dec_button.addEventListener('click', function(e) {
+		require('/Confess/getMyConfessData').getMyConfess();
+	});
+
+	civ_window.add(dec_button);
+
 	/*
 	var man_image = Titanium.UI.createImageView({
-		images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
-		duration : 1500,
-		repeatCount : 0,
-		width : 'auto',
-		height : 'auto',
-		top : height * 0.5
+	images : ['/images/civ/ancient/man/man0.png', '/images/civ/ancient/man/man10.png', '/images/civ/ancient/man/man11.png', '/images/civ/ancient/man/man12.png'],
+	duration : 1500,
+	repeatCount : 0,
+	width : 'auto',
+	height : 'auto',
+	top : height * 0.5
 	});
 	man_image.start();
 
 	man_image.addEventListener('click', function(e) {
 
-		require('/ui/common/serifView/Serif').openView(civ_window);
-		Titanium.App.Properties.setString('first_contact', 'second_contact')
+	require('/ui/common/serifView/Serif').openView(civ_window);
+	Titanium.App.Properties.setString('first_contact', 'second_contact')
 
 	});
 
 	civ_window.add(man_image);
 	*/
 
-
 	//下のアンダーバーに関する処理
 	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
 	civ_window.add(under_bar);
-	
-
 
 	//AddPointSystem
 	var getCommentButton = Titanium.UI.createImageView({
 		backgroundImage : '/images/button/respoint/cupcell_button.png',
-		
-		top : height *0.1,
-		right : width *0.05,
+
+		top : height * 0.1,
+		right : width * 0.05,
 		width : width * 0.2,
 		height : height * 0.1
 	});
@@ -140,16 +154,15 @@ exports.openCivilView = function() {
 	});
 
 	under_bar.add(getCommentButton);
-	
+
 	//ここでボタンの描写に関する処理を行う。
-	civ_window.addEventListener('focus',function(e){
+	civ_window.addEventListener('focus', function(e) {
 		if (!isTimeAlreadyPass()) {
 			getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
-		}else{
+		} else {
 			getCommentButton.setImage('/images/button/respoint/cupcell_button.png');
 		}
 	})
-
 	var cupcell_image = Titanium.UI.createImageView({
 		image : '/images/civ/cupcell/cupcell.png',
 		width : 'auto',
@@ -235,8 +248,6 @@ exports.openCivilView = function() {
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
 	civ_window.add(board);
-	
-	
 
 	return civ_window;
 }
