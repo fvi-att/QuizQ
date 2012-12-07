@@ -1,12 +1,11 @@
 Logfile initialized
 [INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build.log
-[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py distribute Secret C:\adb\android-sdk\tools C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess com.xicolo.confess.app C:\Users\fvi\Dropbox\xicoloConfessProvision javasukidesukab0801230 confess C:\Users\fvi\Desktop\20121203 1
+[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py distribute Secret C:\adb\android-sdk C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess com.xicolo.confess.app C:\Users\fvi\Dropbox\xicoloConfessProvision javasukidesukab0801230 confess C:\Users\fvi\Desktop\20121206 3
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
-[DEBUG] found special platform files dir = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\platform\android
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\title1.png
 [DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-long-land-hdpi\default.png
@@ -30,7 +29,6 @@ Logfile initialized
 [DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-port-mdpi\default.png
 [DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\res\drawable-notlong-port-mdpi\background.png
 [DEBUG] found splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\default.png
-[INFO] Detected custom ApplicationManifest.xml -- no Titanium version migration supported
 [TRACE] Writing out AndroidManifest.xml
 [DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\gen\com\xicolo\confess\app\AssetCryptImpl.java to javac build list
 [DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\gen\com\xicolo\confess\app\R.java to javac build list
