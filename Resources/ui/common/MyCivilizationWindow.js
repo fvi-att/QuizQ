@@ -28,7 +28,7 @@ exports.openCivilView = function() {
 		navBarHidden : true, //タイトルバーを隠す
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
-
+	//旧家に関するボタン
 	var get_stamp_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_stamp/get_stamp_button.png',
 		backgroundSelectedImage : '/images/button/get_stamp/get_stamp_button_pressed.png',
@@ -43,6 +43,8 @@ exports.openCivilView = function() {
 	get_stamp_button.addEventListener('click', function(e) {
 		require('/ui/common/SelectBoard/selectItems').openView(civ_window);
 	});
+	
+	
 
 	//civ_window.add(get_stamp_button);
 
@@ -82,7 +84,7 @@ exports.openCivilView = function() {
 
 	civ_window.add(get_my_tweet_button);
 
-	var dec_button = Titanium.UI.createButton({
+	var groupSearch_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_my_flow_button/get_flow_button.png',
 		backgroundSelectedImage : '/images/button/get_my_flow_button/get_flow_button_pressed.png',
 		width : width * 0.6,
@@ -94,11 +96,15 @@ exports.openCivilView = function() {
 		}
 	});
 
-	dec_button.addEventListener('click', function(e) {
+	groupSearch_button.addEventListener('click', function(e) {
 		require('/Confess/getMyConfessData').getMyConfess();
 	});
+	
+	//一旦画面からかくしておく
+	groupSearch_button.setVisible(false);
+	
 
-	civ_window.add(dec_button);
+	civ_window.add(groupSearch_button);
 
 	/*
 	var man_image = Titanium.UI.createImageView({

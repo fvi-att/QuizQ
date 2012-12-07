@@ -19,9 +19,9 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.4.GA</sdk-version>
-    <id>com.xicolo.confess.dev.app</id>
-    <name>Secret</name>
-    <version>1.51</version>
+    <id>com.xicolo.confess.app</id>
+    <name>Secret_exe</name>
+    <version>1.65</version>
     <publisher>fvi@</publisher>
     <url>http://xicolo.com/wordpress</url>
     <description>iOS implemented</description>

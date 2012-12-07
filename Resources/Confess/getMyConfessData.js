@@ -23,12 +23,19 @@ exports.getMyConfess = function(){
 	actInd.show();
 	
 	var user_id = Titanium.App.Properties.getString('user_id');
-	
+
 	
 	if(!user_id){
-		alert('エラーが発生しました、アプリを再起動してください');
-		actInd.hide();
-		return;
+	//端末内でuser_idを保存する。
+	require('/ACS/LogoutACS').LogoutACS();
+	require('/ACS/Confess/LoginACS').LoginACS();
+	
+	
+	actInd.hide();
+	//再トライする
+	require('/Confess/getMyConfessData').getMyConfess();
+		
+	return;
 	}
 	var condition = new Date()
 	//condition.setDate(condition.getDate() -1);
@@ -36,6 +43,8 @@ exports.getMyConfess = function(){
 	
 	var Cloud = require('ti.cloud');
 	Cloud.Posts.query({
+	page:1,
+	per_page:100,
     where: {
        user_id:user_id
     },

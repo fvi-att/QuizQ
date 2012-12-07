@@ -32,7 +32,7 @@ exports.getPoint = function() {
 			
 			//取得した値をローカルに保存  その後　データを上の表示ビューに反映させる
 		Titanium.App.Properties.setInt('point',Titanium.App.Properties.getInt('point') + get_point);
-		Titanium.App.fireEvent('modify_point');
+		Titanium.App.fireEvent('modify_point',{delta:get_point});
 
 		} else {
 			alert('Error:\\n' + ((e.error && e.message) || JSON.stringify(e)));
