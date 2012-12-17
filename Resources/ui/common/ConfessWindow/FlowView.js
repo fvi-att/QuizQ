@@ -9,7 +9,7 @@ function FlowWindow(download) {
 	var win = require('/ui/common/CommonFlowTableWindow')()
 	var flowTableView = win.table;
 	
-	var row_array = require('/ui/common/ConfessWindow/FlowRowController').createRows(download);
+	var row_array = require('/ui/common/ConfessWindow/FlowRowController').createRows(download,win);
 	
 	for(cnt = 0;cnt < row_array.length;cnt++){
 		flowTableView.appendRow(row_array[cnt].row);

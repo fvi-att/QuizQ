@@ -3,7 +3,7 @@
  * @created at 20121218
  */
 
-exports.createRows = function(download) {
+exports.createRows = function(download,win) {
 	
 	//データオブジェクトを管理
 	var flow_data = require('/Confess/Flowdata').createDataObject(download);

@@ -12,8 +12,6 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 
 
 	//共通化されたテーブルローに対してレスポンスボタンを設ける
-	
-	
 	var response_button = Titanium.UI.createButton({
 		title : 'レス',
 		width : width * 0.2,
