@@ -13,6 +13,15 @@ exports.createRows = function(download,win) {
 	//temp obj
 	var temp_obj =[];
 	
+	rows.getRows = function(){
+		return temp_obj;
+	}
+	
+	rows.getRowData = function(num){
+		return temp_obj[num];
+	}
+	
+	
 	function createRow(count) {
 		//いつかはセクションごとに分割で切るようにしていく
 		var data = flow_data.getAllData()
@@ -23,6 +32,8 @@ exports.createRows = function(download,win) {
 		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', data[count].created_at,data[count].title, data[count].content, 0, data[count].id,data[count].photo, win,count);
 		createdRow.row.setHasChild(false);
 		createdRow.row.post_username = data[count].user;
+		
+		createdRow.row.count = count;
 		
 		temp_obj.push(createdRow);
 		
@@ -40,7 +51,7 @@ exports.createRows = function(download,win) {
 	}
 	
 	//temp return 
-	return temp_obj;
+	return rows.getRows()
 
 }
 
