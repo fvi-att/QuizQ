@@ -14,4 +14,6 @@ exports.createGoalView = function(){
 	//自分のゴールをみる
 	
 	
+	
+	
 }

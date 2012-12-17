@@ -84,6 +84,18 @@ exports.createCommonRow = function(image_path, title, side, photo, id, comment,c
 			status_string += '\nクズだねぇ:' + com_json.kuzu;
 			comment_sumCnt++;
 		}
+		if (com_json.yes){
+			status_string += '\nそうだね:' + com_json.yes;
+			comment_sumCnt++;
+		}
+		if (com_json.what){
+			status_string += '\n何それ？:' + com_json.what;
+			comment_sumCnt++;
+		}
+		if (com_json.strange){
+			status_string += '\nへんなのー:' + com_json.strange;
+			comment_sumCnt++;
+		}
 			
 			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.05 * comment_sumCnt))
 
