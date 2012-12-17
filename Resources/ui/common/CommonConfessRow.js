@@ -5,7 +5,7 @@
  * 
  * created @ 2012 12 02
  */
-exports.createCommonRow = function(image_path, title, side, photo, id, comment,created_at){
+exports.createCommonRow = function(image_path, title, side, photo, id, comment,created_at,num){
 	
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var source_row = require('/ui/common/ConfessWindow/ProjectTableRow').createRowObject(image_path, title, side, photo, id);
@@ -107,14 +107,18 @@ exports.createCommonRow = function(image_path, title, side, photo, id, comment,c
 	comment_label.setText(setCommentText(JSON.parse(comment)));
 
 	source_row.row.add(comment_label);
-	
+	//各ビューが呼び出されているのでどうやら動作が不安定になる。
+	/*
 		Titanium.App.addEventListener('update_row', function(e) {
 		if (e.id == id) {
 			comment = e.status;
 			comment_label.setText(setCommentText(JSON.parse(e.status)));
 		}
 	});
-	
+	*/
+	//コントローラ対策
+	if(num)
+		source_row.num = num;
 	return source_row;
 	
 	

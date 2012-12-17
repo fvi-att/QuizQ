@@ -37,7 +37,8 @@ exports.UpdatePost = function(post_id,message) {
 			duration : 3000,
 			message : "レスを投稿しました。"
 			}).show();
-			//完了とともに要素の更新を行う。
+			//完了とともに要素の更新を行う。 
+			/* つぶやきの数が多いとマズイらしいので仕様を変更*/
 			Titanium.App.fireEvent('update_row',{id:post_id,status:post.content});
 			//alert('OK::200::'+post.content);
 			//alert('Success:\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'test_photo: ' + post.photo);

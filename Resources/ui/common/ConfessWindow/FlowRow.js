@@ -5,10 +5,10 @@
  *
  */
 
-exports.createRowObject = function(image_path, created_at, title, comment, side, id, photo, from_win) {
+exports.createRowObject = function(image_path, created_at, title, comment, side, id, photo, from_win,num) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	
-	var common_row = require('/ui/common/CommonConfessRow').createCommonRow(image_path, title, side, photo, id, comment,created_at);
+	var common_row = require('/ui/common/CommonConfessRow').createCommonRow(image_path, title, side, photo, id, comment,created_at,num);
 
 
 	//共通化されたテーブルローに対してレスポンスボタンを設ける
