@@ -116,21 +116,18 @@ exports.createCommonRow = function(image_path, title, side, photo, id, comment,c
 		left : width * 0.25
 
 	});
+	
+	source_row.comment_label = comment_label;
+	
 	comment_label.setText(setCommentText(JSON.parse(comment)));
 
 	source_row.row.add(comment_label);
-	//各ビューが呼び出されているのでどうやら動作が不安定になる。
-	/*
-		Titanium.App.addEventListener('update_row', function(e) {
-		if (e.id == id) {
-			comment = e.status;
-			comment_label.setText(setCommentText(JSON.parse(e.status)));
-		}
-	});
-	*/
+
 	//コントローラ対策
 	if(num)
 		source_row.num = num;
+		
+		
 	return source_row;
 	
 	

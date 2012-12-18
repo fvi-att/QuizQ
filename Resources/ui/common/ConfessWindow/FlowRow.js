@@ -5,10 +5,10 @@
  *
  */
 
-exports.createRowObject = function(image_path, created_at, title, comment, side, id, photo, from_win,num) {
+exports.createRowObject = function(image_path, created_at, title, comment, side, id, photo, from_win,row_cnt) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	
-	var common_row = require('/ui/common/CommonConfessRow').createCommonRow(image_path, title, side, photo, id, comment,created_at,num);
+	var common_row = require('/ui/common/CommonConfessRow').createCommonRow(image_path, title, side, photo, id, comment,created_at,row_cnt);
 
 
 	//共通化されたテーブルローに対してレスポンスボタンを設ける
@@ -27,7 +27,8 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 			status : JSON.parse(comment),
 			title : title,
 			post_id : id,
-			post_username : common_row.row.post_username
+			post_username : common_row.row.post_username,
+			row_cnt:row_cnt
 		});
 
 	});

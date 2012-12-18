@@ -21,7 +21,7 @@
     <sdk-version>2.1.4.GA</sdk-version>
     <id>com.xicolo.confess.dev.dev.app</id>
     <name>Secret_dev</name>
-    <version>1.65</version>
+    <version>1.7</version>
     <publisher>fvi@</publisher>
     <url>http://xicolo.com/wordpress</url>
     <description>iOS implemented</description>
@@ -48,7 +48,8 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest android:installLocation="auto" android:versionCode="9" android:versionName="dev">
+        <manifest android:installLocation="auto"
+            android:versionCode="10" android:versionName="dev">
             <supports-screens android:anyDensity="false"/>
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
         </manifest>
