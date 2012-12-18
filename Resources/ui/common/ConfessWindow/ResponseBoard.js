@@ -255,7 +255,7 @@ exports.openView = function(view, about) {
 					about.status['kawaii'] = 1;
 				}
 				break;
-							case 10:
+				case 10:
 				if(about.status.whatsmatter){
 					about.status.whatsmatter++;
 				}else{
@@ -296,10 +296,7 @@ exports.openView = function(view, about) {
 		require('/ACS/Confess/UpdatePost').UpdatePost(about.post_id, JSON.stringify(about.status))
 	//	require('/ACS/Confess/UpdatePointKVS').UpdateDelta (about.post_username,point_cnt);
 		require('/ACS/Confess/PointSystem/UpdatePoint_fromObject').createPoint(about.post_username.id,point_cnt);
-		/*
-		delete back_temp_view;
-		delete old_paper;
-		*/
+
 	});
 
 	old_paper.add(tmp_closeButton);

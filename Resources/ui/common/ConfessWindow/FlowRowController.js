@@ -1,24 +1,27 @@
 /**
- * @author fvi
- *
- * created@ 2012 07 19
- * refactering 2012 1202
+ * @author fvi@
+ * @created at 20121218
  */
 
-function FlowWindow(download) {
-	var win = require('/ui/common/CommonFlowTableWindow')()
-	var flowTableView = win.table;
+exports.createRows = function(download,win) {
 	
-	var row_array = require('/ui/common/ConfessWindow/FlowRowController').createRows(download,win);
+	//データオブジェクトを管理
+	var flow_data = require('/Confess/Flowdata').createDataObject(download);
 	
-	for(cnt = 0;cnt < row_array.length;cnt++){
-		flowTableView.appendRow(row_array[cnt].row);
+	var rows = function() {}
+	
+	//temp obj
+	var temp_obj =[];
+	
+	rows.getRows = function(){
+		return temp_obj;
 	}
-
-//	var flow_data = require('/Confess/Flowdata').createDataObject(download);
+	
+	rows.getRowData = function(num){
+		return temp_obj[num];
+	}
 	
 	
-/*	
 	function createRow(count) {
 		//いつかはセクションごとに分割で切るようにしていく
 		var data = flow_data.getAllData()
@@ -30,11 +33,13 @@ function FlowWindow(download) {
 		createdRow.row.setHasChild(false);
 		createdRow.row.post_username = data[count].user;
 		
-		flowTableView.appendRow(createdRow.row);
+		createdRow.row.count = count;
+		
+		temp_obj.push(createdRow);
+		
+		//flowTableView.appendRow(createdRow.row);
 	}
-*/	
 	
-/*	
 	if (Titanium.App.Properties.getBool('flow_side')) {
 		for ( count = 0; count < download.length; count++)
 			createRow(count);
@@ -44,8 +49,9 @@ function FlowWindow(download) {
 		for ( count = download.length; count > -1; count--)
 			createRow(count);
 	}
-*/
-}
+	
+	//temp return 
+	return rows.getRows()
 
-module.exports = FlowWindow;
+}
 
