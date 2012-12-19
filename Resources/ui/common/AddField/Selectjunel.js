@@ -54,21 +54,6 @@ exports.openView = function(view) {
 		view.remove(old_paper);
 		
 		//ここにジャンル設定に関する内容を記述する 　アニメーションに関する処理を書き加える
-		/*
-		    var t = Ti.UI.create2DMatrix();
-   			　　　 t = t.scale(0.5);
-   			
-   			    var animation = Titanium.UI.createAnimation({
-   			    	transform:t,
-   			    	duration:500,
-   			    	top:height *0.1,
-   			    	width:old_paper.width * 0.5,
-   			    	height:height *0.1,
-   			    	autoreverse:false
-   			    });					
-   				picker1.animate(animation);
-   		*/		
-
 			
 	});
 
@@ -89,10 +74,6 @@ exports.openView = function(view) {
 		view.remove(old_paper);
 		
 		Titanium.App.fireEvent('select_junel',{junel:column1.getSelectedRow().getTitle()})
-		/*
-		delete old_paper;
-		delete back_temp_view;
-		*/
 	});
 
 	old_paper.add(cancel_button);
@@ -107,22 +88,6 @@ exports.openView = function(view) {
 		}));
 	}
 
-/*
-	var rows2 = [];
-	for ( i = 0; i < verbs.length; i++) {
-		rows2.push(Ti.UI.createPickerRow({
-			title : verbs[i]
-		}));
-	}
-	
-
-	var rows3 = [];
-	for ( i = (names.length - 1); i >= 0; i--) {
-		rows3.push(Ti.UI.createPickerRow({
-			title : names[i]
-		}));
-	}
-	*/
 
 	var column1 = Ti.UI.createPickerColumn({
 		rows : rows1,
@@ -132,18 +97,6 @@ exports.openView = function(view) {
 			fontSize : "25"
 		}
 	});
-	/*
-	var column2 = Ti.UI.createPickerColumn({
-		rows : rows2,
-		top:height*0.05,
-		width:old_paper.width *0.35,
-		height:old_paper.height*0.5,
-		left:old_paper.width *0.5,
-		font : {
-			fontSize : "24"
-		}
-	});
-	*/
 
 	var picker1 = Ti.UI.createPicker({
 		useSpinner : true,
