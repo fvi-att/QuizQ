@@ -4,7 +4,7 @@
  * created @ 2012 09 11
  *
  */
-
+//aboutが原因で正しくデータの更新を行えなかったのが原因　正しくデータを遷移できなかったのが原因
 exports.openView = function(view, about) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	
@@ -173,14 +173,14 @@ exports.openView = function(view, about) {
 		slide_num++;
 		rePaintSwitch();
 	});
-	var tmp_closeButton = Titanium.UI.createButton({
+	var ok_Button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/OK/trans/button.png',
 		backgroundSelectedImage : '/images/button/OK/trans/button_pressed.png',
 		height : height * 0.1,
 		width : width * 0.5,
 		top : height * 0.7
 	});
-	old_paper.add(tmp_closeButton);
+	old_paper.add(ok_Button);
 
 	//こいつが書き換え更新を行なっている
 	function setCommentStatus(com_num){
@@ -274,7 +274,7 @@ exports.openView = function(view, about) {
 		}
 	}
 
-	tmp_closeButton.addEventListener('click', function(e) {
+	ok_Button.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
 		
@@ -300,7 +300,7 @@ exports.openView = function(view, about) {
 
 	});
 
-	old_paper.add(tmp_closeButton);
+	old_paper.add(ok_Button);
 
 	var cancel_button = Titanium.UI.createButton({
 		backgroundImage : '/images/cancel/cancel.png',

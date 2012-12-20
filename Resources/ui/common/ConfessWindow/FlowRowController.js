@@ -127,11 +127,9 @@ exports.createRows = function(download,win) {
 	Titanium.App.addEventListener('update_row', function(e) {
 		
 		var selected_row = rows.getRowData(e.row_cnt)
-			alert('getSTUB::'+selected_row.comment_label.getText());
 			
 			selected_row.comment_label.setText(setCommentText(e.status));
 			
-			alert('getSTUB2::'+selected_row.comment_label.getText());
 
 		
 		
