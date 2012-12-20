@@ -182,6 +182,7 @@ exports.openView = function(view, about) {
 	});
 	old_paper.add(tmp_closeButton);
 
+	//こいつが書き換え更新を行なっている
 	function setCommentStatus(com_num){
 		switch(com_num){
 			case 0:

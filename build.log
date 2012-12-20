@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.054000 seconds on emulator to get ready
+[DEBUG] waited 0.047000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\Confess\ConfessStarter_Newest.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\Confess\ConfessStarter_Newest.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\Resources\ui\common\ConfessWindow\FlowRowController.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowRowController.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\Confess\build\android\bin\assets\Resources\title1.png
@@ -297,6 +297,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.046000 seconds on emulator to get ready
+[DEBUG] waited 0.050000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
