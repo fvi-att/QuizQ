@@ -10,6 +10,8 @@ exports.createCommonRow = function(image_path, title, side, photo, id, comment,c
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var source_row = require('/ui/common/ConfessWindow/ProjectTableRow').createRowObject(image_path, title, side, photo, id);
 	
+	//コメントデータ構造の保持(暫定)　現在JSON文字列
+	source_row.comObj = comment;
 	
 	var row_height = source_row.row.getHeight();
 	var row_width = source_row.row.getWidth();

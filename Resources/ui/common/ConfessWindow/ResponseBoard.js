@@ -5,11 +5,12 @@
  *
  */
 //aboutが原因で正しくデータの更新を行えなかったのが原因　正しくデータを遷移できなかったのが原因
-exports.openView = function(view, about) {
+exports.openView = function(view, about,row_obj) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	
 	
-	//現時点のポイントを取得する
+	//対象のrowに関する情報を取得する
+	var comment_Obj = row_obj.comObj;
 	
 	
 	
@@ -183,91 +184,92 @@ exports.openView = function(view, about) {
 	old_paper.add(ok_Button);
 
 	//こいつが書き換え更新を行なっている　データの初期化とポイント追加処理
-	function setCommentStatus(com_num){
+	//aboutに大して書き変えを行うのはよくない
+	function setCommentStatus(com_num,list){
 		switch(com_num){
 			case 0:
-				if(about.status.interest){
-					about.status.interest++;
+				if(list.interest){
+					list.interest++;
 				}else{
-					about.status['interest'] = 1;
+					list['interest'] = 1;
 				}
 				break;
 			case 1:
-				if(about.status.bad){
-					about.status.bad++;
+				if(list.bad){
+					list.bad++;
 				}else{
-					about.status['bad'] = 1;
+					list['bad'] = 1;
 				}
 				break;
 			case 2:
-				if(about.status.noway){
-					about.status.noway++;
+				if(list.noway){
+					list.noway++;
 				}else{
-					about.status['noway'] = 1;
+					list['noway'] = 1;
 				}
 				break;
 			case 3:
-				if(about.status.miserable){
-					about.status.miserable++;
+				if(list.miserable){
+					list.miserable++;
 				}else{
-					about.status['miserable'] = 1;
+					list['miserable'] = 1;
 				}
 				break;
 			case 4:
-				if(about.status.cheear){
-					about.status.cheear++;
+				if(list.cheear){
+					list.cheear++;
 				}else{
-					about.status['cheear'] = 1;
+					list['cheear'] = 1;
 				}
 				break;
 			case 5:
-				if(about.status.boon){
-					about.status.boon++;
+				if(list.boon){
+					list.boon++;
 				}else{
-					about.status['boon'] = 1;
+					list['boon'] = 1;
 				}
 				break;
 			case 6:
-				if(about.status.aruaru){
-					about.status.aruaru++;
+				if(list.aruaru){
+					list.aruaru++;
 				}else{
-					about.status['aruaru'] = 1;
+					list['aruaru'] = 1;
 				}
 				break;
 			case 7:
-				if(about.status.aruaruneyo){
-					about.status.aruaruneyo++;
+				if(list.aruaruneyo){
+					list.aruaruneyo++;
 				}else{
-					about.status['aruaruneyo'] = 1;
+					list['aruaruneyo'] = 1;
 				}
 				break;
 			case 8:
-				if(about.status.orealy){
-					about.status.orealy++;
+				if(list.orealy){
+					list.orealy++;
 				}else{
-					about.status['orealy'] = 1;
+					list['orealy'] = 1;
 				}
 				break;
 				
 				case 9:
-				if(about.status.kawaii){
-					about.status.kawaii++;
+				if(list.kawaii){
+					list.kawaii++;
 				}else{
-					about.status['kawaii'] = 1;
+					list['kawaii'] = 1;
 				}
 				break;
 				case 10:
-				if(about.status.whatsmatter){
-					about.status.whatsmatter++;
+				if(list.whatsmatter){
+					list.whatsmatter++;
 				}else{
-					about.status['whatsmatter'] = 1;
+					list['whatsmatter'] = 1;
 				}
 				break;
 				case 11:
-				if(about.status.kuzu){
-					about.status.kuzu++;
+				if(list.kuzu){
+					list.kuzu++;
 				}else{
-					about.status['kuzu'] = 1;
+					list['kuzu'] = 1;
 				}
 				break;
 	
@@ -277,27 +279,33 @@ exports.openView = function(view, about) {
 	ok_Button.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
+		/*
+		var status_list = JSON.parse(comment_label.getText());
+		*/
+		var status_list =JSON.parse(comment_Obj)
 		
 		var point_cnt =0;
-
+		
 		if (switch1.value){
 			point_cnt++;
-			setCommentStatus(3*slide_num +0);
+			setCommentStatus(3*slide_num +0,status_list);
 		}
 		if (switch2.value){
 			point_cnt++;
-			setCommentStatus(3*slide_num +1);
+			setCommentStatus(3*slide_num +1,status_list);
 		}
 		if (switch3.value){
 			point_cnt++;
-			setCommentStatus(3*slide_num +2);
+			setCommentStatus(3*slide_num +2,status_list);
 		}
 		//更新系の処理を書いておくこと 		ポイントを加算し　投稿コメントに関する処理を行う。
 
-		require('/ACS/Confess/ModifyPost').ModifyPost(about.post_id, about.status,about.row_cnt);
+		require('/ACS/Confess/ModifyPost').ModifyPost(about.post_id,status_list,about.row_cnt);
 		
 		require('/ACS/Confess/PointSystem/UpdatePoint_fromObject').createPoint(about.post_username.id,point_cnt);
-
+	
+	
+		row_obj.comObj = JSON.stringify(status_list);		
 	});
 
 	old_paper.add(ok_Button);

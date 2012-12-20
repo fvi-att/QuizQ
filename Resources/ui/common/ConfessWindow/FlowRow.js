@@ -29,7 +29,7 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 			post_id : id,
 			post_username : common_row.row.post_username,
 			row_cnt:row_cnt
-		});
+		},common_row);
 
 	});
 

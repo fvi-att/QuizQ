@@ -57,7 +57,7 @@ exports.createRows = function(download,win) {
 			createRow(count);
 	}
 */
-	//ここからテキスト変更
+	//ここからテキスト変更 json -> text
 		function setCommentText(com_json) {
 		var comment_sumCnt = 0;
 		
@@ -128,11 +128,7 @@ exports.createRows = function(download,win) {
 		
 		var selected_row = rows.getRowData(e.row_cnt)
 			
-			selected_row.comment_label.setText(setCommentText(e.status));
-			
-
-		
-		
+			selected_row.comment_label.setText(setCommentText(e.status));	
 	});
 	
 	//終了
