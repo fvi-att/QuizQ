@@ -182,7 +182,7 @@ exports.openView = function(view, about) {
 	});
 	old_paper.add(ok_Button);
 
-	//こいつが書き換え更新を行なっている
+	//こいつが書き換え更新を行なっている　データの初期化とポイント追加処理
 	function setCommentStatus(com_num){
 		switch(com_num){
 			case 0:
