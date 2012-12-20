@@ -40,6 +40,10 @@ exports.FlowdownloadStart = function() {
 		
 	}
 	*/
+	var order = 'created_at';
+	if (!Titanium.App.Properties.getBool('flow_side'))
+		order = '-' + order;
+		
 	var condition = new Date()
 	//condition.setDate(condition.getDate() -1);
 	condition.setDate(condition.getDate() -1);
@@ -50,7 +54,8 @@ exports.FlowdownloadStart = function() {
 	per_page:100,
     where: {
        created_at:{'$gt':condition}
-    }
+    },
+    order:order
 }, function(e) {
 		if (e.success) {
 			actInd.hide();

@@ -42,6 +42,11 @@ exports.createRows = function(download,win) {
 		//flowTableView.appendRow(createdRow.row);
 	}
 	
+	for ( count = 0; count < download.length; count++){
+		createRow(count);
+	}
+
+/*
 	if (Titanium.App.Properties.getBool('flow_side')) {
 		for ( count = 0; count < download.length; count++)
 			createRow(count);
@@ -51,7 +56,7 @@ exports.createRows = function(download,win) {
 		for ( count = download.length; count > -1; count--)
 			createRow(count);
 	}
-	
+*/
 	//ここからテキスト変更
 		function setCommentText(com_json) {
 		var comment_sumCnt = 0;
