@@ -6,6 +6,7 @@
  */
 
 function FlowWindow(download) {
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var win = require('/ui/common/CommonFlowTableWindow')()
 	var flowTableView = win.table;
 	//テーブルがセットになっているのでそこに付け足していく感じで書いていく。
@@ -15,6 +16,8 @@ function FlowWindow(download) {
 	for(cnt = 0;cnt < row_array.length;cnt++){
 		flowTableView.appendRow(row_array[cnt].row);
 	}
+	
+
 }
 
 module.exports = FlowWindow;
