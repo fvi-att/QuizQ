@@ -31,13 +31,15 @@ exports.createCardWindow = function(){
 		top : height *0.01
 	});
 	win.add(backImageView);
+	var card_controller = require('/ui/common/AddCardWindow/CardController').createCardController();
 	
+	var cards = card_controller.getTwinCards();
 	
-	var card2= require('/ui/common/AddCardWindow/ConfessCard').createCard('blue');
+	var card2= cards[1];
 		card2.center = {x:width *0.52,y:height *0.275};
 	win.add(card2);
 	
-	var card1= require('/ui/common/AddCardWindow/ConfessCard').createCard('STUB');
+	var card1= cards[0];
 		card1.center = {x:width *0.48,y:height *0.225};
 	win.add(card1);
 		
@@ -46,7 +48,8 @@ exports.createCardWindow = function(){
 		center:{x:width *0.85,y:height *0.45}
 		});
 	flip_button.addEventListener('click',function(e){
-		alert('STUB フリップボタンが押されました');
+		card_controller.SwapCard();
+		
 	});
 	win.add(flip_button);
 /*

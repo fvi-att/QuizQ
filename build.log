@@ -5,11 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.051000 seconds on emulator to get ready
+[DEBUG] waited 0.049000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\ui\common\AddCardWindow\ConfessCard.js => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\ui\common\AddCardWindow\ConfessCard.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\ui\common\AddCardWindow\CardController.js => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\ui\common\AddCardWindow\CardController.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\title1.png
@@ -215,6 +215,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/transparent.png
 [DEBUG] from resource zip => assets/Resources/itemGood/json.js
 [DEBUG] from resource zip => assets/Resources/ui/common/AddCardWindow/AddCardWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddCardWindow/CardController.js
 [DEBUG] from resource zip => assets/Resources/ui/common/AddCardWindow/ConfessCard.js
 [DEBUG] from resource zip => assets/Resources/ui/common/AddField/Selectjunel.js
 [DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
@@ -306,6 +307,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.049000 seconds on emulator to get ready
+[DEBUG] waited 0.052000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
