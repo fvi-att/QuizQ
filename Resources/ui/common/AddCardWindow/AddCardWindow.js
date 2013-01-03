@@ -32,25 +32,23 @@ exports.createCardWindow = function(){
 	});
 	win.add(backImageView);
 	
-	var card1View = Titanium.UI.createView({
-		backgroundImage:'/images/navibar/flow_under.png',
-		width:width * 0.85,
-		height:height *0.4,
-		center:{x:width *0.5,y:height *0.3}
-		});
-		
-	var card1Text = Titanium.UI.createTextArea({
-		hintText : 'あなたの秘密のつぶやきをどうぞ\n(200字以内)',
-		textAlign:'center',
-		width:card1View.getWidth()*0.9,
-		height : card1View.getHeight() *0.9,
-		top : height *0.02
-	});
 	
-	card1View.add(card1Text);
+	var card2= require('/ui/common/AddCardWindow/ConfessCard').createCard('blue');
+		card2.center = {x:width *0.52,y:height *0.275};
+	win.add(card2);
+	
+	var card1= require('/ui/common/AddCardWindow/ConfessCard').createCard('STUB');
+		card1.center = {x:width *0.48,y:height *0.225};
+	win.add(card1);
 		
-	win.add(card1View);
-		
+	var flip_button = Titanium.UI.createButton({
+		title:'チェ！',
+		center:{x:width *0.85,y:height *0.45}
+		});
+	flip_button.addEventListener('click',function(e){
+		alert('STUB フリップボタンが押されました');
+	});
+	win.add(flip_button);
 /*
 	var textArea = Titanium.UI.createTextArea({
 		hintText : 'あなたの秘密のつぶやきをどうぞ\n(200字以内)',
