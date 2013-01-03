@@ -126,7 +126,7 @@ exports.AddProject = function() {
 			return false;
 		}
 	
-		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
+		 require('/ACS/Confess/CreatePost').createPost(textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
 
 	});
 	Titanium.App.addEventListener('select_junel',function(e){

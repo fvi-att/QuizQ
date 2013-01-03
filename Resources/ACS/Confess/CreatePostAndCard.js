@@ -4,7 +4,7 @@
  * created @ 201210051050
  *
  */
-exports.createPost = function(title, message, junel, photo_path,use_HN) {
+exports.createPost = function(title,junel, photo_path,use_HN) {
 	var actInd = Titanium.UI.createActivityIndicator({
 		bottom : 10,
 		height : 100,

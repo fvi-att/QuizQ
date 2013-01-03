@@ -118,24 +118,15 @@ var junel_button = Titanium.UI.createButton({
 	
 		card_controller.CommitTexts();
 		var texts = card_controller.getTexts();
-			alert('STUB::'+texts);
 		if (texts[0] == '' || texts[1] == '' ) {
-			alert('中に何もつぶやかれていませんよ！');
+			alert('まだ書き込んでないものがあるようです。\n　右上の矢印ボタンを押してみて！');
 			return false;
 		}
 		
 		
 		alert('STUB 送信しました');
-		/*
-		if(textArea.value.length > 200){
-			alert('200文字以上は投稿できません');
-			return false;
-		}
-		//if(project_image.imagePath)
-			  // require('/ACS/UploadImage').UploadImage(project_image.imagePath);
-		
-		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
-	*/
+			
+		 require('/ACS/Confess/CreatePost').createPost(textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
 	});
 	Titanium.App.addEventListener('select_junel',function(e){
 		junel = e.junel;
