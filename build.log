@@ -1,50 +1,52 @@
 Logfile initialized
-[INFO] logfile = C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build.log
-[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py install Secret_dev C:\adb\android-sdk C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu com.xicolo.confess.dev.dev.app 4
+[INFO] logfile = C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build.log
+[DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py install Secret_dev C:\adb\android-sdk C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu com.xicolo.confess.dev.dev.app 4
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.062000 seconds on emulator to get ready
+[DEBUG] waited 0.047000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\ui\common\CommonFlowTableWindow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\ui\common\CommonFlowTableWindow.js
+[TRACE] COPYING CREATED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\images\button\ResButton\resButton.png => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\images\button\ResButton\resButton.png
+[TRACE] COPYING CREATED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\images\button\ResButton\resButton_Pressed.png => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\images\button\ResButton\resButton_Pressed.png
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\ui\common\ConfessWindow\FlowRow.js => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowRow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
-[DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\title1.png
+[DEBUG] copying app icon: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\title1.png
 [DEBUG] generating theme.xml
-[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-land-hdpi\background.png
-[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-land-ldpi\background.png
-[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-port-hdpi\background.png
-[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-port-ldpi\background.png
-[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-land-hdpi\background.png
-[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-land-ldpi\background.png
-[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-mdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-land-mdpi\background.png
-[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-hdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-port-hdpi\background.png
-[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-ldpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-port-ldpi\background.png
-[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-mdpi\default.png
-[DEBUG] copying C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-port-mdpi\background.png
-[DEBUG] found splash screen at C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\default.png
+[DEBUG] found drawable-long-land-hdpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-land-hdpi\background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-land-ldpi\background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-port-hdpi\background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-long-port-ldpi\background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-land-hdpi\background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-land-ldpi\background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-land-mdpi\background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-port-hdpi\background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-port-ldpi\background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] copying C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\res\drawable-notlong-port-mdpi\background.png
+[DEBUG] found splash screen at C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\default.png
 [DEBUG] Added 'screenSize' to <activity android:configChanges> because targeted api level 13 is >= 13
 [TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\R.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\Secret_devActivity.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\Secret_devAppInfo.java to javac build list
-[DEBUG] adding C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\Secret_devApplication.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\R.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\Secret_devActivity.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\Secret_devAppInfo.java" "C:\\Users\\fvi\\My Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\Secret_devApplication.java"
+[DEBUG] adding C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\R.java to javac build list
+[DEBUG] adding C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\Secret_devActivity.java to javac build list
+[DEBUG] adding C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\Secret_devAppInfo.java to javac build list
+[DEBUG] adding C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\gen\com\xicolo\confess\dev\dev\app\Secret_devApplication.java to javac build list
+[DEBUG] Building Java Sources: "C:\\Users\\fvi\\Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\R.java" "C:\\Users\\fvi\\Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\Secret_devActivity.java" "C:\\Users\\fvi\\Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\Secret_devAppInfo.java" "C:\\Users\\fvi\\Documents\\Titanium_Studio_Workspace\\himitsu\\build\\android\\gen\\com\\xicolo\\confess\\dev\\dev\\app\\Secret_devApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
-[DEBUG] creating unsigned apk: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\app-unsigned.apk
+[DEBUG] creating unsigned apk: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/GetPoint_fromObject.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/PointSystem/UpdatePoint_fromObject.js
 [DEBUG] from resource zip => assets/Resources/ACS/Confess/CreatePost.js
@@ -99,6 +101,8 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/button/OK/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/OK/button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/OK/button_pressed1.png
+[DEBUG] from resource zip => assets/Resources/images/button/ResButton/resButton.png
+[DEBUG] from resource zip => assets/Resources/images/button/ResButton/resButton_Pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/add/button.png
 [DEBUG] from resource zip => assets/Resources/images/button/add/button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/button/construction/construction.png
@@ -295,12 +299,12 @@ Logfile initialized
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
 [DEBUG] from JAR C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
-[DEBUG] installing native lib: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\modules\android\ti.admob\2.0.1\libs\armeabi\libti.admob.so
-[DEBUG] installing native lib: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsu\modules\android\ti.admob\2.0.1\libs\armeabi-v7a\libti.admob.so
+[DEBUG] installing native lib: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\modules\android\ti.admob\2.0.1\libs\armeabi\libti.admob.so
+[DEBUG] installing native lib: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\modules\android\ti.admob\2.0.1\libs\armeabi-v7a\libti.admob.so
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.163000 seconds on emulator to get ready
+[DEBUG] waited 0.046000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
