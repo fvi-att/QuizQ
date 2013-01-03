@@ -5,13 +5,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.047000 seconds on emulator to get ready
+[DEBUG] waited 0.107000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING CREATED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\images\button\ResButton\resButton.png => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\images\button\ResButton\resButton.png
-[TRACE] COPYING CREATED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\images\button\ResButton\resButton_Pressed.png => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\images\button\ResButton\resButton_Pressed.png
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\ui\common\ConfessWindow\FlowRow.js => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\ui\common\ConfessWindow\FlowRow.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\Resources\ui\common\AddCardWindow\AddCardWindow.js => C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\ui\common\AddCardWindow\AddCardWindow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\Documents\Titanium_Studio_Workspace\himitsu\build\android\bin\assets\Resources\title1.png
@@ -215,6 +213,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/note.jpg
 [DEBUG] from resource zip => assets/Resources/images/transparent.png
 [DEBUG] from resource zip => assets/Resources/itemGood/json.js
+[DEBUG] from resource zip => assets/Resources/ui/common/AddCardWindow/AddCardWindow.js
 [DEBUG] from resource zip => assets/Resources/ui/common/AddField/Selectjunel.js
 [DEBUG] from resource zip => assets/Resources/ui/common/CivBoard/Board.js
 [DEBUG] from resource zip => assets/Resources/ui/common/ConfessWindow/ConfigWin.js
@@ -305,6 +304,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.046000 seconds on emulator to get ready
+[DEBUG] waited 0.080000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
