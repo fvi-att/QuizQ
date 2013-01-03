@@ -36,16 +36,19 @@ exports.createCardWindow = function(){
 	var cards = card_controller.getTwinCards();
 	
 	var card2= cards[1];
-		card2.center = {x:width *0.52,y:height *0.275};
+		card2.center = {x:width *0.52,y:height *0.375};
+		card2.addEventListener('click',function(){
+			card_controller.SwapCard();
+		});
 	win.add(card2);
 	
 	var card1= cards[0];
-		card1.center = {x:width *0.48,y:height *0.225};
+		card1.center = {x:width *0.48,y:height *0.325};
 	win.add(card1);
 		
 	var flip_button = Titanium.UI.createButton({
 		title:'チェ！',
-		center:{x:width *0.85,y:height *0.45}
+		center:{x:width *0.85,y:height *0.55}
 		});
 	flip_button.addEventListener('click',function(e){
 		card_controller.SwapCard();
@@ -53,17 +56,8 @@ exports.createCardWindow = function(){
 	});
 	win.add(flip_button);
 /*
-	var textArea = Titanium.UI.createTextArea({
-		hintText : 'あなたの秘密のつぶやきをどうぞ\n(200字以内)',
-		textAlign:'center',
-		width:width *0.95,
-		height : height * 0.45,
-		top : height *0.05
-	});
 
-	win.add(textArea);
-*/
-	var junel_button = Titanium.UI.createButton({
+var junel_button = Titanium.UI.createButton({
 		title : 'ジャンル',
 		width : width * 0.7,
 		height : height * 0.1,
@@ -75,8 +69,9 @@ exports.createCardWindow = function(){
 		require('/ui/common/AddField/Selectjunel').openView(win);
 
 	});
-
-	win.add(junel_button);
+*/
+	//一時的にジャンルを削除　後に抽象化してアップデートすること
+	//win.add(junel_button);
 
 	var project_image = new require('/ui/common/imageFrame/MenuProjectFrame')();
 
@@ -112,26 +107,7 @@ exports.createCardWindow = function(){
 
 	});
 	win.add(handlename_SW);
-	var and_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/And/button.png',
-		backgroundSelectedImage : '/images/button/And/button_pressed.png',
-		height : height * 0.2,
-		width : height * 0.2,
-		top : height * 0.6,
-		left : width * 0.05
 
-	});
-	//and_button.setTouchEnabled(false);
-	and_button.setOpacity(0.5);
-	
-	and_button.addEventListener('click',function(e){
-		Titanium.UI.createNotification({
-			duration : 3000,
-			message : "たくさんつぶやくと使えるようになるかも"
-		}).show();
-	})
-
-//	win.add(and_button);
 
 	var ok_button = new require('/ui/common/button/button')('tweet');
 	ok_button.setTop(height * 0.82);
@@ -139,10 +115,17 @@ exports.createCardWindow = function(){
 	
 
 	ok_button.addEventListener('click', function(e) {
-		if (textArea.value == '' ) {
+	
+		card_controller.CommitTexts();
+		var texts = card_controller.getTexts();
+			alert('STUB::'+texts);
+		if (texts[0] == '' || texts[1] == '' ) {
 			alert('中に何もつぶやかれていませんよ！');
-			return　false;
+			return false;
 		}
+		
+		
+		alert('STUB 送信しました');
 		/*
 		if(textArea.value.length > 200){
 			alert('200文字以上は投稿できません');

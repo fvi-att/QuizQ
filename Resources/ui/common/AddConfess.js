@@ -24,7 +24,7 @@ exports.AddProject = function() {
 
 	var backImageView = Titanium.UI.createImageView({
 		image : '/images/opening/old_paper.jpg',
-		width : width　*0.98,
+		width : width *0.98,
 		height : height * 0.81,
 		top : height *0.01
 	});
@@ -66,7 +66,7 @@ exports.AddProject = function() {
 		textAligin:'center',
 		color : 'black',
 		top : height * 0.6,
-		left: width * 0.05,
+		left: width * 0.1,
 		font : {
 			fontSize : 15
 		}
@@ -118,16 +118,14 @@ exports.AddProject = function() {
 	ok_button.addEventListener('click', function(e) {
 		if (textArea.value == '' ) {
 			alert('中に何もつぶやかれていませんよ！');
-			return　false;
+			return false;
 		}
 		
 		if(textArea.value.length > 200){
 			alert('200文字以上は投稿できません');
 			return false;
 		}
-		//if(project_image.imagePath)
-			  // require('/ACS/UploadImage').UploadImage(project_image.imagePath);
-		
+	
 		 require('/ACS/Confess/CreatePost').createPost(textArea.value,textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
 
 	});

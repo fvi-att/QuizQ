@@ -19,17 +19,17 @@ exports.createCard = function(card_type) {
 		height : height * 0.4,
 	});
 
-	var card1Text = Titanium.UI.createTextArea({
-		hintText : 'あなたの秘密のつぶやきをどうぞ\n(200字以内)',
+	var cardText = Titanium.UI.createTextArea({
+		hintText : 'どんなことができたの？\n(200字以内)',
 		textAlign : 'center',
 		width : cardView.getWidth() * 0.9,
 		height : cardView.getHeight() * 0.9,
 		center:{x:cardView.getWidth() *0.5,y:cardView.getHeight()*0.5}
 	});
 	
-	cardView.text = card1Text.value;
+	cardView.text = cardText;
 	
-	cardView.add(card1Text);
+	cardView.add(cardText);
 
 	
 	return cardView;
