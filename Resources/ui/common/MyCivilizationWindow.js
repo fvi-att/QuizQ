@@ -47,6 +47,26 @@ exports.openCivilView = function() {
 	
 
 	//civ_window.add(get_stamp_button);
+	
+	var start_AddQuizButton = Titanium.UI.createButton({
+		backgroundImage : '/images/button/AddCard/createCardButton.png',
+		backgroundSelectedImage : '/images/button/AddCard/createCardButton_Pressed.png',
+		width : width * 0.6,
+		height : width * 0.3,
+		center : {
+			//x : width * 0.75,
+			x : width * 0.5,
+			y : height * 0.25
+		}
+	});
+	
+	start_AddQuizButton.addEventListener('click',function(e){
+		require('/ui/common/AddCardWindow/AddCardWindow').createCardWindow();
+		
+	});
+	
+	civ_window.add(start_AddQuizButton);
+	
 
 	var get_tweet_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_flow_button/get_flow_button.png',
@@ -56,7 +76,7 @@ exports.openCivilView = function() {
 		center : {
 			//x : width * 0.75,
 			x : width * 0.5,
-			y : height * 0.4
+			y : height * 0.45
 		}
 	});
 
@@ -74,7 +94,7 @@ exports.openCivilView = function() {
 		center : {
 			//x : width * 0.75,
 			x : width * 0.5,
-			y : height * 0.6
+			y : height * 0.65
 		}
 	});
 

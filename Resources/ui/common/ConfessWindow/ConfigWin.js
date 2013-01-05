@@ -113,6 +113,14 @@ exports.OpenConfigWin = function() {
 				}
 				if(input_text.value == 'xicolo_dev')
 					input_text.value = '■開発者';
+				
+				//デバッグ用コマンド　ポイントを３０ポイント付加する
+				if(input_text.value == 'xicolo_point'){
+					alert('DEBUG::ポイントを負荷しました');
+					Titanium.App.Properties.setInt('point',Titanium.App.Properties.getInt('point') + 30);
+					
+					return;
+				}
 					
 				
 				Titanium.App.Properties.setString('handlename',input_text.value);

@@ -73,7 +73,11 @@ exports.createBoard = function() {
 		var delta = e.delta;
 		if(delta == null)
 			delta = 0;
-		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント'+'(+'+delta+')');
+		var plus_minus ='';
+		if(delta >0)
+			plus_minus = '+';
+		
+		point_num.setText('ひみつぶやきポイント\n'+rst+'ポイント'+'('+plus_minus+delta+')');
 	});
 
 	return board;

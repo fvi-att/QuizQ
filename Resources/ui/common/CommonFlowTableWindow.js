@@ -102,7 +102,7 @@ function CommonTableWin() {
 	win.add(config_button);
 
 	//広告を入れるか入れないかを　ここで判断
-	if (true) {
+	if (false) {
 		
 		flowTableView.setHeight(height * 0.7)
 		under_UI_ImageView.setTop(height * 0.76);

@@ -10,10 +10,10 @@ exports.createRowObject = function(image_path, created_at, title, comment, side,
 	
 	var common_row = require('/ui/common/CommonConfessRow').createCommonRow(image_path, title, side, photo, id, comment,created_at,row_cnt);
 
-
 	//共通化されたテーブルローに対してレスポンスボタンを設ける
 	var response_button = Titanium.UI.createButton({
-		title : 'レス',
+		backgroundImage : '/images/button/ResButton/resButton.png',
+		backgroundSelectedImage : '/images/button/ResButton/resButton_Pressed.png',
 		width : width * 0.2,
 		height : width * 0.2,
 		left : width * 0.03

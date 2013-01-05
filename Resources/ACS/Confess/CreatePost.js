@@ -4,7 +4,7 @@
  * created @ 201210051050
  *
  */
-exports.createPost = function(title, message, junel, photo_path,use_HN) {
+exports.createPost = function(title,junel, photo_path,use_HN) {
 	var actInd = Titanium.UI.createActivityIndicator({
 		bottom : 10,
 		height : 100,
@@ -78,7 +78,7 @@ exports.createPost = function(title, message, junel, photo_path,use_HN) {
 		
 	}
 	function Upload() {
-		//初期型の３つを定義ておく。
+		//初期型の３つを定義ておく。 あとでコメントモジュールに統合する
 		var init_comment = {interest:0,noway:0,bad:0};
 		
 		if(use_HN)
