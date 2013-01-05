@@ -4,7 +4,10 @@
  * created @ 201210051050
  *
  */
-exports.createPost = function(title,junel, photo_path,use_HN) {
+exports.createPost = function(title,junel, photo_path,use_HN,card_content) {
+
+	var cardID = require('/util/random').getRandom(20);
+	//ハンドルネームに直しておくね
 	var actInd = Titanium.UI.createActivityIndicator({
 		bottom : 10,
 		height : 100,
@@ -29,6 +32,12 @@ exports.createPost = function(title,junel, photo_path,use_HN) {
 	}
 	
 	//以下詳細な処理
+	
+	function UploadCardContent(){
+	
+		require('/ACS/Confess/CardSystem/UploadCard').UploadCard(cardID,card_content);
+		
+	}
 
 	function ReturnMessage(e) {
 		if (e.success) {
@@ -38,6 +47,9 @@ exports.createPost = function(title,junel, photo_path,use_HN) {
 				alert('データを登録できませんでした');
 				return false;
 			}
+			
+			
+			UploadCardContent();
 
 			actInd.hide();
 
@@ -72,17 +84,27 @@ exports.createPost = function(title,junel, photo_path,use_HN) {
 			return ReturnMessage(e);
 		});
 	}
+	
 	function AddHN(data){
 		if(Titanium.App.Properties.hasProperty('handlename'))
 				data['_HN'] = Titanium.App.Properties.getString('handlename');
 		
 	}
+	
+	function AddCardID(data){
+		data['cardID'] = cardID;
+		data['cardSubPeopleNum']=0;
+	}
+	
 	function Upload() {
 		//初期型の３つを定義ておく。
 		var init_comment = {interest:0,noway:0,bad:0};
 		
+		//いろいろなデータを付加しておく
 		if(use_HN)
 			 AddHN(init_comment);
+		
+		AddCardID(init_comment);
 		
 		var comment =  JSON.stringify(init_comment)
 		Cloud.Posts.create({

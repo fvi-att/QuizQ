@@ -47,7 +47,10 @@ exports.createCardWindow = function(){
 	win.add(card1);
 		
 	var flip_button = Titanium.UI.createButton({
-		title:'チェ！',
+		backgroundImage : '/images/button/swap/swapButton.png',
+		backgroundSelectedImage : '/images/button/swap/swapButton_Pressed.png',
+		width:width * 0.2,
+		height:width *0.2,
 		center:{x:width *0.85,y:height *0.55}
 		});
 	flip_button.addEventListener('click',function(e){
@@ -124,9 +127,8 @@ var junel_button = Titanium.UI.createButton({
 		}
 		
 		
-		alert('STUB 送信しました');
 			
-		 require('/ACS/Confess/CreatePost').createPost(textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
+		 require('/ACS/Confess/CreatePostAndCard').createPost(texts[0],junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'),texts[1]);
 	});
 	Titanium.App.addEventListener('select_junel',function(e){
 		junel = e.junel;

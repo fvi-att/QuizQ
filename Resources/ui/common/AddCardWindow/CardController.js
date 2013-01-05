@@ -14,12 +14,27 @@ exports.createCardController = function() {
 	
 	
 	var textData = ['',''];
+	
+	var card_header_title = ['こんなことがあったんだ','コツはこんな感じ！'];
 
 	controller.card1 = require('/ui/common/AddCardWindow/ConfessCard').createCard('STUB');
 	controller.card2 = require('/ui/common/AddCardWindow/ConfessCard').createCard('blue');
 	
 	controller.card1.isTopCard = true;
-
+	
+	controller.setCard1Texts = function(word){
+	
+		textData[0] = word;
+		controller.card1.text.value = word;
+	
+	}
+	
+	controller.setCard2Texts = function(word){
+	
+		textData[1] = word;
+		controller.card2.text.value = word;
+	
+	}
 	controller.getTwinCards = function() {
 		return [controller.card1, controller.card2];
 	}
@@ -54,6 +69,10 @@ exports.createCardController = function() {
 			
 			card1.text.value = textData[1];
 			
+			card1.title.text = card_header_title[1];
+			card1.title.setColor('blue');
+			
+			
 			card1.isTopCard = false;
 		}else{
 			card2.setBackgroundImage('/images/navibar/flow_under_blue.png');
@@ -64,6 +83,9 @@ exports.createCardController = function() {
 			textData[1] = card1.text.value;
 			
 			card1.text.value =textData[0];
+			
+			card1.title.text = card_header_title[0];
+			card1.title.setColor('orange');
 			
 			card1.isTopCard = true;
 		}

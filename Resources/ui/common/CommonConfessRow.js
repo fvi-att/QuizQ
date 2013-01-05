@@ -38,11 +38,60 @@ exports.createCommonRow = function(image_path, title, side, photo, id, comment,c
 
 	});
 	source_row.row.add(status_label);
+	
+	if(json_status.cardID){
+		var openCardButton = Titanium.UI.createButton({
+			backgroundImage : '/images/button/look/lookButton.png',
+			backgroundSelectedImage : '/images/button/look/lookButton_Pressed.png',
+			width:width *0.2,
+			height:height*0.07,
+			bottom:0,
+			left:width *0.03
+		});
+		
+		openCardButton.addEventListener('click',function(e){
+		var dialog = Ti.UI.createOptionDialog({
+			title : 'ひみつぶやきポイントを3ポイント使います。',
+			buttonNames : ['キャンセル', 'Ok']
+		});
+		
+		dialog.addEventListener('click', function(e) {
+			if (e.index == 1) {// we read it only if get it is pressed
+				
+				if(Titanium.App.Properties.getInt('point') -3 < 0){
+					alert('ひみつぶやきポイントが足りないようです\n色々つぶやいてレスをもらってみてはいかがでしょうか？');
+					return null;
+				}
+				require('/ui/common/CardView/CardViewWindow').createCardViewWindow(title,json_status);
+				
+				Titanium.App.Properties.setInt('point',Titanium.App.Properties.getInt('point') -3);
+				Titanium.App.fireEvent('modify_point',{delta:-3});
+			}
+		});
+
+		
+		
+		dialog.show();
+			
+		});
+		
+		source_row.row.add(openCardButton);
+	}
 
 	function setCommentText(com_json) {
 		var comment_sumCnt = 0;
 		
 		var status_string = '';
+		//カード機能の追加
+		if(com_json.cardID){
+			
+			if(com_json.cardSubPeopleNum > 0){
+				status_string += com_json.cardSubPeopleNum + '人がコツを知りました！\n\n';
+			}else{
+				status_string += '←　ひみつのコツ！　があるみたい！\n';
+			}
+			comment_sumCnt += 2;//ニ行分改行を行なっている
+		}
 
 		status_string += 'イイね：' + com_json.interest + ',';
 
