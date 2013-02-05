@@ -19,6 +19,7 @@ exports.openView = function(view, about,row_obj) {
 					   ['辛いね、わかるよ','勝負時！じゃん！','（^ω^)ワロタ・・'],
 					   ['あるある','あるあるあ・・ねーよ','本当かなぁ？'],
 					   ['カワイイ！','どうしたの？','クズだねぇ'],
+					   ['頑張れ！','ナニソレ？','いいなぁ(´・ω・｀)']
 					  ];
 
 	var back_temp_view = Titanium.UI.createView({
@@ -270,6 +271,26 @@ exports.openView = function(view, about,row_obj) {
 					list.kuzu++;
 				}else{
 					list['kuzu'] = 1;
+				}
+				case 12:
+				if(list.ganbare){
+					list.ganbare++;
+				}else{
+					list['ganbare'] = 1;
+				}
+				
+				case 13:
+				if(list.whatsit){
+					list.whatsit++;
+				}else{
+					list['whatsit'] = 1;
+				}
+				
+				case 14:
+				if(list.envy){
+					list.envy++;
+				}else{
+					list['envy'] = 1;
 				}
 				break;
 	

@@ -21,8 +21,8 @@ exports.openCivilView = function() {
 	}
 
 	var civ_window = Titanium.UI.createWindow({
-		backgroundImage : background_path,
-
+		//backgroundImage : background_path,
+		backgroundColor : 'rgb(255,235,205)',
 		exitOnClose : false,
 		fullscreen : true,
 		navBarHidden : true, //タイトルバーを隠す
@@ -274,6 +274,19 @@ exports.openCivilView = function() {
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
 	civ_window.add(board);
+	
+	//設定画面を表示する
+	civ_window.activity.onCreateOptionsMenu = function(e) {
+		var menu = e.menu;
+		var menuItem = menu.add({
+			title : "設定"
+		});
+		menuItem.setIcon("/images/icon/light_gears.png");
+		menuItem.addEventListener("click", function(e) {
+			require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin();
+			//設定画面を展開する。
+		});
+	};
 
 	return civ_window;
 }

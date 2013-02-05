@@ -34,6 +34,11 @@ function CommonTableWin() {
 
 	//	win.add(searchBar);
 	win.add(flowTableView);
+	
+	
+	flowTableView.addEventListener('scrollEnd',function(e){
+		alert('scrollEnd');
+	})
 
 	//アンダーバーのイメージUIを追加する
 	var under_UI_ImageView = Titanium.UI.createImageView({
