@@ -21,7 +21,7 @@ exports.openCivilView = function() {
 	}
 
 	var civ_window = Titanium.UI.createWindow({
-		backgroundImage : background_path,
+		//backgroundImage : background_path,
 		backgroundColor : 'rgb(255,235,205)',
 		exitOnClose : false,
 		fullscreen : true,
@@ -31,66 +31,102 @@ exports.openCivilView = function() {
 	//旧家に関するボタン
 
 	function createButton() {
-		var base_button = Titanium.UI.createButton({
+		var base_button = Titanium.UI.createView({
 			width : width / 3,
 			height : height / 5,
+			backgroundImage :'/images/button/topMenuButton/topMenuButton.png',
+			backgroundSelectedImage : '/images/button/topMenuButton/topMenuButton_pressed.png',
 		});
 		
+	var label  = Titanium.UI.createLabel({
+		text : 'text',
+		color : 'black',
+		bottom:height *0.015,
+		textAlign:'center',
+		font : {
+			fontSize : 15
+		}
+	});
+		base_button.label = label;
+		base_button.add(label);
+
+	var icon = Titanium.UI.createImageView({
+		width:'auto',
+		height:'auto',
+		center:{x:base_button.getWidth()/2,y:base_button.getHeight()/2}
+	})
+		base_button.icon = icon
+		base_button.add(icon)
+	
 		civ_window.add(base_button)
+	
 		return base_button;
 	}
 	
-	var delta_buttonLayout = height /10
-
+	var delta_buttonLayout = height/10//height /10
+	
 	var sampleUIButton1 = createButton()
-	sampleUIButton1.setTitle('ヘルプ')
-	sampleUIButton1.setTop(delta_buttonLayout)
+	//sampleUIButton1.setTitle('ヘルプ')
+	sampleUIButton1.setTop(delta_buttonLayout +1)
 	sampleUIButton1.setLeft(0);
+	sampleUIButton1.label.setText('ヘルプ')
+	sampleUIButton1.icon.setImage('/images/icon/topmenu/help.png')
 
 	var sampleUIButton2 = createButton()
-	sampleUIButton2.setTop(delta_buttonLayout)
+	sampleUIButton2.setTop(delta_buttonLayout +1)
 	sampleUIButton2.setLeft(width / 3)
-	sampleUIButton2.setTitle('コツをつぶやく')
-
+	//sampleUIButton2.setTitle('コツをつぶやく')
+	sampleUIButton2.label.setText('コツをつぶやく')
+	sampleUIButton2.icon.setImage('/images/icon/topmenu/card.png')
 	sampleUIButton2.addEventListener('click', function(e) {
 		require('/ui/common/AddCardWindow/AddCardWindow').createCardWindow();
 	})
 
 	var sampleUIButton3 = createButton()
-	sampleUIButton3.setTop(delta_buttonLayout)
+	sampleUIButton3.setTop(delta_buttonLayout +1)
 	sampleUIButton3.setLeft(width *2 /3)
-	sampleUIButton3.setTitle('どうやって\n遊ぶの？')
+	//sampleUIButton3.setTitle('どうやって\n遊ぶの？')
+	sampleUIButton3.label.setText('お知らせ')
+	sampleUIButton3.icon.setImage('/images/icon/topmenu/broadcast.png')
 	
 	var sampleUIButton4 = createButton()
-	sampleUIButton4.setTop(height /5 + delta_buttonLayout)
+	sampleUIButton4.setTop(height /5 + delta_buttonLayout +1)
 	sampleUIButton4.setLeft(0)
-	sampleUIButton4.setTitle('設定')
-	
+	//sampleUIButton4.setTitle('設定')
+	sampleUIButton4.label.setText('設定')
+	sampleUIButton4.icon.setImage('/images/icon/topmenu/setting.png')
 	
 	var sampleUIButton5 = createButton()
-	sampleUIButton5.setTop(height /5 + delta_buttonLayout)
+	sampleUIButton5.setTop(height /5 + delta_buttonLayout +1)
 	sampleUIButton5.setLeft(width /3)
-	sampleUIButton5.setTitle('みんなの\nつぶやき')
+	//sampleUIButton5.setTitle('みんなの\nつぶやき')
+	sampleUIButton5.label.setText('みんなの\nひみつぶやき')
+	sampleUIButton5.icon.setImage('/images/icon/topmenu/everybody2.png')
+	
 	
 	sampleUIButton5.addEventListener('click',function(e){
 		require('/Confess/ConfessStarter_Newest').FlowdownloadStart();
 	})
 	
 	var sampleUIButton6 = createButton()
-	sampleUIButton6.setTop(height /5 + delta_buttonLayout)
+	sampleUIButton6.setTop(height /5 + delta_buttonLayout +1)
 	sampleUIButton6.setLeft(width *2/3)
-	sampleUIButton6.setTitle('ポイント確認')
+	//sampleUIButton6.setTitle('ポイント確認')
+	sampleUIButton6.label.setText('ポイント確認')
 	
 	var sampleUIButton7 = createButton()
 	sampleUIButton7.setTop(height *2/5 + delta_buttonLayout)
 	sampleUIButton7.setLeft(0)
-	sampleUIButton7.setTitle('sample7')
+	//sampleUIButton7.setTitle('sample7')
+	sampleUIButton7.label.setText('工事中')
+	sampleUIButton7.icon.setImage('/images/icon/topmenu/construction.png')
 	
 	var sampleUIButton8 = createButton()
 	sampleUIButton8.setTop(height *2/5 + delta_buttonLayout)
 	sampleUIButton8.setLeft(width /3)
-	sampleUIButton8.setTitle('マイ\nつぶやき')
-	
+	//sampleUIButton8.setTitle('マイ\nつぶやき')
+	sampleUIButton8.label.setText('マイ\nひみつぶやき')
+	sampleUIButton8.icon.setImage('/images/icon/topmenu/mytweet.png')
 	sampleUIButton8.addEventListener('click',function(e){
 		require('/Confess/getMyConfessData').getMyConfess();
 	});
@@ -98,20 +134,54 @@ exports.openCivilView = function() {
 	var sampleUIButton9 = createButton()
 	sampleUIButton9.setTop(height *2/5 + delta_buttonLayout)
 	sampleUIButton9.setLeft(width *2/3)
-	sampleUIButton9.setTitle('ポイント\nゲット！')
+	//sampleUIButton9.setTitle('ポイント\nゲット！')
+	sampleUIButton9.label.setText('工事中')
+	sampleUIButton9.icon.setImage('/images/icon/topmenu/construction.png')
 	
-	var tweetButton = Titanium.UI.createButton({
-			title:'内緒でつぶやく',
-			width : width /1.2,
-			height : height / 6,
-			top:height *3/5 + delta_buttonLayout
+	var tweetButton = Titanium.UI.createView({
+			width:Titanium.UI.FILL,
+			height : height - (sampleUIButton9.getTop() + height/5 + delta_buttonLayout),
+			top:height *3/5 + delta_buttonLayout +1,
+			backgroundImage :'/images/button/topMenuButton/topMenuButton.png',
+			backgroundSelectedImage : '/images/button/topMenuButton/topMenuButton_pressed.png',
 		});
+		
+	var tweetButtonIcon = Titanium.UI.createImageView({
+		image:'/images/icon/topmenu/chats.png',
+		width:'auto',
+		height:'auto',
+		
+	})
+	
+	tweetButton.add(tweetButtonIcon)
+	
+	var tweetButtonLabel =  Titanium.UI.createLabel({
+		text : '\n\n内緒でつぶやく',
+		color : 'black',
+		bottom:height *0.02,
+		textAlign:'center',
+		font : {
+			fontSize : 20
+		}
+	});
+	
+	tweetButton.add(tweetButtonLabel)
+		
 		
 	tweetButton.addEventListener('click',function(e){
 		 require('/ui/common/AddConfess').AddProject()
 	})
 		
 		civ_window.add(tweetButton)
+		
+	var underRibbon = Titanium.UI.createImageView({
+			image:'/images/underRibbon/underRibbon2.png',
+			width:Titanium.UI.FILL,
+			height:height *0.2,
+			top:height *0.88
+	})
+	
+		civ_window.add(underRibbon)
 	
 	var get_stamp_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_stamp/get_stamp_button.png',
@@ -211,23 +281,25 @@ exports.openCivilView = function() {
 	//civ_window.add(under_bar);
 
 	//AddPointSystem
-	var getCommentButton = Titanium.UI.createImageView({
+	var getPointButton = Titanium.UI.createImageView({
 		backgroundImage : '/images/button/respoint/cupcell_button.png',
-
+		/*
 		top : height * 0.1,
 		right : width * 0.05,
+		*/
 		width : width * 0.2,
 		height : height * 0.1
 	});
-
-	getCommentButton.addEventListener('click', function(e) {
+	sampleUIButton6.add(getPointButton)
+	
+	getPointButton.addEventListener('click', function(e) {
 		if (!isTimeAlreadyPass()) {
 			Titanium.UI.createNotification({
 				duration : 3000,
 				message : "レスポイントは１日一回だけ収穫できるようです。"
 			}).show();
-			getCommentButton.setImage(null);
-			getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
+			getPointButton.setImage(null);
+			getPointButton.setImage('/images/button/respoint/cupcell_pressed.png');
 
 			return;
 		}
@@ -238,14 +310,15 @@ exports.openCivilView = function() {
 
 	});
 
-	under_bar.add(getCommentButton);
+	//under_bar.add(getPointButton);
+	
 
 	//ここでボタンの描写に関する処理を行う。
 	civ_window.addEventListener('focus', function(e) {
 		if (!isTimeAlreadyPass()) {
-			getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
+			getPointButton.setImage('/images/button/respoint/cupcell_pressed.png');
 		} else {
-			getCommentButton.setImage('/images/button/respoint/cupcell_button.png');
+			getPointButton.setImage('/images/button/respoint/cupcell_button.png');
 		}
 	})
 	var cupcell_image = Titanium.UI.createImageView({
@@ -264,7 +337,7 @@ exports.openCivilView = function() {
 	//長すぎ　ワロリーヌ　
 	function StartAnimation() {
 		//カプセルのアニメーションに関する処理　とても長いのでいつかはオブジェクト化　＆Mycivilカラの分割を行う
-		getCommentButton.setTouchEnabled(false);
+		getPointButton.setTouchEnabled(false);
 		cupcell_image.animate({
 			center : {
 				x : width * 0.5,
@@ -318,10 +391,10 @@ exports.openCivilView = function() {
 						duration : 3000,
 						message : "レスポイントが追加されました！\n上のタブで確認ができます"
 					}).show();
-					getCommentButton.setImage(null);
-					getCommentButton.setImage('/images/button/respoint/cupcell_pressed.png');
+					getPointButton.setImage(null);
+					getPointButton.setImage('/images/button/respoint/cupcell_pressed.png');
 
-					getCommentButton.setTouchEnabled(true);
+					getPointButton.setTouchEnabled(true);
 					//ボタン確認処理時間を登録する
 					Titanium.App.Properties.setDouble('lastTime', (new Date).getTime());
 				}, 2500);
@@ -333,6 +406,16 @@ exports.openCivilView = function() {
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
 	civ_window.add(board);
+	
+	
+	var upperRibbon = Titanium.UI.createImageView({
+			image:'/images/underRibbon/underRibbon2.png',
+			width:width,
+			height:height *0.12,
+			top:-0.03 * height
+	})
+	
+		civ_window.add(upperRibbon)
 
 	//設定画面を表示する
 	civ_window.activity.onCreateOptionsMenu = function(e) {
