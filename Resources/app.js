@@ -55,7 +55,8 @@ if (Ti.version < 1.8) {
 	
 	//オープニング
 	//この時点で　上　オープニング画面　下　メイン画面になっている
-	require('/ui/common/Opening/OpeningWindow').openWindow();
+	if(Titanium.App.Properties.getBool('setOpening'))
+		require('/ui/common/Opening/OpeningWindow').openWindow();
 	
 
 })();

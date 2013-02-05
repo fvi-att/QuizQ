@@ -7,7 +7,7 @@ exports.OpenConfigWin = function() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
 	var win = Titanium.UI.createWindow({
-		title : 'ひみつぶやきフローの設定',
+		title : '設定',
 		backgroundImage:'/images/opening/old_paper.jpg',
 		exitOnClose : false,
 		fullscreen : false,
@@ -41,6 +41,34 @@ exports.OpenConfigWin = function() {
 		}).show();
 
 	});
+	
+	var opening_SWLabel = Titanium.UI.createLabel({
+		text : 'オープニングを起動時に表示する',
+		color : 'black',
+		top : height * 0.4,
+		font : {
+			fontSize : 20
+		}
+	});
+
+
+
+	var opening_SW = Titanium.UI.createSwitch({
+		value : Titanium.App.Properties.getBool('setOpening'),
+		top : height * 0.55
+	});
+	
+	opening_SW.addEventListener('change',function(e){
+		Titanium.App.Properties.setBool('setOpening', e.value);
+
+		Titanium.UI.createNotification({
+			duration : 2000,
+			message : "設定を変更しました\n次回更新時から反映されます"
+		}).show();
+	})
+	
+	
+	
 	var handlename = Titanium.App.Properties.getString('handlename');
 	if(!handlename)
 		handlename = '名無しさん';
@@ -51,7 +79,7 @@ exports.OpenConfigWin = function() {
 				handlename,
 		textAligin:'center',
 		color : 'black',
-		top : height * 0.55,
+		top : height * 0.65,
 		font : {
 			fontSize : 20
 		}
@@ -66,7 +94,7 @@ exports.OpenConfigWin = function() {
 	var change_handlenameButton = Titanium.UI.createButton({
 		title:'ハンドルネームを変更',
 		textAlign : 'center',
-		top : height * 0.65,
+		top : height * 0.75,
 		width : width * 0.75
 	});
 	
@@ -194,6 +222,8 @@ exports.OpenConfigWin = function() {
 	win.add(introSW_label);
 	win.add(introSW);
 	
+	win.add(opening_SWLabel)
+	win.add(opening_SW)
 
 	/*
 	win.add(introSW_label);

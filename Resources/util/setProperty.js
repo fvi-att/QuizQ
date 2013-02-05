@@ -30,6 +30,9 @@ exports.setProperty = function(){
 	if (!Titanium.App.Properties.hasProperty('point'))
 		Titanium.App.Properties.setInt('point', INITIAL_POINT);
 	
+	//オープニングをスキップするかの処理
+	if(!Titanium.App.Properties.hasProperty('setOpening'))
+		Titanium.App.Properties.setBool('setOpening', true);
 	//パラメータ値の管理
 	//人間のおしゃべり機能に関するパラメータ　を文字列で表現する
 	if (!Titanium.App.Properties.hasProperty('prmt_talk'))
