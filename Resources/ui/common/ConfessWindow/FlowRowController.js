@@ -46,19 +46,9 @@ exports.createRows = function(download,win) {
 		createRow(count);
 	}
 
-/*
-	if (Titanium.App.Properties.getBool('flow_side')) {
-		for ( count = 0; count < download.length; count++)
-			createRow(count);
-
-	} else {
-		//falseのときtwitter形式にする
-		for ( count = download.length; count > -1; count--)
-			createRow(count);
-	}
-*/
 	//ここからテキスト変更 json -> text
 		function setCommentText(com_json) {
+		
 		var comment_sumCnt = 0;
 		
 		var status_string = '';

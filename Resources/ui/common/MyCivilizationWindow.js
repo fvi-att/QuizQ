@@ -15,7 +15,7 @@ exports.openCivilView = function() {
 	function isTimeAlreadyPass() {
 		//getTimeはミリ秒で表示されているのでここでは一日を超えているかいなかを確認している
 		if (Titanium.App.Properties.getDouble('lastTime') < new Date().getTime() - 1000 * 60 * 60 * 24)
-			return true;
+			return true;//一日経過しているのでポイントの取得ができるようにする。
 
 		return false;
 	}
@@ -71,6 +71,10 @@ exports.openCivilView = function() {
 	sampleUIButton1.setLeft(0);
 	sampleUIButton1.label.setText('ヘルプ')
 	sampleUIButton1.icon.setImage('/images/icon/topmenu/help.png')
+	
+	sampleUIButton1.addEventListener('click',function(e){
+		require('/ui/common/Help/helpWin').openWin()
+	})
 
 	var sampleUIButton2 = createButton()
 	sampleUIButton2.setTop(delta_buttonLayout +1)
@@ -88,6 +92,9 @@ exports.openCivilView = function() {
 	//sampleUIButton3.setTitle('どうやって\n遊ぶの？')
 	sampleUIButton3.label.setText('お知らせ')
 	sampleUIButton3.icon.setImage('/images/icon/topmenu/broadcast.png')
+	sampleUIButton3.addEventListener('click',function(e){
+		require('/ui/common/Help/helpWin').openWin('http://xicolo.com/wordpress/?page_id=347')
+	})
 	
 	var sampleUIButton4 = createButton()
 	sampleUIButton4.setTop(height /5 + delta_buttonLayout +1)
@@ -95,6 +102,10 @@ exports.openCivilView = function() {
 	//sampleUIButton4.setTitle('設定')
 	sampleUIButton4.label.setText('設定')
 	sampleUIButton4.icon.setImage('/images/icon/topmenu/setting.png')
+	
+	sampleUIButton4.addEventListener('click',function(e){
+		require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin()
+	})
 	
 	var sampleUIButton5 = createButton()
 	sampleUIButton5.setTop(height /5 + delta_buttonLayout +1)
@@ -296,11 +307,12 @@ exports.openCivilView = function() {
 		if (!isTimeAlreadyPass()) {
 			Titanium.UI.createNotification({
 				duration : 3000,
-				message : "レスポイントは１日一回だけ収穫できるようです。"
+				message : "新しいレスポイントは１日一回だけ獲得できます。"
 			}).show();
 			getPointButton.setImage(null);
 			getPointButton.setImage('/images/button/respoint/cupcell_pressed.png');
-
+			
+			Titanium.App.fireEvent('modify_point',{delta:0});
 			return;
 		}
 		//ゲットしたポイントを取得し零に戻す
@@ -416,6 +428,15 @@ exports.openCivilView = function() {
 	})
 	
 		civ_window.add(upperRibbon)
+	var upperRibbonLabel = Titanium.UI.createImageView({
+			image:'/images/navibar/menu/menuLabel.png',
+			
+			width:width /2.5,
+			height:height /15,
+			center:{x:width * 0.52,y:height *0.05}
+	})
+	
+		civ_window.add(upperRibbonLabel)
 
 	//設定画面を表示する
 	civ_window.activity.onCreateOptionsMenu = function(e) {

@@ -42,7 +42,7 @@ exports.createBoard = function() {
 	function MoveBoard(){
 		var move = height * -0.05;
 		if (!board.isAppear) {
-			move = height * 0.15;
+			move = height * 0.215;
 			board.isAppear = true;
 		} else {
 			board.isAppear = false;

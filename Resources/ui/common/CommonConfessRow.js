@@ -135,18 +135,22 @@ exports.createCommonRow = function(image_path, title, side, photo, id, comment,c
 			status_string += '\nクズだねぇ:' + com_json.kuzu;
 			comment_sumCnt++;
 		}
-		if (com_json.yes){
-			status_string += '\nそうだね:' + com_json.yes;
+	/*	
+	 * 原因不明のバグが起きているので一旦停止　UIの設計を優先　２０１３年２月
+	 
+		if (com_json.ganbare){
+			status_string += '\n頑張れ！:' + com_json.ganbare;
 			comment_sumCnt++;
 		}
-		if (com_json.what){
-			status_string += '\n何それ？:' + com_json.what;
+		if (com_json.whatsit){
+			status_string += '\nナニソレ？:' + com_json.whatsit;
 			comment_sumCnt++;
 		}
-		if (com_json.strange){
-			status_string += '\nへんなのー:' + com_json.strange;
+		if (com_json.envy){
+			status_string += '\nいいなぁ(´・ω・｀):' + com_json.envy;
 			comment_sumCnt++;
 		}
+	*/
 			
 			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.05 * comment_sumCnt))
 
