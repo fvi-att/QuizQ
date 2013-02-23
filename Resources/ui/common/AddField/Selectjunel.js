@@ -6,6 +6,9 @@
  */
 
 exports.openView = function(view) {
+	
+	var junel = 'ひとりごと';
+	
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var back_temp_view = Titanium.UI.createView({
 		backgroundColor : 'black',
@@ -31,7 +34,7 @@ exports.openView = function(view) {
 	});
 	
 	var label = Titanium.UI.createLabel({
-		text:'ジャンルを選んでください\n今後ジャンルを増やしていく予定です',
+		text:'ジャンルを選んでください',
 		color:'black',
 		width:old_paper.width * 0.9,
 		top:old_paper.height * 0.1,
@@ -39,25 +42,18 @@ exports.openView = function(view) {
 	});
 	old_paper.add(label);
 
-	var tmp_closeButton = Titanium.UI.createButton({
+	var ok_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/OK/trans/button.png',
 		backgroundSelectedImage : '/images/button/OK/trans/button_pressed.png',
 		height : height * 0.1,
 		width : width * 0.5,
 		top : height * 0.7
 	});
-	old_paper.add(tmp_closeButton);
+	old_paper.add(ok_button);
 
-	tmp_closeButton.addEventListener('click', function(e) {
-		
-		view.remove(back_temp_view);
-		view.remove(old_paper);
-		
-		//ここにジャンル設定に関する内容を記述する 　アニメーションに関する処理を書き加える
-			
-	});
 
-	old_paper.add(tmp_closeButton);
+
+	old_paper.add(ok_button);
 
 	var cancel_button = Titanium.UI.createButton({
 		backgroundImage : '/images/cancel/cancel.png',
@@ -69,17 +65,12 @@ exports.openView = function(view) {
 		}
 	});
 
-	cancel_button.addEventListener('click', function(e) {
-		view.remove(back_temp_view);
-		view.remove(old_paper);
-		
-		Titanium.App.fireEvent('select_junel',{junel:column1.getSelectedRow().getTitle()})
-	});
+
 
 	old_paper.add(cancel_button);
 	//ピッカーに関する処理
-	var names = ['ひとりごと'];
-//	var verbs = ['素養', '文化', 'マニア', '経済', '国際', '小ネタ', 'カワイイ', 'ニュース', 'びっくり'];
+	var names = ['ひとりごと','買わなきゃよかった・・','やらなきゃよかった・・','いわなきゃよかった・・','●●なきゃよかった・・'];
+
 
 	var rows1 = [];
 	for (var i = 0; i < names.length; i++) {
@@ -109,6 +100,28 @@ exports.openView = function(view) {
 
 
 	old_paper.add(picker1);
+	
+	picker1.addEventListener('change',function(e){
+		
+		junel = e.row.title
+	})
+	ok_button.addEventListener('click', function(e) {
+		
+		view.remove(back_temp_view);
+		view.remove(old_paper);
+		
+		Titanium.App.fireEvent('select_junel',{junel:junel})
+		//alert('STUB::'+picker1.getSelectedRow(0).getTitle())
+	});
+	
+	cancel_button.addEventListener('click', function(e) {
+		view.remove(back_temp_view);
+		view.remove(old_paper);
+		
+		//Titanium.App.fireEvent('select_junel',{junel:junel})
+		//Titanium.App.fireEvent('select_junel',{junel:column1.getSelectedRow().getTitle()})
+		//alert('STUB::'+picker1.getSelectedRow(0).getTitle())
+	});
 
 
 	view.add(old_paper);

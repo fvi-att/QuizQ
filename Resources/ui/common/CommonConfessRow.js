@@ -5,7 +5,8 @@
  * 
  * created @ 2012 12 02
  */
-exports.createCommonRow = function(image_path, title, side, photo, id, comment,created_at,num){
+exports.createCommonRow = function(image_path,title,side, photo, id, comment,created_at,num
+	){
 	
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var source_row = require('/ui/common/ConfessWindow/ProjectTableRow').createRowObject(image_path, title, side, photo, id);
@@ -27,10 +28,10 @@ exports.createCommonRow = function(image_path, title, side, photo, id, comment,c
 		poster_name = '名無しさん';
 
 	var status_label = Titanium.UI.createLabel({
-		text : 'by' + poster_name + '\n' + created_at,
+		text : 'by' + poster_name + '\n' + created_at+'\n'+ junel,
 		color : 'black',
 		font : {
-			fontSize : width / 27
+			fontSize : width / 25
 		},
 		textAlign : 'left',
 		top : row_height * 0.05,

@@ -38,20 +38,15 @@ exports.createPost = function(title,junel, photo_path,use_HN) {
 				alert('データを登録できませんでした');
 				return false;
 			}
-
 			actInd.hide();
 
 			//投稿用ウィンドウを閉じるイベントを発生させる
-			Titanium.App.fireEvent('complete_post');
-			//alert('Success:\\n' + 'id: ' + post.id + '\\n' + 'title: ' + post.title + '\\n' + 'content: ' + post.content + '\\n' + 'photo: ' + post.photo+ post.content + '\\n' + ': ' + post.photo);
-			
+			Titanium.App.fireEvent('complete_post')
 			return true;
 
 		} else {
 			alert('Error:\\n' + ((e.error && e.message) || JSON.stringify(e)));
 			actInd.hide();
-
-			//alert('投稿に失敗しました。もう一度投稿ボタンを押してください');
 			return false;
 
 		}
@@ -62,6 +57,7 @@ exports.createPost = function(title,junel, photo_path,use_HN) {
 		var init_comment = {interest:0,noway:0,bad:0};
 		
 		var comment =  JSON.stringify(init_comment)
+		
 		Cloud.Posts.create({
 			content :comment,
 			title : title,

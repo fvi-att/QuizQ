@@ -41,8 +41,8 @@ exports.AddProject = function() {
 	win.add(textArea);
 
 	var junel_button = Titanium.UI.createButton({
-		title : 'ジャンル',
-		width : width * 0.7,
+		title : 'ジャンル:ひとりごと',
+		width : width * 0.85,
 		height : height * 0.1,
 		top : height * 0.5,
 		
@@ -131,6 +131,8 @@ exports.AddProject = function() {
 	});
 	Titanium.App.addEventListener('select_junel',function(e){
 		junel = e.junel;
+		
+		junel_button.setTitle('ジャンル：'+junel)
 	})
 	Titanium.App.addEventListener('complete_post',function(e){
 		win.close();
