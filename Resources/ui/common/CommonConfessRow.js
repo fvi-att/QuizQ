@@ -28,7 +28,7 @@ exports.createCommonRow = function(image_path,title,side, photo, id, comment,cre
 		poster_name = '名無しさん';
 
 	var status_label = Titanium.UI.createLabel({
-		text : 'by' + poster_name + '\n' + created_at+'\n'+ junel,
+		text : 'by' + poster_name + '\n' + created_at+'\n'+ 'STUB:',
 		color : 'black',
 		font : {
 			fontSize : width / 25

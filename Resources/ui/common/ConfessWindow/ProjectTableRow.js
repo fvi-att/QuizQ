@@ -20,10 +20,11 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 
 	
 	var lf_count = Math.max(title.split("\n").length - 1,title.length / 12)
+	//原初テーブルロー
 	var row = Titanium.UI.createTableViewRow({
 		backgroundImage : '/images/transparent.png',
 		hasChild : true,
-		height : height * 0.2 + height * 0.05 * lf_count + hasPhoto * height * 0.30,
+		height : height * 0.2 + (height * 0.05 * lf_count)+ hasPhoto * height * 0.30,
 		//className : 'todo_row'+title+id,
 		id : id,
 
@@ -50,13 +51,14 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 
 		
 	}
+	//マスターラベル
 	var label = Titanium.UI.createLabel({
 		text : title,
 		color : 'black',
 		font : {
 			fontSize : width / 20
 		},
-		top:height * 0.08 + hasPhoto * height *0.3,
+		top:height * 0.1 + hasPhoto * height *0.3,
 		textAlign : 'center',
 		left : width * 0.25
 
