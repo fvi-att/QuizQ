@@ -31,7 +31,7 @@ exports.createRows = function(download,win) {
 		if (!data[count])
 			return;
 
-		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', data[count].created_at,data[count].title, data[count].content, 0, data[count].id,data[count].photo, win,count);
+		var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('', data[count].created_at,data[count].title, data[count].content, 0, data[count].id,data[count].photo, win,count,data[count]);
 		createdRow.row.setHasChild(false);
 		createdRow.row.post_username = data[count].user;
 		

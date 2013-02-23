@@ -18,8 +18,7 @@ function FlowWindow(download) {
 		if (!data[count])
 			return;
 			
-		//var createdRow = require('/ui/common/ConfessWindow/FlowRow').createRowObject('',data[count].title, 0,data[count].photo,data[count].id, data[count].content, data[count].created_at);
-		var createdRow = require('/ui/common/CommonConfessRow').createCommonRow('',data[count].title,0,data[count].photo,data[count].id,data[count].content,data[count].created_at,count);
+	var createdRow = require('/ui/common/CommonConfessRow').createCommonRow('',data[count].title,0,data[count].photo,data[count].id,data[count].content,data[count].created_at,count,data[count]);
 		createdRow.row.setHasChild(false);
 		createdRow.row.post_username = data[count].user;
 		

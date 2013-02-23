@@ -5,10 +5,10 @@
  *
  */
 
-exports.createRowObject = function(image_path, created_at, title, comment, side, id, photo, from_win,row_cnt) {
+exports.createRowObject = function(image_path, created_at, title, comment, side, id, photo, from_win,row_cnt,row_obj_prmt) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	
-	var common_row = require('/ui/common/CommonConfessRow').createCommonRow(image_path, title, side, photo, id, comment,created_at,row_cnt);
+	var common_row = require('/ui/common/CommonConfessRow').createCommonRow(image_path, title, side, photo, id, comment,created_at,row_cnt,row_obj_prmt);
 
 	//共通化されたテーブルローに対してレスポンスボタンを設ける
 	var response_button = Titanium.UI.createButton({

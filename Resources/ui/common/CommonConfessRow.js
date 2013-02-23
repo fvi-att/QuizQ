@@ -5,13 +5,12 @@
  * 
  * created @ 2012 12 02
  */
-exports.createCommonRow = function(image_path,title,side, photo, id, comment,created_at,num
-	){
+exports.createCommonRow = function(image_path,title,side, photo, id, comment,created_at,num,row_obj_prmt){
 	
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var source_row = require('/ui/common/ConfessWindow/ProjectTableRow').createRowObject(image_path, title, side, photo, id);
 	
-	//コメントデータ構造の保持(暫定)　現在JSON文字列
+	//レスポンスデータ構造の保持(暫定)　現在JSON文字列
 	source_row.comObj = comment;
 	
 	var row_height = source_row.row.getHeight();
@@ -26,12 +25,14 @@ exports.createCommonRow = function(image_path,title,side, photo, id, comment,cre
 
 	if (!poster_name)
 		poster_name = '名無しさん';
-
+		
+	//[2]でジャンルを表示するようにしている
+	var junel_str = (JSON.stringify(row_obj_prmt.tags[0])).split('"')[2]
 	var status_label = Titanium.UI.createLabel({
-		text : 'by' + poster_name + '\n' + created_at+'\n'+ 'STUB:',
+		text : 'by' + poster_name + '\n' + created_at+'\n #'+junel_str ,
 		color : 'black',
 		font : {
-			fontSize : width / 25
+			fontSize : width / 27
 		},
 		textAlign : 'left',
 		top : row_height * 0.05,
