@@ -19,9 +19,9 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.4.GA</sdk-version>
-    <id>com.xicolo.confess.dev.app</id>
-    <name>Secret_exe</name>
-    <version>3.15</version>
+    <id>com.xicolo.confess.dev.dev.app</id>
+    <name>Secret_dev</name>
+    <version>3.2</version>
     <publisher>fvi@</publisher>
     <url>http://xicolo.com/wordpress</url>
     <description>iOS implemented</description>
@@ -50,7 +50,7 @@
     <android xmlns:android="http://schemas.android.com/apk/res/android">
         <tool-api-level>13</tool-api-level>
         <manifest android:installLocation="auto"
-            android:versionCode="14" android:versionName="dev">
+            android:versionCode="15" android:versionName="dev">
             <supports-screens android:anyDensity="false"/>
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
         </manifest>
