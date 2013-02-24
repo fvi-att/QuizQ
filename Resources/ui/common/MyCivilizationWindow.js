@@ -45,6 +45,7 @@ exports.openCivilView = function() {
 		textAlign:'center',
 		font : {
 			fontSize : height / 50
+			
 		}
 	});
 		base_button.label = label;
