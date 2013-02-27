@@ -65,8 +65,8 @@ exports.openCivilView = function() {
 		width:'auto',
 		height:'auto',
 		image:'/images/eventBatch/eventBatch.png',
-		top:base_button.getHeight() * 0.2,
-		right:base_button.getWidth() *0.2,
+		top:base_button.getHeight() * 0.1,
+		right:base_button.getWidth() *0.1,
 		visible:false
 	})
 	
@@ -160,7 +160,8 @@ exports.openCivilView = function() {
 	//sampleUIButton6.setTitle('ポイント確認')
 	sampleUIButton6.label.setText('ポイント確認')
 	
-	sampleUIButton6.batch.setVisible(Titanium.App.Properties.getBool('event_batch6'))
+	//sampleUIButton6.batch.setVisible(Titanium.App.Properties.getBool('event_batch6'))
+	sampleUIButton6.batch.setVisible(true)
 	
 	var sampleUIButton7 = createButton()
 	sampleUIButton7.setTop(height *2/5 + delta_buttonLayout)
