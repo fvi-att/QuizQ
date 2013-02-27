@@ -97,6 +97,9 @@ exports.openCivilView = function() {
 	
 	sampleUIButton1.addEventListener('click',function(e){
 		require('/ui/common/Help/helpWin').openWin()
+		
+		Titanium.App.Properties.setBool('event_batch1',false)
+		sampleUIButton1.batch.setVisible(false)
 	})
 
 	var sampleUIButton2 = createButton()
@@ -111,6 +114,9 @@ exports.openCivilView = function() {
 	
 	sampleUIButton2.addEventListener('click', function(e) {
 		require('/ui/common/AddCardWindow/AddCardWindow').createCardWindow();
+		
+		Titanium.App.Properties.setBool('event_batch2',false)
+		sampleUIButton2.batch.setVisible(false)
 	})
 
 	var sampleUIButton3 = createButton()
@@ -125,6 +131,9 @@ exports.openCivilView = function() {
 	
 	sampleUIButton3.addEventListener('click',function(e){
 		require('/ui/common/Help/helpWin').openWin('http://xicolo.com/wordpress/?page_id=347')
+		
+		Titanium.App.Properties.setBool('event_batch3',false)
+		sampleUIButton3.batch.setVisible(false)
 	})
 	
 	var sampleUIButton4 = createButton()
@@ -138,6 +147,9 @@ exports.openCivilView = function() {
 	
 	sampleUIButton4.addEventListener('click',function(e){
 		require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin()
+		
+		Titanium.App.Properties.setBool('event_batch4',false)
+		sampleUIButton4.batch.setVisible(false)
 	})
 	
 	var sampleUIButton5 = createButton()
@@ -152,6 +164,9 @@ exports.openCivilView = function() {
 	
 	sampleUIButton5.addEventListener('click',function(e){
 		require('/Confess/ConfessStarter_Newest').FlowdownloadStart();
+		
+		Titanium.App.Properties.setBool('event_batch6',false)
+		sampleUIButton6.batch.setVisible(false)
 	})
 	
 	var sampleUIButton6 = createButton()
@@ -160,8 +175,12 @@ exports.openCivilView = function() {
 	//sampleUIButton6.setTitle('ポイント確認')
 	sampleUIButton6.label.setText('ポイント確認')
 	
-	//sampleUIButton6.batch.setVisible(Titanium.App.Properties.getBool('event_batch6'))
-	sampleUIButton6.batch.setVisible(true)
+	sampleUIButton6.batch.setVisible(Titanium.App.Properties.getBool('event_batch6'))
+	
+	sampleUIButton6.addEventListener('click',function(e){
+		Titanium.App.Properties.setBool('event_batch6',false)
+		sampleUIButton6.batch.setVisible(false)
+	})
 	
 	var sampleUIButton7 = createButton()
 	sampleUIButton7.setTop(height *2/5 + delta_buttonLayout)
@@ -171,6 +190,10 @@ exports.openCivilView = function() {
 	
 	sampleUIButton7.batch.setVisible(Titanium.App.Properties.getBool('event_batch7'))
 	
+	sampleUIButton7.addEventListener('click',function(e){
+		Titanium.App.Properties.setBool('event_batch7',false)
+		sampleUIButton7.batch.setVisible(false)
+	})
 	var sampleUIButton8 = createButton()
 	sampleUIButton8.setTop(height *2/5 + delta_buttonLayout)
 	sampleUIButton8.setLeft(width /3)
@@ -182,6 +205,9 @@ exports.openCivilView = function() {
 	
 	sampleUIButton8.addEventListener('click',function(e){
 		require('/Confess/getMyConfessData').getMyConfess();
+		
+		Titanium.App.Properties.setBool('event_batch8',false)
+		sampleUIButton8.batch.setVisible(false)
 	});
 	
 	var sampleUIButton9 = createButton()
@@ -192,6 +218,11 @@ exports.openCivilView = function() {
 	sampleUIButton9.icon.setImage('/images/icon/topmenu/construction.png')
 	
 	sampleUIButton9.batch.setVisible(Titanium.App.Properties.getBool('event_batch9'))
+	
+	sampleUIButton9.addEventListener('click',function(e){
+		Titanium.App.Properties.setBool('event_batch9',false)
+		sampleUIButton9.batch.setVisible(false)
+	});
 	
 	var tweetButton = Titanium.UI.createView({
 			width:Titanium.UI.FILL,
