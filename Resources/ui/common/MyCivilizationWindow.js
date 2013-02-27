@@ -36,6 +36,7 @@ exports.openCivilView = function() {
 			height : height / 5,
 			backgroundImage :'/images/button/topMenuButton/topMenuButton.png',
 			backgroundSelectedImage : '/images/button/topMenuButton/topMenuButton_pressed.png',
+			
 		});
 		
 	var label  = Titanium.UI.createLabel({
@@ -58,11 +59,30 @@ exports.openCivilView = function() {
 	})
 		base_button.icon = icon
 		base_button.add(icon)
+		
 	
-		civ_window.add(base_button)
+	var eventBatchImage = Titanium.UI.createImageView({
+		width:'auto',
+		height:'auto',
+		image:'/images/eventBatch/eventBatch.png',
+		top:base_button.getHeight() * 0.2,
+		right:base_button.getWidth() *0.2,
+		visible:false
+	})
 	
-		return base_button;
+		base_button.batch = eventBatchImage
+		base_button.add(eventBatchImage)
+		
+		
+		
+	civ_window.add(base_button)
+	return base_button;
+	
+
+		
 	}
+	//ボタン作成メソッド終了
+	
 	
 	var delta_buttonLayout = height/10//height /10
 	
@@ -72,6 +92,8 @@ exports.openCivilView = function() {
 	sampleUIButton1.setLeft(0);
 	sampleUIButton1.label.setText('ヘルプ')
 	sampleUIButton1.icon.setImage('/images/icon/topmenu/help.png')
+	
+	sampleUIButton1.batch.setVisible(Titanium.App.Properties.getBool('event_batch1'))
 	
 	sampleUIButton1.addEventListener('click',function(e){
 		require('/ui/common/Help/helpWin').openWin()
@@ -83,6 +105,10 @@ exports.openCivilView = function() {
 	//sampleUIButton2.setTitle('コツをつぶやく')
 	sampleUIButton2.label.setText('コツをつぶやく')
 	sampleUIButton2.icon.setImage('/images/icon/topmenu/card.png')
+	
+	sampleUIButton2.batch.setVisible(Titanium.App.Properties.getBool('event_batch2'))
+	
+	
 	sampleUIButton2.addEventListener('click', function(e) {
 		require('/ui/common/AddCardWindow/AddCardWindow').createCardWindow();
 	})
@@ -93,6 +119,10 @@ exports.openCivilView = function() {
 	//sampleUIButton3.setTitle('どうやって\n遊ぶの？')
 	sampleUIButton3.label.setText('お知らせ')
 	sampleUIButton3.icon.setImage('/images/icon/topmenu/broadcast.png')
+	
+	sampleUIButton3.batch.setVisible(Titanium.App.Properties.getBool('event_batch3'))
+	
+	
 	sampleUIButton3.addEventListener('click',function(e){
 		require('/ui/common/Help/helpWin').openWin('http://xicolo.com/wordpress/?page_id=347')
 	})
@@ -103,6 +133,8 @@ exports.openCivilView = function() {
 	//sampleUIButton4.setTitle('設定')
 	sampleUIButton4.label.setText('設定')
 	sampleUIButton4.icon.setImage('/images/icon/topmenu/setting.png')
+	
+	sampleUIButton4.batch.setVisible(Titanium.App.Properties.getBool('event_batch4'))
 	
 	sampleUIButton4.addEventListener('click',function(e){
 		require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin()
@@ -115,6 +147,8 @@ exports.openCivilView = function() {
 	sampleUIButton5.label.setText('みんなの\nひみつぶやき')
 	sampleUIButton5.icon.setImage('/images/icon/topmenu/everybody2.png')
 	
+	sampleUIButton5.batch.setVisible(Titanium.App.Properties.getBool('event_batch5'))
+	
 	
 	sampleUIButton5.addEventListener('click',function(e){
 		require('/Confess/ConfessStarter_Newest').FlowdownloadStart();
@@ -126,19 +160,25 @@ exports.openCivilView = function() {
 	//sampleUIButton6.setTitle('ポイント確認')
 	sampleUIButton6.label.setText('ポイント確認')
 	
+	sampleUIButton6.batch.setVisible(Titanium.App.Properties.getBool('event_batch6'))
+	
 	var sampleUIButton7 = createButton()
 	sampleUIButton7.setTop(height *2/5 + delta_buttonLayout)
 	sampleUIButton7.setLeft(0)
-	//sampleUIButton7.setTitle('sample7')
 	sampleUIButton7.label.setText('工事中')
 	sampleUIButton7.icon.setImage('/images/icon/topmenu/construction.png')
+	
+	sampleUIButton7.batch.setVisible(Titanium.App.Properties.getBool('event_batch7'))
 	
 	var sampleUIButton8 = createButton()
 	sampleUIButton8.setTop(height *2/5 + delta_buttonLayout)
 	sampleUIButton8.setLeft(width /3)
-	//sampleUIButton8.setTitle('マイ\nつぶやき')
 	sampleUIButton8.label.setText('マイ\nひみつぶやき')
 	sampleUIButton8.icon.setImage('/images/icon/topmenu/mytweet.png')
+	
+	sampleUIButton8.batch.setVisible(Titanium.App.Properties.getBool('event_batch8'))
+	
+	
 	sampleUIButton8.addEventListener('click',function(e){
 		require('/Confess/getMyConfessData').getMyConfess();
 	});
@@ -149,6 +189,8 @@ exports.openCivilView = function() {
 	//sampleUIButton9.setTitle('ポイント\nゲット！')
 	sampleUIButton9.label.setText('工事中')
 	sampleUIButton9.icon.setImage('/images/icon/topmenu/construction.png')
+	
+	sampleUIButton9.batch.setVisible(Titanium.App.Properties.getBool('event_batch9'))
 	
 	var tweetButton = Titanium.UI.createView({
 			width:Titanium.UI.FILL,
