@@ -117,6 +117,10 @@ exports.createCommonRow = function(image_path,title,side, photo, id, comment,cre
 			status_string += '\nあるある！:' + com_json.aruaru;
 			comment_sumCnt++;
 		}
+		if (com_json.ganbare){
+			status_string += '\nガンバレー!:' + com_json.ganbare;
+			comment_sumCnt++;
+		}
 		if (com_json.aruaruneyo){
 			status_string += '\nあるあるあ・・ねーよ:' + com_json.aruaruneyo;
 			comment_sumCnt++;

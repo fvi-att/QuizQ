@@ -47,7 +47,7 @@ exports.createRows = function(download,win) {
 	}
 
 	//ここからテキスト変更 json -> text
-		function setCommentText(com_json) {
+	function setCommentText(com_json) {
 		
 		var comment_sumCnt = 0;
 		
@@ -65,6 +65,10 @@ exports.createRows = function(download,win) {
 		}
 		if (com_json.cheear){
 			status_string += '\n勝負時！じゃん！：' + com_json.cheear;
+			comment_sumCnt++;
+		}
+		if (com_json.ganbare){
+			status_string += '\nガンバレー!:' + com_json.ganbare;
 			comment_sumCnt++;
 		}
 		if (com_json.boon){

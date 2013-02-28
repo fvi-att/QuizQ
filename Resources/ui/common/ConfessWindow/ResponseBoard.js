@@ -16,8 +16,8 @@ exports.openView = function(view, about,row_obj) {
 	
 	var slide_num = 0;
 	var comment_data =[['イイね！','マズイね！','あり得ない！'],
-					   ['辛いね、わかるよ','勝負時！じゃん！','（^ω^)ワロタ・・'],
-					   ['あるある','あるあるあ・・ねーよ','本当かなぁ？'],
+					   ['辛いね、わかるよ','勝負時じゃん！','（^ω^)ワロタ・・'],
+					   ['あるある','ガンバレ！','本当かなぁ？'],
 					   ['カワイイ！','どうしたの？','クズだねぇ']
 					  ];
 
@@ -237,10 +237,10 @@ exports.openView = function(view, about,row_obj) {
 				}
 				break;
 			case 7:
-				if(list.aruaruneyo){
-					list.aruaruneyo++;
+				if(list.ganbare){
+					list.ganbare++;
 				}else{
-					list['aruaruneyo'] = 1;
+					list['ganbare'] = 1;
 				}
 				break;
 			case 8:
@@ -271,18 +271,15 @@ exports.openView = function(view, about,row_obj) {
 				}else{
 					list['kuzu'] = 1;
 				}
-				break;
-				
+				break;	
 		}
 	}
 
 	ok_Button.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
-		/*
-		var status_list = JSON.parse(comment_label.getText());
-		*/
-		var status_list =JSON.parse(comment_Obj)
+		
+		status_list =JSON.parse(comment_Obj)
 		
 		var point_cnt =0;
 		
@@ -323,10 +320,6 @@ exports.openView = function(view, about,row_obj) {
 	cancel_button.addEventListener('click', function(e) {
 		view.remove(back_temp_view);
 		view.remove(old_paper);
-		/*
-		delete old_paper;
-		delete back_temp_view;
-		*/
 	});
 
 	old_paper.add(cancel_button);
