@@ -86,147 +86,147 @@ exports.openCivilView = function() {
 	
 	var delta_buttonLayout = height/10//height /10
 	
-	var sampleUIButton1 = createButton()
-	//sampleUIButton1.setTitle('ヘルプ')
-	sampleUIButton1.setTop(delta_buttonLayout +1)
-	sampleUIButton1.setLeft(0);
-	sampleUIButton1.label.setText('ヘルプ')
-	sampleUIButton1.icon.setImage('/images/icon/topmenu/help.png')
+	var menuGridButton1 = createButton()
+	//menuGridButton1.setTitle('ヘルプ')
+	menuGridButton1.setTop(delta_buttonLayout +1)
+	menuGridButton1.setLeft(0);
+	menuGridButton1.label.setText('ヘルプ')
+	menuGridButton1.icon.setImage('/images/icon/topmenu/help.png')
 	
-	sampleUIButton1.batch.setVisible(Titanium.App.Properties.getBool('event_batch1'))
+	menuGridButton1.batch.setVisible(Titanium.App.Properties.getBool('event_batch1'))
 	
-	sampleUIButton1.addEventListener('click',function(e){
+	menuGridButton1.addEventListener('click',function(e){
 		require('/ui/common/Help/helpWin').openWin()
 		
 		Titanium.App.Properties.setBool('event_batch1',false)
-		sampleUIButton1.batch.setVisible(false)
+		menuGridButton1.batch.setVisible(false)
 	})
 
-	var sampleUIButton2 = createButton()
-	sampleUIButton2.setTop(delta_buttonLayout +1)
-	sampleUIButton2.setLeft(width / 3)
-	//sampleUIButton2.setTitle('コツをつぶやく')
-	sampleUIButton2.label.setText('コツをつぶやく')
-	sampleUIButton2.icon.setImage('/images/icon/topmenu/card.png')
+	var menuGridButton2 = createButton()
+	menuGridButton2.setTop(delta_buttonLayout +1)
+	menuGridButton2.setLeft(width / 3)
+	//menuGridButton2.setTitle('コツをつぶやく')
+	menuGridButton2.label.setText('コツをつぶやく')
+	menuGridButton2.icon.setImage('/images/icon/topmenu/card.png')
 	
-	sampleUIButton2.batch.setVisible(Titanium.App.Properties.getBool('event_batch2'))
+	menuGridButton2.batch.setVisible(Titanium.App.Properties.getBool('event_batch2'))
 	
 	
-	sampleUIButton2.addEventListener('click', function(e) {
+	menuGridButton2.addEventListener('click', function(e) {
 		require('/ui/common/AddCardWindow/AddCardWindow').createCardWindow();
 		
 		Titanium.App.Properties.setBool('event_batch2',false)
-		sampleUIButton2.batch.setVisible(false)
+		menuGridButton2.batch.setVisible(false)
 	})
 
-	var sampleUIButton3 = createButton()
-	sampleUIButton3.setTop(delta_buttonLayout +1)
-	sampleUIButton3.setLeft(width *2 /3)
-	//sampleUIButton3.setTitle('どうやって\n遊ぶの？')
-	sampleUIButton3.label.setText('お知らせ')
-	sampleUIButton3.icon.setImage('/images/icon/topmenu/broadcast.png')
+	var menuGridButton3 = createButton()
+	menuGridButton3.setTop(delta_buttonLayout +1)
+	menuGridButton3.setLeft(width *2 /3)
+	//menuGridButton3.setTitle('どうやって\n遊ぶの？')
+	menuGridButton3.label.setText('お知らせ')
+	menuGridButton3.icon.setImage('/images/icon/topmenu/broadcast.png')
 	
-	sampleUIButton3.batch.setVisible(Titanium.App.Properties.getBool('event_batch3'))
+	menuGridButton3.batch.setVisible(Titanium.App.Properties.getBool('event_batch3'))
 	
 	
-	sampleUIButton3.addEventListener('click',function(e){
+	menuGridButton3.addEventListener('click',function(e){
 		require('/ui/common/Help/helpWin').openWin('http://xicolo.com/wordpress/?page_id=347')
 		
 		Titanium.App.Properties.setBool('event_batch3',false)
-		sampleUIButton3.batch.setVisible(false)
+		menuGridButton3.batch.setVisible(false)
 	})
 	
-	var sampleUIButton4 = createButton()
-	sampleUIButton4.setTop(height /5 + delta_buttonLayout +1)
-	sampleUIButton4.setLeft(0)
-	//sampleUIButton4.setTitle('設定')
-	sampleUIButton4.label.setText('設定')
-	sampleUIButton4.icon.setImage('/images/icon/topmenu/setting.png')
+	var menuGridButton4 = createButton()
+	menuGridButton4.setTop(height /5 + delta_buttonLayout +1)
+	menuGridButton4.setLeft(0)
+	//menuGridButton4.setTitle('設定')
+	menuGridButton4.label.setText('設定')
+	menuGridButton4.icon.setImage('/images/icon/topmenu/setting.png')
 	
-	sampleUIButton4.batch.setVisible(Titanium.App.Properties.getBool('event_batch4'))
+	menuGridButton4.batch.setVisible(Titanium.App.Properties.getBool('event_batch4'))
 	
-	sampleUIButton4.addEventListener('click',function(e){
+	menuGridButton4.addEventListener('click',function(e){
 		require('/ui/common/ConfessWindow/ConfigWin').OpenConfigWin()
 		
 		Titanium.App.Properties.setBool('event_batch4',false)
-		sampleUIButton4.batch.setVisible(false)
+		menuGridButton4.batch.setVisible(false)
 	})
 	
-	var sampleUIButton5 = createButton()
-	sampleUIButton5.setTop(height /5 + delta_buttonLayout +1)
-	sampleUIButton5.setLeft(width /3)
-	//sampleUIButton5.setTitle('みんなの\nつぶやき')
-	sampleUIButton5.label.setText('みんなの\nひみつぶやき')
-	sampleUIButton5.icon.setImage('/images/icon/topmenu/everybody2.png')
+	var menuGridButton5 = createButton()
+	menuGridButton5.setTop(height /5 + delta_buttonLayout +1)
+	menuGridButton5.setLeft(width /3)
+	//menuGridButton5.setTitle('みんなの\nつぶやき')
+	menuGridButton5.label.setText('みんなの\nひみつぶやき')
+	menuGridButton5.icon.setImage('/images/icon/topmenu/everybody2.png')
 	
-	sampleUIButton5.batch.setVisible(Titanium.App.Properties.getBool('event_batch5'))
+	menuGridButton5.batch.setVisible(Titanium.App.Properties.getBool('event_batch5'))
 	
 	
-	sampleUIButton5.addEventListener('click',function(e){
+	menuGridButton5.addEventListener('click',function(e){
 		require('/Confess/ConfessStarter_Newest').FlowdownloadStart();
 		
 		Titanium.App.Properties.setBool('event_batch6',false)
-		sampleUIButton6.batch.setVisible(false)
+		menuGridButton5.batch.setVisible(false)
 	})
 	
-	var sampleUIButton6 = createButton()
-	sampleUIButton6.setTop(height /5 + delta_buttonLayout +1)
-	sampleUIButton6.setLeft(width *2/3)
-	//sampleUIButton6.setTitle('ポイント確認')
-	sampleUIButton6.label.setText('ポイント確認')
+	var menuGridButton6 = createButton()
+	menuGridButton6.setTop(height /5 + delta_buttonLayout +1)
+	menuGridButton6.setLeft(width *2/3)
+	//menuGridButton6.setTitle('ポイント確認')
+	menuGridButton6.label.setText('ポイント確認')
 	
-	sampleUIButton6.batch.setVisible(Titanium.App.Properties.getBool('event_batch6'))
+	menuGridButton6.batch.setVisible(Titanium.App.Properties.getBool('event_batch6'))
 	
-	sampleUIButton6.addEventListener('click',function(e){
+	menuGridButton6.addEventListener('click',function(e){
 		Titanium.App.Properties.setBool('event_batch6',false)
-		sampleUIButton6.batch.setVisible(false)
+		menuGridButton6.batch.setVisible(false)
 	})
 	
-	var sampleUIButton7 = createButton()
-	sampleUIButton7.setTop(height *2/5 + delta_buttonLayout)
-	sampleUIButton7.setLeft(0)
-	sampleUIButton7.label.setText('工事中')
-	sampleUIButton7.icon.setImage('/images/icon/topmenu/construction.png')
+	var menuGridButton7 = createButton()
+	menuGridButton7.setTop(height *2/5 + delta_buttonLayout)
+	menuGridButton7.setLeft(0)
+	menuGridButton7.label.setText('工事中')
+	menuGridButton7.icon.setImage('/images/icon/topmenu/construction.png')
 	
-	sampleUIButton7.batch.setVisible(Titanium.App.Properties.getBool('event_batch7'))
+	menuGridButton7.batch.setVisible(Titanium.App.Properties.getBool('event_batch7'))
 	
-	sampleUIButton7.addEventListener('click',function(e){
+	menuGridButton7.addEventListener('click',function(e){
 		Titanium.App.Properties.setBool('event_batch7',false)
-		sampleUIButton7.batch.setVisible(false)
+		menuGridButton7.batch.setVisible(false)
 	})
-	var sampleUIButton8 = createButton()
-	sampleUIButton8.setTop(height *2/5 + delta_buttonLayout)
-	sampleUIButton8.setLeft(width /3)
-	sampleUIButton8.label.setText('マイ\nひみつぶやき')
-	sampleUIButton8.icon.setImage('/images/icon/topmenu/mytweet.png')
+	var menuGridButton8 = createButton()
+	menuGridButton8.setTop(height *2/5 + delta_buttonLayout)
+	menuGridButton8.setLeft(width /3)
+	menuGridButton8.label.setText('マイ\nひみつぶやき')
+	menuGridButton8.icon.setImage('/images/icon/topmenu/mytweet.png')
 	
-	sampleUIButton8.batch.setVisible(Titanium.App.Properties.getBool('event_batch8'))
+	menuGridButton8.batch.setVisible(Titanium.App.Properties.getBool('event_batch8'))
 	
 	
-	sampleUIButton8.addEventListener('click',function(e){
+	menuGridButton8.addEventListener('click',function(e){
 		require('/Confess/getMyConfessData').getMyConfess();
 		
 		Titanium.App.Properties.setBool('event_batch8',false)
-		sampleUIButton8.batch.setVisible(false)
+		menuGridButton8.batch.setVisible(false)
 	});
 	
-	var sampleUIButton9 = createButton()
-	sampleUIButton9.setTop(height *2/5 + delta_buttonLayout)
-	sampleUIButton9.setLeft(width *2/3)
-	//sampleUIButton9.setTitle('ポイント\nゲット！')
-	sampleUIButton9.label.setText('工事中')
-	sampleUIButton9.icon.setImage('/images/icon/topmenu/construction.png')
+	var menuGridButton9 = createButton()
+	menuGridButton9.setTop(height *2/5 + delta_buttonLayout)
+	menuGridButton9.setLeft(width *2/3)
+	//menuGridButton9.setTitle('ポイント\nゲット！')
+	menuGridButton9.label.setText('工事中')
+	menuGridButton9.icon.setImage('/images/icon/topmenu/construction.png')
 	
-	sampleUIButton9.batch.setVisible(Titanium.App.Properties.getBool('event_batch9'))
+	menuGridButton9.batch.setVisible(Titanium.App.Properties.getBool('event_batch9'))
 	
-	sampleUIButton9.addEventListener('click',function(e){
+	menuGridButton9.addEventListener('click',function(e){
 		Titanium.App.Properties.setBool('event_batch9',false)
-		sampleUIButton9.batch.setVisible(false)
+		menuGridButton9.batch.setVisible(false)
 	});
 	
 	var tweetButton = Titanium.UI.createView({
 			width:Titanium.UI.FILL,
-			height : height - (sampleUIButton9.getTop() + height/5 + delta_buttonLayout),
+			height : height - (menuGridButton9.getTop() + height/5 + delta_buttonLayout),
 			top:height *3/5 + delta_buttonLayout +1,
 			backgroundImage :'/images/button/topMenuButton/topMenuButton.png',
 			backgroundSelectedImage : '/images/button/topMenuButton/topMenuButton_pressed.png',
@@ -376,7 +376,7 @@ exports.openCivilView = function() {
 		width : width * 0.2,
 		height : height * 0.1
 	});
-	sampleUIButton6.add(getPointButton)
+	menuGridButton6.add(getPointButton)
 	
 	getPointButton.addEventListener('click', function(e) {
 		if (!isTimeAlreadyPass()) {

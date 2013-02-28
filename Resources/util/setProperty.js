@@ -61,12 +61,10 @@ exports.setProperty = function(){
 				Titanium.App.Properties.setBool('event_batch'+event_cnt, false);
 		}
 		//初期更新情報	ヘルプとWhat's newは常に更新しておく。
-		if (!Titanium.App.Properties.hasProperty('event_batch1'))
+		if (Titanium.App.Properties.hasProperty('event_batch1'))
 		Titanium.App.Properties.setBool('event_batch1', true);
 		
-
-		
-		if (!Titanium.App.Properties.hasProperty('event_batch3'))
+		if (Titanium.App.Properties.hasProperty('event_batch3'))
 		Titanium.App.Properties.setBool('event_batch3', true);
 		
 		
