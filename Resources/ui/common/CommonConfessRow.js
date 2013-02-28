@@ -81,86 +81,11 @@ exports.createCommonRow = function(image_path,title,side, photo, id, comment,cre
 	}
 
 	function setCommentText(com_json) {
-		var comment_sumCnt = 0;
-		
-		var status_string = '';
-		//カード機能の追加
-		if(com_json.cardID){
-			
-			if(com_json.cardSubPeopleNum > 0){
-				status_string += com_json.cardSubPeopleNum + '人がコツを知りました！\n\n';
-			}else{
-				status_string += '←　ひみつのコツ！　があるみたい！\n';
-			}
-			comment_sumCnt += 2;//ニ行分改行を行なっている
-		}
+			var response = require('/ResponseObj/Response2Str').Perse(com_json)
 
-		status_string += 'イイね：' + com_json.interest + ',';
+			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.05 * response.sumCnt))
 
-		status_string += 'マズイね：' + com_json.bad + ',';
-
-		status_string += 'あり得ない！：' + com_json.noway;
-
-		if (com_json.miserable){
-			status_string += '\n辛いね！わかるよ：' + com_json.miserable;
-			comment_sumCnt++;
-		}
-		if (com_json.cheear){
-			status_string += '\n勝負時！じゃん！：' + com_json.cheear;
-			comment_sumCnt++;
-		}
-		if (com_json.boon){
-			status_string += '\n（^ω^)ワロタ・・：' + com_json.boon;
-			comment_sumCnt++;
-		}
-		if (com_json.aruaru){
-			status_string += '\nあるある！:' + com_json.aruaru;
-			comment_sumCnt++;
-		}
-		if (com_json.ganbare){
-			status_string += '\nガンバレー!:' + com_json.ganbare;
-			comment_sumCnt++;
-		}
-		if (com_json.aruaruneyo){
-			status_string += '\nあるあるあ・・ねーよ:' + com_json.aruaruneyo;
-			comment_sumCnt++;
-		}
-		if (com_json.orealy){
-			status_string += '\nえっ　本当かなぁ？:' + com_json.orealy;
-			comment_sumCnt++;
-		}
-		if (com_json.kawaii){
-			status_string += '\nカワイイ！:' + com_json.kawaii;
-			comment_sumCnt++;
-		}
-		if (com_json.whatsmatter){
-			status_string += '\nどうしたの？:' + com_json.whatsmatter;
-			comment_sumCnt++;
-		}
-		if (com_json.kuzu){
-			status_string += '\nクズだねぇ:' + com_json.kuzu;
-			comment_sumCnt++;
-		}
-	/*	
-	 * 原因不明のバグが起きているので一旦停止　UIの設計を優先　２０１３年２月
-	 
-		if (com_json.ganbare){
-			status_string += '\n頑張れ！:' + com_json.ganbare;
-			comment_sumCnt++;
-		}
-		if (com_json.whatsit){
-			status_string += '\nナニソレ？:' + com_json.whatsit;
-			comment_sumCnt++;
-		}
-		if (com_json.envy){
-			status_string += '\nいいなぁ(´・ω・｀):' + com_json.envy;
-			comment_sumCnt++;
-		}
-	*/
-			
-			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.05 * comment_sumCnt))
-
-		return status_string;
+		return response.string;
 
 	}
 

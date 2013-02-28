@@ -49,72 +49,7 @@ exports.createRows = function(download,win) {
 	//ここからテキスト変更 json -> text
 	function setCommentText(com_json) {
 		
-		var comment_sumCnt = 0;
-		
-		var status_string = '';
-
-		status_string += 'イイね：' + com_json.interest + ',';
-
-		status_string += 'マズイね：' + com_json.bad + ',';
-
-		status_string += 'あり得ない！：' + com_json.noway;
-
-		if (com_json.miserable){
-			status_string += '\n辛いね！わかるよ：' + com_json.miserable;
-			comment_sumCnt++;
-		}
-		if (com_json.cheear){
-			status_string += '\n勝負時！じゃん！：' + com_json.cheear;
-			comment_sumCnt++;
-		}
-		if (com_json.ganbare){
-			status_string += '\nガンバレー!:' + com_json.ganbare;
-			comment_sumCnt++;
-		}
-		if (com_json.boon){
-			status_string += '\n（^ω^)ワロタ・・：' + com_json.boon;
-			comment_sumCnt++;
-		}
-		if (com_json.aruaru){
-			status_string += '\nあるある！:' + com_json.aruaru;
-			comment_sumCnt++;
-		}
-		if (com_json.aruaruneyo){
-			status_string += '\nあるあるあ・・ねーよ:' + com_json.aruaruneyo;
-			comment_sumCnt++;
-		}
-		if (com_json.orealy){
-			status_string += '\nえっ　本当かなぁ？:' + com_json.orealy;
-			comment_sumCnt++;
-		}
-		if (com_json.kawaii){
-			status_string += '\nカワイイ！:' + com_json.kawaii;
-			comment_sumCnt++;
-		}
-		if (com_json.whatsmatter){
-			status_string += '\nどうしたの？:' + com_json.whatsmatter;
-			comment_sumCnt++;
-		}
-		if (com_json.kuzu){
-			status_string += '\nクズだねぇ:' + com_json.kuzu;
-			comment_sumCnt++;
-		}
-		if (com_json.yes){
-			status_string += '\nそうだね:' + com_json.yes;
-			comment_sumCnt++;
-		}
-		if (com_json.what){
-			status_string += '\n何それ？:' + com_json.what;
-			comment_sumCnt++;
-		}
-		if (com_json.strange){
-			status_string += '\nへんなのー:' + com_json.strange;
-			comment_sumCnt++;
-		}
-			
-			//source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.05 * comment_sumCnt))
-
-		return status_string;
+		return require('/ResponseObj/Response2Str').Perse(com_json).string
 
 	}
 	
@@ -125,9 +60,7 @@ exports.createRows = function(download,win) {
 			selected_row.comment_label.setText(setCommentText(e.status));	
 	});
 	
-	//終了
 	
-	//temp return 
 	return rows.getRows()
 
 }
