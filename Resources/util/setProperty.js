@@ -57,9 +57,10 @@ exports.setProperty = function(){
 	//ボタンの更新イベント情報
 		for(event_cnt = 0;event_cnt <= 9;event_cnt++){
 			if (!Titanium.App.Properties.hasProperty('event_batch'+event_cnt))
+				//9つのすべてのプロパティ値の設定を初期化、定義
 				Titanium.App.Properties.setBool('event_batch'+event_cnt, false);
 		}
-		//初期更新情報	
+		//初期更新情報	ヘルプとWhat's newは常に更新しておく。
 		if (!Titanium.App.Properties.hasProperty('event_batch1'))
 		Titanium.App.Properties.setBool('event_batch1', true);
 		

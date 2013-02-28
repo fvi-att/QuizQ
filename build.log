@@ -3,17 +3,13 @@ Logfile initialized
 [DEBUG] C:\Users\fvi\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py install Secret_dev C:\adb\android-sdk C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki com.xicolo.confess.dev.dev.app 4
 [INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
 [DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 0 devices/emulators
-[TRACE] adb devices returned 0 devices/emulators
-[INFO] Application installed. Launch from drawer on Home Screen
 [TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 10 seconds)
-[DEBUG] waited 10.337000 seconds on emulator to get ready
-[INFO] Waiting for the Android Emulator to become available
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.123000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\ConfessWindow\ConfigWin.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\ConfessWindow\ConfigWin.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\util\setProperty.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\util\setProperty.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\title1.png
@@ -335,6 +331,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.027000 seconds on emulator to get ready
+[DEBUG] waited 0.054000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
