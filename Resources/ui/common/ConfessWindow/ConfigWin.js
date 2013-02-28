@@ -146,16 +146,17 @@ exports.OpenConfigWin = function() {
 				if(input_text.value == 'xicolo_point'){
 					alert('DEBUG::ポイントを負荷しました');
 					Titanium.App.Properties.setInt('point',Titanium.App.Properties.getInt('point') + 30);
-				
+					return;
+				}
 				if(input_text.value == 'xi_st_reset'){
 					alert('DEBUG::すべての更新をリセットしました')
 					for(cnt = 1;cnt <= 9;cnt++){
 						Titanium.App.Properties.setBool('event_batch'+cnt, true);
 					}
 					
-				}
 					return;
 				}
+
 					
 				
 				Titanium.App.Properties.setString('handlename',input_text.value);

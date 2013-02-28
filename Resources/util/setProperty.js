@@ -55,32 +55,19 @@ exports.setProperty = function(){
 		Titanium.App.Properties.setDouble('last_flow_update',(new Date(2000, 1,1, 23, 59, 59)).getTime())
 		
 	//ボタンの更新イベント情報
+		for(event_cnt = 0;event_cnt <= 9;event_cnt++){
+			if (!Titanium.App.Properties.hasProperty('event_batch'+event_cnt))
+				Titanium.App.Properties.setBool('event_batch'+event_cnt, false);
+		}
+		//初期更新情報	
 		if (!Titanium.App.Properties.hasProperty('event_batch1'))
 		Titanium.App.Properties.setBool('event_batch1', true);
 		
-		if (!Titanium.App.Properties.hasProperty('event_batch2'))
-		Titanium.App.Properties.setBool('event_batch2', false);
+
 		
 		if (!Titanium.App.Properties.hasProperty('event_batch3'))
 		Titanium.App.Properties.setBool('event_batch3', true);
 		
-		if (!Titanium.App.Properties.hasProperty('event_batch4'))
-		Titanium.App.Properties.setBool('event_batch4', false);
-		
-		if (!Titanium.App.Properties.hasProperty('event_batch5'))
-		Titanium.App.Properties.setBool('event_batch5', false);
-		
-		if (!Titanium.App.Properties.hasProperty('event_batch6'))
-		Titanium.App.Properties.setBool('event_batch6', false);
-		
-		if (!Titanium.App.Properties.hasProperty('event_batch7'))
-		Titanium.App.Properties.setBool('event_batch7', false);
-		
-		if (!Titanium.App.Properties.hasProperty('event_batch8'))
-		Titanium.App.Properties.setBool('event_batch8', false);
-		
-		if (!Titanium.App.Properties.hasProperty('event_batch9'))
-		Titanium.App.Properties.setBool('event_batch9', false);
 		
 		
 		
