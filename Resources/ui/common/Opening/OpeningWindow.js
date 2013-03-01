@@ -57,7 +57,7 @@ exports.openWindow = function() {
 		height:height * 0.35,
 		color:'black',
 		top:height *0.36,
-		font:{fontSize:17},
+		fontSize : height / 40,
 		slide_num:1
 	});
 	
@@ -66,29 +66,29 @@ exports.openWindow = function() {
 	var left_button = Titanium.UI.createButton({
 		backgroundSelectedImage:'/images/opening/slide_button/left_button.png',
 		backgroundImage:'/images/opening/slide_button/left_button_pressed.png',
-		width:width * 0.06,
-		height:height *0.07,
+		width:width * 0.1,
+		height:height *0.1,
 		left:0
 	});
 	left_button.addEventListener('click',function(e){
 		changeText(-1);
 	})
-	old_paper.add(left_button);
-	//win.add(left_button)
+	//old_paper.add(left_button);
+	win.add(left_button)
 	
 	
 	var right_button = Titanium.UI.createButton({
 		backgroundSelectedImage:'/images/opening/slide_button/right_button.png',
 		backgroundImage:'/images/opening/slide_button/right_button_pressed.png',
-		width:width * 0.06,
-		height:height *0.07,
+		width:width * 0.1,
+		height:height *0.1,
 		right:0
 	});
 	right_button.addEventListener('click',function(e){
 		changeText(1);
 	})
-	//win.add(right_button);
-	old_paper.add(right_button)
+	win.add(right_button);
+	//old_paper.add(right_button)
 	
 	function changeText(delta){
 		var after_num = label.slide_num + delta;
