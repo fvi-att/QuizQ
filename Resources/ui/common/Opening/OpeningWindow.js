@@ -15,7 +15,8 @@ exports.openWindow = function() {
 	
 	
 	
-	var win = Titanium.UI.createWindow({
+	var win = require('/ui/common/CommonNavigationWindow').createCommonNavigationWindow()
+	/*Titanium.UI.createWindow({
 		title :L('opening'),
 		backgroundColor:'white',
 		//backgroundImage : '/images/background/open_background.png',
@@ -23,14 +24,8 @@ exports.openWindow = function() {
 		fullscreen : false,
 		orientationModes : [Titanium.UI.PORTRAIT]
 	});
-	var backgroundImage = Titanium.UI.createView({
-		backgroundImage:'/images/background/open_background.png',
-		width:Ti.UI.FILL,
-		height:Ti.UI.FIll,
-		opacity:0.7
-	});
-	
-	win.add(backgroundImage);
+	*/
+
 	
 	var old_paper = Titanium.UI.createView({
 		backgroundImage:'/images/opening/old_paper.jpg',
@@ -50,7 +45,7 @@ exports.openWindow = function() {
 	});
 	
 	old_paper.add(movie_view);
-	
+	//win.add(movie_view)
 	
 	movie_view.start();
 	
@@ -79,6 +74,8 @@ exports.openWindow = function() {
 		changeText(-1);
 	})
 	old_paper.add(left_button);
+	//win.add(left_button)
+	
 	
 	var right_button = Titanium.UI.createButton({
 		backgroundSelectedImage:'/images/opening/slide_button/right_button.png',
@@ -90,8 +87,8 @@ exports.openWindow = function() {
 	right_button.addEventListener('click',function(e){
 		changeText(1);
 	})
-	old_paper.add(right_button);
-	
+	//win.add(right_button);
+	old_paper.add(right_button)
 	
 	function changeText(delta){
 		var after_num = label.slide_num + delta;

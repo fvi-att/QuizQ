@@ -9,6 +9,7 @@
  */
 
 exports.createCommonNavigationWindow = function(){
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var base_window = Titanium.UI.createWindow({
 		//backgroundImage : background_path,
 		backgroundColor : 'rgb(255,235,205)',
