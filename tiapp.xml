@@ -19,7 +19,7 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.4.GA</sdk-version>
-    <id>com.xicolo.confess.dev.app</id>
+    <id>com.xicolo.confess.app</id>
     <name>Secret_exe</name>
     <version>3.19</version>
     <publisher>fvi@</publisher>
