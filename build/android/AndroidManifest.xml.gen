@@ -1,0 +1,44 @@
+<?xml version="1.0" ?><manifest android:installLocation="auto" android:versionCode="15" android:versionName="dev" package="com.xicolo.confess.app" xmlns:android="http://schemas.android.com/apk/res/android">
+	<supports-screens android:anyDensity="false"/><uses-sdk android:minSdkVersion="8"/>
+
+	<!-- TI_MANIFEST -->
+
+	<application android:debuggable="false" android:icon="@drawable/appicon" android:label="Secret_exe" android:name="Secret_exeApplication">
+
+		<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.google.ads.AdActivity"/><service android:name="ti.inappbilling.BillingService"/><receiver android:name="ti.inappbilling.BillingReceiver">
+                    <intent-filter>
+                        <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+                        <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+                        <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+                    </intent-filter>
+                </receiver>
+
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Secret_exe" android:name=".Secret_exeActivity" android:theme="@style/Theme.Titanium">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity android:configChanges="keyboardHidden|orientation" android:name="ti.modules.titanium.media.TiCameraActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiActivity"/>
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.Translucent"/>
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiModalActivity" android:theme="@android:style/Theme.Translucent"/>
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="ti.modules.titanium.ui.TiTabActivity"/>
+		<activity android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"/>
+
+		<service android:exported="false" android:name="org.appcelerator.titanium.analytics.TiAnalyticsService"/>
+		
+
+	</application>
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="com.android.vending.BILLING"/>
+	
+
+</manifest>
