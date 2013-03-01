@@ -20,7 +20,7 @@ exports.openCivilView = function() {
 		return false;
 	}
 
-	var civ_window = Titanium.UI.createWindow({
+	var base_window = Titanium.UI.createWindow({
 		//backgroundImage : background_path,
 		backgroundColor : 'rgb(255,235,205)',
 		exitOnClose : false,
@@ -75,7 +75,7 @@ exports.openCivilView = function() {
 		
 		
 		
-	civ_window.add(base_button)
+	base_window.add(base_button)
 	return base_button;
 	
 
@@ -258,7 +258,7 @@ exports.openCivilView = function() {
 		 require('/ui/common/AddConfess').AddProject()
 	})
 		
-		civ_window.add(tweetButton)
+		base_window.add(tweetButton)
 		
 	var underRibbon = Titanium.UI.createImageView({
 			image:'/images/underRibbon/underRibbon2.png',
@@ -267,7 +267,7 @@ exports.openCivilView = function() {
 			top:height *0.88
 	})
 	
-		civ_window.add(underRibbon)
+		base_window.add(underRibbon)
 	
 	var get_stamp_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_stamp/get_stamp_button.png',
@@ -281,10 +281,10 @@ exports.openCivilView = function() {
 	});
 
 	get_stamp_button.addEventListener('click', function(e) {
-		require('/ui/common/SelectBoard/selectItems').openView(civ_window);
+		require('/ui/common/SelectBoard/selectItems').openView(base_window);
 	});
 
-	//civ_window.add(get_stamp_button);
+	//base_window.add(get_stamp_button);
 
 	var start_AddQuizButton = Titanium.UI.createButton({
 		backgroundImage : '/images/button/AddCard/createCardButton.png',
@@ -303,7 +303,7 @@ exports.openCivilView = function() {
 
 	});
 
-	//civ_window.add(start_AddQuizButton);
+	//base_window.add(start_AddQuizButton);
 
 	var get_tweet_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_flow_button/get_flow_button.png',
@@ -321,7 +321,7 @@ exports.openCivilView = function() {
 		require('/Confess/ConfessStarter_Newest').FlowdownloadStart();
 	});
 
-	//civ_window.add(get_tweet_button);
+	//base_window.add(get_tweet_button);
 
 	var get_my_tweet_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_my_flow_button/get_flow_button.png',
@@ -339,7 +339,7 @@ exports.openCivilView = function() {
 		require('/Confess/getMyConfessData').getMyConfess();
 	});
 
-	//civ_window.add(get_my_tweet_button);
+	//base_window.add(get_my_tweet_button);
 
 	var groupSearch_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_my_flow_button/get_flow_button.png',
@@ -360,11 +360,11 @@ exports.openCivilView = function() {
 	//一旦画面からかくしておく
 	groupSearch_button.setVisible(false);
 
-	civ_window.add(groupSearch_button);
+	base_window.add(groupSearch_button);
 
 	//下のアンダーバーに関する処理
-	var under_bar = require('/ui/common/underbar/underbar').createBar(civ_window)
-	//civ_window.add(under_bar);
+	var under_bar = require('/ui/common/underbar/underbar').createBar(base_window)
+	//base_window.add(under_bar);
 
 	//AddPointSystem
 	var getPointButton = Titanium.UI.createImageView({
@@ -401,7 +401,7 @@ exports.openCivilView = function() {
 	
 
 	//ここでボタンの描写に関する処理を行う。
-	civ_window.addEventListener('focus', function(e) {
+	base_window.addEventListener('focus', function(e) {
 		if (!isTimeAlreadyPass()) {
 			getPointButton.setImage('/images/button/respoint/cupcell_pressed.png');
 		} else {
@@ -418,7 +418,7 @@ exports.openCivilView = function() {
 		}
 	});
 
-	civ_window.add(cupcell_image);
+	base_window.add(cupcell_image);
 
 	//変更　アイテムに関するアニメーションを関数に変更
 	//長すぎ　ワロリーヌ　
@@ -451,7 +451,7 @@ exports.openCivilView = function() {
 						y : height * 0.4
 					}
 				}));
-				civ_window.add(food_arr[0]);
+				base_window.add(food_arr[0]);
 
 				var disappear_time = setTimeout(function(e) {
 					//cupcell_image.setCenter({x:width * 0.5,y:-1 * height});
@@ -470,7 +470,7 @@ exports.openCivilView = function() {
 
 				var item_disappear_time = setTimeout(function(e) {
 					//STUB的処理←　あとでちゃんと消しといてね
-					civ_window.remove(food_arr[0]);
+					base_window.remove(food_arr[0]);
 					clearTimeout(item_disappear_time);
 					//delete food_arr[0];
 
@@ -492,7 +492,7 @@ exports.openCivilView = function() {
 	//ボードに関する設定　
 	var board = require('/ui/common/CivBoard/Board').createBoard();
 
-	civ_window.add(board);
+	base_window.add(board);
 	
 	
 	var upperRibbon = Titanium.UI.createImageView({
@@ -502,7 +502,7 @@ exports.openCivilView = function() {
 			top:-0.03 * height
 	})
 	
-		civ_window.add(upperRibbon)
+		base_window.add(upperRibbon)
 	var upperRibbonLabel = Titanium.UI.createImageView({
 			image:'/images/navibar/menu/menuLabel.png',
 			
@@ -511,10 +511,10 @@ exports.openCivilView = function() {
 			center:{x:width * 0.52,y:height *0.05}
 	})
 	
-		civ_window.add(upperRibbonLabel)
+		base_window.add(upperRibbonLabel)
 
 	//設定画面を表示する
-	civ_window.activity.onCreateOptionsMenu = function(e) {
+	base_window.activity.onCreateOptionsMenu = function(e) {
 		var menu = e.menu;
 		var menuItem = menu.add({
 			title : "設定"
@@ -526,5 +526,5 @@ exports.openCivilView = function() {
 		});
 	};
 
-	return civ_window;
+	return base_window;
 }

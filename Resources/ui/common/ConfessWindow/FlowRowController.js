@@ -49,6 +49,7 @@ exports.createRows = function(download,win) {
 	//ここからテキスト変更 json -> text
 	function setCommentText(com_json) {
 		
+		
 		return require('/ResponseObj/Response2Str').Perse(com_json).string
 
 	}
