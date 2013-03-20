@@ -20,16 +20,16 @@ exports.openCivilView = function() {
 		return false;
 	}
 
-	var base_window = Titanium.UI.createWindow({
+	var base_window = require('/ui/common/CommonNavigationWindow').createCommonNavigationWindow()/*
 		//backgroundImage : background_path,
 		backgroundColor : 'rgb(255,235,205)',
 		exitOnClose : false,
 		fullscreen : true,
 		navBarHidden : true, //タイトルバーを隠す
 		orientationModes : [Titanium.UI.PORTRAIT]
-	});
-	//旧家に関するボタン
-
+	});*/
+	
+//グリッドメニューボタン　作成
 	function createButton() {
 		var base_button = Titanium.UI.createView({
 			width : width / 3,
@@ -81,7 +81,7 @@ exports.openCivilView = function() {
 
 		
 	}
-	//ボタン作成メソッド終了
+//ボタン作成メソッド終了
 	
 	
 	var delta_buttonLayout = height/10//height /10
@@ -213,7 +213,6 @@ exports.openCivilView = function() {
 	var menuGridButton9 = createButton()
 	menuGridButton9.setTop(height *2/5 + delta_buttonLayout)
 	menuGridButton9.setLeft(width *2/3)
-	//menuGridButton9.setTitle('ポイント\nゲット！')
 	menuGridButton9.label.setText('工事中')
 	menuGridButton9.icon.setImage('/images/icon/topmenu/construction.png')
 	
@@ -259,7 +258,7 @@ exports.openCivilView = function() {
 	})
 		
 		base_window.add(tweetButton)
-		
+/*		
 	var underRibbon = Titanium.UI.createImageView({
 			image:'/images/underRibbon/underRibbon2.png',
 			width:Titanium.UI.FILL,
@@ -268,7 +267,7 @@ exports.openCivilView = function() {
 	})
 	
 		base_window.add(underRibbon)
-	
+*/	
 	var get_stamp_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_stamp/get_stamp_button.png',
 		backgroundSelectedImage : '/images/button/get_stamp/get_stamp_button_pressed.png',
@@ -361,10 +360,6 @@ exports.openCivilView = function() {
 	groupSearch_button.setVisible(false);
 
 	base_window.add(groupSearch_button);
-
-	//下のアンダーバーに関する処理
-	var under_bar = require('/ui/common/underbar/underbar').createBar(base_window)
-	//base_window.add(under_bar);
 
 	//AddPointSystem
 	var getPointButton = Titanium.UI.createImageView({
@@ -489,20 +484,8 @@ exports.openCivilView = function() {
 		})
 	}
 
-	//ボードに関する設定　
-	var board = require('/ui/common/CivBoard/Board').createBoard();
 
-	base_window.add(board);
-	
-	
-	var upperRibbon = Titanium.UI.createImageView({
-			image:'/images/underRibbon/underRibbon2.png',
-			width:width,
-			height:height *0.12,
-			top:-0.03 * height
-	})
-	
-		base_window.add(upperRibbon)
+
 	var upperRibbonLabel = Titanium.UI.createImageView({
 			image:'/images/navibar/menu/menuLabel.png',
 			
@@ -512,6 +495,15 @@ exports.openCivilView = function() {
 	})
 	
 		base_window.add(upperRibbonLabel)
+		
+	
+	
+		//ポイントボードに関する設定　
+	var board = require('/ui/common/CivBoard/Board').createBoard();
+
+	base_window.add(board);
+	
+	
 
 	//設定画面を表示する
 	base_window.activity.onCreateOptionsMenu = function(e) {

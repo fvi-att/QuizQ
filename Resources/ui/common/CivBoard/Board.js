@@ -30,7 +30,7 @@ exports.createBoard = function() {
 		height : height * 0.25,
 		center : {
 			x : width * 0.5,
-			y : -0.05 * height
+			y : -0.15 * height
 		},
 		isAppear : false,
 
@@ -40,7 +40,7 @@ exports.createBoard = function() {
 	board.add(point_num);
 
 	function MoveBoard(){
-		var move = height * -0.05;
+		var move = height * -0.15;
 		if (!board.isAppear) {
 			move = height * 0.215;
 			board.isAppear = true;
@@ -73,7 +73,9 @@ exports.createBoard = function() {
 		var delta = e.delta;
 		if(delta == null)
 			delta = 0;
+			
 		var plus_minus ='';
+		
 		if(delta >0)
 			plus_minus = '+';
 		

@@ -6,14 +6,16 @@
 exports.OpenConfigWin = function() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
-	var win = Titanium.UI.createWindow({
+	var win = require('/ui/common/CommonNavigationWindow').createCommonNavigationWindow()/*Titanium.UI.createWindow({
 		title : '設定',
 		backgroundImage:'/images/opening/old_paper.jpg',
 		exitOnClose : false,
 		fullscreen : false,
 		
 		orientationModes : [Titanium.UI.PORTRAIT]
-	});
+	});*/
+	
+	
 
 	var introSW_label = Titanium.UI.createLabel({
 		text : 'ひみつぶやきの流れを変更する\n'+
@@ -226,6 +228,16 @@ exports.OpenConfigWin = function() {
 
 		dialog.show();
 	});
+	
+	var upperRibbonLabel = Titanium.UI.createImageView({
+			image:'/images/navibar/menu/menuLabel.png',
+			
+			width:width /2.5,
+			height:height /15,
+			center:{x:width * 0.52,y:height *0.05}
+	})
+	
+	win.add(upperRibbonLabel)
 
 	win.add(introSW_label);
 	win.add(introSW);
@@ -233,12 +245,7 @@ exports.OpenConfigWin = function() {
 	win.add(opening_SWLabel)
 	win.add(opening_SW)
 
-	/*
-	win.add(introSW_label);
-	win.add(introSW);
-	win.add(account_man);
 
-	*/
 	win.open();
 
 }

@@ -16,15 +16,6 @@ exports.openWindow = function() {
 	
 	
 	var win = require('/ui/common/CommonNavigationWindow').createCommonNavigationWindow()
-	/*Titanium.UI.createWindow({
-		title :L('opening'),
-		backgroundColor:'white',
-		//backgroundImage : '/images/background/open_background.png',
-		exitOnClose : false,
-		fullscreen : false,
-		orientationModes : [Titanium.UI.PORTRAIT]
-	});
-	*/
 
 	
 	var old_paper = Titanium.UI.createView({
