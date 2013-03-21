@@ -230,7 +230,7 @@ exports.OpenConfigWin = function() {
 	});
 	
 	var upperRibbonLabel = Titanium.UI.createImageView({
-			image:'/images/navibar/menu/menuLabel.png',
+			image:'/images/navibar/config/configLabel.png',
 			
 			width:width /2.5,
 			height:height /15,
