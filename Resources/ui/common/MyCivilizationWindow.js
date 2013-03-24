@@ -191,6 +191,8 @@ exports.openCivilView = function() {
 	menuGridButton7.batch.setVisible(Titanium.App.Properties.getBool('event_batch7'))
 	
 	menuGridButton7.addEventListener('click',function(e){
+		require('/ui/common/ProfileWindow/ProfileWindow').OpenProfileWindow()
+		
 		Titanium.App.Properties.setBool('event_batch7',false)
 		menuGridButton7.batch.setVisible(false)
 	})
@@ -258,16 +260,7 @@ exports.openCivilView = function() {
 	})
 		
 		base_window.add(tweetButton)
-/*		
-	var underRibbon = Titanium.UI.createImageView({
-			image:'/images/underRibbon/underRibbon2.png',
-			width:Titanium.UI.FILL,
-			height:height *0.2,
-			top:height *0.88
-	})
-	
-		base_window.add(underRibbon)
-*/	
+
 	var get_stamp_button = Titanium.UI.createButton({
 		backgroundImage : '/images/button/get_stamp/get_stamp_button.png',
 		backgroundSelectedImage : '/images/button/get_stamp/get_stamp_button_pressed.png',
