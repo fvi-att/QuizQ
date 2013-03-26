@@ -46,9 +46,35 @@ exports.OpenProfileWindow = function() {
 	labels[0].setText('で')
 	labels[1].setText('の')
 	labels[2].setText('で')
-	labels[3].setText('歳\nの気分')
+	labels[3].setText('の気分!')
 	labels[3].setFont({fontSize:height/30})
-
+	
+	
+	var data = Array(4)
+	data[0]=Ti.UI.createPickerRow({title:'普通',custom_item:'b'});
+	data[1]=Ti.UI.createPickerRow({title:'変態',custom_item:'s'});
+	data[2]=Ti.UI.createPickerRow({title:'アホ',custom_item:'m'});
+	data[3]=Ti.UI.createPickerRow({title:'伝説',custom_item:'g'});
+	
+	pickers[0].add(data)
+	
+	var data1 = Array(4)
+	data1[0]=Ti.UI.createPickerRow({title:'名無しさん',custom_item:'b'});
+	data1[1]=Ti.UI.createPickerRow({title:'ニート',custom_item:'s'});
+	data1[2]=Ti.UI.createPickerRow({title:'JK',custom_item:'s'});
+	data1[3]=Ti.UI.createPickerRow({title:'JC',custom_item:'s'});
+	pickers[1].add(data1)
+	
+	var data2 = Array(6)
+	data2[0]=Ti.UI.createPickerRow({title:'3歳',custom_item:'b'});
+	data2[1]=Ti.UI.createPickerRow({title:'10歳',custom_item:'s'});
+	data2[2]=Ti.UI.createPickerRow({title:'10代',custom_item:'s'});
+	data2[3]=Ti.UI.createPickerRow({title:'18歳',custom_item:'s'});
+	data2[4]=Ti.UI.createPickerRow({title:'おっさん',custom_item:'s'});
+	data2[5]=Ti.UI.createPickerRow({title:'おばさん',custom_item:'s'});
+	pickers[2].add(data2)
+	
+	
 	var user_name=Titanium.App.Properties.getString('handlename');
 	if(!user_name)
 		user_name='名無しさん'
