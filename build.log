@@ -5,11 +5,12 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.025000 seconds on emulator to get ready
+[DEBUG] waited 0.019000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\ProfileWindow\ProfileWindow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\ProfileWindow\ProfileWindow.js
+[TRACE] COPYING CREATED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\images\icon\topmenu\profile.png => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\images\icon\topmenu\profile.png
+[TRACE] COPYING MODIFIED FILE: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\MyCivilizationWindow.js => C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\MyCivilizationWindow.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fvi\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\title1.png
@@ -176,6 +177,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/icon/topmenu/help.png
 [DEBUG] from resource zip => assets/Resources/images/icon/topmenu/mytweet.png
 [DEBUG] from resource zip => assets/Resources/images/icon/topmenu/point.png
+[DEBUG] from resource zip => assets/Resources/images/icon/topmenu/profile.png
 [DEBUG] from resource zip => assets/Resources/images/icon/topmenu/setting.png
 [DEBUG] from resource zip => assets/Resources/images/icon/dark_gears.png
 [DEBUG] from resource zip => assets/Resources/images/icon/dark_link.png
@@ -194,6 +196,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/navibar/nav_button/info/info_nav_button.png
 [DEBUG] from resource zip => assets/Resources/images/navibar/nav_button/info/info_nav_button_pressed.png
 [DEBUG] from resource zip => assets/Resources/images/navibar/profile/profileLabel.png
+[DEBUG] from resource zip => assets/Resources/images/navibar/profile/profileLabel.png.old
 [DEBUG] from resource zip => assets/Resources/images/navibar/flow_navibar.png
 [DEBUG] from resource zip => assets/Resources/images/navibar/flow_under.png
 [DEBUG] from resource zip => assets/Resources/images/navibar/flow_under_blue.png
@@ -276,6 +279,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
 [DEBUG] from resource zip => assets/Resources/util/GetJSTime.js
 [DEBUG] from resource zip => assets/Resources/util/MergePoint.js
+[DEBUG] from resource zip => assets/Resources/util/ProfileDictionary.js
 [DEBUG] from resource zip => assets/Resources/util/getbackPathWithTime.js
 [DEBUG] from resource zip => assets/Resources/util/random.js
 [DEBUG] from resource zip => assets/Resources/util/setProperty.js

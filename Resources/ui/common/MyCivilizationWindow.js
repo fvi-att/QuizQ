@@ -185,8 +185,8 @@ exports.openCivilView = function() {
 	var menuGridButton7 = createButton()
 	menuGridButton7.setTop(height *2/5 + delta_buttonLayout)
 	menuGridButton7.setLeft(0)
-	menuGridButton7.label.setText('工事中')
-	menuGridButton7.icon.setImage('/images/icon/topmenu/construction.png')
+	menuGridButton7.label.setText('名無しさん\nプロフィール')
+	menuGridButton7.icon.setImage('/images/icon/topmenu/profile.png')
 	
 	menuGridButton7.batch.setVisible(Titanium.App.Properties.getBool('event_batch7'))
 	

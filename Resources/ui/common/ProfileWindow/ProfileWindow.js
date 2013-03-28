@@ -114,6 +114,33 @@ exports.OpenProfileWindow = function() {
 	})
 
 	win.add(upperRibbonLabel)
+	
+	function CommitChange(){
+		
+		if(name_field.value){
+				Titanium.App.Properties.setString('handlename',name_field.value);
+				Titanium.App.fireEvent('change_handlename');
+		}
+		
+		
+		
+	}
+	
+	var ok_button = Titanium.UI.createButton({
+		title : 'これで行く',
+		width : width * 0.6,
+		height : 'auto',
+		top : height * 0.8
+	});
+	
+
+	ok_button.addEventListener('click', function(e) {
+		CommitChange()
+		win.close();
+		//delete win;
+	});
+	
+	win.add(ok_button);
 
 	win.open()
 
