@@ -13,15 +13,15 @@ exports.AddProject = function() {
 
 
 	var background_path = require('/util/getbackPathWithTime').getPath();
-	var win = Titanium.UI.createWindow({
+	var win =require('/ui/common/CommonNavigationWindow').createCommonNavigationWindow() /*Titanium.UI.createWindow({
 		title : '',
 		backgroundImage : background_path,
 		exitOnClose : false,
 		fullscreen : false,
 		navBarHidden: true, //タイトルバーを隠す
 		orientationModes : [Titanium.UI.PORTRAIT]
-	});
-
+	});*/
+	/*
 	var backImageView = Titanium.UI.createImageView({
 		image : '/images/opening/old_paper.jpg',
 		width : width *0.98,
@@ -29,13 +29,13 @@ exports.AddProject = function() {
 		top : height *0.01
 	});
 	win.add(backImageView);
-
+	*/
 	var textArea = Titanium.UI.createTextArea({
 		hintText : 'あなたの秘密のつぶやきをどうぞ\n(200字以内)',
 		textAlign:'center',
 		width:width *0.95,
-		height : height * 0.45,
-		top : height *0.05
+		height : height * 0.4,
+		top : height *0.1
 	});
 
 	win.add(textArea);
@@ -46,14 +46,61 @@ exports.AddProject = function() {
 		height : height * 0.1,
 		top : height * 0.5,
 		
-	});
+	})
+	
+	win.add(junel_button)
 
 	junel_button.addEventListener('click', function(e) {
-		require('/ui/common/AddField/Selectjunel').openView(win);
+		//require('/ui/common/AddField/Selectjunel').openView(win);
+		var back_view = Titanium.UI.createView({
+			backgroundColor : 'white',
+			width : Titanium.UI.FILL,
+			height : height * 0.1,
+			opacity : 1.0,
+			layout : 'vertical'
+
+		})
+		var input_text = Ti.UI.createTextField({
+			hintText : 'ジャンルを入れてください',
+			width : Titanium.UI.FILL,
+			textAlign : 'center',
+			opacity : 1.0,
+			left : 0
+		});
+		
+		back_view.add(input_text)
+		
+		
+		var dialog = Ti.UI.createOptionDialog({
+			title : '#ひとりごと',
+			androidView : back_view,
+			buttonNames : ['キャンセル', 'Ok']
+		})
+		
+		dialog.addEventListener('click', function(e) {
+			if (e.index == 1) {// we read it only if get it is pressed
+				if(input_text.value == ''){
+					alert('ジャンル名を入れていください');
+					return;
+				}
+				if(input_text.value.match(/■/)){
+					alert('■は運営専用の記号です。');
+					return;
+				}
+				if(input_text.value == 'xicolo_dev')
+					input_text.value = '■開発者';
+					
+				
+				Titanium.App.fireEvent('select_junel',{junel:input_text.value});
+					
+			}
+		});
+		
+		dialog.show()
 
 	});
 
-	win.add(junel_button);
+	
 
 	var project_image = new require('/ui/common/imageFrame/MenuProjectFrame')();
 
@@ -84,34 +131,16 @@ exports.AddProject = function() {
 	});
 		handlename_SW.addEventListener('change', function(e) {
 		// e.valueにはスイッチの新しい値が true もしくは falseとして設定されます。
-
+		
 		Titanium.App.Properties.setBool('use_handlename', e.value);
 
 	});
 	win.add(handlename_SW);
-	var and_button = Titanium.UI.createButton({
-		backgroundImage : '/images/button/And/button.png',
-		backgroundSelectedImage : '/images/button/And/button_pressed.png',
-		height : height * 0.2,
-		width : height * 0.2,
-		top : height * 0.6,
-		left : width * 0.05
-
-	});
-	//and_button.setTouchEnabled(false);
-	and_button.setOpacity(0.5);
 	
-	and_button.addEventListener('click',function(e){
-		Titanium.UI.createNotification({
-			duration : 3000,
-			message : "たくさんつぶやくと使えるようになるかも"
-		}).show();
-	})
-
-//	win.add(and_button);
-
+	
 	var ok_button = new require('/ui/common/button/button')('tweet');
-	ok_button.setTop(height * 0.82);
+	
+	ok_button.setTop(height * 0.8);
 	
 	
 
@@ -129,11 +158,14 @@ exports.AddProject = function() {
 		 require('/ACS/Confess/CreatePost').createPost(textArea.value,junel,project_image.imagePath,Titanium.App.Properties.getBool('use_handlename'));
 
 	});
+	
 	Titanium.App.addEventListener('select_junel',function(e){
-		junel = e.junel;
-		
-		junel_button.setTitle('ジャンル：'+junel)
+		//広域変数　junel は危険　レキシカル変数に変更せよ
+		junel = e.junel		
+		junel_button.setTitle('ジャンル：'+e.junel)
 	})
+	
+	
 	Titanium.App.addEventListener('complete_post',function(e){
 		win.close();
 		//delete win;
