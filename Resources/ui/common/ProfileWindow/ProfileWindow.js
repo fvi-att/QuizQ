@@ -28,8 +28,8 @@ exports.OpenProfileWindow = function() {
 		})
 	}
 
-	function createPicker(cnt) {
-		return Ti.UI.createPicker({
+	function createPicker(cnt,name) {
+		var picker = Ti.UI.createPicker({
 			height : height * 0.1,
 			width : width * 0.5,
 			center : {
@@ -37,15 +37,26 @@ exports.OpenProfileWindow = function() {
 				y : height * (0.15 * (cnt + 2) + 0.1)
 			}
 		})
+		
+		picker.addEventListener('change',function(e){
+			Titanium.App.Properties.setString(name,e.row.getTitle())
+			
+		})
+		
+		win.add(picker)
+		
+		return picker
 	}
 
-	var pickers = Array(3)
 	var labels = Array(4)
-
-	for ( pic_cnt = 0; pic_cnt < pickers.length; pic_cnt++) {
-		pickers[pic_cnt] = createPicker(pic_cnt)
-		win.add(pickers[pic_cnt])
-	}
+	
+	var columsText = Array(3)
+	
+	var adjectivePicker = createPicker(0,"adjective")
+	var posessionPicker = createPicker(1,"posession")
+	var agePicker       = createPicker(2,"age")
+	
+	
 	for ( lbl_cnt = 0; lbl_cnt < labels.length; lbl_cnt++) {
 		labels[lbl_cnt] = createLabel(lbl_cnt)
 		win.add(labels[lbl_cnt])
@@ -76,7 +87,9 @@ exports.OpenProfileWindow = function() {
 		custom_item : 'g'
 	});
 
-	pickers[0].add(data)
+	adjectivePicker.add(data)
+	
+
 
 	var data1 = Array(4)
 	data1[0] = Ti.UI.createPickerRow({
@@ -95,7 +108,8 @@ exports.OpenProfileWindow = function() {
 		title : 'JC',
 		custom_item : 's'
 	});
-	pickers[1].add(data1)
+	posessionPicker.add(data1)
+
 
 	var data2 = Array(6)
 	data2[0] = Ti.UI.createPickerRow({
@@ -111,18 +125,19 @@ exports.OpenProfileWindow = function() {
 		custom_item : 's'
 	});
 	data2[3] = Ti.UI.createPickerRow({
-		title : '18歳',
+		title : '20代',
 		custom_item : 's'
 	});
 	data2[4] = Ti.UI.createPickerRow({
-		title : 'おっさん',
+		title : '30代',
 		custom_item : 's'
 	});
 	data2[5] = Ti.UI.createPickerRow({
-		title : 'おばさん',
+		title : 'おっさん',
 		custom_item : 's'
 	});
-	pickers[2].add(data2)
+	agePicker.add(data2)
+	
 
 	var user_name = Titanium.App.Properties.getString('handlename');
 	if (!user_name)
@@ -133,7 +148,7 @@ exports.OpenProfileWindow = function() {
 		width : width * 0.5,
 		hintText : user_name,
 		center : {
-			x : pickers[0].getCenter().x,
+			x : adjectivePicker.getCenter().x,
 			y : labels[0].getCenter().y
 		}
 	})
@@ -176,17 +191,17 @@ exports.OpenProfileWindow = function() {
 			Titanium.App.Properties.setString('handlename', name_field.value);
 			Titanium.App.fireEvent('change_handlename');
 
-			Titanium.UI.createNotification({
-				duration : 2000,
-				message : "名無しプロフィールを更新しました"
-			}).show();
-
 		}
+		
+		Titanium.UI.createNotification({
+				duration : 2000,
+				message : "名無しプロフィールを変更しました"
+			}).show();
 
 	}
 
 	var ok_button = Titanium.UI.createButton({
-		title : 'これで行く',
+		title : 'これで行く!!',
 		width : width * 0.6,
 		height : 'auto',
 		top : height * 0.8

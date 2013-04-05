@@ -6,15 +6,7 @@
 exports.OpenConfigWin = function() {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 
-	var win = require('/ui/common/CommonNavigationWindow').createCommonNavigationWindow()/*Titanium.UI.createWindow({
-		title : '設定',
-		backgroundImage:'/images/opening/old_paper.jpg',
-		exitOnClose : false,
-		fullscreen : false,
-		
-		orientationModes : [Titanium.UI.PORTRAIT]
-	});*/
-	
+	var win = require('/ui/common/CommonNavigationWindow').createCommonNavigationWindow()
 	
 
 	var introSW_label = Titanium.UI.createLabel({

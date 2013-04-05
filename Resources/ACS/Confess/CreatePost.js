@@ -4,7 +4,7 @@
  * created @ 201210051050
  *
  */
-exports.createPost = function(title,junel, photo_path,use_HN) {
+exports.createPost = function(title, junel, photo_path, use_HN) {
 	var actInd = Titanium.UI.createActivityIndicator({
 		bottom : 10,
 		height : 100,
@@ -19,15 +19,15 @@ exports.createPost = function(title,junel, photo_path,use_HN) {
 	});
 
 	actInd.show();
-	
+
 	var Cloud = require('ti.cloud');
-		
+
 	if (photo_path) {
 		return UploadWithImage();
 	} else {
 		return Upload();
 	}
-	
+
 	//以下詳細な処理
 
 	function ReturnMessage(e) {
@@ -54,38 +54,52 @@ exports.createPost = function(title,junel, photo_path,use_HN) {
 
 	function UploadWithImage() {
 		//content変更
-		var init_comment = {interest:0,noway:0,bad:0};
-		
-		var comment =  JSON.stringify(init_comment)
-		
-		Cloud.Posts.create({
-			content :comment,
-			title : title,
-			tags : [junel],
-			photo : Titanium.Filesystem.getFile(photo_path),
-			acl_name :'All_Public'
-		}, function(e) {
-			return ReturnMessage(e);
-		});
-	}
-	function AddHN(data){
-		if(Titanium.App.Properties.hasProperty('handlename'))
-				data['_HN'] = Titanium.App.Properties.getString('handlename');
-		
-	}
-	function Upload() {
-		//初期型の３つを定義ておく。 あとでコメントモジュールに統合する
-		var init_comment = {interest:0,noway:0,bad:0};
-		
-		if(use_HN)
-			 AddHN(init_comment);
-		
-		var comment =  JSON.stringify(init_comment)
+		var init_comment = {
+			interest : 0,
+			noway : 0,
+			bad : 0
+		};
+
+		var comment = JSON.stringify(init_comment)
+
 		Cloud.Posts.create({
 			content : comment,
 			title : title,
 			tags : [junel],
-			acl_name :'All_Public'
+			photo : Titanium.Filesystem.getFile(photo_path),
+			acl_name : 'All_Public'
+		}, function(e) {
+			return ReturnMessage(e);
+		});
+	}
+
+	function AddHN(data) {
+		if (use_HN) {
+			if (Titanium.App.Properties.hasProperty('handlename')) {
+				data['_HN'] = Titanium.App.Properties.getString('handlename') + '(' + Titanium.App.Properties.getString('adjective') + 'の' + Titanium.App.Properties.getString('posession') + ','+ Titanium.App.Properties.getString('age')+')'
+			}
+		}else{
+				data['_HN'] = '(' + Titanium.App.Properties.getString('adjective') + 'の' + Titanium.App.Properties.getString('posession') + ',' + Titanium.App.Properties.getString('age') + ')'
+		}
+	}
+
+	function Upload() {
+		//初期型の３つを定義ておく。 あとでコメントモジュールに統合する
+		var init_comment = {
+			interest : 0,
+			noway : 0,
+			bad : 0
+		};
+
+		//if(use_HN)
+		AddHN(init_comment);
+
+		var comment = JSON.stringify(init_comment)
+		Cloud.Posts.create({
+			content : comment,
+			title : title,
+			tags : [junel],
+			acl_name : 'All_Public'
 		}, function(e) {
 			return ReturnMessage(e);
 		});

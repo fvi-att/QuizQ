@@ -223,6 +223,7 @@ exports.openCivilView = function() {
 	menuGridButton9.addEventListener('click',function(e){
 		Titanium.App.Properties.setBool('event_batch9',false)
 		menuGridButton9.batch.setVisible(false)
+		
 	});
 	
 	var tweetButton = Titanium.UI.createView({

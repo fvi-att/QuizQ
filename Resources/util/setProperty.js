@@ -57,6 +57,16 @@ exports.setProperty = function() {
 			//9つのすべてのプロパティ値の設定を初期化、定義
 			Titanium.App.Properties.setBool('event_batch' + event_cnt, false);
 	}
+	
+	if(!Titanium.App.Properties.hasProperty('adjective'))
+		Titanium.App.Properties.setString('adjective','とある')
+	if(!Titanium.App.Properties.hasProperty('posession'))
+		Titanium.App.Properties.setString('posession','名無しさん')
+	if(!Titanium.App.Properties.hasProperty('age'))
+		Titanium.App.Properties.setString('age','10代')
+	
+	
+	
 	//初期更新情報	ヘルプとWhat's newは常に更新しておく。
 	var LATEST_APP_VERSION = 16
 	if (Titanium.App.getVersion() <= LATEST_APP_VERSION) {
