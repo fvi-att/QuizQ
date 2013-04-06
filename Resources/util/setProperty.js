@@ -11,15 +11,7 @@ exports.setProperty = function() {
 	//ゲーム全般に関する設定
 	var INITIAL_POINT = 10;
 	var INITIAL_RESPONSE_POINT = 3;
-	/*
-	 *
-	 サンプル画面は廃止しました。
-	 if (!Titanium.App.Properties.hasProperty('isIntroNeed'))
-	 Titanium.App.Properties.setBool('isIntroNeed', true);
 
-	 if (!Titanium.App.Properties.hasProperty('isSampleNeed'))
-	 Titanium.App.Properties.setBool('isSampleNeed', true);
-	 */
 	if (!Titanium.App.Properties.hasProperty('lastTime'))
 		Titanium.App.Properties.setDouble('lastTime', (new Date(2000, 1, 1, 23, 59, 59)).getTime())
 
@@ -58,6 +50,7 @@ exports.setProperty = function() {
 			Titanium.App.Properties.setBool('event_batch' + event_cnt, false);
 	}
 	
+	//プロフィールに関する処理
 	if(!Titanium.App.Properties.hasProperty('adjective'))
 		Titanium.App.Properties.setString('adjective','とある')
 	if(!Titanium.App.Properties.hasProperty('posession'))
@@ -75,6 +68,9 @@ exports.setProperty = function() {
 
 		if (!Titanium.App.Properties.hasProperty('event_batch3'))
 			Titanium.App.Properties.setBool('event_batch3', true);
+			
+		if (!Titanium.App.Properties.hasProperty('event_batch7'))
+			Titanium.App.Properties.setBool('event_batch7', true);
 
 	}
 
