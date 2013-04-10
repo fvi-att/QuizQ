@@ -19,8 +19,8 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.4.GA</sdk-version>
-    <id>com.xicolo.confess.app</id>
-    <name>Secret_exe</name>
+    <id>com.xicolo.confess.dev.dev.app</id>
+    <name>Secret_dev</name>
     <version>16</version>
     <publisher>fvi@</publisher>
     <url>http://xicolo.com/wordpress</url>
