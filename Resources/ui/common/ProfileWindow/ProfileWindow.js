@@ -200,13 +200,14 @@ exports.OpenProfileWindow = function() {
 
 	}
 
-	var ok_button = Titanium.UI.createButton({
-		title : 'これで行く!!',
-		width : width * 0.6,
-		height : 'auto',
-		top : height * 0.8
-	});
-
+	var ok_button =  Titanium.UI.createButton({
+		height:height * 0.1,
+		width:width * 0.6,
+		backgroundImage:'/images/button/OK/navibar/button.png',
+		backgroundSelectedImage:'/images/button/OK/navibar/button_pressed.png',
+		top:height *0.9
+	})
+	
 	ok_button.addEventListener('click', function(e) {
 		CommitChange()
 		win.close();

@@ -30,7 +30,7 @@ exports.createCommonNavigationWindow = function(){
 		
 	var upperRibbon = Titanium.UI.createImageView({
 			image:'/images/underRibbon/underRibbon2.png',
-			width:width,
+			width:Titanium.UI.FILL,
 			height:height *0.12,
 			top:-0.03 * height
 	})

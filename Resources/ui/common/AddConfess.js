@@ -132,10 +132,9 @@ exports.AddProject = function() {
 		height:height * 0.1,
 		width:width * 0.6,
 		backgroundImage:'/images/button/tweet/navibar/button.png',
-		backgroundSelectedImage:'/images/button/tweet/navibar/button_pressed.png'
-	})//new require('/ui/common/button/button')('tweet');
-	
-	ok_button.setTop(height * 0.9);
+		backgroundSelectedImage:'/images/button/tweet/navibar/button_pressed.png',
+		top:height *0.9
+	})
 	
 	
 
