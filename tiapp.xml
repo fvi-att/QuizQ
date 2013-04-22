@@ -12,6 +12,7 @@
     <property name="ti.android.bug2373.buttonText">\u7d9a\u3051\u308b</property>
     <property name="ti.android.bug2373.backgroundColor">black</property>
     <deployment-targets>
+        <target device="tizen">false</target>
         <target device="mobileweb">true</target>
         <target device="iphone">true</target>
         <target device="ipad">true</target>
@@ -19,12 +20,16 @@
         <target device="blackberry">false</target>
     </deployment-targets>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <sdk-version>3.0.2.GA</sdk-version>
     <id>com.xicolo.confess.dev.dev.app</id>
     <name>Secret_dev</name>
     <version>17</version>
 =======
     <sdk-version>2.1.4.GA</sdk-version>
+=======
+    <sdk-version>3.1.0.GA</sdk-version>
+>>>>>>> 2b7de7e8030ec84a8a4aee209adfe9eb5dd482e8
     <id>com.xicolo.confess.dev.dev.app</id>
     <name>Secret_dev</name>
     <version>16</version>

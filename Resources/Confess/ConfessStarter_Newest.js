@@ -26,20 +26,7 @@ exports.FlowdownloadStart = function() {
 	});
 
 	actInd.show();
-	/*
-	if(latest_update_posts && (Titanium.App.Properties.getDouble('last_flow_update') + 1000*30 < new Date().getTime)){
-		//if(latest_update_posts){
-		alert('どうやら再利用できるデータが存在するようです');
-		
-		new require('/ui/common/ConfessWindow/FlowView')(latest_update_posts);
-		actInd.hide();
-		
-		
-		return;
-		
-		
-	}
-	*/
+
 	var order = 'created_at';
 	if (!Titanium.App.Properties.getBool('flow_side'))
 		order = '-' + order;
