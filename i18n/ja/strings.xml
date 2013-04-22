@@ -19,10 +19,22 @@
 							日々の不満や小さな悩みなど匿名ならではのつぶやきを\n
 							ひみつぶやきで！</string>
 							
-
+							
+							
+	<string name="interest">イイね！</string>
+	<string name="bad">マズイね</string>
+	<string name="noway">あり得ない！</string>
+	<string name="miserable">\n辛いね！わかるよ</string>
+	<string name="cheear">\n勝負時！じゃん！</string>
+	<string name="ganbare">\nガンバレー!:</string>
+	<string name="boon">\n（^ω^)ワロタ・・</string>
+	<string name="aruaru">\nあるある！</string>
+	<string name="aruaruneyo">\nあるあるあ・・ねーよ</string>
+	<string name="orealy">\nえっ　本当かなぁ？</string>
+	<string name="kawaii">\nカワイイ！</string>
+	<string name="whatsmatter">\nどうしたの？</string>
+	<string name="kuzu">\nクズだねぇ</string>
 	
-	
-
-							 
+								 
 							  
 </resources>

@@ -18,10 +18,17 @@
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
+<<<<<<< HEAD
     <sdk-version>3.0.2.GA</sdk-version>
     <id>com.xicolo.confess.dev.dev.app</id>
     <name>Secret_dev</name>
     <version>17</version>
+=======
+    <sdk-version>2.1.4.GA</sdk-version>
+    <id>com.xicolo.confess.dev.dev.app</id>
+    <name>Secret_dev</name>
+    <version>16</version>
+>>>>>>> 55977c385a5febdb0faf75f2a6a9642308afe3bb
     <publisher>fvi@</publisher>
     <url>http://xicolo.com/wordpress</url>
     <description>iOS implemented</description>
