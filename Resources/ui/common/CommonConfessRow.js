@@ -81,9 +81,10 @@ exports.createCommonRow = function(image_path,title,side, photo, id, comment,cre
 	}
 
 	function setCommentText(com_json) {
+		
 			var response = require('/ResponseObj/Response2Str').Perse(com_json)
 
-			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.05 * response.sumCnt))
+			source_row.row.setHeight(source_row.row.getHeight()*(1 + 0.1 * response.sumCnt))
 
 		return response.string;
 
