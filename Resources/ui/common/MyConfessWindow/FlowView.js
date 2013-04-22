@@ -9,13 +9,15 @@ function FlowWindow(download) {
 	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var win = require('/ui/common/CommonFlowTableWindow')()
 	var flowTableView = win.table;
-
+	
+	//現時点でflowdataは何の役割を果たしていないが　ここでデータを処理するMVCのControllerの役割を果たす。
+	//なるべくどのデータを渡すかをこのビューで記述しないようにする。
 	var flow_data = require('/Confess/Flowdata').createDataObject(download);
 
 	function createRow(count) {
 		//いつかはセクションごとに分割で切るようにしていく
 		var data = flow_data.getAllData()
-
+		//稀に投稿データが破損して常時出来ないことがあるので回避処理を事前に行う
 		if (!data[count])
 			return;
 
@@ -28,23 +30,15 @@ function FlowWindow(download) {
 			backgroundSelectedImage : '/images/icon/trash/trash_pressed.png',
 			width : width * 0.07,
 			height : width * 0.07,
-			center : {
-				x : width * 0.1,
-				y : createdRow.row.getHeight() / 2
-			}
+			top:height  *0.05,
+			right:width *0.05
 		})
 
 		trashButton.addEventListener('click', function(e) {
-		var Cloud = require('ti.cloud');
-			Cloud.Posts.remove({
-				post_id : createdRow.row.post_id
-			}, function(e) {
-				if (e.success) {
-					alert('Success::'+createdRow.row.post_id);
-				} else {
-					alert('Error:\n' + ((e.error && e.message) || JSON.stringify(e)));
-				}
-			});
+			
+			//サーバ上で投稿データの削除が成功したかどうか確認した後にUI上でもtableViewから削除を試みる
+			if(require('/ACS/Confess/RemovePost').RemovePost(createdRow.row.post_id))
+				Titanium.App.fireEvent('remove_post_row',{post_id:createdRow.row.post_id})
 		})
 
 		createdRow.row.add(trashButton)
