@@ -9,7 +9,8 @@
 
 exports.createDataObject = function(data){
 	var obj = function(){}
-	
+	//Objectカーソル,dataCurを用いてオブジェクトが提供しているデータの範囲を定義している
+	//テーブルの行もここで管理しようかと思ったけどやめた。
 	obj.data = data;
 	
 	//1つのセクションは10件のデータを保有する

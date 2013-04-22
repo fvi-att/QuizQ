@@ -25,7 +25,7 @@ exports.RemovePost = function(post_id){
 			buttonNames : ['キャンセル', 'Ok']
 		});
 		
-		dialog.addEventListener('click', function(e) {
+		return dialog.addEventListener('click', function(e) {
 			if (e.index == 1) {// we read it only if get it is pressed
 				return DoRemovePost(post_id)
 			}

@@ -12,13 +12,16 @@ function FlowWindow(download) {
 	
 	//現時点でflowdataは何の役割を果たしていないが　ここでデータを処理するMVCのControllerの役割を果たす。
 	//なるべくどのデータを渡すかをこのビューで記述しないようにする。
-	var flow_data = require('/Confess/Flowdata').createDataObject(download);
+	var flowDataList = require('/Confess/Flowdata').createDataObject(download);
 	
 	
 
 	function createRow(count) {
 		//いつかはセクションごとに分割で切るようにしていく
-		var data = flow_data.getAllData()
+		var data = flowDataList.getAllData()
+		/* データをいちいち切り取って作成していたが　ver17からは管理リストを作成しそこに問い合わせを投げる形で
+		 * テーブルビューの削除を実現する。
+		 */
 		//稀に投稿データが破損して常時出来ないことがあるので回避処理を事前に行う
 		if (!data[count])
 			return;
@@ -39,9 +42,10 @@ function FlowWindow(download) {
 		trashButton.addEventListener('click', function(e) {
 			
 			//サーバ上で投稿データの削除が成功したかどうか確認した後にUI上でもtableViewから削除を試みる
-			if(require('/ACS/Confess/RemovePost').RemovePost(createdRow.row.post_id))
-				Titanium.App.fireEvent('remove_post_row',{row:createdRow.row})
-			//いいアイデアが思いつかないお
+			if(require('/ACS/Confess/RemovePost').RemovePost(createdRow.row.post_id)){
+				alert('STUB::remove_row_status')
+			}
+			
 		})
 
 		createdRow.row.add(trashButton)
