@@ -1,15 +1,17 @@
 Logfile initialized
 [INFO] logfile = C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build.log
-[DEBUG] C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\builder.py install Secret_dev C:\adb\sdk C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki com.xicolo.confess.dev.dev.app 14
-[INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
+[DEBUG] C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\builder.py install Secret_dev C:\adb\sdk C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki com.xicolo.confess.dev.dev.app 14
+[INFO] Titanium SDK version: 3.1.0 (04/15/13 18:45 57634ef)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.020000 seconds on emulator to get ready
+[DEBUG] waited 0.016000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ResponseObj\Response2Str.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ResponseObj\Response2Str.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\CommonConfessRow.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\CommonConfessRow.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\ConfessWindow\ProjectTableRow.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\ConfessWindow\ProjectTableRow.js
+[DEBUG] LiveView not enabled
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\title1.png
@@ -297,7 +299,12 @@ Logfile initialized
 [DEBUG] from resource zip => assets/tiapp.xml
 [DEBUG] from resource zip => res/drawable/appicon.png
 [DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/drawable/btn_check_buttonless_on_64.png
+[DEBUG] from resource zip => res/drawable/btn_more_64.png
+[DEBUG] from resource zip => res/drawable/disclosure_64.png
 [DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => res/layout/titanium_ui_list_header_or_footer.xml
+[DEBUG] from resource zip => res/layout/titanium_ui_list_item.xml
 [DEBUG] from resource zip => AndroidManifest.xml
 [DEBUG] from resource zip => resources.arsc
 [DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
@@ -310,27 +317,29 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
-[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\2.1.4.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_64.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_64.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
 [DEBUG] installing native lib: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\modules\android\ti.admob\2.0.1\libs\armeabi\libti.admob.so
 [DEBUG] installing native lib: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\modules\android\ti.admob\2.0.1\libs\armeabi-v7a\libti.admob.so
 [DEBUG] installing native lib: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\modules\android\ti.inappbilling\2.2.0\libs\armeabi\libti.inappbilling.so
@@ -341,6 +350,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.020000 seconds on emulator to get ready
+[DEBUG] waited 0.031000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
