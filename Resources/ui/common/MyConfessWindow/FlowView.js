@@ -6,6 +6,7 @@
  */
 
 function FlowWindow(download) {
+	height = Ti.Platform.displayCaps.platformHeight, width = Ti.Platform.displayCaps.platformWidth;
 	var win = require('/ui/common/CommonFlowTableWindow')()
 	var flowTableView = win.table;
 
@@ -21,6 +22,21 @@ function FlowWindow(download) {
 	var createdRow = require('/ui/common/CommonConfessRow').createCommonRow('',data[count].title,0,data[count].photo,data[count].id,data[count].content,data[count].created_at,count,data[count]);
 		createdRow.row.setHasChild(false);
 		createdRow.row.post_username = data[count].user;
+		
+		var trashButton = Titanium.UI.createButton({
+			backgroundImage:'/images/icon/trash/trash.png',
+			backgroundSelectedImage:'/images/icon/trash/trash_pressed.png',
+			width:width * 0.07,
+			height:width *0.07,
+			right:width *0.1,
+			bottom:height *0.05
+		})
+		
+		trashButton.addEventListener('click',function(e){
+			alert('press:STUB::'+createdRow.row.post_id)
+		})
+		
+		createdRow.row.add(trashButton)
 		
 		flowTableView.appendRow(createdRow.row);
 		

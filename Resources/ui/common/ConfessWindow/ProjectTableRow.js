@@ -26,7 +26,7 @@ exports.createRowObject = function(image_path, title, side, photo, id) {
 		hasChild : true,
 		height : height * 0.2 + (height * 0.05 * lf_count)+ hasPhoto * height * 0.30,
 		//className : 'todo_row'+title+id,
-		id : id,
+		post_id : id,
 
 	});
 	var row_height = row.getHeight();
