@@ -31,15 +31,20 @@ function CommonTableWin() {
 	});
 
 	win.table = flowTableView;
-
-	//	win.add(searchBar);
-	win.add(flowTableView);
 	
+	Titanium.App.addEventLisntener('remove_post_row', function(e) {
+			flowTableView.deleteRow(r.row);
+		
+	})
+	
+	
+	win.add(flowTableView);
+
 	//アンダーバーのイメージUIを追加する
 	var under_UI_ImageView = Titanium.UI.createImageView({
 		image : '/images/navibar/flow_under.png',
 		width : Titanium.UI.FILL,
-		height : height *0.3,
+		height : height * 0.3,
 
 		top : height * 0.85
 
@@ -102,8 +107,8 @@ function CommonTableWin() {
 	win.add(config_button);
 
 	//広告を入れるか入れないかを　ここで判断
-	if (true) {
-		
+	if (false) {
+
 		flowTableView.setHeight(height * 0.7)
 		under_UI_ImageView.setTop(height * 0.76);
 		//admob 追加

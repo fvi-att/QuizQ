@@ -13,6 +13,8 @@ function FlowWindow(download) {
 	//現時点でflowdataは何の役割を果たしていないが　ここでデータを処理するMVCのControllerの役割を果たす。
 	//なるべくどのデータを渡すかをこのビューで記述しないようにする。
 	var flow_data = require('/Confess/Flowdata').createDataObject(download);
+	
+	
 
 	function createRow(count) {
 		//いつかはセクションごとに分割で切るようにしていく
@@ -30,7 +32,7 @@ function FlowWindow(download) {
 			backgroundSelectedImage : '/images/icon/trash/trash_pressed.png',
 			width : width * 0.07,
 			height : width * 0.07,
-			top:height  *0.05,
+			top:height  *0.02,
 			right:width *0.05
 		})
 
@@ -38,7 +40,8 @@ function FlowWindow(download) {
 			
 			//サーバ上で投稿データの削除が成功したかどうか確認した後にUI上でもtableViewから削除を試みる
 			if(require('/ACS/Confess/RemovePost').RemovePost(createdRow.row.post_id))
-				Titanium.App.fireEvent('remove_post_row',{post_id:createdRow.row.post_id})
+				Titanium.App.fireEvent('remove_post_row',{row:createdRow.row})
+			//いいアイデアが思いつかないお
 		})
 
 		createdRow.row.add(trashButton)
@@ -46,16 +49,9 @@ function FlowWindow(download) {
 		flowTableView.appendRow(createdRow.row);
 
 	}
-
-	if (Titanium.App.Properties.getBool('flow_side')) {
-		for ( count = 0; count < download.length; count++)
+	
+	for ( count = 0; count < download.length; count++)
 			createRow(count);
-
-	} else {
-		//falseのときtwitter形式にする
-		for ( count = download.length; count > -1; count--)
-			createRow(count);
-	}
 
 }
 

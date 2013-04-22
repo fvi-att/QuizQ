@@ -12,6 +12,7 @@
     <property name="ti.android.bug2373.buttonText">\u7d9a\u3051\u308b</property>
     <property name="ti.android.bug2373.backgroundColor">black</property>
     <deployment-targets>
+        <target device="tizen">false</target>
         <target device="mobileweb">true</target>
         <target device="iphone">true</target>
         <target device="ipad">true</target>

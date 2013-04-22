@@ -37,9 +37,10 @@ exports.getMyConfess = function(){
 		
 	return;
 	}
-	var condition = new Date()
-	//condition.setDate(condition.getDate() -1);
-	condition.setDate(condition.getDate() -1);
+
+	var order = 'created_at';
+	if (!Titanium.App.Properties.getBool('flow_side'))
+		order = '-' + order;
 	
 	var Cloud = require('ti.cloud');
 	Cloud.Posts.query({
@@ -48,7 +49,7 @@ exports.getMyConfess = function(){
     where: {
        user_id:user_id
     },
-    order:'created_at'
+    order:order
 }, function(e) {
 		if (e.success) {
 			var post = e.posts[0];

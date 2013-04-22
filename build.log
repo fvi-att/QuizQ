@@ -1,16 +1,15 @@
 Logfile initialized
 [INFO] logfile = C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build.log
-[DEBUG] C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\builder.py install Secret_dev C:\adb\sdk C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki com.xicolo.confess.dev.dev.app 14
+[DEBUG] C:\Users\Iwai_7\AppData\Roaming\Titanium\mobilesdk\win32\3.1.0.GA\android\builder.py install Secret_dev C:\adb\sdk C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki com.xicolo.confess.dev.dev.app 14 adb:9419
 [INFO] Titanium SDK version: 3.1.0 (04/15/13 18:45 57634ef)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.016000 seconds on emulator to get ready
+[DEBUG] waited 0.022000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\CommonFlowTableWindow.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\CommonFlowTableWindow.js
-[TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\MyConfessWindow\FlowView.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\MyConfessWindow\FlowView.js
 [DEBUG] LiveView not enabled
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
@@ -352,6 +351,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.020000 seconds on emulator to get ready
+[DEBUG] waited 0.021000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
+[INFO] Forwarding host port 9419 to device for debugging.
