@@ -11,39 +11,48 @@ function FlowWindow(download) {
 	var flowTableView = win.table;
 
 	var flow_data = require('/Confess/Flowdata').createDataObject(download);
-	
+
 	function createRow(count) {
 		//いつかはセクションごとに分割で切るようにしていく
 		var data = flow_data.getAllData()
-		
+
 		if (!data[count])
 			return;
-			
-	var createdRow = require('/ui/common/CommonConfessRow').createCommonRow('',data[count].title,0,data[count].photo,data[count].id,data[count].content,data[count].created_at,count,data[count]);
+
+		var createdRow = require('/ui/common/CommonConfessRow').createCommonRow('', data[count].title, 0, data[count].photo, data[count].id, data[count].content, data[count].created_at, count, data[count]);
 		createdRow.row.setHasChild(false);
 		createdRow.row.post_username = data[count].user;
-		
+
 		var trashButton = Titanium.UI.createButton({
-			backgroundImage:'/images/icon/trash/trash.png',
-			backgroundSelectedImage:'/images/icon/trash/trash_pressed.png',
-			width:width * 0.07,
-			height:width *0.07,
-			right:width *0.1,
-			bottom:height *0.05
+			backgroundImage : '/images/icon/trash/trash.png',
+			backgroundSelectedImage : '/images/icon/trash/trash_pressed.png',
+			width : width * 0.07,
+			height : width * 0.07,
+			center : {
+				x : width * 0.1,
+				y : createdRow.row.getHeight() / 2
+			}
 		})
-		
-		trashButton.addEventListener('click',function(e){
-			alert('press:STUB::'+createdRow.row.post_id)
+
+		trashButton.addEventListener('click', function(e) {
+		var Cloud = require('ti.cloud');
+			Cloud.Posts.remove({
+				post_id : createdRow.row.post_id
+			}, function(e) {
+				if (e.success) {
+					alert('Success::'+createdRow.row.post_id);
+				} else {
+					alert('Error:\n' + ((e.error && e.message) || JSON.stringify(e)));
+				}
+			});
 		})
-		
+
 		createdRow.row.add(trashButton)
-		
+
 		flowTableView.appendRow(createdRow.row);
-		
+
 	}
-	
-	
-	
+
 	if (Titanium.App.Properties.getBool('flow_side')) {
 		for ( count = 0; count < download.length; count++)
 			createRow(count);

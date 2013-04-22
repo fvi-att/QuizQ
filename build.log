@@ -5,21 +5,12 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-<<<<<<< HEAD
-[DEBUG] waited 0.031000 seconds on emulator to get ready
+[DEBUG] waited 0.015000 seconds on emulator to get ready
 [DEBUG] com.xicolo.confess.dev.dev.app installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\MyConfessWindow\FlowView.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\MyConfessWindow\FlowView.js
-=======
-[DEBUG] waited 0.016000 seconds on emulator to get ready
-[DEBUG] com.xicolo.confess.dev.dev.app installed? False
-[INFO] Copying CommonJS modules...
-[INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\CommonConfessRow.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\CommonConfessRow.js
-[TRACE] COPYING MODIFIED FILE: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\Resources\ui\common\ConfessWindow\ProjectTableRow.js => C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\ui\common\ConfessWindow\ProjectTableRow.js
 [DEBUG] LiveView not enabled
->>>>>>> master
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\Iwai_7\My Documents\Titanium_Studio_Workspace\himitsubuyaki\build\android\bin\assets\Resources\title1.png
@@ -360,10 +351,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-<<<<<<< HEAD
-[DEBUG] waited 0.015000 seconds on emulator to get ready
-=======
-[DEBUG] waited 0.031000 seconds on emulator to get ready
->>>>>>> master
+[DEBUG] waited 0.016000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
