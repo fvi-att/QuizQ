@@ -32,10 +32,7 @@ function CommonTableWin() {
 
 	win.table = flowTableView;
 	
-	Titanium.App.addEventLisntener('remove_post_row', function(e) {
-			flowTableView.deleteRow(r.row);
-		
-	})
+
 	
 	
 	win.add(flowTableView);
