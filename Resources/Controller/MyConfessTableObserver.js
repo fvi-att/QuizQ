@@ -8,16 +8,24 @@ var controller = function(){}
 if(!controller.removed)
 	controller.removed = [];
 	
-	
-evports.setTableView = function(tableview){
+exports.setRowData = function(row_data){
+	controller.rowdata = row_data
+}
+
+
+exports.setTableView = function(tableview){
 		controller.tableview = tableview
 	
 }
-exports.addListener = function(func){
+exports.addListenerRemoved = function(func){
 	controller.removed.append(func);
 }
 
 //temp
 
-exports.
-
+exports.fireEvent = function(){
+	for(cnt = 0;cnt < controller.removed.length;cnt++){
+		//登録したメソッドすべてを実行するようにする
+		controller.removed[cnt](controller.tableView)
+	}
+}
