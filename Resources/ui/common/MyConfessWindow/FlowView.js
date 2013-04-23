@@ -40,12 +40,10 @@ function FlowWindow(download) {
 		})
 
 		trashButton.addEventListener('click', function(e) {
+			//UI上から削除を試みる
 			
 			//サーバ上で投稿データの削除が成功したかどうか確認した後にUI上でもtableViewから削除を試みる
-			if(require('/ACS/Confess/RemovePost').RemovePost(createdRow.row.post_id)){
-				alert('STUB::remove_row_status')
-			}
-			
+			require('/ACS/Confess/RemovePost').RemovePost(createdRow.row.post_id)			
 		})
 
 		createdRow.row.add(trashButton)
